@@ -1,70 +1,75 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #f5f7fa;
-  margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0; padding: 0;
+  background: #f0f4f8;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
 }
 
-h1, h2 {
-  color: #333;
-}
+.page { max-width: 700px; width: 100%; margin: 40px; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 6px 20px rgba(0,0,0,0.1);}
+.hidden { display: none; }
 
-button {
-  background-color: #4CAF50;
+h1, h2 { text-align: center; }
+p { text-align: center; }
+
+.buttons { display: flex; justify-content: center; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
+
+.btn {
+  background: #007bff;
   color: white;
   border: none;
+  padding: 12px 25px;
+  font-size: 16px;
   border-radius: 8px;
-  padding: 10px 20px;
-  margin: 5px 0;
   cursor: pointer;
-  font-size: 1em;
   transition: all 0.3s ease;
 }
+.btn:hover { background: #0056b3; }
 
-button:hover {
-  background-color: #45a049;
+.btn-option {
+  background: #f1f1f1;
+  color: #333;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-
-button.correct {
-  background-color: #4CAF50;
-  color: white;
-}
-
-button.incorrect {
-  background-color: #f44336;
-  color: white;
-}
-
-.quiz, .dashboard, .feedback, #resultPage {
-  background: white;
-  padding: 20px 30px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-  margin-top: 20px;
-  width: 90%;
-  max-width: 600px;
-}
+.btn-option:hover { background: #e2e6ea; }
+.btn-option.correct { background: #28a745; color: white; border-color: #28a745; }
+.btn-option.incorrect { background: #dc3545; color: white; border-color: #dc3545; }
 
 #progressContainer {
   width: 100%;
-  background-color: #ddd;
-  height: 15px;
+  height: 20px;
+  background: #e0e0e0;
   border-radius: 10px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
-
 #progressBar {
-  width: 0%;
   height: 100%;
-  background: linear-gradient(90deg, #4CAF50, #81C784);
-  border-radius: 10px;
-  transition: width 0.5s ease-in-out;
+  width: 0%;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  transition: width 0.5s ease;
 }
 
-.options button {
+table {
   width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
-
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+table th {
+  background: #007bff;
+  color: white;
+}
