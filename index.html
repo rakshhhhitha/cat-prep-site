@@ -53,10 +53,10 @@
       const questionTypes = ["Meaning", "Synonym", "Antonym"];
       const questionType = getRandomItem(questionTypes);
 
-      let filteredVocab = vocabulary.filter(entry => {
-        if (questionType === "Meaning") return entry.meaning?.trim() !== "";
-        if (questionType === "Synonym") return entry.synonym?.trim() !== "";
-        if (questionType === "Antonym") return entry.antonym?.trim() !== "";
+      const filteredVocab = vocabulary.filter(entry => {
+        if (questionType === "Meaning") return entry.Meanings?.trim();
+        if (questionType === "Synonym") return entry.Synonym?.trim();
+        if (questionType === "Antonym") return entry.Antonym?.trim();
         return false;
       });
 
@@ -71,22 +71,22 @@
       let options = [];
 
       if (questionType === "Meaning") {
-        questionText = `What is the meaning of "${item.word}"?`;
-        correctAnswer = item.meaning.trim();
-        options = filteredVocab.map(v => v.meaning).filter(Boolean);
+        questionText = `What is the meaning of "${item.Word}"?`;
+        correctAnswer = item.Meanings.trim();
+        options = filteredVocab.map(v => v.Meanings).filter(Boolean);
       } else if (questionType === "Synonym") {
-        questionText = `Which word is a synonym of "${item.word}"?`;
-        const synonyms = item.synonym.split(",").map(s => s.trim()).filter(Boolean);
+        questionText = `Which word is a synonym of "${item.Word}"?`;
+        const synonyms = item.Synonym?.split(",").map(s => s.trim()).filter(Boolean) || [];
         correctAnswer = getRandomItem(synonyms);
-        options = filteredVocab.flatMap(v => v.synonym.split(",").map(s => s.trim()));
+        options = filteredVocab.flatMap(v => (v.Synonym?.split(",").map(s => s.trim()) || []));
       } else if (questionType === "Antonym") {
-        questionText = `Which word is an antonym of "${item.word}"?`;
-        const antonyms = item.antonym.split(",").map(a => a.trim()).filter(Boolean);
+        questionText = `Which word is an antonym of "${item.Word}"?`;
+        const antonyms = item.Antonym?.split(",").map(a => a.trim()).filter(Boolean) || [];
         correctAnswer = getRandomItem(antonyms);
-        options = filteredVocab.flatMap(v => v.antonym.split(",").map(a => a.trim()));
+        options = filteredVocab.flatMap(v => (v.Antonym?.split(",").map(a => a.trim()) || []));
       }
 
-      // Clean options
+      // Clean and shuffle options
       options = [...new Set(options.filter(Boolean))];
       if (!options.includes(correctAnswer)) options.push(correctAnswer);
       options = options.sort(() => 0.5 - Math.random()).slice(0, 4);
