@@ -5,213 +5,211 @@
   <title>Vocabulary Quiz</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; }
-    .question { font-size: 1.2em; margin-bottom: 10px; }
-    .options button { display: block; margin: 5px 0; padding: 10px; width: 300px; }
+    .hidden { display: none; }
+    .options button { display: block; margin: 5px 0; padding: 10px; width: 300px; cursor: pointer; }
     .feedback { margin-top: 10px; font-weight: bold; }
     .dashboard { margin-top: 20px; border-top: 1px solid #ccc; padding-top: 10px; }
-    .hidden { display: none; }
-    button { cursor: pointer; }
   </style>
 </head>
 <body>
-  <h1>Vocabulary Quiz</h1>
+<h1>Vocabulary Quiz</h1>
 
-  <!-- Start / Review Page -->
-  <div id="startPage">
-    <p>Total Questions: <span id="totalQuestions">0</span></p>
-    <p>Previously attempted: <span id="prevAttempts">0</span></p>
-    <p>Incorrect questions: <span id="incorrectCount">0</span></p>
-    <button id="learnBtn">Learn Incorrect Words</button>
-    <button id="startQuizBtn">Start Quiz</button>
-    <button id="clearReviewBtn">Clear Review / Reset Stats</button>
+<!-- Start / Review Page -->
+<div id="startPage">
+  <p>Total Questions in dataset: <span id="totalQuestions">0</span></p>
+  <p>Previously attempted: <span id="prevAttempts">0</span></p>
+  <p>Incorrect questions: <span id="incorrectCount">0</span></p>
+  <button id="learnBtn">Learn Incorrect Words</button>
+  <button id="startQuizBtn">Start Quiz</button>
+  <button id="clearReviewBtn">Clear Review / Reset Stats</button>
+</div>
+
+<!-- Quiz Page -->
+<div id="quizPage" class="hidden">
+  <p>Question <span id="currentQ">1</span> / 20</p>
+  <div class="question" id="questionText"></div>
+  <div class="options" id="optionsContainer"></div>
+  <div class="feedback" id="feedback"></div>
+  <div class="dashboard">
+    <p>Total Attempts: <span id="totalAttempts">0</span></p>
+    <p>Correct Answers: <span id="correctAnswers">0</span></p>
+    <p>Accuracy: <span id="accuracy">0%</span></p>
   </div>
+</div>
 
-  <!-- Quiz Page -->
-  <div class="quiz hidden" id="quizPage">
-    <p>Question <span id="currentQ">1</span> / 20</p>
-    <div class="question" id="questionText"></div>
-    <div class="options" id="optionsContainer"></div>
-    <div class="feedback" id="feedback"></div>
+<!-- Learn Page -->
+<div id="learnPage" class="hidden">
+  <h2>Learn Incorrect Words</h2>
+  <ul id="learnList"></ul>
+  <button id="backBtn">Back</button>
+</div>
 
-    <div class="dashboard">
-      <p>Total Attempts: <span id="totalAttempts">0</span></p>
-      <p>Correct Answers: <span id="correctAnswers">0</span></p>
-      <p>Accuracy: <span id="accuracy">0%</span></p>
-    </div>
-  </div>
+<script>
+let vocabulary = [];
+let quizQuestions = [];
+let incorrectQuestions = JSON.parse(localStorage.getItem("review") || "[]");
+let currentIndex = 0;
+let totalAttempts = 0;
+let correctAnswers = 0;
 
-  <!-- Learn Page -->
-  <div id="learnPage" class="hidden">
-    <h2>Learn Incorrect Words</h2>
-    <ul id="learnList"></ul>
-    <button id="backBtn">Back</button>
-  </div>
+// DOM Elements
+const startPage = document.getElementById("startPage");
+const quizPage = document.getElementById("quizPage");
+const learnPage = document.getElementById("learnPage");
+const questionText = document.getElementById("questionText");
+const optionsContainer = document.getElementById("optionsContainer");
+const feedback = document.getElementById("feedback");
+const totalQuestionsSpan = document.getElementById("totalQuestions");
+const prevAttemptsSpan = document.getElementById("prevAttempts");
+const incorrectCountSpan = document.getElementById("incorrectCount");
+const currentQ = document.getElementById("currentQ");
+const totalAttemptsSpan = document.getElementById("totalAttempts");
+const correctAnswersSpan = document.getElementById("correctAnswers");
+const accuracySpan = document.getElementById("accuracy");
+const learnList = document.getElementById("learnList");
 
-  <script>
-    let vocabulary = [];
-    let quizQuestions = [];
-    let incorrectQuestions = JSON.parse(localStorage.getItem("review") || "[]");
-    let currentIndex = 0;
-    let totalAttempts = 0;
-    let correctAnswers = 0;
+function updateDashboard() {
+  totalAttemptsSpan.textContent = totalAttempts;
+  correctAnswersSpan.textContent = correctAnswers;
+  accuracySpan.textContent = totalAttempts ? ((correctAnswers/totalAttempts)*100).toFixed(2) + "%" : "0%";
+}
 
-    const startPage = document.getElementById("startPage");
-    const quizPage = document.getElementById("quizPage");
-    const learnPage = document.getElementById("learnPage");
-    const questionText = document.getElementById("questionText");
-    const optionsContainer = document.getElementById("optionsContainer");
-    const feedback = document.getElementById("feedback");
-    const totalQuestionsSpan = document.getElementById("totalQuestions");
-    const prevAttemptsSpan = document.getElementById("prevAttempts");
-    const incorrectCountSpan = document.getElementById("incorrectCount");
-    const currentQ = document.getElementById("currentQ");
-    const totalAttemptsSpan = document.getElementById("totalAttempts");
-    const correctAnswersSpan = document.getElementById("correctAnswers");
-    const accuracySpan = document.getElementById("accuracy");
-    const learnList = document.getElementById("learnList");
+function saveIncorrectAnswer(question, correct, selected) {
+  incorrectQuestions.push({ question, correct, selected });
+  localStorage.setItem("review", JSON.stringify(incorrectQuestions));
+}
 
-    function updateDashboard() {
-      totalAttemptsSpan.textContent = totalAttempts;
-      correctAnswersSpan.textContent = correctAnswers;
-      const accuracy = totalAttempts ? ((correctAnswers / totalAttempts) * 100).toFixed(2) : 0;
-      accuracySpan.textContent = accuracy + "%";
-    }
+function getRandomItem(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
 
-    function saveIncorrectAnswer(question, correct, selected) {
-      incorrectQuestions.push({ question, correct, selected });
-      localStorage.setItem("review", JSON.stringify(incorrectQuestions));
-    }
+function getRandomQuestions(array, n) {
+  const shuffled = [...array].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, n);
+}
 
-    function getRandomItem(array) {
-      return array[Math.floor(Math.random() * array.length)];
-    }
+function shuffleOptions(options) {
+  return options.sort(() => 0.5 - Math.random());
+}
 
-    function getRandomQuestions(array, n) {
-      const shuffled = [...array].sort(() => 0.5 - Math.random());
-      return shuffled.slice(0, n);
-    }
+function showStartPage() {
+  startPage.classList.remove("hidden");
+  quizPage.classList.add("hidden");
+  learnPage.classList.add("hidden");
+  totalQuestionsSpan.textContent = vocabulary.length;
+  prevAttemptsSpan.textContent = localStorage.getItem("prevAttempts") || 0;
+  incorrectCountSpan.textContent = incorrectQuestions.length;
+}
 
-    function shuffleOptions(options) {
-      return options.sort(() => 0.5 - Math.random());
-    }
+document.getElementById("learnBtn").onclick = () => {
+  startPage.classList.add("hidden");
+  learnPage.classList.remove("hidden");
+  learnList.innerHTML = "";
+  if (incorrectQuestions.length === 0) {
+    learnList.innerHTML = "<li>No incorrect words yet!</li>";
+  } else {
+    incorrectQuestions.forEach(q => {
+      const li = document.createElement("li");
+      li.textContent = `${q.question} — Correct: ${q.correct} — Your answer: ${q.selected}`;
+      learnList.appendChild(li);
+    });
+  }
+}
 
-    function showStartPage() {
-      startPage.classList.remove("hidden");
-      quizPage.classList.add("hidden");
-      learnPage.classList.add("hidden");
-      totalQuestionsSpan.textContent = vocabulary.length;
-      prevAttemptsSpan.textContent = localStorage.getItem("prevAttempts") || 0;
-      incorrectCountSpan.textContent = incorrectQuestions.length;
-    }
+document.getElementById("backBtn").onclick = showStartPage;
 
-    document.getElementById("learnBtn").onclick = () => {
-      startPage.classList.add("hidden");
-      learnPage.classList.remove("hidden");
-      learnList.innerHTML = "";
-      if(incorrectQuestions.length===0){
-        learnList.innerHTML = "<li>No incorrect words yet!</li>";
+document.getElementById("clearReviewBtn").onclick = () => {
+  localStorage.removeItem("review");
+  localStorage.removeItem("prevAttempts");
+  incorrectQuestions = [];
+  alert("Review and stats cleared!");
+  showStartPage();
+}
+
+function startQuiz() {
+  startPage.classList.add("hidden");
+  quizPage.classList.remove("hidden");
+  currentIndex = 0;
+  totalAttempts = 0;
+  correctAnswers = 0;
+  updateDashboard();
+  quizQuestions = getRandomQuestions(vocabulary, 20);
+  currentQ.textContent = 1;
+  generateQuestion();
+}
+
+document.getElementById("startQuizBtn").onclick = startQuiz;
+
+function generateQuestion() {
+  feedback.textContent = "";
+  const item = quizQuestions[currentIndex];
+  const types = ["Meanings", "Synonym", "Antonym"];
+  let type = getRandomItem(types);
+
+  let correct = "";
+  let question = "";
+  let options = [];
+
+  if(type==="Meanings" && item.Meanings){
+    question = `What is the meaning of "${item.Word}"?`;
+    correct = item.Meanings;
+    options = vocabulary.map(v=>v.Meanings).filter(Boolean);
+  } else if(type==="Synonym" && item.Synonym){
+    const syns = item.Synonym.split(",").map(s=>s.trim()).filter(Boolean);
+    correct = getRandomItem(syns);
+    options = vocabulary.flatMap(v => v.Synonym?.split(",").map(s=>s.trim()) || []);
+  } else if(type==="Antonym" && item.Antonym){
+    const ants = item.Antonym.split(",").map(a=>a.trim()).filter(Boolean);
+    correct = getRandomItem(ants);
+    options = vocabulary.flatMap(v => v.Antonym?.split(",").map(a=>a.trim()) || []);
+  }
+
+  options = [...new Set(options.filter(Boolean))];
+  if(!options.includes(correct)) options.push(correct);
+  options = shuffleOptions(options).slice(0,4);
+  if(!options.includes(correct)) options[Math.floor(Math.random()*4)] = correct;
+
+  questionText.textContent = question;
+  optionsContainer.innerHTML = "";
+  options.forEach(opt => {
+    const btn = document.createElement("button");
+    btn.textContent = opt;
+    btn.onclick = ()=>{
+      totalAttempts++;
+      if(opt === correct){
+        correctAnswers++;
+        feedback.textContent = "✅ Correct!";
       } else {
-        incorrectQuestions.forEach(q => {
-          const li = document.createElement("li");
-          li.textContent = `${q.question} — Correct: ${q.correct} — Your answer: ${q.selected}`;
-          learnList.appendChild(li);
-        });
+        feedback.textContent = `❌ Incorrect! Correct answer: ${correct}`;
+        saveIncorrectAnswer(question, correct, opt);
       }
-    }
-
-    document.getElementById("backBtn").onclick = showStartPage;
-
-    document.getElementById("clearReviewBtn").onclick = () => {
-      localStorage.removeItem("review");
-      localStorage.removeItem("prevAttempts");
-      incorrectQuestions = [];
-      alert("Review and stats cleared!");
-      showStartPage();
-    }
-
-    function startQuiz() {
-      startPage.classList.add("hidden");
-      quizPage.classList.remove("hidden");
-      currentIndex = 0;
-      totalAttempts = 0;
-      correctAnswers = 0;
       updateDashboard();
-      quizQuestions = getRandomQuestions(vocabulary, 20);
-      currentQ.textContent = 1;
-      generateQuestion();
-    }
-
-    function generateQuestion() {
-      feedback.textContent = "";
-      const item = quizQuestions[currentIndex];
-      const types = ["Meanings","Synonym","Antonym"];
-      let type = getRandomItem(types);
-
-      let correct = "";
-      let question = "";
-      let options = [];
-
-      if(type==="Meanings" && item.Meanings){
-        question = `What is the meaning of "${item.Word}"?`;
-        correct = item.Meanings;
-        options = vocabulary.map(v=>v.Meanings).filter(Boolean);
-      } else if(type==="Synonym" && item.Synonym){
-        const syns = item.Synonym.split(",").map(s=>s.trim()).filter(Boolean);
-        correct = getRandomItem(syns);
-        options = vocabulary.flatMap(v=>v.Synonym?.split(",").map(s=>s.trim()) || []);
-      } else if(type==="Antonym" && item.Antonym){
-        const ants = item.Antonym.split(",").map(a=>a.trim()).filter(Boolean);
-        correct = getRandomItem(ants);
-        options = vocabulary.flatMap(v=>v.Antonym?.split(",").map(a=>a.trim()) || []);
-      }
-
-      options = [...new Set(options.filter(Boolean))];
-      if(!options.includes(correct)) options.push(correct);
-      options = shuffleOptions(options).slice(0,4);
-      if(!options.includes(correct)) options[Math.floor(Math.random()*4)] = correct;
-
-      questionText.textContent = question;
-      optionsContainer.innerHTML = "";
-      options.forEach(opt=>{
-        const btn = document.createElement("button");
-        btn.textContent = opt;
-        btn.onclick = ()=>{
-          totalAttempts++;
-          if(opt===correct){
-            correctAnswers++;
-            feedback.textContent = "✅ Correct!";
-          } else {
-            feedback.textContent = `❌ Incorrect! Correct answer: ${correct}`;
-            saveIncorrectAnswer(question, correct, opt);
-          }
-          updateDashboard();
-          currentIndex++;
-          if(currentIndex<quizQuestions.length){
-            currentQ.textContent = currentIndex+1;
-            setTimeout(generateQuestion,1500);
-          } else {
-            localStorage.setItem("prevAttempts", Number(localStorage.getItem("prevAttempts")||0)+totalAttempts);
-            alert("Quiz Complete!");
-            showStartPage();
-          }
-        };
-        optionsContainer.appendChild(btn);
-      });
-    }
-
-    document.getElementById("startQuizBtn").onclick = startQuiz;
-
-    // ===== Fetch JSON from your GitHub repo =====
-    fetch("https://raw.githubusercontent.com/rakshhhhitha/cat-prep-site/main/vocab-data.json")
-      .then(res=>res.json())
-      .then(data=>{
-        vocabulary = data;
+      currentIndex++;
+      if(currentIndex < quizQuestions.length){
+        currentQ.textContent = currentIndex+1;
+        setTimeout(generateQuestion, 1500);
+      } else {
+        localStorage.setItem("prevAttempts", Number(localStorage.getItem("prevAttempts")||0)+totalAttempts);
+        alert("Quiz Complete!");
         showStartPage();
-      })
-      .catch(err=>{
-        console.error("Error loading vocabulary data:", err);
-        questionText.textContent = "Failed to load vocabulary.";
-      });
-  </script>
+      }
+    }
+    optionsContainer.appendChild(btn);
+  });
+}
+
+// ==== Fetch vocabulary from GitHub ====
+fetch("https://raw.githubusercontent.com/rakshhhhitha/cat-prep-site/main/vocab-data.json")
+  .then(res => res.json())
+  .then(data => {
+    vocabulary = data;
+    showStartPage();
+  })
+  .catch(err => {
+    console.error("Error loading vocabulary data:", err);
+    questionText.textContent = "Failed to load vocabulary.";
+  });
+
+</script>
 </body>
 </html>
