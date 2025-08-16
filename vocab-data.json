@@ -1,18 +1,5 @@
 [
-    {
-        "Word": "Garment",
-        "Meanings": "Article of clothing",
-        "Synonym": "Attire, apparel, outfit",
-        "Antonym": null
-    },
-    {
-        "Word": "jester",
-        "Meanings": "Clown; buffoon",
-        "Synonym": "Fool, Joker, Entertainer",
-        "Antonym": null
-    },
-    {
-        "Word": "venom",
+    {        "Word": "venom",
         "Meanings": "poison, toxin, bane, acrimony",
         "Synonym": "toxin, poison",
         "Antonym": "antidote, remedy"
@@ -53,12 +40,7 @@
         "Synonym": "Auxiliary, Supporting",
         "Antonym": "Primary"
     },
-    {
-        "Word": "recitals",
-        "Meanings": "cast or fashion anew",
-        "Synonym": "performances, renditions",
-        "Antonym": null
-    },
+
     {
         "Word": "forfeit",
         "Meanings": "to lose as a penalty",
@@ -77,12 +59,7 @@
         "Synonym": "improper, indecent",
         "Antonym": "appropriate, proper"
     },
-    {
-        "Word": "kimono",
-        "Meanings": "Traditional dress of Japan",
-        "Synonym": "Robe, Garment",
-        "Antonym": null
-    },
+
     {
         "Word": "Ascertain",
         "Meanings": "Get to know",
@@ -95,12 +72,7 @@
         "Synonym": "widespread, frequent",
         "Antonym": "rare, uncommon"
     },
-    {
-        "Word": "jacuzzi",
-        "Meanings": "A special type of bath with jets",
-        "Synonym": "Hot tub, Whirlpool",
-        "Antonym": null
-    },
+  
     {
         "Word": "perilous",
         "Meanings": "dangerous",
@@ -173,12 +145,7 @@
         "Synonym": "Permanent, long-lasting, persistent",
         "Antonym": "Temporary, fleeting, short-lived"
     },
-    {
-        "Word": "pyre",
-        "Meanings": "large pile of wood for burning",
-        "Synonym": "pile, heap",
-        "Antonym": null
-    },
+  
     {
         "Word": "reproach",
         "Meanings": "to express disapproval or disappointment",
@@ -227,18 +194,8 @@
         "Synonym": "Invoke, Summon",
         "Antonym": "Dismiss, Banish"
     },
-    {
-        "Word": "Topic",
-        "Meanings": "The subject of discussion",
-        "Synonym": "Subject, Theme",
-        "Antonym": null
-    },
-    {
-        "Word": "vandal",
-        "Meanings": "person who destroys property for the pleasure of destruction",
-        "Synonym": "destroyer, defacer",
-        "Antonym": null
-    },
+   
+   
     {
         "Word": "moderation",
         "Meanings": "quality of being limited; not extreme",
@@ -275,12 +232,7 @@
         "Synonym": "Strut, Boast",
         "Antonym": "Slouch"
     },
-    {
-        "Word": "jockey",
-        "Meanings": "Ride a horse; to position advantageously",
-        "Synonym": "Rider, Maneuverer",
-        "Antonym": null
-    },
+  
     {
         "Word": "vendetta",
         "Meanings": "private quarrel between families",
@@ -437,12 +389,7 @@
         "Synonym": "Reserved, coy, bashful, reticent",
         "Antonym": "Bold, brazen, shameless, impudent"
     },
-    {
-        "Word": "Troupe",
-        "Meanings": "A group of performers",
-        "Synonym": "Company, Ensemble",
-        "Antonym": null
-    },
+  
     {
         "Word": "Edible",
         "Meanings": "Fit to be eaten; not poisonous",
@@ -515,12 +462,7 @@
         "Synonym": "snoop, meddle",
         "Antonym": "ignore, overlook"
     },
-    {
-        "Word": "Riff",
-        "Meanings": "A repeated pattern or phrase in music",
-        "Synonym": "Phrase, Motif",
-        "Antonym": null
-    },
+  
     {
         "Word": "Blast",
         "Meanings": "Explosion, gust of wind",
@@ -557,12 +499,7 @@
         "Synonym": "Approve, back, advocate, sign",
         "Antonym": "Oppose, reject, disapprove"
     },
-    {
-        "Word": "sermon",
-        "Meanings": "Reproving a person for his faults",
-        "Synonym": "Lecture, Homily",
-        "Antonym": null
-    },
+  
     {
         "Word": "Acclaimed",
         "Meanings": "Welcomed with shouts and approval",
@@ -623,12 +560,7 @@
         "Synonym": "prim, puritanical",
         "Antonym": "liberal, permissive"
     },
-    {
-        "Word": "vamp",
-        "Meanings": "flirtatious woman, coquette, seductress, temptress",
-        "Synonym": "seductress, siren",
-        "Antonym": null
-    },
+   
     {
         "Word": "squabble",
         "Meanings": "Quarrel noisily",
@@ -641,12 +573,7 @@
         "Synonym": "tangible, noticeable",
         "Antonym": "intangible, imperceptible"
     },
-    {
-        "Word": "inasmuch",
-        "Meanings": "since; because",
-        "Synonym": "as, because, seeing that",
-        "Antonym": null
-    },
+   
     {
         "Word": "placid",
         "Meanings": "serenely free of interruption or disturbance",
@@ -659,12 +586,7 @@
         "Synonym": "peculiarity, oddity",
         "Antonym": "normality, regularity"
     },
-    {
-        "Word": "synopsis",
-        "Meanings": "Summary or outline",
-        "Synonym": "Abstract, Summary",
-        "Antonym": null
-    },
+  
     {
         "Word": "Aeon",
         "Meanings": "Eternity, immeasurable time",
@@ -743,12 +665,7 @@
         "Synonym": "Fascinate, Captivate",
         "Antonym": "Bore, Repel"
     },
-    {
-        "Word": "kitty",
-        "Meanings": "Pool of funds",
-        "Synonym": "Pot, Fund, Pool",
-        "Antonym": null
-    },
+ 
     {
         "Word": "Turmoil",
         "Meanings": "A state of great disturbance or confusion",
@@ -827,12 +744,7 @@
         "Synonym": "agitated, upset",
         "Antonym": "calm, composed"
     },
-    {
-        "Word": "urchin",
-        "Meanings": "a mischievous child",
-        "Synonym": "brat, rascal",
-        "Antonym": null
-    },
+
     {
         "Word": "Turgid",
         "Meanings": "Swollen and distended or bloated",
@@ -971,12 +883,7 @@
         "Synonym": "Conquer, Defeat",
         "Antonym": "Liberate"
     },
-    {
-        "Word": "offal",
-        "Meanings": "waste or by-product",
-        "Synonym": "Refuse, Garbage",
-        "Antonym": null
-    },
+ 
     {
         "Word": "Brazen",
         "Meanings": "Shamelessly bold",
@@ -989,12 +896,7 @@
         "Synonym": "Mesmerize, charm, fascinate, captivate",
         "Antonym": "Bore, repel, disgust"
     },
-    {
-        "Word": "skit",
-        "Meanings": "Short piece of humorous writing",
-        "Synonym": "Comedy, Sketch",
-        "Antonym": null
-    },
+  
     {
         "Word": "Deciduous",
         "Meanings": "Shedding leaves annually; temporary; ephemeral",
@@ -1013,12 +915,7 @@
         "Synonym": "Sharply, Abrupt",
         "Antonym": "Gradually"
     },
-    {
-        "Word": "Tassel",
-        "Meanings": "A bunch of threads tied at one end and used as decoration",
-        "Synonym": "Fringe, Pendant",
-        "Antonym": null
-    },
+ 
     {
         "Word": "Constrict",
         "Meanings": "To make narrower or tighter; to limit or inhibit",
@@ -1031,12 +928,7 @@
         "Synonym": "Shimmer, twinkle, flicker",
         "Antonym": "Darkness"
     },
-    {
-        "Word": "Tawny",
-        "Meanings": "A light brown to brownish-yellow color",
-        "Synonym": "Beige, Tan",
-        "Antonym": null
-    },
+  
     {
         "Word": "Embellish",
         "Meanings": "Make more beautiful; exaggerate",
@@ -1061,12 +953,7 @@
         "Synonym": "Tight, Tense",
         "Antonym": "Loose"
     },
-    {
-        "Word": "Thesaurus",
-        "Meanings": "A book that lists words and their synonyms",
-        "Synonym": "Synonym dictionary",
-        "Antonym": null
-    },
+
     {
         "Word": "Callous",
         "Meanings": "Emotionally insensitive or unfeeling",
@@ -1121,12 +1008,7 @@
         "Synonym": "Rebuke, Criticism",
         "Antonym": "Praise, Approval"
     },
-    {
-        "Word": "offal",
-        "Meanings": "waste or by-product of a process",
-        "Synonym": "Refuse, Garbage",
-        "Antonym": null
-    },
+ 
     {
         "Word": "hinterland",
         "Meanings": "remote area away from cities",
@@ -1355,12 +1237,7 @@
         "Synonym": "Courageous, valiant, chivalrous",
         "Antonym": "Cowardly, timid"
     },
-    {
-        "Word": "quilt",
-        "Meanings": "banquet cover, warmer",
-        "Synonym": "blanket, cover",
-        "Antonym": null
-    },
+
     {
         "Word": "Abate",
         "Meanings": "To lessen, To subside",
@@ -1397,12 +1274,7 @@
         "Synonym": "Fold, wrinkle, crinkle",
         "Antonym": "Smoothness, flatness"
     },
-    {
-        "Word": "kiosk",
-        "Meanings": "A small stand for sale",
-        "Synonym": "Stall, Booth, Stand",
-        "Antonym": null
-    },
+  
     {
         "Word": "redress",
         "Meanings": "to set right; remedy",
@@ -1439,24 +1311,14 @@
         "Synonym": "rebellion, insurrection",
         "Antonym": "submission, compliance"
     },
-    {
-        "Word": "stationery",
-        "Meanings": "Writing material",
-        "Synonym": "Writing supplies",
-        "Antonym": null
-    },
+  
     {
         "Word": "Elicit",
         "Meanings": "To draw out",
         "Synonym": "Extract, evoke, obtain, derive",
         "Antonym": "Suppress, hide, block"
     },
-    {
-        "Word": "silt",
-        "Meanings": "Fine-grained sandy sediment carried or deposited by water",
-        "Synonym": "Sediment, Deposit",
-        "Antonym": null
-    },
+    
     {
         "Word": "fidelity",
         "Meanings": "loyalty; accuracy",
@@ -1577,12 +1439,7 @@
         "Synonym": "Satisfy, Serve",
         "Antonym": "Lack"
     },
-    {
-        "Word": "Thespians",
-        "Meanings": "Actors",
-        "Synonym": "Performers, Actors",
-        "Antonym": null
-    },
+  
     {
         "Word": "Elegy",
         "Meanings": "Poem/song of lament",
@@ -1667,12 +1524,7 @@
         "Synonym": "agreeable, congruent, melodious",
         "Antonym": "discordant, incompatible"
     },
-    {
-        "Word": "jerk",
-        "Meanings": "A spasmodic muscle movement",
-        "Synonym": "Twitch, Jolt",
-        "Antonym": null
-    },
+   
     {
         "Word": "viscous",
         "Meanings": "sticky; semi-fluid",
@@ -1733,30 +1585,15 @@
         "Synonym": "Drug, Opioid",
         "Antonym": "Stimulant, Energizer"
     },
-    {
-        "Word": "Abhor",
-        "Meanings": "To hate or detest",
-        "Synonym": null,
-        "Antonym": null
-    },
-    {
-        "Word": "Resort",
-        "Meanings": "A place frequented for relaxation or recreation",
-        "Synonym": "Retreat, Haven, Sanctuary",
-        "Antonym": null
-    },
+   
+  
     {
         "Word": "Eradicate",
         "Meanings": "To destroy completely",
         "Synonym": "Eliminate, abolish, wipe out, annihilate",
         "Antonym": "Preserve, maintain, uphold"
     },
-    {
-        "Word": "swoop",
-        "Meanings": "Sudden descent to capture or attack",
-        "Synonym": "Pounce, Dive",
-        "Antonym": null
-    },
+   
     {
         "Word": "piety",
         "Meanings": "the quality of being religious",
@@ -1799,12 +1636,7 @@
         "Synonym": "Dodge, Evade",
         "Antonym": "Work, Confront"
     },
-    {
-        "Word": "nascent",
-        "Meanings": "A. Stimulant",
-        "Synonym": null,
-        "Antonym": null
-    },
+ 
     {
         "Word": "indistinct",
         "Meanings": "not clearly seen or heard",
@@ -1817,12 +1649,7 @@
         "Synonym": "Tarnished, Soiled",
         "Antonym": "Clean, Pure"
     },
-    {
-        "Word": "Aberration",
-        "Meanings": "Straying away from what is normal",
-        "Synonym": null,
-        "Antonym": null
-    },
+   
     {
         "Word": "illicit",
         "Meanings": "unlawful",
@@ -1847,12 +1674,7 @@
         "Synonym": "Embodiment, personification, representation, essence",
         "Antonym": "Antithesis, opposite"
     },
-    {
-        "Word": "Guild",
-        "Meanings": "An association",
-        "Synonym": "Union, group, organization",
-        "Antonym": null
-    },
+  
     {
         "Word": "vicious",
         "Meanings": "evil, wild, violent, fierce",
@@ -1889,12 +1711,7 @@
         "Synonym": "Separate, distinct, independent, detached",
         "Antonym": "Connected, joined, continuous, linked"
     },
-    {
-        "Word": "sawdust",
-        "Meanings": "Small particles of wood produced by sawing",
-        "Synonym": "Wood shavings",
-        "Antonym": null
-    },
+   
     {
         "Word": "Construe",
         "Meanings": "To interpret or analyze",
@@ -1961,24 +1778,14 @@
         "Synonym": "Distinct, diverse, unlike, contrasting",
         "Antonym": "Similar, alike, homogeneous, identical"
     },
-    {
-        "Word": "sunray",
-        "Meanings": "Ray of sunlight",
-        "Synonym": "Sunbeam",
-        "Antonym": null
-    },
+   
     {
         "Word": "Deviance",
         "Meanings": "Departure from moral norms",
         "Synonym": "Aberration, irregularity, abnormality, oddity",
         "Antonym": "Normality, regularity, conformity"
     },
-    {
-        "Word": "kindergarten",
-        "Meanings": "School for infants",
-        "Synonym": "Preschool, Nursery",
-        "Antonym": null
-    },
+   
     {
         "Word": "precarious",
         "Meanings": "uncertain; risky; dangerous",
@@ -2105,12 +1912,7 @@
         "Synonym": "Shorten, reduce, cut down, diminish",
         "Antonym": "Extend, lengthen, expand"
     },
-    {
-        "Word": "standing",
-        "Meanings": "Status or reputation (figurative)",
-        "Synonym": "Status, Position",
-        "Antonym": null
-    },
+   
     {
         "Word": "suffocate",
         "Meanings": "Cause or have difficulty in breathing",
@@ -2207,12 +2009,7 @@
         "Synonym": "Adolescent, Youthful, Immature",
         "Antonym": "Mature, Adult"
     },
-    {
-        "Word": "Gravel",
-        "Meanings": "Small stones",
-        "Synonym": "Pebbles, shingle, rubble",
-        "Antonym": null
-    },
+   
     {
         "Word": "Equilibrium",
         "Meanings": "State of balance",
@@ -2243,12 +2040,7 @@
         "Synonym": "Brash, Audacious",
         "Antonym": "Timid, Nervous"
     },
-    {
-        "Word": "nautical",
-        "Meanings": "Of, or ships or navigation",
-        "Synonym": "Marine, Maritime",
-        "Antonym": null
-    },
+  
     {
         "Word": "illusion",
         "Meanings": "false idea or perception",
@@ -2309,12 +2101,7 @@
         "Synonym": "boring, monotonous",
         "Antonym": "exciting, interesting"
     },
-    {
-        "Word": "natal",
-        "Meanings": "Of or relating to one's birth",
-        "Synonym": null,
-        "Antonym": null
-    },
+   
     {
         "Word": "prudence",
         "Meanings": "careful, forethought",
@@ -2387,12 +2174,7 @@
         "Synonym": "cultured, scholarly, intellectual",
         "Antonym": "lowbrow, philistine"
     },
-    {
-        "Word": "Ablution",
-        "Meanings": "Washing",
-        "Synonym": "Cleansing, Purification",
-        "Antonym": null
-    },
+  
     {
         "Word": "mandatory",
         "Meanings": "authoritatively commanded",
@@ -2477,12 +2259,7 @@
         "Synonym": "clean, flawless, pristine",
         "Antonym": "dirty, flawed"
     },
-    {
-        "Word": "strut",
-        "Meanings": "A supporting bar; swagger",
-        "Synonym": "Swagger, Parade",
-        "Antonym": null
-    },
+  
     {
         "Word": "Denizen",
         "Meanings": "Inhabitant; frequent visitor",
@@ -2597,12 +2374,7 @@
         "Synonym": "suppress, put down",
         "Antonym": "provoke, incite"
     },
-    {
-        "Word": "sash",
-        "Meanings": "A band or ribbon worn round the waist or shoulder",
-        "Synonym": "Belt, Band",
-        "Antonym": null
-    },
+  
     {
         "Word": "penchant",
         "Meanings": "a strong liking or tendency",
@@ -2633,12 +2405,7 @@
         "Synonym": "Mumble, Murmur",
         "Antonym": "Enunciate"
     },
-    {
-        "Word": "Girth",
-        "Meanings": "The measure around something",
-        "Synonym": "Circumference, perimeter",
-        "Antonym": null
-    },
+   
     {
         "Word": "hobnob",
         "Meanings": "to associate with (esp. rich/powerful)",
@@ -2663,12 +2430,7 @@
         "Synonym": "Bombardment, Onslaught",
         "Antonym": "Lull"
     },
-    {
-        "Word": "Clientele",
-        "Meanings": "Customers collectively",
-        "Synonym": "Patrons, Customers",
-        "Antonym": null
-    },
+   
     {
         "Word": "Elegiac",
         "Meanings": "Mournful, sad (esp. in poetry/music)",
@@ -2687,12 +2449,7 @@
         "Synonym": "Inclusive, Broad",
         "Antonym": "Narrow, Exclusive"
     },
-    {
-        "Word": "Abdication",
-        "Meanings": "Giving up control or authority",
-        "Synonym": null,
-        "Antonym": null
-    },
+   
     {
         "Word": "Drone",
         "Meanings": "Low continuous sound; monotonous worker",
@@ -2807,12 +2564,7 @@
         "Synonym": "Narcissism, vanity, egotism",
         "Antonym": "Humility, selflessness"
     },
-    {
-        "Word": "wince",
-        "Meanings": "try to avoid unpleasantness",
-        "Synonym": "flinch, recoil",
-        "Antonym": null
-    },
+   
     {
         "Word": "incessant",
         "Meanings": "continuing without pause",
@@ -2855,12 +2607,7 @@
         "Synonym": "clear, absolve",
         "Antonym": "condemn, blame"
     },
-    {
-        "Word": "Arcade",
-        "Meanings": "Covered passage especially lined with shops",
-        "Synonym": null,
-        "Antonym": null
-    },
+  
     {
         "Word": "Avow",
         "Meanings": "Admit, declare openly",
@@ -2909,12 +2656,7 @@
         "Synonym": "Weave, Stitch, Join",
         "Antonym": "Unravel, Separate"
     },
-    {
-        "Word": "Euthanasia",
-        "Meanings": "Act of painless death for relief",
-        "Synonym": "Mercy killing",
-        "Antonym": null
-    },
+   
     {
         "Word": "Countenance",
         "Meanings": "To approve or support",
@@ -2987,12 +2729,7 @@
         "Synonym": "Learned, knowledgeable, wise, intellectual",
         "Antonym": "Ignorant, uneducated, illiterate"
     },
-    {
-        "Word": "Brass",
-        "Meanings": "Alloy of copper and zinc",
-        "Synonym": "Metal, Alloy",
-        "Antonym": null
-    },
+   
     {
         "Word": "recluse",
         "Meanings": "person who lives alone and avoids others",
@@ -3005,12 +2742,7 @@
         "Synonym": "harm, diminish, injure",
         "Antonym": "improve, enhance"
     },
-    {
-        "Word": "missive",
-        "Meanings": "letter",
-        "Synonym": "Message, Communication",
-        "Antonym": null
-    },
+   
     {
         "Word": "forbear",
         "Meanings": "to refrain; be patient",
@@ -3035,12 +2767,7 @@
         "Synonym": "Knotty, rough, twisted",
         "Antonym": "Smooth, straight"
     },
-    {
-        "Word": "soot",
-        "Meanings": "Black powder in smoke",
-        "Synonym": "Ash, Soot",
-        "Antonym": null
-    },
+   
     {
         "Word": "Grimace",
         "Meanings": "To make a twisted face (pain/disgust)",
@@ -3155,12 +2882,7 @@
         "Synonym": "Flood, Overwhelm, Submerge",
         "Antonym": "Drain, Clear"
     },
-    {
-        "Word": "Tadpole",
-        "Meanings": "The aquatic larval stage of a frog",
-        "Synonym": null,
-        "Antonym": null
-    },
+   
     {
         "Word": "Tantrum",
         "Meanings": "A sudden outburst of anger or frustration",
@@ -3215,12 +2937,7 @@
         "Synonym": "Conclusive, resolute, determined, unwavering, definite",
         "Antonym": "Indecisive, doubtful, hesitant, uncertain"
     },
-    {
-        "Word": "stride",
-        "Meanings": "Walk with long steps",
-        "Synonym": "March, Strut",
-        "Antonym": null
-    },
+  
     {
         "Word": "woo",
         "Meanings": "to court or try to gain",
@@ -3461,12 +3178,7 @@
         "Synonym": "Obsolete, Antiquated",
         "Antonym": "Modern, Current"
     },
-    {
-        "Word": "Archives",
-        "Meanings": "Collection of historical records/documents",
-        "Synonym": "Records, Repository",
-        "Antonym": null
-    },
+ 
     {
         "Word": "flaunting",
         "Meanings": "show off",
@@ -3557,12 +3269,7 @@
         "Synonym": "Disperse, squander, vanish, dissolve",
         "Antonym": "Gather, accumulate, save, conserve"
     },
-    {
-        "Word": "junta",
-        "Meanings": "A group of men united for secret intrigue",
-        "Synonym": "Cabal, Faction, Clique",
-        "Antonym": null
-    },
+  
     {
         "Word": "partisan",
         "Meanings": "showing strong support for a party or cause",
@@ -3587,12 +3294,7 @@
         "Synonym": "shaggy, bushy, woolly",
         "Antonym": "bald, hairless"
     },
-    {
-        "Word": "vat",
-        "Meanings": "a large vessel",
-        "Synonym": "tub, container",
-        "Antonym": null
-    },
+  
     {
         "Word": "shunt",
         "Meanings": "Send from one track to another; lay aside",
@@ -3617,12 +3319,7 @@
         "Synonym": "Imply, Suggest, Indicate",
         "Antonym": "Conceal, Hide"
     },
-    {
-        "Word": "whine",
-        "Meanings": "show bodily or mental pain",
-        "Synonym": "complain, moan",
-        "Antonym": null
-    },
+   
     {
         "Word": "odorous",
         "Meanings": "repulsive; hateful",
@@ -3689,12 +3386,7 @@
         "Synonym": "Embellish, decorate, ornate",
         "Antonym": "Strip, deface"
     },
-    {
-        "Word": "kit",
-        "Meanings": "Apparatus, gear, outfit",
-        "Synonym": "Tools, Set, Equipment",
-        "Antonym": null
-    },
+   
     {
         "Word": "lumber",
         "Meanings": "move in a clumsy, noisy way",
@@ -3713,12 +3405,7 @@
         "Synonym": "oppress, harass",
         "Antonym": "protect, defend"
     },
-    {
-        "Word": "Ensign",
-        "Meanings": "Flag; emblem",
-        "Synonym": "Banner, flag, standard, symbol",
-        "Antonym": null
-    },
+   
     {
         "Word": "procrastination",
         "Meanings": "to keep putting off",
@@ -3833,12 +3520,7 @@
         "Synonym": "Creation, Invention",
         "Antonym": "Imitation"
     },
-    {
-        "Word": "insignia",
-        "Meanings": "Distinguishing marks as emblems of rank",
-        "Synonym": "Badge, Symbol, Emblem",
-        "Antonym": null
-    },
+
     {
         "Word": "Addle",
         "Meanings": "To become rotten, to become confused",
@@ -4115,12 +3797,7 @@
         "Synonym": "Unfeeling, Numb, Unaware",
         "Antonym": "Aware, Sane, Conscious"
     },
-    {
-        "Word": "veterinary",
-        "Meanings": "referring to treatment of sick animals",
-        "Synonym": "animal doctor",
-        "Antonym": null
-    },
+ 
     {
         "Word": "Charismatic",
         "Meanings": "Possessing spiritual grace; inspiring",
@@ -4133,12 +3810,7 @@
         "Synonym": "Healing, Curative",
         "Antonym": "Harmful"
     },
-    {
-        "Word": "realm",
-        "Meanings": "kingdom; domain",
-        "Synonym": "domain, sphere",
-        "Antonym": null
-    },
+   
     {
         "Word": "Abysmal",
         "Meanings": "Extremely bad",
@@ -4187,12 +3859,7 @@
         "Synonym": "doubt, misgiving",
         "Antonym": "confidence, assurance"
     },
-    {
-        "Word": "keep-sake",
-        "Meanings": "Gift kept in memory of giver",
-        "Synonym": "Memento, Souvenir, Token",
-        "Antonym": null
-    },
+  
     {
         "Word": "irresolute",
         "Meanings": "Hesitating; undecided",
@@ -4229,12 +3896,7 @@
         "Synonym": "unheard-of, exceptional",
         "Antonym": "usual, known"
     },
-    {
-        "Word": "relic",
-        "Meanings": "something left from the past",
-        "Synonym": "artifact, remains",
-        "Antonym": null
-    },
+  
     {
         "Word": "Bait",
         "Meanings": "To persecute; food in a trap",
@@ -4469,12 +4131,7 @@
         "Synonym": "Anxious, Uneasy",
         "Antonym": "Confident"
     },
-    {
-        "Word": "Turquoise",
-        "Meanings": "A greenish-blue color; also a gemstone",
-        "Synonym": "Aqua, Cyan, Teal",
-        "Antonym": null
-    },
+   
     {
         "Word": "Discern",
         "Meanings": "Perceive clearly with effort",
@@ -4511,12 +4168,7 @@
         "Synonym": "impending, forthcoming, near",
         "Antonym": "distant, remote"
     },
-    {
-        "Word": "palate",
-        "Meanings": "roof of the mouth; sense of taste",
-        "Synonym": null,
-        "Antonym": null
-    },
+   
     {
         "Word": "Compatible",
         "Meanings": "Getting along or going together",
@@ -4613,12 +4265,7 @@
         "Synonym": "authorization, permit",
         "Antonym": "denial, refusal"
     },
-    {
-        "Word": "verdict",
-        "Meanings": "judgement, decision, ruling",
-        "Synonym": "decision, judgment",
-        "Antonym": null
-    },
+   
     {
         "Word": "inebriated",
         "Meanings": "drunk",
@@ -4631,12 +4278,7 @@
         "Synonym": "Obscene, Lustful, Licentious",
         "Antonym": "Pure, Chaste"
     },
-    {
-        "Word": "opine",
-        "Meanings": "to express opinion",
-        "Synonym": "Comment, Suggestion",
-        "Antonym": null
-    },
+   
     {
         "Word": "Theatrical",
         "Meanings": "Dramatic; exaggerated",
@@ -4655,36 +4297,21 @@
         "Synonym": "majority, dominance",
         "Antonym": "minority"
     },
-    {
-        "Word": "Theseus",
-        "Meanings": "Proper noun (Greek mythology hero)",
-        "Synonym": null,
-        "Antonym": null
-    },
+   
     {
         "Word": "mordant",
         "Meanings": "biting and caustic; incisive",
         "Synonym": "Sarcastic, Sharp",
         "Antonym": "Mild, Gentle"
     },
-    {
-        "Word": "Asterisk",
-        "Meanings": "Star-shaped symbol",
-        "Synonym": null,
-        "Antonym": null
-    },
+  
     {
         "Word": "provoke",
         "Meanings": "make angry",
         "Synonym": "irritate, incite",
         "Antonym": "calm, soothe"
     },
-    {
-        "Word": "Curriculum",
-        "Meanings": "The subjects comprising a course of study",
-        "Synonym": "Syllabus, course, program, outline",
-        "Antonym": null
-    },
+ 
     {
         "Word": "Repulsive",
         "Meanings": "Causing a feeling of disgust or aversion",
@@ -4973,12 +4600,7 @@
         "Synonym": "Blast, surge, blow",
         "Antonym": "Calm, breeze"
     },
-    {
-        "Word": "sting",
-        "Meanings": "Something sharp",
-        "Synonym": "Prick, Bite",
-        "Antonym": null
-    },
+    
     {
         "Word": "Besiege",
         "Meanings": "Overwhelm or surround",
@@ -4997,12 +4619,7 @@
         "Synonym": "disorderly, disobedient",
         "Antonym": "obedient, manageable"
     },
-    {
-        "Word": "writ",
-        "Meanings": "written order",
-        "Synonym": "document, decree",
-        "Antonym": null
-    },
+   
     {
         "Word": "Broach",
         "Meanings": "To bring up a topic for discussion",
@@ -5015,12 +4632,7 @@
         "Synonym": "hesitate, stumble, waver",
         "Antonym": "persist, continue, stabilize"
     },
-    {
-        "Word": "wag",
-        "Meanings": "merry person",
-        "Synonym": "joker, merrymaker",
-        "Antonym": null
-    },
+   
     {
         "Word": "Defer",
         "Meanings": "To postpone; yield due to respect",
@@ -5237,12 +4849,7 @@
         "Synonym": "Overlay, Cover",
         "Antonym": "Underlay"
     },
-    {
-        "Word": "paradigm",
-        "Meanings": "a model; example",
-        "Synonym": "pattern, archetype",
-        "Antonym": null
-    },
+ 
     {
         "Word": "Daft",
         "Meanings": "Silly or inane",
@@ -5279,12 +4886,7 @@
         "Synonym": "Weak, Feeble",
         "Antonym": "Strong, Firm"
     },
-    {
-        "Word": "kennel",
-        "Meanings": "House for dogs",
-        "Synonym": "Doghouse",
-        "Antonym": null
-    },
+   
     {
         "Word": "Extempore",
         "Meanings": "Without prior preparation",
@@ -5303,12 +4905,7 @@
         "Synonym": "Charming, lovable, appealing, enchanting",
         "Antonym": "Repulsive, hateful, unpleasant"
     },
-    {
-        "Word": "poncho",
-        "Meanings": "large piece of cloth",
-        "Synonym": "cloak, shawl",
-        "Antonym": null
-    },
+   
     {
         "Word": "salient",
         "Meanings": "Most noticeable or important",
@@ -5339,12 +4936,7 @@
         "Synonym": "Monitoring, Observation",
         "Antonym": "Neglect"
     },
-    {
-        "Word": "Teethe",
-        "Meanings": "To grow or cut teeth",
-        "Synonym": null,
-        "Antonym": null
-    },
+   
     {
         "Word": "insipid",
         "Meanings": "Without taste or flavor",
@@ -5363,12 +4955,7 @@
         "Synonym": "Bankrupt, Broke, Ruined",
         "Antonym": "Solvent, Wealthy"
     },
-    {
-        "Word": "Gnaw",
-        "Meanings": "To bite or wear away",
-        "Synonym": "Chew, nibble, erode",
-        "Antonym": null
-    },
+    
     {
         "Word": "stigma",
         "Meanings": "Mark of shame or disgrace",
@@ -5393,12 +4980,7 @@
         "Synonym": "Abstinence, Chastity",
         "Antonym": "Matrimony, Marriage"
     },
-    {
-        "Word": "slither",
-        "Meanings": "To sleep, slide, or glide along",
-        "Synonym": "Slide, Glide",
-        "Antonym": null
-    },
+   
     {
         "Word": "prodigy",
         "Meanings": "a person with a special talent",
@@ -5489,12 +5071,7 @@
         "Synonym": "Obscurity, Cloudiness",
         "Antonym": "Clarity, Transparency"
     },
-    {
-        "Word": "Artifact",
-        "Meanings": "Man-made object",
-        "Synonym": "Relic, Object",
-        "Antonym": null
-    },
+    
     {
         "Word": "Ruffian",
         "Meanings": "A violent, cruel man",
@@ -5579,12 +5156,7 @@
         "Synonym": "calm, composed",
         "Antonym": "agitated, anxious"
     },
-    {
-        "Word": "Chisel",
-        "Meanings": "Steel tool for shaping materials",
-        "Synonym": "Carver, Gouge",
-        "Antonym": null
-    },
+   
     {
         "Word": "Benevolence",
         "Meanings": "Activity in doing good",
@@ -5609,12 +5181,7 @@
         "Synonym": "libertine, rakehell",
         "Antonym": "virtuous person"
     },
-    {
-        "Word": "plaque",
-        "Meanings": "flat metal on a wall as a memorial",
-        "Synonym": "plate, tablet",
-        "Antonym": null
-    },
+   
     {
         "Word": "jagged",
         "Meanings": "Uneven, rough edged, notched",
@@ -5651,12 +5218,7 @@
         "Synonym": "Hide, Cover",
         "Antonym": "Reveal, Expose"
     },
-    {
-        "Word": "kiln",
-        "Meanings": "Furnace for baking bricks, pottery",
-        "Synonym": "Oven, Furnace",
-        "Antonym": null
-    },
+  
     {
         "Word": "Coax",
         "Meanings": "Get somebody to do something by kindness",
@@ -5705,24 +5267,14 @@
         "Synonym": "Pamper, cherish, adore, idolize",
         "Antonym": "Neglect, ignore, disregard, forget"
     },
-    {
-        "Word": "varnish",
-        "Meanings": "adornment, decoration, polish, display",
-        "Synonym": "lacquer, glaze",
-        "Antonym": null
-    },
+   
     {
         "Word": "Gush",
         "Meanings": "To burst out suddenly (liquid or feeling)",
         "Synonym": "Spurt, stream, effuse",
         "Antonym": "Trickle"
     },
-    {
-        "Word": "Talisman",
-        "Meanings": "An object believed to bring good luck",
-        "Synonym": "Charm, Amulet",
-        "Antonym": null
-    },
+   
     {
         "Word": "Baleful",
         "Meanings": "Harmful, ominous",
@@ -5783,24 +5335,14 @@
         "Synonym": "Obliterate, Exterminate",
         "Antonym": "Create, Preserve"
     },
-    {
-        "Word": "suffrage",
-        "Meanings": "Short prayer usually in a series; right of voting",
-        "Synonym": "Vote, Franchise",
-        "Antonym": null
-    },
+   
     {
         "Word": "haughty",
         "Meanings": "arrogant; conceited",
         "Synonym": "proud, snobbish, supercilious",
         "Antonym": "humble, modest"
     },
-    {
-        "Word": "scrabble",
-        "Meanings": "To scratch or grope about frantically",
-        "Synonym": "Scramble, Claw",
-        "Antonym": null
-    },
+  
     {
         "Word": "obtuse",
         "Meanings": "projecting, prominent, undesirably blunt",
@@ -5855,12 +5397,7 @@
         "Synonym": "Scheme, Plot",
         "Antonym": "Honesty, Frankness"
     },
-    {
-        "Word": "forensic",
-        "Meanings": "related to legal or judicial matters",
-        "Synonym": "legal, judicial, criminalistic",
-        "Antonym": null
-    },
+ 
     {
         "Word": "Goad",
         "Meanings": "To provoke or urge",
@@ -5891,12 +5428,7 @@
         "Synonym": "yield, soften",
         "Antonym": "harden, resist"
     },
-    {
-        "Word": "Apiary",
-        "Meanings": "A place where bees are kept",
-        "Synonym": "Beehouse",
-        "Antonym": null
-    },
+   
     {
         "Word": "Grave",
         "Meanings": "Serious or solemn",
@@ -5945,12 +5477,7 @@
         "Synonym": "Mess, Chaos",
         "Antonym": "Order, Cleanliness"
     },
-    {
-        "Word": "nuptial",
-        "Meanings": "A. Of marriage or wedding",
-        "Synonym": "Matrimonial, Bridal",
-        "Antonym": null
-    },
+   
     {
         "Word": "Devious",
         "Meanings": "Indirect; not straightforward; dishonest",
@@ -5987,12 +5514,7 @@
         "Synonym": "Appearance, Similarity",
         "Antonym": "Difference"
     },
-    {
-        "Word": "sheath",
-        "Meanings": "Cover for the blade of a weapon or tool",
-        "Synonym": "Cover, Case",
-        "Antonym": null
-    },
+  
     {
         "Word": "Turbulence",
         "Meanings": "Wild or disturbing activity",
@@ -6035,12 +5557,7 @@
         "Synonym": "sharp, biting",
         "Antonym": "mild, bland"
     },
-    {
-        "Word": "streak",
-        "Meanings": "Long; thin; move very fast",
-        "Synonym": "Stripe, Line",
-        "Antonym": null
-    },
+   
     {
         "Word": "stilted",
         "Meanings": "Artificially formal or dignified",
@@ -6089,12 +5606,7 @@
         "Synonym": "counterfeit, imitation, fraud",
         "Antonym": "original, genuine"
     },
-    {
-        "Word": "nomenclature",
-        "Meanings": "science, etc. naming used in a system or field",
-        "Synonym": "Terminology, Classification",
-        "Antonym": null
-    },
+  
     {
         "Word": "vestige",
         "Meanings": "trace or sign",
@@ -6155,12 +5667,7 @@
         "Synonym": "Various, Diverse",
         "Antonym": "Similar"
     },
-    {
-        "Word": "neurotic",
-        "Meanings": "A. Mental disorder, functional disorder of the nervous system",
-        "Synonym": null,
-        "Antonym": null
-    },
+ 
     {
         "Word": "irksome",
         "Meanings": "Tiresome",
@@ -6173,12 +5680,7 @@
         "Synonym": "destructive, damaging",
         "Antonym": "beneficial, harmless"
     },
-    {
-        "Word": "icon",
-        "Meanings": "image, figure, statue",
-        "Synonym": "symbol, idol, emblem",
-        "Antonym": null
-    },
+   
     {
         "Word": "snare",
         "Meanings": "Trap",
@@ -6251,12 +5753,7 @@
         "Synonym": "Decisive, ultimate, authoritative, precise",
         "Antonym": "Vague, doubtful, unclear, confusing"
     },
-    {
-        "Word": "muffler",
-        "Meanings": "cloth worn round the neck; silencer",
-        "Synonym": "Scarf, Silencer",
-        "Antonym": null
-    },
+   
     {
         "Word": "ignoramus",
         "Meanings": "an ignorant person",
@@ -6323,12 +5820,7 @@
         "Synonym": "Hateful, vile, contemptible, loathsome, abominable",
         "Antonym": "Noble, admirable, praiseworthy, honorable"
     },
-    {
-        "Word": "parable",
-        "Meanings": "a simple story used to illustrate a moral or spiritual lesson",
-        "Synonym": "allegory, fable",
-        "Antonym": null
-    },
+   
     {
         "Word": "Adventitious",
         "Meanings": "Coming from another source, not innate",
@@ -6341,12 +5833,7 @@
         "Synonym": "tirade, diatribe",
         "Antonym": "praise, compliment"
     },
-    {
-        "Word": "yarn",
-        "Meanings": "tale, story; fibers for knitting",
-        "Synonym": "tale, story",
-        "Antonym": null
-    },
+   
     {
         "Word": "Trepidation",
         "Meanings": "A feeling of fear or anxiety about something that may happen",
@@ -6407,12 +5894,7 @@
         "Synonym": "Conductor, Virtuoso",
         "Antonym": "Amateur, Novice"
     },
-    {
-        "Word": "Gasket",
-        "Meanings": "Packing material for joints",
-        "Synonym": "Seal, ring, washer",
-        "Antonym": null
-    },
+   
     {
         "Word": "Grit",
         "Meanings": "Courage, persistence",
@@ -6461,24 +5943,14 @@
         "Synonym": "Enlighten, correct, inform, rectify",
         "Antonym": "Mislead, deceive, convince, fool"
     },
-    {
-        "Word": "repast",
-        "Meanings": "meal",
-        "Synonym": null,
-        "Antonym": null
-    },
+    
     {
         "Word": "Gasp",
         "Meanings": "To inhale suddenly",
         "Synonym": "Pant, puff, choke",
         "Antonym": "Exhale"
     },
-    {
-        "Word": "hematology",
-        "Meanings": "study of blood and diseases",
-        "Synonym": null,
-        "Antonym": null
-    },
+  
     {
         "Word": "repel",
         "Meanings": "to drive away",
