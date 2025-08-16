@@ -1,11 +1,136 @@
-body { font-family: Arial, sans-serif; margin: 20px; }
-.hidden { display: none; }
+/* General Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Container */
+#startPage, #quizPage {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  padding: 30px 40px;
+  margin: 50px 0;
+  width: 500px;
+  max-width: 90%;
+  text-align: center;
+}
+
+/* Hidden */
+.hidden {
+  display: none;
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+/* Question Card */
+.question {
+  background: #f0f4ff;
+  border-left: 6px solid #4a90e2;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Options Buttons */
 .options button {
   display: block;
-  margin: 5px 0;
-  padding: 10px;
-  width: 300px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-size: 1rem;
+  background: #ffffff;
+  border: 2px solid #4a90e2;
+  border-radius: 8px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
 }
-.feedback { margin-top: 10px; font-weight: bold; }
-.dashboard { margin-top: 20px; border-top: 1px solid #ccc; padding-top: 10px; }
+
+.options button:hover {
+  background: #4a90e2;
+  color: #fff;
+  transform: scale(1.02);
+}
+
+/* Feedback */
+.feedback {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.feedback.correct {
+  color: #28a745;
+}
+
+.feedback.incorrect {
+  color: #dc3545;
+}
+
+/* Dashboard */
+.dashboard {
+  margin-top: 25px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  text-align: left;
+}
+
+.dashboard p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* Start Quiz Button */
+#startQuizBtn {
+  background: #4a90e2;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#startQuizBtn:hover {
+  background: #357ab7;
+  transform: scale(1.05);
+}
+
+/* Progress Bar */
+#progressContainer {
+  background: #e0e0e0;
+  border-radius: 10px;
+  height: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0%;
+  background: #4a90e2;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
