@@ -2,59 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz Report</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="reportPage">
-    <h1>Quiz Attempts Report</h1>
+  <div class="page">
+    <h1>Quiz Report</h1>
     <table id="reportTable">
       <thead>
         <tr>
           <th>Attempt #</th>
-          <th>Date & Time</th>
           <th>Score</th>
-          <th>Accuracy (%)</th>
+          <th>Accuracy</th>
         </tr>
       </thead>
-      <tbody>
-        <!-- Attempt rows will be injected here -->
-      </tbody>
+      <tbody></tbody>
     </table>
-    <button onclick="clearReport()">Clear Report</button>
-    <button onclick="goBack()">Back to Quiz</button>
+    <div class="buttons">
+      <button onclick="window.location.href='index.html'" class="btn">Back to Quiz</button>
+    </div>
   </div>
 
   <script>
     const tbody = document.querySelector("#reportTable tbody");
-    const attempts = JSON.parse(localStorage.getItem('quizAttempts') || '[]');
+    const attempts = JSON.parse(localStorage.getItem("quizAttempts") || "[]");
 
-    function renderReport() {
-      tbody.innerHTML = "";
-      attempts.forEach((attempt, index) => {
-        const row = document.createElement("tr");
-        row.innerHTML = `
-          <td>${index + 1}</td>
-          <td>${attempt.date}</td>
-          <td>${attempt.score} / ${attempt.total}</td>
-          <td>${attempt.accuracy}</td>
-        `;
-        tbody.appendChild(row);
+    if (attempts.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="3">No attempts yet</td></tr>`;
+    } else {
+      attempts.forEach((a, i) => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `<td>${i+1}</td><td>${a.score}/${a.total}</td><td>${a.accuracy}%</td>`;
+        tbody.appendChild(tr);
       });
     }
-
-    function clearReport() {
-      if(confirm("Are you sure you want to clear all attempts?")) {
-        localStorage.removeItem('quizAttempts');
-        renderReport();
-      }
-    }
-
-    function goBack() {
-      window.location.href = "index.html";
-    }
-
-    renderReport();
   </script>
 </body>
 </html>
