@@ -1,58 +1,70 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  background: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2 {
   color: #333;
 }
 
-.hidden { display: none; }
-
-h1, h2 {
-  text-align: center;
-}
-
 button {
-  cursor: pointer;
-  background: #007BFF;
+  background-color: #4CAF50;
   color: white;
   border: none;
-  padding: 12px 20px;
-  margin: 8px 0;
-  border-radius: 6px;
-  transition: 0.3s;
-  font-size: 16px;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s ease;
 }
 
-button:hover { background: #0056b3; }
+button:hover {
+  background-color: #45a049;
+}
 
-.options button.correct { background: #28a745 !important; }
-.options button.incorrect { background: #dc3545 !important; }
+button.correct {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button.incorrect {
+  background-color: #f44336;
+  color: white;
+}
+
+.quiz, .dashboard, .feedback, #resultPage {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  margin-top: 20px;
+  width: 90%;
+  max-width: 600px;
+}
 
 #progressContainer {
   width: 100%;
-  background: #ddd;
-  border-radius: 6px;
-  height: 20px;
-  margin-bottom: 15px;
+  background-color: #ddd;
+  height: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 #progressBar {
-  height: 100%;
   width: 0%;
-  background: #28a745;
-  border-radius: 6px;
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50, #81C784);
+  border-radius: 10px;
   transition: width 0.5s ease-in-out;
 }
 
-.feedback {
-  text-align: center;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.dashboard {
-  margin-top: 20px;
-  text-align: center;
-  font-weight: bold;
+.options button {
+  width: 100%;
 }
 
