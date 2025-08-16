@@ -11,6 +11,7 @@
     <h1>Vocabulary Quiz</h1>
     <p>Total Words Available: <span id="totalQuestions">0</span></p>
     <button id="startQuizBtn">Start Quiz</button>
+    <button id="viewReportBtn">View Report</button>
   </div>
 
   <!-- Quiz Page -->
@@ -23,12 +24,6 @@
     <div class="question" id="questionText"></div>
     <div class="options" id="optionsContainer"></div>
     <div class="feedback" id="feedback"></div>
-
-    <div class="dashboard">
-      <p>Total Attempts: <span id="totalAttempts">0</span></p>
-      <p>Correct Answers: <span id="correctAnswers">0</span></p>
-      <p>Accuracy: <span id="accuracy">0%</span></p>
-    </div>
   </div>
 
   <!-- Results Page -->
@@ -37,9 +32,19 @@
     <p>Your Score: <span id="finalScore"></span> / <span id="totalQuestionsResult"></span></p>
     <p>Accuracy: <span id="finalAccuracy"></span>%</p>
     <button id="restartQuizBtn">Restart Quiz</button>
+    <button id="viewReportFromResult">View Report</button>
   </div>
 
   <script src="script.js"></script>
+
+  <script>
+    // Link buttons to report.html
+    document.getElementById("viewReportBtn").onclick = () => {
+      window.location.href = "report.html";
+    };
+    document.getElementById("viewReportFromResult").onclick = () => {
+      window.location.href = "report.html";
+    };
+  </script>
 </body>
 </html>
-
