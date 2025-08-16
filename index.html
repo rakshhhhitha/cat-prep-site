@@ -1,43 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Vocabulary Quiz</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Vocabulary Quiz</h1>
-
-<!-- Start / Review Page -->
-<div id="startPage">
-  <p>Total Questions in dataset: <span id="totalQuestions">0</span></p>
-  <p>Previously attempted: <span id="prevAttempts">0</span></p>
-  <p>Incorrect questions: <span id="incorrectCount">0</span></p>
-  <button id="learnBtn">Learn Incorrect Words</button>
-  <button id="startQuizBtn">Start Quiz</button>
-  <button id="clearReviewBtn">Clear Review / Reset Stats</button>
-</div>
-
-<!-- Quiz Page -->
-<div id="quizPage" class="hidden">
-  <p>Question <span id="currentQ">1</span> / 20</p>
-  <div class="question" id="questionText"></div>
-  <div class="options" id="optionsContainer"></div>
-  <div class="feedback" id="feedback"></div>
-  <div class="dashboard">
-    <p>Total Attempts: <span id="totalAttempts">0</span></p>
-    <p>Correct Answers: <span id="correctAnswers">0</span></p>
-    <p>Accuracy: <span id="accuracy">0%</span></p>
+  <div id="startPage">
+    <h1>Vocabulary Quiz</h1>
+    <p>Total Words: <span id="totalQuestions">0</span></p>
+    <button id="startQuizBtn">Start Quiz</button>
   </div>
-</div>
 
-<!-- Learn Page -->
-<div id="learnPage" class="hidden">
-  <h2>Learn Incorrect Words</h2>
-  <ul id="learnList"></ul>
-  <button id="backBtn">Back</button>
-</div>
+  <div id="quizPage" class="hidden">
+    <h2>Question <span id="currentQ">1</span> / 20</h2>
+    <div class="question" id="questionText"></div>
+    <div class="options" id="optionsContainer"></div>
+    <div class="feedback" id="feedback"></div>
+    <div class="dashboard">
+      <p>Total Attempts: <span id="totalAttempts">0</span></p>
+      <p>Correct Answers: <span id="correctAnswers">0</span></p>
+      <p>Accuracy: <span id="accuracy">0%</span></p>
+    </div>
+  </div>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
