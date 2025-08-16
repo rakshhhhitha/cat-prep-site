@@ -26,15 +26,7 @@
   </div>
 
   <script>
-    // Vocabulary embedded directly
-    const vocabulary = [
-      { "Word": "Garment", "Meanings": "Article of clothing", "Synonym": "Attire, apparel, outfit", "Antonym": null },
-      { "Word": "jester", "Meanings": "Clown; buffoon", "Synonym": "Fool, Joker, Entertainer", "Antonym": null },
-      { "Word": "venom", "Meanings": "poison, toxin, bane, acrimony", "Synonym": "toxin, poison", "Antonym": "antidote, remedy" },
-      { "Word": "Thickset", "Meanings": "Stout or stocky", "Synonym": "Sturdy, Stocky", "Antonym": "Thin, Slender" },
-      { "Word": "loll", "Meanings": "rest; to sit or stand in a lazy way; hang (dog’s tongue)", "Synonym": "Lounge, Recline", "Antonym": "Stand upright" }
-    ];
-
+    let vocabulary = [];
     let totalAttempts = 0;
     let correctAnswers = 0;
 
@@ -124,9 +116,18 @@
       });
     }
 
-    // Initialize
-    updateDashboard();
-    generateQuiz();
+    // Fetch the JSON from GitHub
+    fetch('https://raw.githubusercontent.com/<username>/<repo>/main/vocab-data.json')
+      .then(res => res.json())
+      .then(data => {
+        vocabulary = data;
+        updateDashboard();
+        generateQuiz();
+      })
+      .catch(err => {
+        console.error("Error loading vocabulary data:", err);
+        document.getElementById("questionText").textContent = "Failed to load vocabulary.";
+      });
   </script>
 </body>
 </html>
