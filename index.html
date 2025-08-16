@@ -6,17 +6,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Start Page -->
   <div id="startPage">
     <h1>Vocabulary Quiz</h1>
-    <p>Total Words: <span id="totalQuestions">0</span></p>
+    <p>Total Words Available: <span id="totalQuestions">0</span></p>
     <button id="startQuizBtn">Start Quiz</button>
   </div>
 
+  <!-- Quiz Page -->
   <div id="quizPage" class="hidden">
+    <div id="progressContainer">
+      <div id="progressBar"></div>
+    </div>
+
     <h2>Question <span id="currentQ">1</span> / 20</h2>
     <div class="question" id="questionText"></div>
     <div class="options" id="optionsContainer"></div>
     <div class="feedback" id="feedback"></div>
+
     <div class="dashboard">
       <p>Total Attempts: <span id="totalAttempts">0</span></p>
       <p>Correct Answers: <span id="correctAnswers">0</span></p>
