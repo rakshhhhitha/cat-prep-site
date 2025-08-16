@@ -97,11 +97,11 @@ function generateQuestion() {
   feedback.textContent = "";
   const item = quizQuestions[currentIndex];
 
-  // Available types only
+  // Determine available types
   let types = [];
-  if(item.Meanings) types.push("Meanings");
-  if(item.Synonym) types.push("Synonym");
-  if(item.Antonym) types.push("Antonym");
+  if(item.Meanings && item.Meanings.trim() !== "") types.push("Meanings");
+  if(item.Synonym && item.Synonym.trim() !== "") types.push("Synonym");
+  if(item.Antonym && item.Antonym.trim() !== "") types.push("Antonym");
 
   if(types.length === 0){
     currentIndex++;
@@ -122,19 +122,20 @@ function generateQuestion() {
   let options = [];
 
   if(type==="Meanings"){
-    question = `What is the meaning of "${item.Word}"?`;
-    correct = item.Meanings;
+    question = item.Word ? `What is the meaning of "${item.Word}"?` : "Question unavailable";
+    correct = item.Meanings ? item.Meanings.trim() : "";
     options = vocabulary.map(v=>v.Meanings).filter(Boolean);
   } else if(type==="Synonym"){
-    const syns = item.Synonym.split(",").map(s=>s.trim()).filter(Boolean);
-    correct = getRandomItem(syns);
+    const syns = item.Synonym ? item.Synonym.split(",").map(s=>s.trim()).filter(Boolean) : [];
+    correct = getRandomItem(syns) || "";
     options = vocabulary.flatMap(v => v.Synonym?.split(",").map(s=>s.trim()) || []);
   } else if(type==="Antonym"){
-    const ants = item.Antonym.split(",").map(a=>a.trim()).filter(Boolean);
-    correct = getRandomItem(ants);
+    const ants = item.Antonym ? item.Antonym.split(",").map(a=>a.trim()).filter(Boolean) : [];
+    correct = getRandomItem(ants) || "";
     options = vocabulary.flatMap(v => v.Antonym?.split(",").map(a=>a.trim()) || []);
   }
 
+  // Clean and shuffle options
   options = [...new Set(options.filter(Boolean))];
   if(!options.includes(correct)) options.push(correct);
   options = shuffleOptions(options).slice(0,4);
