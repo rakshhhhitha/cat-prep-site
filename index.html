@@ -23,12 +23,14 @@
     <div class="question" id="questionText"></div>
     <div class="options" id="optionsContainer"></div>
     <div class="feedback" id="feedback"></div>
+  </div>
 
-    <div class="dashboard">
-      <p>Total Attempts: <span id="totalAttempts">0</span></p>
-      <p>Correct Answers: <span id="correctAnswers">0</span></p>
-      <p>Accuracy: <span id="accuracy">0%</span></p>
-    </div>
+  <!-- Results Page -->
+  <div id="resultPage" class="hidden">
+    <h1>Quiz Completed!</h1>
+    <p>Your Score: <span id="finalScore"></span> / <span id="totalQuestionsResult"></span></p>
+    <p>Accuracy: <span id="finalAccuracy"></span>%</p>
+    <button id="restartQuizBtn">Restart Quiz</button>
   </div>
 
   <script src="script.js"></script>
