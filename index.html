@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vocabulary Quiz</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .question { font-size: 1.2em; margin-bottom: 10px; }
+        .options button { display: block; margin: 5px 0; padding: 10px; width: 300px; }
+        .feedback { margin-top: 10px; font-weight: bold; }
+        .dashboard { margin-top: 30px; border-top: 1px solid #ccc; padding-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Vocabulary Quiz</h1>
+    <div class="quiz">
+        <div class="question" id="questionText"></div>
+        <div class="options" id="optionsContainer"></div>
+        <div class="feedback" id="feedback"></div>
+    </div>
+    <div class="dashboard">
+        <h2>Dashboard</h2>
+        <p>Total Attempts: <span id="totalAttempts">0</span></p>
+        <p>Correct Answers: <span id="correctAnswers">0</span></p>
+        <p>Accuracy: <span id="accuracy">0%</span></p>
+    </div>
+
+    <script>
+        const vocabulary = [
+            { word: "Abate", meaning: "To lessen", synonym: "Diminish", antonym: "Intensify" },
+            { word: "Benevolent", meaning: "Kind-hearted", synonym: "Generous", antonym: "Malevolent" },
+            { word: "Candid", meaning: "Honest", synonym: "Frank", antonym: "Deceitful" },
+            { word: "Frugal", meaning: "Economical", synonym: "Thrifty", antonym: "Extravagant" },
+            { word: "Lucid", meaning: "Clear", synonym: "Transparent", antonym: "Obscure" }
+        ];
+
+        let totalAttempts = 0;
+        let correctAnswers = 0;
+
+        function updateDashboard() {
+            document.getElementById("totalAttempts").textContent = totalAttempts;
+            document.getElementById("correctAnswers").textContent = correctAnswers;
+            const accuracy = totalAttempts ? ((correctAnswers / totalAttempts) * 100).toFixed(2) : 0;
+            document.getElementById("accuracy").textContent = accuracy + "%";
+        }
+
+        function saveIncorrectAnswer(question, correct, selected) {
+            const review = JSON.parse(localStorage.getItem("review") || "[]");
+            review.push({ question, correct, selected });
+            localStorage.setItem("review", JSON.stringify(review));
+        }
+
+        function generateQuiz() {
+            document.getElementById("feedback").textContent = "";
+            const questionTypes = ["Meaning", "Synonym", "Antonym"];
+            const questionType = questionTypes[Math.floor(Math.random() * questionTypes.length)];
+            const item = vocabulary[Math.floor(Math.random() * vocabulary.length)];
+            let questionText = "";
+            let correctAnswer = "";
+            let options = [];
+
+            if (questionType === "Meaning") {
+                questionText = `What is the meaning of "${item.word}"?`;
+                correctAnswer = item.meaning;
+                options = vocabulary.map(v => v.meaning);
+            } else if (questionType === "Synonym") {
+                questionText = `Which word is a synonym of "${item.word}"?`;
+                correctAnswer = item.synonym;
+                options = vocabulary.map(v => v.synonym);
+            } else if (questionType === "Antonym") {
+                questionText = `Which word is an antonym of "${item.word}"?`;
+                correctAnswer = item.antonym;
+                options = vocabulary.map(v => v.antonym);
+            }
+
+            // Shuffle and pick 4 options including the correct one
+            options = [...new Set(options)];
+            if (!options.includes(correctAnswer)) options.push(correctAnswer);
+            options = options.sort(() => 0.5 - Math.random()).slice(0, 4);
+            if (!options.includes(correctAnswer)) options[Math.floor(Math.random() * 4)] = correctAnswer;
+
+            document.getElementById("questionText").textContent = questionText;
+            const container = document.getElementById("optionsContainer");
+            container.innerHTML = "";
+            options.forEach(option => {
+                const btn = document.createElement("button");
+                btn.textContent = option;
+                btn.onclick = () => {
+                    totalAttempts++;
+                    if (option === correctAnswer) {
+                        correctAnswers++;
+                        document.getElementById("feedback").textContent = "✅ Correct!";
+                    } else {
+                        document.getElementById("feedback").textContent = `❌ Incorrect! Correct answer: ${correctAnswer}`;
+                        saveIncorrectAnswer(questionText, correctAnswer, option);
+                    }
+                    updateDashboard();
+                    setTimeout(generateQuiz, 2000);
+                };
+                container.appendChild(btn);
+            });
+        }
+
+        updateDashboard();
+        generateQuiz();
+    </script>
+</body>
+</html>
