@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vocabulary Quiz</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <!-- Start Page -->
   <div id="startPage">
     <h1>Vocabulary Quiz</h1>
@@ -25,12 +23,18 @@
     <div class="question" id="questionText"></div>
     <div class="options" id="optionsContainer"></div>
     <div class="feedback" id="feedback"></div>
+
+    <div class="dashboard">
+      <p>Total Attempts: <span id="totalAttempts">0</span></p>
+      <p>Correct Answers: <span id="correctAnswers">0</span></p>
+      <p>Accuracy: <span id="accuracy">0%</span></p>
+    </div>
   </div>
 
   <!-- Results Page -->
   <div id="resultPage" class="hidden">
     <h1>Quiz Completed!</h1>
-    <p>Your Score: <span id="finalScore"></span> / 20</p>
+    <p>Your Score: <span id="finalScore"></span> / <span id="totalQuestionsResult"></span></p>
     <p>Accuracy: <span id="finalAccuracy"></span>%</p>
     <button id="restartQuizBtn">Restart Quiz</button>
   </div>
