@@ -3,13 +3,13 @@
         "Word": "Garment",
         "Meanings": "Article of clothing",
         "Synonym": "Attire, apparel, outfit",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "jester",
         "Meanings": "Clown; buffoon",
         "Synonym": "Fool, Joker, Entertainer",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "venom",
@@ -57,7 +57,7 @@
         "Word": "recitals",
         "Meanings": "cast or fashion anew",
         "Synonym": "performances, renditions",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "forfeit",
@@ -81,7 +81,7 @@
         "Word": "kimono",
         "Meanings": "Traditional dress of Japan",
         "Synonym": "Robe, Garment",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Ascertain",
@@ -99,7 +99,7 @@
         "Word": "jacuzzi",
         "Meanings": "A special type of bath with jets",
         "Synonym": "Hot tub, Whirlpool",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "perilous",
@@ -177,7 +177,7 @@
         "Word": "pyre",
         "Meanings": "large pile of wood for burning",
         "Synonym": "pile, heap",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "reproach",
@@ -231,13 +231,13 @@
         "Word": "Topic",
         "Meanings": "The subject of discussion",
         "Synonym": "Subject, Theme",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "vandal",
         "Meanings": "person who destroys property for the pleasure of destruction",
         "Synonym": "destroyer, defacer",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "moderation",
@@ -279,7 +279,7 @@
         "Word": "jockey",
         "Meanings": "Ride a horse; to position advantageously",
         "Synonym": "Rider, Maneuverer",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "vendetta",
@@ -441,7 +441,7 @@
         "Word": "Troupe",
         "Meanings": "A group of performers",
         "Synonym": "Company, Ensemble",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Edible",
@@ -519,7 +519,7 @@
         "Word": "Riff",
         "Meanings": "A repeated pattern or phrase in music",
         "Synonym": "Phrase, Motif",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Blast",
@@ -561,7 +561,7 @@
         "Word": "sermon",
         "Meanings": "Reproving a person for his faults",
         "Synonym": "Lecture, Homily",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Acclaimed",
@@ -627,7 +627,7 @@
         "Word": "vamp",
         "Meanings": "flirtatious woman, coquette, seductress, temptress",
         "Synonym": "seductress, siren",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "squabble",
@@ -645,7 +645,7 @@
         "Word": "inasmuch",
         "Meanings": "since; because",
         "Synonym": "as, because, seeing that",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "placid",
@@ -663,7 +663,7 @@
         "Word": "synopsis",
         "Meanings": "Summary or outline",
         "Synonym": "Abstract, Summary",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Aeon",
@@ -747,7 +747,7 @@
         "Word": "kitty",
         "Meanings": "Pool of funds",
         "Synonym": "Pot, Fund, Pool",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Turmoil",
@@ -831,7 +831,7 @@
         "Word": "urchin",
         "Meanings": "a mischievous child",
         "Synonym": "brat, rascal",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Turgid",
@@ -975,7 +975,7 @@
         "Word": "offal",
         "Meanings": "waste or by-product",
         "Synonym": "Refuse, Garbage",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Brazen",
@@ -993,7 +993,7 @@
         "Word": "skit",
         "Meanings": "Short piece of humorous writing",
         "Synonym": "Comedy, Sketch",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Deciduous",
@@ -1017,7 +1017,7 @@
         "Word": "Tassel",
         "Meanings": "A bunch of threads tied at one end and used as decoration",
         "Synonym": "Fringe, Pendant",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Constrict",
@@ -1035,7 +1035,7 @@
         "Word": "Tawny",
         "Meanings": "A light brown to brownish-yellow color",
         "Synonym": "Beige, Tan",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Embellish",
@@ -1065,7 +1065,7 @@
         "Word": "Thesaurus",
         "Meanings": "A book that lists words and their synonyms",
         "Synonym": "Synonym dictionary",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Callous",
@@ -1125,7 +1125,7 @@
         "Word": "offal",
         "Meanings": "waste or by-product of a process",
         "Synonym": "Refuse, Garbage",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "hinterland",
@@ -1359,7 +1359,7 @@
         "Word": "quilt",
         "Meanings": "banquet cover, warmer",
         "Synonym": "blanket, cover",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Abate",
@@ -1401,7 +1401,7 @@
         "Word": "kiosk",
         "Meanings": "A small stand for sale",
         "Synonym": "Stall, Booth, Stand",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "redress",
@@ -1443,7 +1443,7 @@
         "Word": "stationery",
         "Meanings": "Writing material",
         "Synonym": "Writing supplies",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Elicit",
@@ -1455,7 +1455,7 @@
         "Word": "silt",
         "Meanings": "Fine-grained sandy sediment carried or deposited by water",
         "Synonym": "Sediment, Deposit",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "fidelity",
@@ -1581,7 +1581,7 @@
         "Word": "Thespians",
         "Meanings": "Actors",
         "Synonym": "Performers, Actors",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Elegy",
@@ -1671,7 +1671,7 @@
         "Word": "jerk",
         "Meanings": "A spasmodic muscle movement",
         "Synonym": "Twitch, Jolt",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "viscous",
@@ -1736,14 +1736,14 @@
     {
         "Word": "Abhor",
         "Meanings": "To hate or detest",
-        "Synonym": NaN,
-        "Antonym": NaN
+        "Synonym": null,
+        "Antonym": null
     },
     {
         "Word": "Resort",
         "Meanings": "A place frequented for relaxation or recreation",
         "Synonym": "Retreat, Haven, Sanctuary",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Eradicate",
@@ -1755,7 +1755,7 @@
         "Word": "swoop",
         "Meanings": "Sudden descent to capture or attack",
         "Synonym": "Pounce, Dive",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "piety",
@@ -1802,8 +1802,8 @@
     {
         "Word": "nascent",
         "Meanings": "A. Stimulant",
-        "Synonym": NaN,
-        "Antonym": NaN
+        "Synonym": null,
+        "Antonym": null
     },
     {
         "Word": "indistinct",
@@ -1820,8 +1820,8 @@
     {
         "Word": "Aberration",
         "Meanings": "Straying away from what is normal",
-        "Synonym": NaN,
-        "Antonym": NaN
+        "Synonym": null,
+        "Antonym": null
     },
     {
         "Word": "illicit",
@@ -1851,7 +1851,7 @@
         "Word": "Guild",
         "Meanings": "An association",
         "Synonym": "Union, group, organization",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "vicious",
@@ -1893,7 +1893,7 @@
         "Word": "sawdust",
         "Meanings": "Small particles of wood produced by sawing",
         "Synonym": "Wood shavings",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Construe",
@@ -1965,7 +1965,7 @@
         "Word": "sunray",
         "Meanings": "Ray of sunlight",
         "Synonym": "Sunbeam",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Deviance",
@@ -1977,7 +1977,7 @@
         "Word": "kindergarten",
         "Meanings": "School for infants",
         "Synonym": "Preschool, Nursery",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "precarious",
@@ -2109,7 +2109,7 @@
         "Word": "standing",
         "Meanings": "Status or reputation (figurative)",
         "Synonym": "Status, Position",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "suffocate",
@@ -2211,7 +2211,7 @@
         "Word": "Gravel",
         "Meanings": "Small stones",
         "Synonym": "Pebbles, shingle, rubble",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Equilibrium",
@@ -2247,7 +2247,7 @@
         "Word": "nautical",
         "Meanings": "Of, or ships or navigation",
         "Synonym": "Marine, Maritime",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "illusion",
@@ -2312,8 +2312,8 @@
     {
         "Word": "natal",
         "Meanings": "Of or relating to one's birth",
-        "Synonym": NaN,
-        "Antonym": NaN
+        "Synonym": null,
+        "Antonym": null
     },
     {
         "Word": "prudence",
@@ -2391,7 +2391,7 @@
         "Word": "Ablution",
         "Meanings": "Washing",
         "Synonym": "Cleansing, Purification",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "mandatory",
@@ -2481,7 +2481,7 @@
         "Word": "strut",
         "Meanings": "A supporting bar; swagger",
         "Synonym": "Swagger, Parade",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Denizen",
@@ -2601,7 +2601,7 @@
         "Word": "sash",
         "Meanings": "A band or ribbon worn round the waist or shoulder",
         "Synonym": "Belt, Band",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "penchant",
@@ -2637,7 +2637,7 @@
         "Word": "Girth",
         "Meanings": "The measure around something",
         "Synonym": "Circumference, perimeter",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "hobnob",
@@ -2667,7 +2667,7 @@
         "Word": "Clientele",
         "Meanings": "Customers collectively",
         "Synonym": "Patrons, Customers",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Elegiac",
@@ -2690,8 +2690,8 @@
     {
         "Word": "Abdication",
         "Meanings": "Giving up control or authority",
-        "Synonym": NaN,
-        "Antonym": NaN
+        "Synonym": null,
+        "Antonym": null
     },
     {
         "Word": "Drone",
@@ -2811,7 +2811,7 @@
         "Word": "wince",
         "Meanings": "try to avoid unpleasantness",
         "Synonym": "flinch, recoil",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "incessant",
@@ -2858,8 +2858,8 @@
     {
         "Word": "Arcade",
         "Meanings": "Covered passage especially lined with shops",
-        "Synonym": NaN,
-        "Antonym": NaN
+        "Synonym": null,
+        "Antonym": null
     },
     {
         "Word": "Avow",
@@ -2913,7 +2913,7 @@
         "Word": "Euthanasia",
         "Meanings": "Act of painless death for relief",
         "Synonym": "Mercy killing",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Countenance",
@@ -2991,7 +2991,7 @@
         "Word": "Brass",
         "Meanings": "Alloy of copper and zinc",
         "Synonym": "Metal, Alloy",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "recluse",
@@ -3009,7 +3009,7 @@
         "Word": "missive",
         "Meanings": "letter",
         "Synonym": "Message, Communication",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "forbear",
@@ -3039,7 +3039,7 @@
         "Word": "soot",
         "Meanings": "Black powder in smoke",
         "Synonym": "Ash, Soot",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Grimace",
@@ -3158,8 +3158,8 @@
     {
         "Word": "Tadpole",
         "Meanings": "The aquatic larval stage of a frog",
-        "Synonym": NaN,
-        "Antonym": NaN
+        "Synonym": null,
+        "Antonym": null
     },
     {
         "Word": "Tantrum",
@@ -3219,7 +3219,7 @@
         "Word": "stride",
         "Meanings": "Walk with long steps",
         "Synonym": "March, Strut",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "woo",
@@ -3465,7 +3465,7 @@
         "Word": "Archives",
         "Meanings": "Collection of historical records/documents",
         "Synonym": "Records, Repository",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "flaunting",
@@ -3561,7 +3561,7 @@
         "Word": "junta",
         "Meanings": "A group of men united for secret intrigue",
         "Synonym": "Cabal, Faction, Clique",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "partisan",
@@ -3591,7 +3591,7 @@
         "Word": "vat",
         "Meanings": "a large vessel",
         "Synonym": "tub, container",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "shunt",
@@ -3621,7 +3621,7 @@
         "Word": "whine",
         "Meanings": "show bodily or mental pain",
         "Synonym": "complain, moan",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "odorous",
@@ -3693,7 +3693,7 @@
         "Word": "kit",
         "Meanings": "Apparatus, gear, outfit",
         "Synonym": "Tools, Set, Equipment",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "lumber",
@@ -3717,7 +3717,7 @@
         "Word": "Ensign",
         "Meanings": "Flag; emblem",
         "Synonym": "Banner, flag, standard, symbol",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "procrastination",
@@ -3837,7 +3837,7 @@
         "Word": "insignia",
         "Meanings": "Distinguishing marks as emblems of rank",
         "Synonym": "Badge, Symbol, Emblem",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Addle",
@@ -4119,7 +4119,7 @@
         "Word": "veterinary",
         "Meanings": "referring to treatment of sick animals",
         "Synonym": "animal doctor",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Charismatic",
@@ -4137,7 +4137,7 @@
         "Word": "realm",
         "Meanings": "kingdom; domain",
         "Synonym": "domain, sphere",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Abysmal",
@@ -4191,7 +4191,7 @@
         "Word": "keep-sake",
         "Meanings": "Gift kept in memory of giver",
         "Synonym": "Memento, Souvenir, Token",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "irresolute",
@@ -4233,7 +4233,7 @@
         "Word": "relic",
         "Meanings": "something left from the past",
         "Synonym": "artifact, remains",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Bait",
@@ -4473,7 +4473,7 @@
         "Word": "Turquoise",
         "Meanings": "A greenish-blue color; also a gemstone",
         "Synonym": "Aqua, Cyan, Teal",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Discern",
@@ -4514,8 +4514,8 @@
     {
         "Word": "palate",
         "Meanings": "roof of the mouth; sense of taste",
-        "Synonym": NaN,
-        "Antonym": NaN
+        "Synonym": null,
+        "Antonym": null
     },
     {
         "Word": "Compatible",
@@ -4617,7 +4617,7 @@
         "Word": "verdict",
         "Meanings": "judgement, decision, ruling",
         "Synonym": "decision, judgment",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "inebriated",
@@ -4635,7 +4635,7 @@
         "Word": "opine",
         "Meanings": "to express opinion",
         "Synonym": "Comment, Suggestion",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Theatrical",
@@ -4658,8 +4658,8 @@
     {
         "Word": "Theseus",
         "Meanings": "Proper noun (Greek mythology hero)",
-        "Synonym": NaN,
-        "Antonym": NaN
+        "Synonym": null,
+        "Antonym": null
     },
     {
         "Word": "mordant",
@@ -4670,8 +4670,8 @@
     {
         "Word": "Asterisk",
         "Meanings": "Star-shaped symbol",
-        "Synonym": NaN,
-        "Antonym": NaN
+        "Synonym": null,
+        "Antonym": null
     },
     {
         "Word": "provoke",
@@ -4683,7 +4683,7 @@
         "Word": "Curriculum",
         "Meanings": "The subjects comprising a course of study",
         "Synonym": "Syllabus, course, program, outline",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Repulsive",
@@ -4977,7 +4977,7 @@
         "Word": "sting",
         "Meanings": "Something sharp",
         "Synonym": "Prick, Bite",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Besiege",
@@ -5001,7 +5001,7 @@
         "Word": "writ",
         "Meanings": "written order",
         "Synonym": "document, decree",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Broach",
@@ -5019,7 +5019,7 @@
         "Word": "wag",
         "Meanings": "merry person",
         "Synonym": "joker, merrymaker",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Defer",
@@ -5241,7 +5241,7 @@
         "Word": "paradigm",
         "Meanings": "a model; example",
         "Synonym": "pattern, archetype",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Daft",
@@ -5283,7 +5283,7 @@
         "Word": "kennel",
         "Meanings": "House for dogs",
         "Synonym": "Doghouse",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Extempore",
@@ -5307,7 +5307,7 @@
         "Word": "poncho",
         "Meanings": "large piece of cloth",
         "Synonym": "cloak, shawl",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "salient",
@@ -5342,8 +5342,8 @@
     {
         "Word": "Teethe",
         "Meanings": "To grow or cut teeth",
-        "Synonym": NaN,
-        "Antonym": NaN
+        "Synonym": null,
+        "Antonym": null
     },
     {
         "Word": "insipid",
@@ -5367,7 +5367,7 @@
         "Word": "Gnaw",
         "Meanings": "To bite or wear away",
         "Synonym": "Chew, nibble, erode",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "stigma",
@@ -5397,7 +5397,7 @@
         "Word": "slither",
         "Meanings": "To sleep, slide, or glide along",
         "Synonym": "Slide, Glide",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "prodigy",
@@ -5493,7 +5493,7 @@
         "Word": "Artifact",
         "Meanings": "Man-made object",
         "Synonym": "Relic, Object",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Ruffian",
@@ -5583,7 +5583,7 @@
         "Word": "Chisel",
         "Meanings": "Steel tool for shaping materials",
         "Synonym": "Carver, Gouge",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Benevolence",
@@ -5613,7 +5613,7 @@
         "Word": "plaque",
         "Meanings": "flat metal on a wall as a memorial",
         "Synonym": "plate, tablet",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "jagged",
@@ -5655,7 +5655,7 @@
         "Word": "kiln",
         "Meanings": "Furnace for baking bricks, pottery",
         "Synonym": "Oven, Furnace",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Coax",
@@ -5709,7 +5709,7 @@
         "Word": "varnish",
         "Meanings": "adornment, decoration, polish, display",
         "Synonym": "lacquer, glaze",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Gush",
@@ -5721,7 +5721,7 @@
         "Word": "Talisman",
         "Meanings": "An object believed to bring good luck",
         "Synonym": "Charm, Amulet",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Baleful",
@@ -5787,7 +5787,7 @@
         "Word": "suffrage",
         "Meanings": "Short prayer usually in a series; right of voting",
         "Synonym": "Vote, Franchise",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "haughty",
@@ -5799,7 +5799,7 @@
         "Word": "scrabble",
         "Meanings": "To scratch or grope about frantically",
         "Synonym": "Scramble, Claw",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "obtuse",
@@ -5859,7 +5859,7 @@
         "Word": "forensic",
         "Meanings": "related to legal or judicial matters",
         "Synonym": "legal, judicial, criminalistic",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Goad",
@@ -5895,7 +5895,7 @@
         "Word": "Apiary",
         "Meanings": "A place where bees are kept",
         "Synonym": "Beehouse",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Grave",
@@ -5949,7 +5949,7 @@
         "Word": "nuptial",
         "Meanings": "A. Of marriage or wedding",
         "Synonym": "Matrimonial, Bridal",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Devious",
@@ -5991,7 +5991,7 @@
         "Word": "sheath",
         "Meanings": "Cover for the blade of a weapon or tool",
         "Synonym": "Cover, Case",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Turbulence",
@@ -6039,7 +6039,7 @@
         "Word": "streak",
         "Meanings": "Long; thin; move very fast",
         "Synonym": "Stripe, Line",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "stilted",
@@ -6093,7 +6093,7 @@
         "Word": "nomenclature",
         "Meanings": "science, etc. naming used in a system or field",
         "Synonym": "Terminology, Classification",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "vestige",
@@ -6158,8 +6158,8 @@
     {
         "Word": "neurotic",
         "Meanings": "A. Mental disorder, functional disorder of the nervous system",
-        "Synonym": NaN,
-        "Antonym": NaN
+        "Synonym": null,
+        "Antonym": null
     },
     {
         "Word": "irksome",
@@ -6177,7 +6177,7 @@
         "Word": "icon",
         "Meanings": "image, figure, statue",
         "Synonym": "symbol, idol, emblem",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "snare",
@@ -6255,7 +6255,7 @@
         "Word": "muffler",
         "Meanings": "cloth worn round the neck; silencer",
         "Synonym": "Scarf, Silencer",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "ignoramus",
@@ -6327,7 +6327,7 @@
         "Word": "parable",
         "Meanings": "a simple story used to illustrate a moral or spiritual lesson",
         "Synonym": "allegory, fable",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Adventitious",
@@ -6345,7 +6345,7 @@
         "Word": "yarn",
         "Meanings": "tale, story; fibers for knitting",
         "Synonym": "tale, story",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Trepidation",
@@ -6411,7 +6411,7 @@
         "Word": "Gasket",
         "Meanings": "Packing material for joints",
         "Synonym": "Seal, ring, washer",
-        "Antonym": NaN
+        "Antonym": null
     },
     {
         "Word": "Grit",
@@ -6464,8 +6464,8 @@
     {
         "Word": "repast",
         "Meanings": "meal",
-        "Synonym": NaN,
-        "Antonym": NaN
+        "Synonym": null,
+        "Antonym": null
     },
     {
         "Word": "Gasp",
@@ -6476,8 +6476,8 @@
     {
         "Word": "hematology",
         "Meanings": "study of blood and diseases",
-        "Synonym": NaN,
-        "Antonym": NaN
+        "Synonym": null,
+        "Antonym": null
     },
     {
         "Word": "repel",
