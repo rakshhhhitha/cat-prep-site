@@ -1,136 +1,143 @@
 let vocabulary = [];
+let quizQuestions = [];
+let currentQuestionIndex = 0;
 let totalAttempts = 0;
 let correctAnswers = 0;
-let currentQuestionIndex = 0;
-let selectedQuestions = [];
 
-// Fetch vocabulary from GitHub
+// Fetch vocab data from GitHub
 fetch('https://raw.githubusercontent.com/rakshhhhitha/cat-prep-site/main/vocab-data.json')
   .then(res => res.json())
   .then(data => {
-    vocabulary = data.filter(v => v.Meanings || v.Synonym || v.Antonym);
+    vocabulary = data.filter(v => v.Word && (v.Meanings || v.Synonym || v.Antonym));
     document.getElementById("totalQuestions").textContent = vocabulary.length;
-  }).catch(err => {
-    console.error(err);
+  })
+  .catch(err => {
+    console.error("Failed to load vocabulary:", err);
     alert("Failed to load vocabulary data.");
   });
 
-// Utility
-function getRandomItem(array) {
-  return array[Math.floor(Math.random() * array.length)];
-}
+// DOM Elements
+const startPage = document.getElementById('startPage');
+const quizPage = document.getElementById('quizPage');
+const resultPage = document.getElementById('resultPage');
+const startBtn = document.getElementById('startQuizBtn');
+const restartBtn = document.getElementById('restartQuizBtn');
+const questionText = document.getElementById('questionText');
+const optionsContainer = document.getElementById('optionsContainer');
+const feedback = document.getElementById('feedback');
+const currentQ = document.getElementById('currentQ');
+const progressBar = document.getElementById('progressBar');
+const finalScore = document.getElementById('finalScore');
+const finalAccuracy = document.getElementById('finalAccuracy');
 
-function shuffleArray(array) {
-  return array.sort(() => Math.random() - 0.5);
-}
+// Start Quiz
+startBtn.addEventListener('click', startQuiz);
+restartBtn.addEventListener('click', startQuiz);
 
-function getRandomQuestions(count) {
-  const valid = vocabulary.filter(v => v.Meanings || v.Synonym || v.Antonym);
-  return shuffleArray(valid).slice(0, count);
-}
-
-// UI helpers
-function showPage(pageId) {
-  document.querySelectorAll(".page").forEach(p => p.classList.add("hidden"));
-  document.getElementById(pageId).classList.remove("hidden");
-}
-
-function updateDashboard() {
-  const progressPercent = ((currentQuestionIndex)/selectedQuestions.length)*100;
-  document.getElementById("progressBar").style.width = progressPercent + "%";
-  document.getElementById("currentQ").textContent = currentQuestionIndex + 1;
-}
-
-// Start quiz
 function startQuiz() {
+  startPage.classList.add('hidden');
+  resultPage.classList.add('hidden');
+  quizPage.classList.remove('hidden');
+
   totalAttempts = 0;
   correctAnswers = 0;
   currentQuestionIndex = 0;
-  selectedQuestions = getRandomQuestions(20);
-  showPage("quizPage");
-  generateQuiz();
+  feedback.textContent = '';
+  progressBar.style.width = '0%';
+
+  // Pick 20 random non-repeating questions
+  quizQuestions = [];
+  let vocabCopy = [...vocabulary];
+  while (quizQuestions.length < 20 && vocabCopy.length > 0) {
+    let idx = Math.floor(Math.random() * vocabCopy.length);
+    quizQuestions.push(vocabCopy.splice(idx, 1)[0]);
+  }
+
+  showQuestion();
 }
 
-// Generate question
-function generateQuiz() {
-  if (currentQuestionIndex >= selectedQuestions.length) return showResult();
+function showQuestion() {
+  if (currentQuestionIndex >= quizQuestions.length) {
+    showResults();
+    return;
+  }
 
-  document.getElementById("feedback").textContent = "";
-  const item = selectedQuestions[currentQuestionIndex];
+  const item = quizQuestions[currentQuestionIndex];
+  const questionTypes = [];
+  if (item.Meanings) questionTypes.push('Meaning');
+  if (item.Synonym) questionTypes.push('Synonym');
+  if (item.Antonym) questionTypes.push('Antonym');
 
-  // Decide question type
-  const types = [];
-  if (item.Meanings) types.push("Meaning");
-  if (item.Synonym) types.push("Synonym");
-  if (item.Antonym) types.push("Antonym");
-  const qType = getRandomItem(types);
+  const type = questionTypes[Math.floor(Math.random() * questionTypes.length)];
+  let question = '';
+  let correctAnswer = '';
+  let options = [];
 
-  let questionText = "", correctAnswer = "", options = [];
-
-  if (qType === "Meaning") {
-    questionText = `What is the meaning of "${item.Word}"?`;
+  if (type === 'Meaning') {
+    question = `What is the meaning of "${item.Word}"?`;
     correctAnswer = item.Meanings;
     options = vocabulary.map(v => v.Meanings).filter(Boolean);
-  } else if (qType === "Synonym") {
-    questionText = `Which word is a synonym of "${item.Word}"?`;
-    const syns = item.Synonym.split(",").map(s => s.trim()).filter(Boolean);
-    correctAnswer = getRandomItem(syns);
-    options = vocabulary.flatMap(v => (v.Synonym?.split(",").map(s => s.trim()) || []));
-  } else if (qType === "Antonym") {
-    questionText = `Which word is an antonym of "${item.Word}"?`;
-    const ants = item.Antonym.split(",").map(a => a.trim()).filter(Boolean);
-    correctAnswer = getRandomItem(ants);
-    options = vocabulary.flatMap(v => (v.Antonym?.split(",").map(a => a.trim()) || []));
+  } else if (type === 'Synonym') {
+    question = `Which word is a synonym of "${item.Word}"?`;
+    const synonyms = item.Synonym.split(',').map(s => s.trim()).filter(Boolean);
+    correctAnswer = synonyms[Math.floor(Math.random() * synonyms.length)];
+    options = vocabulary.flatMap(v => v.Synonym ? v.Synonym.split(',').map(s => s.trim()) : []);
+  } else if (type === 'Antonym') {
+    question = `Which word is an antonym of "${item.Word}"?`;
+    const antonyms = item.Antonym.split(',').map(a => a.trim()).filter(Boolean);
+    correctAnswer = antonyms[Math.floor(Math.random() * antonyms.length)];
+    options = vocabulary.flatMap(v => v.Antonym ? v.Antonym.split(',').map(a => a.trim()) : []);
   }
 
   options = [...new Set(options.filter(Boolean))];
   if (!options.includes(correctAnswer)) options.push(correctAnswer);
   options = shuffleArray(options).slice(0, 4);
-  if (!options.includes(correctAnswer)) options[Math.floor(Math.random()*4)] = correctAnswer;
+  if (!options.includes(correctAnswer)) options[Math.floor(Math.random() * 4)] = correctAnswer;
 
-  document.getElementById("questionText").textContent = questionText;
-  const container = document.getElementById("optionsContainer");
-  container.innerHTML = "";
+  questionText.textContent = question;
+  currentQ.textContent = currentQuestionIndex + 1;
+  optionsContainer.innerHTML = '';
+  feedback.textContent = '';
 
-  options.forEach(option => {
-    const btn = document.createElement("button");
-    btn.textContent = option;
-    btn.classList.add("btn-option");
-    btn.onclick = () => {
-      totalAttempts++;
-      if (option === correctAnswer) {
-        correctAnswers++;
-        btn.classList.add("correct");
-        document.getElementById("feedback").textContent = "✅ Correct!";
-      } else {
-        btn.classList.add("incorrect");
-        document.getElementById("feedback").textContent = `❌ Incorrect! Correct: ${correctAnswer}`;
-      }
-      updateDashboard();
-      currentQuestionIndex++;
-      setTimeout(generateQuiz, 1000);
-    };
-    container.appendChild(btn);
+  options.forEach(opt => {
+    const btn = document.createElement('button');
+    btn.textContent = opt;
+    btn.addEventListener('click', () => handleAnswer(btn, correctAnswer));
+    optionsContainer.appendChild(btn);
   });
 
-  updateDashboard();
+  progressBar.style.width = `${(currentQuestionIndex / quizQuestions.length) * 100}%`;
 }
 
-function showResult() {
-  showPage("resultPage");
-  document.getElementById("finalScore").textContent = correctAnswers;
-  document.getElementById("totalQuestionsResult").textContent = selectedQuestions.length;
-  const accuracy = ((correctAnswers/selectedQuestions.length)*100).toFixed(2);
-  document.getElementById("finalAccuracy").textContent = accuracy;
+function handleAnswer(button, correctAnswer) {
+  totalAttempts++;
+  const buttons = [...optionsContainer.children];
+  buttons.forEach(b => b.disabled = true);
 
-  // Save attempt to localStorage
-  const attempts = JSON.parse(localStorage.getItem("quizAttempts") || "[]");
-  attempts.push({ score: correctAnswers, total: selectedQuestions.length, accuracy });
-  localStorage.setItem("quizAttempts", JSON.stringify(attempts));
+  if (button.textContent === correctAnswer) {
+    correctAnswers++;
+    button.classList.add('correct');
+    feedback.textContent = '✅ Correct!';
+  } else {
+    button.classList.add('incorrect');
+    feedback.textContent = `❌ Incorrect! Correct: ${correctAnswer}`;
+  }
+
+  currentQuestionIndex++;
+  setTimeout(showQuestion, 1500);
 }
 
-// Event Listeners
-document.getElementById("startQuizBtn").addEventListener("click", startQuiz);
-document.getElementById("restartQuizBtn").addEventListener("click", () => showPage("startPage"));
-document.getElementById("viewReportBtn").addEventListener("click", () => window.location.href="report.html");
-document.getElementById("viewReportFromResult").addEventListener("click", () => window.location.href="report.html");
+function showResults() {
+  quizPage.classList.add('hidden');
+  resultPage.classList.remove('hidden');
+  finalScore.textContent = correctAnswers;
+  finalAccuracy.textContent = ((correctAnswers / totalAttempts) * 100).toFixed(2);
+}
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
