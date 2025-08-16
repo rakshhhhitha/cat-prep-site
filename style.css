@@ -1,4 +1,3 @@
-/* General Body */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -10,8 +9,7 @@ body {
   min-height: 100vh;
 }
 
-/* Container */
-#startPage, #quizPage {
+#startPage, #quizPage, #resultPage {
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
@@ -22,25 +20,11 @@ body {
   text-align: center;
 }
 
-/* Hidden */
-.hidden {
-  display: none;
-}
+.hidden { display: none; }
 
-/* Headings */
-h1 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-  color: #333;
-}
+h1 { margin-bottom: 20px; font-size: 2rem; color: #333; }
+h2 { margin-bottom: 20px; font-size: 1.5rem; color: #555; }
 
-h2 {
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-  color: #555;
-}
-
-/* Question Card */
 .question {
   background: #f0f4ff;
   border-left: 6px solid #4a90e2;
@@ -51,7 +35,6 @@ h2 {
   text-align: left;
 }
 
-/* Options Buttons */
 .options button {
   display: block;
   width: 100%;
@@ -72,36 +55,31 @@ h2 {
   transform: scale(1.02);
 }
 
-/* Feedback */
+.options button.correct {
+  background-color: #28a745;
+  color: #fff;
+  border-color: #28a745;
+}
+
+.options button.incorrect {
+  background-color: #dc3545;
+  color: #fff;
+  border-color: #dc3545;
+}
+
 .feedback {
   margin-top: 15px;
   font-weight: bold;
   font-size: 1.1rem;
 }
 
-.feedback.correct {
-  color: #28a745;
-}
+.feedback.correct { color: #28a745; }
+.feedback.incorrect { color: #dc3545; }
 
-.feedback.incorrect {
-  color: #dc3545;
-}
+.dashboard { margin-top: 25px; border-top: 1px solid #ccc; padding-top: 15px; text-align: left; }
+.dashboard p { margin: 5px 0; font-size: 1rem; }
 
-/* Dashboard */
-.dashboard {
-  margin-top: 25px;
-  border-top: 1px solid #ccc;
-  padding-top: 15px;
-  text-align: left;
-}
-
-.dashboard p {
-  margin: 5px 0;
-  font-size: 1rem;
-}
-
-/* Start Quiz Button */
-#startQuizBtn {
+#startQuizBtn, #restartQuizBtn {
   background: #4a90e2;
   color: #fff;
   font-size: 1.2rem;
@@ -112,12 +90,11 @@ h2 {
   transition: all 0.3s ease;
 }
 
-#startQuizBtn:hover {
+#startQuizBtn:hover, #restartQuizBtn:hover {
   background: #357ab7;
   transform: scale(1.05);
 }
 
-/* Progress Bar */
 #progressContainer {
   background: #e0e0e0;
   border-radius: 10px;
@@ -132,5 +109,5 @@ h2 {
   width: 0%;
   background: #4a90e2;
   border-radius: 10px;
-  transition: width 0.3s ease;
+  transition: width 0.5s ease;
 }
