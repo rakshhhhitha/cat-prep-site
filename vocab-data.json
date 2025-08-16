@@ -1,0 +1,6554 @@
+[
+  {
+    "word": "Garment",
+    "meaning": "",
+    "synonym": "Attire, apparel, outfit",
+    "antonym": "—"
+  },
+  {
+    "word": "jester",
+    "meaning": "",
+    "synonym": "Fool, Joker, Entertainer",
+    "antonym": "—"
+  },
+  {
+    "word": "venom",
+    "meaning": "",
+    "synonym": "toxin, poison",
+    "antonym": "antidote, remedy"
+  },
+  {
+    "word": "Thickset",
+    "meaning": "",
+    "synonym": "Sturdy, Stocky",
+    "antonym": "Thin, Slender"
+  },
+  {
+    "word": "loll",
+    "meaning": "",
+    "synonym": "Lounge, Recline",
+    "antonym": "Stand upright"
+  },
+  {
+    "word": "Evasive",
+    "meaning": "",
+    "synonym": "Elusive, misleading, ambiguous, cagey",
+    "antonym": "Direct, honest, straightforward"
+  },
+  {
+    "word": "forge",
+    "meaning": "",
+    "synonym": "fabricate, fake, form",
+    "antonym": "destroy, dismantle"
+  },
+  {
+    "word": "Clerical",
+    "meaning": "",
+    "synonym": "Ecclesiastical, Administrative",
+    "antonym": "Secular, Nonreligious"
+  },
+  {
+    "word": "Ancillary",
+    "meaning": "",
+    "synonym": "Auxiliary, Supporting",
+    "antonym": "Primary"
+  },
+  {
+    "word": "recitals",
+    "meaning": "",
+    "synonym": "performances, renditions",
+    "antonym": "nan"
+  },
+  {
+    "word": "forfeit",
+    "meaning": "",
+    "synonym": "surrender, give up, lose",
+    "antonym": "retain, gain"
+  },
+  {
+    "word": "Defiance",
+    "meaning": "",
+    "synonym": "Resistance, opposition, rebellion, challenge",
+    "antonym": "Compliance, obedience, submission, respect"
+  },
+  {
+    "word": "unseemly",
+    "meaning": "",
+    "synonym": "improper, indecent",
+    "antonym": "appropriate, proper"
+  },
+  {
+    "word": "kimono",
+    "meaning": "",
+    "synonym": "Robe, Garment",
+    "antonym": "—"
+  },
+  {
+    "word": "Ascertain",
+    "meaning": "",
+    "synonym": "Discover, Determine",
+    "antonym": "Overlook, Ignore"
+  },
+  {
+    "word": "prevalent",
+    "meaning": "",
+    "synonym": "widespread, frequent",
+    "antonym": "rare, uncommon"
+  },
+  {
+    "word": "jacuzzi",
+    "meaning": "",
+    "synonym": "Hot tub, Whirlpool",
+    "antonym": "—"
+  },
+  {
+    "word": "perilous",
+    "meaning": "",
+    "synonym": "risky, hazardous",
+    "antonym": "safe, secure"
+  },
+  {
+    "word": "Gape",
+    "meaning": "",
+    "synonym": "Gawk, stare, ogle",
+    "antonym": "Glance, ignore"
+  },
+  {
+    "word": "Gyrate",
+    "meaning": "",
+    "synonym": "Spin, twirl, rotate",
+    "antonym": "Remain still"
+  },
+  {
+    "word": "Cede/Cession",
+    "meaning": "",
+    "synonym": "Relinquish, Yield",
+    "antonym": "Retain, Keep"
+  },
+  {
+    "word": "Enmity",
+    "meaning": "",
+    "synonym": "Hostility, animosity, antagonism",
+    "antonym": "Friendship, goodwill, amity"
+  },
+  {
+    "word": "Annuity",
+    "meaning": "",
+    "synonym": "Pension, Stipend",
+    "antonym": "One-time payment"
+  },
+  {
+    "word": "Dislodge",
+    "meaning": "",
+    "synonym": "Displace, expel, knock out",
+    "antonym": "Fix, secure, fasten, establish"
+  },
+  {
+    "word": "Embezzle",
+    "meaning": "",
+    "synonym": "Misappropriate, steal, misuse, defraud",
+    "antonym": "Repay, reimburse, compensate"
+  },
+  {
+    "word": "supercilious",
+    "meaning": "",
+    "synonym": "Arrogant, Haughty",
+    "antonym": "Humble"
+  },
+  {
+    "word": "extol",
+    "meaning": "",
+    "synonym": "applaud, commend, exalt",
+    "antonym": "criticize, blame, denounce"
+  },
+  {
+    "word": "palatial",
+    "meaning": "",
+    "synonym": "grand, splendid",
+    "antonym": "humble, modest"
+  },
+  {
+    "word": "Enduring",
+    "meaning": "",
+    "synonym": "Permanent, long-lasting, persistent",
+    "antonym": "Temporary, fleeting, short-lived"
+  },
+  {
+    "word": "pyre",
+    "meaning": "",
+    "synonym": "pile, heap",
+    "antonym": "nan"
+  },
+  {
+    "word": "reproach",
+    "meaning": "",
+    "synonym": "blame, criticize",
+    "antonym": "praise, compliment"
+  },
+  {
+    "word": "Boorish",
+    "meaning": "",
+    "synonym": "Crude, Ill-mannered",
+    "antonym": "Polite, Refined"
+  },
+  {
+    "word": "Bask",
+    "meaning": "",
+    "synonym": "Revel, Delight",
+    "antonym": "Shiver"
+  },
+  {
+    "word": "hoodwink",
+    "meaning": "",
+    "synonym": "dupe, fool, mislead",
+    "antonym": "enlighten, reveal"
+  },
+  {
+    "word": "Tarnished",
+    "meaning": "",
+    "synonym": "Stained, Dull",
+    "antonym": "Polished, Clean"
+  },
+  {
+    "word": "Counterfeit",
+    "meaning": "",
+    "synonym": "Fake, forged, fraudulent, imitation",
+    "antonym": "Genuine, authentic, real"
+  },
+  {
+    "word": "Attune",
+    "meaning": "",
+    "synonym": "Adjust, Harmonize",
+    "antonym": "Disrupt"
+  },
+  {
+    "word": "Conjure",
+    "meaning": "",
+    "synonym": "Invoke, Summon",
+    "antonym": "Dismiss, Banish"
+  },
+  {
+    "word": "Topic",
+    "meaning": "",
+    "synonym": "Subject, Theme",
+    "antonym": "—"
+  },
+  {
+    "word": "vandal",
+    "meaning": "",
+    "synonym": "destroyer, defacer",
+    "antonym": "—"
+  },
+  {
+    "word": "moderation",
+    "meaning": "",
+    "synonym": "Restraint, Temperance",
+    "antonym": "Excess, Intemperance"
+  },
+  {
+    "word": "suppress",
+    "meaning": "",
+    "synonym": "Replace, Supplant",
+    "antonym": "Maintain"
+  },
+  {
+    "word": "Camouflage",
+    "meaning": "",
+    "synonym": "Concealment, Disguise",
+    "antonym": "Exposure, Revelation"
+  },
+  {
+    "word": "verve",
+    "meaning": "",
+    "synonym": "energy, vitality",
+    "antonym": "lethargy, dullness"
+  },
+  {
+    "word": "illegible",
+    "meaning": "",
+    "synonym": "unreadable, indecipherable",
+    "antonym": "legible, clear"
+  },
+  {
+    "word": "swagger",
+    "meaning": "",
+    "synonym": "Strut, Boast",
+    "antonym": "Slouch"
+  },
+  {
+    "word": "jockey",
+    "meaning": "",
+    "synonym": "Rider, Maneuverer",
+    "antonym": "—"
+  },
+  {
+    "word": "vendetta",
+    "meaning": "",
+    "synonym": "feud, rivalry",
+    "antonym": "peace, truce"
+  },
+  {
+    "word": "Adage",
+    "meaning": "",
+    "synonym": "Proverb, Maxim",
+    "antonym": "Modern saying"
+  },
+  {
+    "word": "Acquit",
+    "meaning": "",
+    "synonym": "Exonerate, Vindicate",
+    "antonym": "Convict"
+  },
+  {
+    "word": "Decorum",
+    "meaning": "",
+    "synonym": "Civility, politeness, propriety, etiquette, courtesy",
+    "antonym": "Impropriety, rudeness, vulgarity, misbehavior"
+  },
+  {
+    "word": "miscreant",
+    "meaning": "",
+    "synonym": "Villain, Criminal",
+    "antonym": "Hero, Good person"
+  },
+  {
+    "word": "ominous",
+    "meaning": "",
+    "synonym": "Menacing, Sinister",
+    "antonym": "Promising, Auspicious"
+  },
+  {
+    "word": "stint",
+    "meaning": "",
+    "synonym": "Limit, Restrict",
+    "antonym": "Splurge"
+  },
+  {
+    "word": "multifarious",
+    "meaning": "",
+    "synonym": "Diverse, Varied",
+    "antonym": "Uniform, Similar"
+  },
+  {
+    "word": "Badger",
+    "meaning": "",
+    "synonym": "Pester, Harass",
+    "antonym": "Soothe, Comfort"
+  },
+  {
+    "word": "Trustworthy",
+    "meaning": "",
+    "synonym": "Reliable, Dependable",
+    "antonym": "Unreliable"
+  },
+  {
+    "word": "impertinent",
+    "meaning": "",
+    "synonym": "insolent, impolite, cheeky",
+    "antonym": "respectful, courteous"
+  },
+  {
+    "word": "incoherent",
+    "meaning": "",
+    "synonym": "confused, disjointed, unintelligible",
+    "antonym": "coherent, clear"
+  },
+  {
+    "word": "Accredit",
+    "meaning": "",
+    "synonym": "Authorize, Sanction",
+    "antonym": "Disapprove"
+  },
+  {
+    "word": "Gullible",
+    "meaning": "",
+    "synonym": "Naive, trusting, innocent",
+    "antonym": "Skeptical, suspicious"
+  },
+  {
+    "word": "Celestial",
+    "meaning": "",
+    "synonym": "Heavenly, Divine",
+    "antonym": "Mortal, Earthly, Terrestrial"
+  },
+  {
+    "word": "spruce",
+    "meaning": "",
+    "synonym": "Neat, Tidy",
+    "antonym": "Untidy"
+  },
+  {
+    "word": "uproar",
+    "meaning": "",
+    "synonym": "chaos, disturbance",
+    "antonym": "calm, peace"
+  },
+  {
+    "word": "Discourse",
+    "meaning": "",
+    "synonym": "Conversation, dialogue, debate, lecture",
+    "antonym": "Silence, quiet"
+  },
+  {
+    "word": "Anon",
+    "meaning": "",
+    "synonym": "Shortly, Presently",
+    "antonym": "Later"
+  },
+  {
+    "word": "Celerity",
+    "meaning": "",
+    "synonym": "Speed, Swiftness",
+    "antonym": "Slowness, Delay"
+  },
+  {
+    "word": "smug",
+    "meaning": "",
+    "synonym": "Self-satisfied",
+    "antonym": "Humble"
+  },
+  {
+    "word": "pliant",
+    "meaning": "",
+    "synonym": "flexible, supple",
+    "antonym": "rigid, inflexible"
+  },
+  {
+    "word": "Barrage (2)",
+    "meaning": "",
+    "synonym": "Dam, Barrier",
+    "antonym": "Channel"
+  },
+  {
+    "word": "Bravura",
+    "meaning": "",
+    "synonym": "Dashing, Flair",
+    "antonym": "Timidity"
+  },
+  {
+    "word": "remnant",
+    "meaning": "",
+    "synonym": "remainder, residue",
+    "antonym": "entirety, whole"
+  },
+  {
+    "word": "Demure",
+    "meaning": "",
+    "synonym": "Reserved, coy, bashful, reticent",
+    "antonym": "Bold, brazen, shameless, impudent"
+  },
+  {
+    "word": "Troupe",
+    "meaning": "",
+    "synonym": "Company, Ensemble",
+    "antonym": "—"
+  },
+  {
+    "word": "Edible",
+    "meaning": "",
+    "synonym": "Eatable, consumable, digestible",
+    "antonym": "Inedible, poisonous, toxic"
+  },
+  {
+    "word": "Cumbersome",
+    "meaning": "",
+    "synonym": "Burdensome, unwieldy, clumsy, awkward",
+    "antonym": "Light, manageable, convenient"
+  },
+  {
+    "word": "whimsical",
+    "meaning": "",
+    "synonym": "quirky, playful",
+    "antonym": "serious, realistic"
+  },
+  {
+    "word": "matriculation",
+    "meaning": "",
+    "synonym": "Enrollment, Registration",
+    "antonym": "Expulsion, Withdrawal"
+  },
+  {
+    "word": "Dogmatic",
+    "meaning": "",
+    "synonym": "Opinionated, assertive, arrogant, dictatorial",
+    "antonym": "Flexible, open-minded, uncertain"
+  },
+  {
+    "word": "hoax",
+    "meaning": "",
+    "synonym": "prank, deception, fraud",
+    "antonym": "truth, reality"
+  },
+  {
+    "word": "Dexterity",
+    "meaning": "",
+    "synonym": "Agility, adroitness, expertise, nimbleness",
+    "antonym": "Clumsiness, ineptitude, awkwardness"
+  },
+  {
+    "word": "noxious",
+    "meaning": "",
+    "synonym": "Harmful, Toxic",
+    "antonym": "Harmless, Innocuous"
+  },
+  {
+    "word": "Temperate",
+    "meaning": "",
+    "synonym": "Mild, Moderate",
+    "antonym": "Extreme"
+  },
+  {
+    "word": "implacable",
+    "meaning": "",
+    "synonym": "unrelenting, unforgiving, relentless",
+    "antonym": "placable, compassionate"
+  },
+  {
+    "word": "Discomfit",
+    "meaning": "",
+    "synonym": "Confuse, embarrass, disturb, thwart",
+    "antonym": "Comfort, soothe, assist, support"
+  },
+  {
+    "word": "pry",
+    "meaning": "",
+    "synonym": "snoop, meddle",
+    "antonym": "ignore, overlook"
+  },
+  {
+    "word": "Riff",
+    "meaning": "",
+    "synonym": "Phrase, Motif",
+    "antonym": "—"
+  },
+  {
+    "word": "Blast",
+    "meaning": "",
+    "synonym": "Burst, Gust",
+    "antonym": "Calm"
+  },
+  {
+    "word": "reciprocity",
+    "meaning": "",
+    "synonym": "mutuality, exchange",
+    "antonym": "selfishness"
+  },
+  {
+    "word": "outlandish",
+    "meaning": "",
+    "synonym": "Bizarre, Unusual",
+    "antonym": "Normal, Conventional"
+  },
+  {
+    "word": "hospitable",
+    "meaning": "",
+    "synonym": "friendly, generous, accommodating",
+    "antonym": "inhospitable, unfriendly"
+  },
+  {
+    "word": "Bizarre",
+    "meaning": "",
+    "synonym": "Eccentric, Unexpected",
+    "antonym": "Plain, Commonplace"
+  },
+  {
+    "word": "Endorse",
+    "meaning": "",
+    "synonym": "Approve, back, advocate, sign",
+    "antonym": "Oppose, reject, disapprove"
+  },
+  {
+    "word": "sermon",
+    "meaning": "",
+    "synonym": "Lecture, Homily",
+    "antonym": "-"
+  },
+  {
+    "word": "Acclaimed",
+    "meaning": "",
+    "synonym": "Applaud, Praise",
+    "antonym": "Criticize"
+  },
+  {
+    "word": "Declaim",
+    "meaning": "",
+    "synonym": "Orate, proclaim, recite, protest, bluster",
+    "antonym": "Whisper, mumble, suppress, conceal"
+  },
+  {
+    "word": "Bogus",
+    "meaning": "",
+    "synonym": "Sham, Fraudulent",
+    "antonym": "Genuine, Authentic"
+  },
+  {
+    "word": "ultimatum",
+    "meaning": "",
+    "synonym": "final demand, warning",
+    "antonym": "suggestion, request"
+  },
+  {
+    "word": "sustenance",
+    "meaning": "",
+    "synonym": "Food, Maintenance",
+    "antonym": "Starvation"
+  },
+  {
+    "word": "Conspicuous",
+    "meaning": "",
+    "synonym": "Noticeable, Prominent",
+    "antonym": "Inconspicuous, Hidden"
+  },
+  {
+    "word": "Derivative",
+    "meaning": "",
+    "synonym": "Secondary, copied, imitative, unoriginal",
+    "antonym": "Original, innovative, unique, inventive"
+  },
+  {
+    "word": "Distraught",
+    "meaning": "",
+    "synonym": "Worried, upset, distracted, troubled",
+    "antonym": "Calm, composed, collected, peaceful"
+  },
+  {
+    "word": "visceral",
+    "meaning": "",
+    "synonym": "instinctive, intuitive",
+    "antonym": "logical, rational"
+  },
+  {
+    "word": "prudish",
+    "meaning": "",
+    "synonym": "prim, puritanical",
+    "antonym": "liberal, permissive"
+  },
+  {
+    "word": "vamp",
+    "meaning": "",
+    "synonym": "seductress, siren",
+    "antonym": "—"
+  },
+  {
+    "word": "squabble",
+    "meaning": "",
+    "synonym": "Quarrel, Dispute",
+    "antonym": "Agree"
+  },
+  {
+    "word": "palpable",
+    "meaning": "",
+    "synonym": "tangible, noticeable",
+    "antonym": "intangible, imperceptible"
+  },
+  {
+    "word": "inasmuch",
+    "meaning": "",
+    "synonym": "as, because, seeing that",
+    "antonym": "—"
+  },
+  {
+    "word": "placid",
+    "meaning": "",
+    "synonym": "calm, peaceful",
+    "antonym": "agitated, disturbed"
+  },
+  {
+    "word": "quirk",
+    "meaning": "",
+    "synonym": "peculiarity, oddity",
+    "antonym": "normality, regularity"
+  },
+  {
+    "word": "synopsis",
+    "meaning": "",
+    "synonym": "Abstract, Summary",
+    "antonym": "nan"
+  },
+  {
+    "word": "Aeon",
+    "meaning": "",
+    "synonym": "Eon, Forever",
+    "antonym": "Moment"
+  },
+  {
+    "word": "Bravado",
+    "meaning": "",
+    "synonym": "Swagger, Boldness",
+    "antonym": "Cowardice"
+  },
+  {
+    "word": "incredible",
+    "meaning": "",
+    "synonym": "unbelievable, amazing, implausible",
+    "antonym": "believable, ordinary"
+  },
+  {
+    "word": "plethora",
+    "meaning": "",
+    "synonym": "surplus, abundance",
+    "antonym": "shortage"
+  },
+  {
+    "word": "florid",
+    "meaning": "",
+    "synonym": "ornate, flowery, flushed",
+    "antonym": "plain, pallid"
+  },
+  {
+    "word": "hinder",
+    "meaning": "",
+    "synonym": "impede, block, hamper",
+    "antonym": "help, assist, facilitate"
+  },
+  {
+    "word": "infringe",
+    "meaning": "",
+    "synonym": "trespass, break, encroach",
+    "antonym": "obey, comply"
+  },
+  {
+    "word": "obstinate",
+    "meaning": "",
+    "synonym": "Persistent, Inflexible",
+    "antonym": "Flexible, Yielding"
+  },
+  {
+    "word": "Gentry",
+    "meaning": "",
+    "synonym": "Aristocracy, nobility",
+    "antonym": "Commoners, peasants"
+  },
+  {
+    "word": "ferocity",
+    "meaning": "",
+    "synonym": "brutality, savagery, violence",
+    "antonym": "gentleness, kindness, mildness"
+  },
+  {
+    "word": "shrewd",
+    "meaning": "",
+    "synonym": "Sharp, Clever",
+    "antonym": "Foolish"
+  },
+  {
+    "word": "Tacit",
+    "meaning": "",
+    "synonym": "Implicit, Unspoken",
+    "antonym": "Explicit"
+  },
+  {
+    "word": "mesmerise",
+    "meaning": "",
+    "synonym": "Fascinate, Captivate",
+    "antonym": "Bore, Repel"
+  },
+  {
+    "word": "kitty",
+    "meaning": "",
+    "synonym": "Pot, Fund, Pool",
+    "antonym": "—"
+  },
+  {
+    "word": "Turmoil",
+    "meaning": "",
+    "synonym": "Chaos, Disorder",
+    "antonym": "Calm, Peace"
+  },
+  {
+    "word": "Accolade",
+    "meaning": "",
+    "synonym": "Honor, Award",
+    "antonym": "Criticism"
+  },
+  {
+    "word": "Thrift",
+    "meaning": "",
+    "synonym": "Frugality, Economy",
+    "antonym": "Wastefulness"
+  },
+  {
+    "word": "vice",
+    "meaning": "",
+    "synonym": "immorality, corruption",
+    "antonym": "virtue, morality"
+  },
+  {
+    "word": "husk",
+    "meaning": "",
+    "synonym": "shell, casing, covering",
+    "antonym": "core, essence"
+  },
+  {
+    "word": "impassioned",
+    "meaning": "",
+    "synonym": "fervent, emotional, intense",
+    "antonym": "indifferent, apathetic"
+  },
+  {
+    "word": "reprimand",
+    "meaning": "",
+    "synonym": "rebuke, admonish",
+    "antonym": "praise, commend"
+  },
+  {
+    "word": "nexus",
+    "meaning": "",
+    "synonym": "Link, Connection",
+    "antonym": "Separation, Disconnection"
+  },
+  {
+    "word": "Adulteration",
+    "meaning": "",
+    "synonym": "Contamination, Tainting",
+    "antonym": "Purification"
+  },
+  {
+    "word": "ingenious",
+    "meaning": "",
+    "synonym": "creative, resourceful, imaginative",
+    "antonym": "dull, unskilled"
+  },
+  {
+    "word": "Gesticulate",
+    "meaning": "",
+    "synonym": "Signal, pantomime, gesture",
+    "antonym": "Speak plainly"
+  },
+  {
+    "word": "Ennui",
+    "meaning": "",
+    "synonym": "Boredom, tedium, listlessness, weariness",
+    "antonym": "Excitement, enthusiasm, energy"
+  },
+  {
+    "word": "perturbed",
+    "meaning": "",
+    "synonym": "agitated, upset",
+    "antonym": "calm, composed"
+  },
+  {
+    "word": "urchin",
+    "meaning": "",
+    "synonym": "brat, rascal",
+    "antonym": "—"
+  },
+  {
+    "word": "Turgid",
+    "meaning": "",
+    "synonym": "Inflated, Pompous",
+    "antonym": "Simple, Plain"
+  },
+  {
+    "word": "serrated",
+    "meaning": "",
+    "synonym": "Notched, Saw-toothed",
+    "antonym": "Smooth"
+  },
+  {
+    "word": "hypocrisy",
+    "meaning": "",
+    "synonym": "insincerity, pretense, deceit",
+    "antonym": "honesty, sincerity"
+  },
+  {
+    "word": "precipitous",
+    "meaning": "",
+    "synonym": "steep, abrupt",
+    "antonym": "gradual, gentle"
+  },
+  {
+    "word": "sallow",
+    "meaning": "",
+    "synonym": "Pale, Yellowish",
+    "antonym": "Healthy, Rosy"
+  },
+  {
+    "word": "Drawl",
+    "meaning": "",
+    "synonym": "Prolong, stretch, slur",
+    "antonym": "Clip, shorten, snappy"
+  },
+  {
+    "word": "odium",
+    "meaning": "",
+    "synonym": "Hatred, Abhorrence",
+    "antonym": "Admiration, Approval"
+  },
+  {
+    "word": "Ascend",
+    "meaning": "",
+    "synonym": "Climb, Rise",
+    "antonym": "Descend, Drop"
+  },
+  {
+    "word": "kingpin",
+    "meaning": "",
+    "synonym": "Leader, Head, Boss",
+    "antonym": "Follower, Subordinate"
+  },
+  {
+    "word": "Retake",
+    "meaning": "",
+    "synonym": "Recapture, Reclaim",
+    "antonym": "Lose"
+  },
+  {
+    "word": "Riddle",
+    "meaning": "",
+    "synonym": "Puzzle, Enigma",
+    "antonym": "Solution"
+  },
+  {
+    "word": "Taboo",
+    "meaning": "",
+    "synonym": "Prohibition, Ban",
+    "antonym": "Allowed, Permitted"
+  },
+  {
+    "word": "Debutante",
+    "meaning": "",
+    "synonym": "Beginner, novice, entrant, newcomer, initiate",
+    "antonym": "Veteran, expert, experienced, seasoned"
+  },
+  {
+    "word": "pellucid",
+    "meaning": "",
+    "synonym": "clear, lucid",
+    "antonym": "opaque, cloudy"
+  },
+  {
+    "word": "Gleam",
+    "meaning": "",
+    "synonym": "Sparkle, glint, shimmer",
+    "antonym": "Dull, fade"
+  },
+  {
+    "word": "intractable",
+    "meaning": "",
+    "synonym": "Stubborn, Unruly, Unmanageable",
+    "antonym": "Docile, Manageable"
+  },
+  {
+    "word": "vile",
+    "meaning": "",
+    "synonym": "disgusting, horrible",
+    "antonym": "pleasant, admirable"
+  },
+  {
+    "word": "Cordially",
+    "meaning": "",
+    "synonym": "Warmly, graciously, affably, genially",
+    "antonym": "Coldly, indifferently, rudely"
+  },
+  {
+    "word": "Tawdry",
+    "meaning": "",
+    "synonym": "Showy, Flashy",
+    "antonym": "Elegant, Tasteful"
+  },
+  {
+    "word": "Entice",
+    "meaning": "",
+    "synonym": "Attract, lure, tempt, persuade",
+    "antonym": "Repel, discourage, deter"
+  },
+  {
+    "word": "Acronym",
+    "meaning": "",
+    "synonym": "Initialism",
+    "antonym": "Phrase"
+  },
+  {
+    "word": "Catalyst",
+    "meaning": "",
+    "synonym": "Stimulus, Trigger",
+    "antonym": "Blocker, Hindrance"
+  },
+  {
+    "word": "subjugate",
+    "meaning": "",
+    "synonym": "Conquer, Defeat",
+    "antonym": "Liberate"
+  },
+  {
+    "word": "offal",
+    "meaning": "",
+    "synonym": "Refuse, Garbage",
+    "antonym": "-"
+  },
+  {
+    "word": "Brazen",
+    "meaning": "",
+    "synonym": "Impudent, Daring",
+    "antonym": "Submissive, Humble"
+  },
+  {
+    "word": "Enthrall",
+    "meaning": "",
+    "synonym": "Mesmerize, charm, fascinate, captivate",
+    "antonym": "Bore, repel, disgust"
+  },
+  {
+    "word": "skit",
+    "meaning": "",
+    "synonym": "Comedy, Sketch",
+    "antonym": "-"
+  },
+  {
+    "word": "Deciduous",
+    "meaning": "",
+    "synonym": "Temporary, short-lived, fleeting, transitory",
+    "antonym": "Permanent, perennial, lasting, evergreen"
+  },
+  {
+    "word": "precursory",
+    "meaning": "",
+    "synonym": "preliminary, initial",
+    "antonym": "subsequent, later"
+  },
+  {
+    "word": "steeply",
+    "meaning": "",
+    "synonym": "Sharply, Abrupt",
+    "antonym": "Gradually"
+  },
+  {
+    "word": "Tassel",
+    "meaning": "",
+    "synonym": "Fringe, Pendant",
+    "antonym": "—"
+  },
+  {
+    "word": "Constrict",
+    "meaning": "",
+    "synonym": "Compress, Contract, Tighten",
+    "antonym": "Expand, Loosen, Release"
+  },
+  {
+    "word": "Glimmer",
+    "meaning": "",
+    "synonym": "Shimmer, twinkle, flicker",
+    "antonym": "Darkness"
+  },
+  {
+    "word": "Tawny",
+    "meaning": "",
+    "synonym": "Beige, Tan",
+    "antonym": "—"
+  },
+  {
+    "word": "Embellish",
+    "meaning": "",
+    "synonym": "Decorate, adorn, enhance, exaggerate",
+    "antonym": "Spoil, mar, deface"
+  },
+  {
+    "word": "melancholy",
+    "meaning": "",
+    "synonym": "Sad, Sorrowful",
+    "antonym": "Happy, Merry"
+  },
+  {
+    "word": "infirm",
+    "meaning": "",
+    "synonym": "frail, ailing, decrepit",
+    "antonym": "strong, healthy"
+  },
+  {
+    "word": "Taut",
+    "meaning": "",
+    "synonym": "Tight, Tense",
+    "antonym": "Loose"
+  },
+  {
+    "word": "Thesaurus",
+    "meaning": "",
+    "synonym": "Synonym dictionary",
+    "antonym": "—"
+  },
+  {
+    "word": "Callous",
+    "meaning": "",
+    "synonym": "Obdurate, Insensible",
+    "antonym": "Compassionate, Sympathetic"
+  },
+  {
+    "word": "Demur",
+    "meaning": "",
+    "synonym": "Object, protest, oppose, challenge",
+    "antonym": "Approve, accept, agree, consent"
+  },
+  {
+    "word": "Etiquette",
+    "meaning": "",
+    "synonym": "Manners, decorum, propriety, protocol",
+    "antonym": "Rudeness, impropriety, bad manners"
+  },
+  {
+    "word": "Erratic",
+    "meaning": "",
+    "synonym": "Inconsistent, unstable, abnormal, changeable",
+    "antonym": "Consistent, stable, predictable"
+  },
+  {
+    "word": "Amnesia",
+    "meaning": "",
+    "synonym": "Forgetfulness",
+    "antonym": "Recall"
+  },
+  {
+    "word": "naive",
+    "meaning": "",
+    "synonym": "Artless, Innocent, Unsophisticated",
+    "antonym": "Cunning, Shrewd, Sly"
+  },
+  {
+    "word": "infuriate",
+    "meaning": "",
+    "synonym": "enrage, madden, provoke",
+    "antonym": "appease, calm"
+  },
+  {
+    "word": "Efficacy",
+    "meaning": "",
+    "synonym": "Effectiveness, efficiency, performance",
+    "antonym": "Ineffectiveness, failure, uselessness"
+  },
+  {
+    "word": "Censure",
+    "meaning": "",
+    "synonym": "Rebuke, Criticism",
+    "antonym": "Praise, Approval"
+  },
+  {
+    "word": "offal",
+    "meaning": "",
+    "synonym": "Refuse, Garbage",
+    "antonym": "-"
+  },
+  {
+    "word": "hinterland",
+    "meaning": "",
+    "synonym": "backcountry, frontier",
+    "antonym": "city, metropolis"
+  },
+  {
+    "word": "Gouge",
+    "meaning": "",
+    "synonym": "Scoop, chisel, dig",
+    "antonym": "Fill, smooth"
+  },
+  {
+    "word": "sophisticated",
+    "meaning": "",
+    "synonym": "Refined, Cultured",
+    "antonym": "Unsophisticated"
+  },
+  {
+    "word": "inflammatory",
+    "meaning": "",
+    "synonym": "provocative, inciting, agitating",
+    "antonym": "calming, soothing"
+  },
+  {
+    "word": "morbid",
+    "meaning": "",
+    "synonym": "Unhealthy, Grim",
+    "antonym": "Healthy, Cheerful"
+  },
+  {
+    "word": "Tonic",
+    "meaning": "",
+    "synonym": "Stimulant, Invigorator",
+    "antonym": "Depressant"
+  },
+  {
+    "word": "Taunt",
+    "meaning": "",
+    "synonym": "Ridicule, Tease",
+    "antonym": "Compliment"
+  },
+  {
+    "word": "Chromatic",
+    "meaning": "",
+    "synonym": "Colorful, Pigmented",
+    "antonym": "Achromatic, Colorless"
+  },
+  {
+    "word": "Detriment",
+    "meaning": "",
+    "synonym": "Injury, loss, impairment, disadvantage",
+    "antonym": "Benefit, gain, advantage, profit"
+  },
+  {
+    "word": "Gorge",
+    "meaning": "",
+    "synonym": "Devour, stuff, binge",
+    "antonym": "Fast, abstain"
+  },
+  {
+    "word": "sluggard",
+    "meaning": "",
+    "synonym": "Lazy, Idle",
+    "antonym": "Energetic"
+  },
+  {
+    "word": "Tactile",
+    "meaning": "",
+    "synonym": "Tangible, Touchable",
+    "antonym": "Intangible"
+  },
+  {
+    "word": "underbid",
+    "meaning": "",
+    "synonym": "underquote, outbid",
+    "antonym": "overbid"
+  },
+  {
+    "word": "voluptuous",
+    "meaning": "",
+    "synonym": "sensual, luxurious",
+    "antonym": "plain, austere"
+  },
+  {
+    "word": "Dilatory",
+    "meaning": "",
+    "synonym": "Tardy, sluggish, slow, procrastinating",
+    "antonym": "Prompt, timely, efficient, punctual"
+  },
+  {
+    "word": "Eon",
+    "meaning": "",
+    "synonym": "Age, eternity, era, millennium",
+    "antonym": "Moment, instant"
+  },
+  {
+    "word": "Totalitarian",
+    "meaning": "",
+    "synonym": "Autocratic, Authoritarian",
+    "antonym": "Democratic"
+  },
+  {
+    "word": "Respired",
+    "meaning": "",
+    "synonym": "Inhaled, Breathed",
+    "antonym": "Exhaled"
+  },
+  {
+    "word": "mettlesome",
+    "meaning": "",
+    "synonym": "Brave, Spirited",
+    "antonym": "Cowardly, Fearful"
+  },
+  {
+    "word": "Camaraderie",
+    "meaning": "",
+    "synonym": "Companionship, Fellowship",
+    "antonym": "Hostility, Dislike"
+  },
+  {
+    "word": "Barren",
+    "meaning": "",
+    "synonym": "Unproductive, Infertile",
+    "antonym": "Fertile, Productive"
+  },
+  {
+    "word": "Tout",
+    "meaning": "",
+    "synonym": "Advertise, Praise",
+    "antonym": "Criticize"
+  },
+  {
+    "word": "Concede",
+    "meaning": "",
+    "synonym": "Surrender, Admit, Own",
+    "antonym": "Deny, Refute, Disagree"
+  },
+  {
+    "word": "Adjudicate",
+    "meaning": "",
+    "synonym": "Judge, Arbitrate",
+    "antonym": "Ignore"
+  },
+  {
+    "word": "Accomplice",
+    "meaning": "",
+    "synonym": "Associate, Collaborator",
+    "antonym": "Opponent"
+  },
+  {
+    "word": "plea",
+    "meaning": "",
+    "synonym": "appeal, petition",
+    "antonym": "demand"
+  },
+  {
+    "word": "Discord",
+    "meaning": "",
+    "synonym": "Conflict, strife, quarrel, tension, friction",
+    "antonym": "Harmony, agreement, accord, unity"
+  },
+  {
+    "word": "slate",
+    "meaning": "",
+    "synonym": "Criticize, List",
+    "antonym": "Approve"
+  },
+  {
+    "word": "penurious",
+    "meaning": "",
+    "synonym": "impoverished, needy",
+    "antonym": "wealthy, rich"
+  },
+  {
+    "word": "Affirm",
+    "meaning": "",
+    "synonym": "Assert, Declare, Assure",
+    "antonym": "Deny, Refute"
+  },
+  {
+    "word": "quack",
+    "meaning": "",
+    "synonym": "fraud, charlatan",
+    "antonym": "expert, professional"
+  },
+  {
+    "word": "lethal",
+    "meaning": "",
+    "synonym": "Deadly, Fatal",
+    "antonym": "Harmless"
+  },
+  {
+    "word": "Disinter",
+    "meaning": "",
+    "synonym": "Unearth, exhume, uncover",
+    "antonym": "Bury, entomb, conceal"
+  },
+  {
+    "word": "Cupidity",
+    "meaning": "",
+    "synonym": "Greed, avarice, lust, materialism",
+    "antonym": "Generosity, contentment, selflessness"
+  },
+  {
+    "word": "spurn",
+    "meaning": "",
+    "synonym": "Reject, Scorn",
+    "antonym": "Accept"
+  },
+  {
+    "word": "jubilant",
+    "meaning": "",
+    "synonym": "Overjoyed, Elated, Exultant",
+    "antonym": "Sad, Disappointed"
+  },
+  {
+    "word": "Expedient",
+    "meaning": "",
+    "synonym": "Advantageous, suitable, beneficial, resourceful",
+    "antonym": "Unwise, impractical, disadvantageous"
+  },
+  {
+    "word": "Gallant",
+    "meaning": "",
+    "synonym": "Courageous, valiant, chivalrous",
+    "antonym": "Cowardly, timid"
+  },
+  {
+    "word": "quilt",
+    "meaning": "",
+    "synonym": "blanket, cover",
+    "antonym": "nan"
+  },
+  {
+    "word": "Abate",
+    "meaning": "",
+    "synonym": "Subside, Lessen, Ease, Let up, Decrease, Diminish, Moderate",
+    "antonym": "Intensify, Continue, Increase"
+  },
+  {
+    "word": "suppress",
+    "meaning": "",
+    "synonym": "Quash, Stifle",
+    "antonym": "Encourage"
+  },
+  {
+    "word": "mince",
+    "meaning": "",
+    "synonym": "Mumble, Soften",
+    "antonym": "Articulate, Clarify"
+  },
+  {
+    "word": "finesse",
+    "meaning": "",
+    "synonym": "diplomacy, tact, skill",
+    "antonym": "clumsiness, ineptitude, awkwardness"
+  },
+  {
+    "word": "ratify",
+    "meaning": "",
+    "synonym": "confirm, endorse",
+    "antonym": "reject, veto"
+  },
+  {
+    "word": "Crease",
+    "meaning": "",
+    "synonym": "Fold, wrinkle, crinkle",
+    "antonym": "Smoothness, flatness"
+  },
+  {
+    "word": "kiosk",
+    "meaning": "",
+    "synonym": "Stall, Booth, Stand",
+    "antonym": "—"
+  },
+  {
+    "word": "redress",
+    "meaning": "",
+    "synonym": "compensate, correct",
+    "antonym": "worsen"
+  },
+  {
+    "word": "Bestial",
+    "meaning": "",
+    "synonym": "Brutish, Savage, Barbaric",
+    "antonym": "Civilized, Cultured, Learned"
+  },
+  {
+    "word": "Encapsulate",
+    "meaning": "",
+    "synonym": "Enclose, contain, compress, summarize",
+    "antonym": "Release, expand, free"
+  },
+  {
+    "word": "verdant",
+    "meaning": "",
+    "synonym": "lush, leafy",
+    "antonym": "barren, dry"
+  },
+  {
+    "word": "uncouth",
+    "meaning": "",
+    "synonym": "rude, unrefined",
+    "antonym": "refined, polished"
+  },
+  {
+    "word": "uprising",
+    "meaning": "",
+    "synonym": "rebellion, insurrection",
+    "antonym": "submission, compliance"
+  },
+  {
+    "word": "stationery",
+    "meaning": "",
+    "synonym": "Writing supplies",
+    "antonym": "-"
+  },
+  {
+    "word": "Elicit",
+    "meaning": "",
+    "synonym": "Extract, evoke, obtain, derive",
+    "antonym": "Suppress, hide, block"
+  },
+  {
+    "word": "silt",
+    "meaning": "",
+    "synonym": "Sediment, Deposit",
+    "antonym": "-"
+  },
+  {
+    "word": "fidelity",
+    "meaning": "",
+    "synonym": "allegiance, faithfulness, devotion",
+    "antonym": "infidelity, betrayal, treachery"
+  },
+  {
+    "word": "myriad",
+    "meaning": "",
+    "synonym": "Countless, Innumerable",
+    "antonym": "Few, Limited"
+  },
+  {
+    "word": "indulge",
+    "meaning": "",
+    "synonym": "gratify, pamper, spoil",
+    "antonym": "deny, abstain"
+  },
+  {
+    "word": "Agape",
+    "meaning": "",
+    "synonym": "Astonished, Amazed",
+    "antonym": "Unsurprised"
+  },
+  {
+    "word": "vanity",
+    "meaning": "",
+    "synonym": "conceit, arrogance",
+    "antonym": "humility, modesty"
+  },
+  {
+    "word": "satiate",
+    "meaning": "",
+    "synonym": "Satisfy, Fill",
+    "antonym": "Starve, Deprive"
+  },
+  {
+    "word": "salutary",
+    "meaning": "",
+    "synonym": "Beneficial, Helpful",
+    "antonym": "Harmful, Detrimental"
+  },
+  {
+    "word": "noble",
+    "meaning": "",
+    "synonym": "Honorable, Dignified",
+    "antonym": "Base, Ignoble"
+  },
+  {
+    "word": "Audacious",
+    "meaning": "",
+    "synonym": "Bold, Reckless",
+    "antonym": "Cautious, Timid"
+  },
+  {
+    "word": "sequence",
+    "meaning": "",
+    "synonym": "Series, Order",
+    "antonym": "Disarray"
+  },
+  {
+    "word": "Advert",
+    "meaning": "",
+    "synonym": "Mention, Refer",
+    "antonym": "Ignore"
+  },
+  {
+    "word": "pseudonym",
+    "meaning": "",
+    "synonym": "alias, pen name",
+    "antonym": "real name"
+  },
+  {
+    "word": "sober",
+    "meaning": "",
+    "synonym": "Serious, Temperate",
+    "antonym": "Drunk"
+  },
+  {
+    "word": "Cower",
+    "meaning": "",
+    "synonym": "Cringe, flinch, recoil, tremble",
+    "antonym": "Stand tall, confront, face"
+  },
+  {
+    "word": "fanciful",
+    "meaning": "",
+    "synonym": "whimsical, dreamlike, fantastical",
+    "antonym": "realistic, practical, grounded"
+  },
+  {
+    "word": "usurp",
+    "meaning": "",
+    "synonym": "seize, take over",
+    "antonym": "relinquish, surrender"
+  },
+  {
+    "word": "racy",
+    "meaning": "",
+    "synonym": "lively, spicy",
+    "antonym": "dull, bland"
+  },
+  {
+    "word": "phoney",
+    "meaning": "",
+    "synonym": "fake, counterfeit",
+    "antonym": "genuine, real"
+  },
+  {
+    "word": "vigilant",
+    "meaning": "",
+    "synonym": "watchful, alert",
+    "antonym": "inattentive, careless"
+  },
+  {
+    "word": "suffice",
+    "meaning": "",
+    "synonym": "Satisfy, Serve",
+    "antonym": "Lack"
+  },
+  {
+    "word": "Thespians",
+    "meaning": "",
+    "synonym": "Performers, Actors",
+    "antonym": "—"
+  },
+  {
+    "word": "Elegy",
+    "meaning": "",
+    "synonym": "Lament, dirge, requiem",
+    "antonym": "Celebration, rejoicing"
+  },
+  {
+    "word": "Bereave",
+    "meaning": "",
+    "synonym": "Deprive, Mourn",
+    "antonym": "Console"
+  },
+  {
+    "word": "Arrogance",
+    "meaning": "",
+    "synonym": "Haughtiness, Conceit",
+    "antonym": "Humility, Modesty"
+  },
+  {
+    "word": "Balk",
+    "meaning": "",
+    "synonym": "Hinder, Obstruct",
+    "antonym": "Facilitate"
+  },
+  {
+    "word": "renounce",
+    "meaning": "",
+    "synonym": "abandon, forsake",
+    "antonym": "accept, embrace"
+  },
+  {
+    "word": "spurious",
+    "meaning": "",
+    "synonym": "False, Fake",
+    "antonym": "Genuine"
+  },
+  {
+    "word": "Emote",
+    "meaning": "",
+    "synonym": "Express, act, dramatize, demonstrate",
+    "antonym": "Repress, suppress, conceal"
+  },
+  {
+    "word": "zeal",
+    "meaning": "",
+    "synonym": "passion, eagerness",
+    "antonym": "apathy, indifference"
+  },
+  {
+    "word": "onus",
+    "meaning": "",
+    "synonym": "Duty, Obligation",
+    "antonym": "Privilege, Exemption"
+  },
+  {
+    "word": "Detraction",
+    "meaning": "",
+    "synonym": "Criticism, disparagement, belittling, aspersion",
+    "antonym": "Praise, compliment, approval, acclaim"
+  },
+  {
+    "word": "imperative",
+    "meaning": "",
+    "synonym": "crucial, necessary, vital",
+    "antonym": "optional, trivial"
+  },
+  {
+    "word": "hermaphrodite",
+    "meaning": "",
+    "synonym": "intersex",
+    "antonym": "male, female"
+  },
+  {
+    "word": "loathe",
+    "meaning": "",
+    "synonym": "Detest, Abhor, Abominate",
+    "antonym": "Like, Love"
+  },
+  {
+    "word": "harmonious",
+    "meaning": "",
+    "synonym": "agreeable, congruent, melodious",
+    "antonym": "discordant, incompatible"
+  },
+  {
+    "word": "jerk",
+    "meaning": "",
+    "synonym": "Twitch, Jolt",
+    "antonym": "—"
+  },
+  {
+    "word": "viscous",
+    "meaning": "",
+    "synonym": "thick, gelatinous",
+    "antonym": "watery, fluid"
+  },
+  {
+    "word": "malleable",
+    "meaning": "",
+    "synonym": "Flexible, Pliant",
+    "antonym": "Rigid, Inflexible"
+  },
+  {
+    "word": "Acrid",
+    "meaning": "",
+    "synonym": "Pungent, Bitter",
+    "antonym": "Mild, Gentle"
+  },
+  {
+    "word": "infuse",
+    "meaning": "",
+    "synonym": "instill, pour, inject",
+    "antonym": "extract, remove"
+  },
+  {
+    "word": "hush",
+    "meaning": "",
+    "synonym": "quiet, mute, silence",
+    "antonym": "speak, noise"
+  },
+  {
+    "word": "Correlate",
+    "meaning": "",
+    "synonym": "Connect, associate, link, relate",
+    "antonym": "Disconnect, separate, isolate"
+  },
+  {
+    "word": "Drowsiness",
+    "meaning": "",
+    "synonym": "Sleepiness, slumber, stupor, somnolence",
+    "antonym": "Alertness, wakefulness, vigilance"
+  },
+  {
+    "word": "Dabble",
+    "meaning": "",
+    "synonym": "Splash, paddle, play, tinker",
+    "antonym": "Immerse, dive, plunge"
+  },
+  {
+    "word": "lustrous",
+    "meaning": "",
+    "synonym": "Shiny, Gleaming",
+    "antonym": "Dull, Matte"
+  },
+  {
+    "word": "narcotic",
+    "meaning": "",
+    "synonym": "Drug, Opioid",
+    "antonym": "Stimulant, Energizer"
+  },
+  {
+    "word": "Abhor",
+    "meaning": "",
+    "synonym": "nan",
+    "antonym": "nan"
+  },
+  {
+    "word": "Resort",
+    "meaning": "",
+    "synonym": "Retreat, Haven, Sanctuary",
+    "antonym": "—"
+  },
+  {
+    "word": "Eradicate",
+    "meaning": "",
+    "synonym": "Eliminate, abolish, wipe out, annihilate",
+    "antonym": "Preserve, maintain, uphold"
+  },
+  {
+    "word": "swoop",
+    "meaning": "",
+    "synonym": "Pounce, Dive",
+    "antonym": "-"
+  },
+  {
+    "word": "piety",
+    "meaning": "",
+    "synonym": "devotion, holiness",
+    "antonym": "impiety, irreverence"
+  },
+  {
+    "word": "Divulge",
+    "meaning": "",
+    "synonym": "Disclose, expose, confess, admit",
+    "antonym": "Conceal, hide, suppress, withhold"
+  },
+  {
+    "word": "Revere",
+    "meaning": "",
+    "synonym": "Respect, Admire, Venerate",
+    "antonym": "Disrespect, Despise"
+  },
+  {
+    "word": "vacillation",
+    "meaning": "",
+    "synonym": "indecision, wavering",
+    "antonym": "decisiveness, firmness"
+  },
+  {
+    "word": "virile",
+    "meaning": "",
+    "synonym": "masculine, potent",
+    "antonym": "effeminate, weak"
+  },
+  {
+    "word": "indiscreet",
+    "meaning": "",
+    "synonym": "rash, reckless, careless",
+    "antonym": "prudent, cautious"
+  },
+  {
+    "word": "malinger",
+    "meaning": "",
+    "synonym": "Dodge, Evade",
+    "antonym": "Work, Confront"
+  },
+  {
+    "word": "nascent",
+    "meaning": "",
+    "synonym": "-",
+    "antonym": "-"
+  },
+  {
+    "word": "indistinct",
+    "meaning": "",
+    "synonym": "vague, blurry, faint",
+    "antonym": "distinct, clear"
+  },
+  {
+    "word": "sullied",
+    "meaning": "",
+    "synonym": "Tarnished, Soiled",
+    "antonym": "Clean, Pure"
+  },
+  {
+    "word": "Aberration",
+    "meaning": "",
+    "synonym": "nan",
+    "antonym": "nan"
+  },
+  {
+    "word": "illicit",
+    "meaning": "",
+    "synonym": "illegal, forbidden, unauthorized",
+    "antonym": "legal, lawful"
+  },
+  {
+    "word": "Teem",
+    "meaning": "",
+    "synonym": "Overflow, Abound",
+    "antonym": "Lack"
+  },
+  {
+    "word": "Elaborate",
+    "meaning": "",
+    "synonym": "Detailed, intricate, ornate, thorough",
+    "antonym": "Simple, plain, crude"
+  },
+  {
+    "word": "Epitome",
+    "meaning": "",
+    "synonym": "Embodiment, personification, representation, essence",
+    "antonym": "Antithesis, opposite"
+  },
+  {
+    "word": "Guild",
+    "meaning": "",
+    "synonym": "Union, group, organization",
+    "antonym": "—"
+  },
+  {
+    "word": "vicious",
+    "meaning": "",
+    "synonym": "cruel, brutal",
+    "antonym": "kind, gentle"
+  },
+  {
+    "word": "killjoy",
+    "meaning": "",
+    "synonym": "Spoilsport, Party-pooper",
+    "antonym": "Life of the party"
+  },
+  {
+    "word": "racket",
+    "meaning": "",
+    "synonym": "noise, clamor, commotion",
+    "antonym": "peace, quiet"
+  },
+  {
+    "word": "Emend",
+    "meaning": "",
+    "synonym": "Revise, amend, rectify, proofread",
+    "antonym": "Corrupt, worsen, spoil"
+  },
+  {
+    "word": "sobriety",
+    "meaning": "",
+    "synonym": "Temperance, Soberness",
+    "antonym": "Intoxication"
+  },
+  {
+    "word": "Discrete",
+    "meaning": "",
+    "synonym": "Separate, distinct, independent, detached",
+    "antonym": "Connected, joined, continuous, linked"
+  },
+  {
+    "word": "sawdust",
+    "meaning": "",
+    "synonym": "Wood shavings",
+    "antonym": "-"
+  },
+  {
+    "word": "Construe",
+    "meaning": "",
+    "synonym": "Translate, Explain",
+    "antonym": "Misinterpret, Confuse"
+  },
+  {
+    "word": "hibernate",
+    "meaning": "",
+    "synonym": "sleep, rest, dormancy",
+    "antonym": "awaken, activity"
+  },
+  {
+    "word": "Tepid",
+    "meaning": "",
+    "synonym": "Lukewarm, Mild",
+    "antonym": "Enthusiastic"
+  },
+  {
+    "word": "précis",
+    "meaning": "",
+    "synonym": "summary, synopsis",
+    "antonym": "elaboration, expansion"
+  },
+  {
+    "word": "Dissolution",
+    "meaning": "",
+    "synonym": "Collapse, disintegration, destruction",
+    "antonym": "Union, unity, formation, consolidation"
+  },
+  {
+    "word": "heresy",
+    "meaning": "",
+    "synonym": "dissent, blasphemy, unorthodoxy",
+    "antonym": "orthodoxy, belief"
+  },
+  {
+    "word": "utopia",
+    "meaning": "",
+    "synonym": "paradise, heaven",
+    "antonym": "dystopia, hell"
+  },
+  {
+    "word": "ingress",
+    "meaning": "",
+    "synonym": "entry, entrance, access",
+    "antonym": "egress, exit"
+  },
+  {
+    "word": "Cacophony",
+    "meaning": "",
+    "synonym": "Racket, Dissonance, Noise",
+    "antonym": "Harmony, Melody"
+  },
+  {
+    "word": "keen",
+    "meaning": "",
+    "synonym": "Eager, Sharp, Enthusiastic",
+    "antonym": "Dull, Apathetic"
+  },
+  {
+    "word": "Disparate",
+    "meaning": "",
+    "synonym": "Distinct, diverse, unlike, contrasting",
+    "antonym": "Similar, alike, homogeneous, identical"
+  },
+  {
+    "word": "sunray",
+    "meaning": "",
+    "synonym": "Sunbeam",
+    "antonym": "-"
+  },
+  {
+    "word": "Deviance",
+    "meaning": "",
+    "synonym": "Aberration, irregularity, abnormality, oddity",
+    "antonym": "Normality, regularity, conformity"
+  },
+  {
+    "word": "kindergarten",
+    "meaning": "",
+    "synonym": "Preschool, Nursery",
+    "antonym": "—"
+  },
+  {
+    "word": "precarious",
+    "meaning": "",
+    "synonym": "insecure, unsafe",
+    "antonym": "safe, secure"
+  },
+  {
+    "word": "Despot",
+    "meaning": "",
+    "synonym": "Dictator, oppressor, autocrat, tyrant",
+    "antonym": "Democrat, liberator, egalitarian"
+  },
+  {
+    "word": "induct",
+    "meaning": "",
+    "synonym": "install, initiate, enroll",
+    "antonym": "dismiss, expel"
+  },
+  {
+    "word": "zenith",
+    "meaning": "",
+    "synonym": "peak, summit",
+    "antonym": "base, bottom"
+  },
+  {
+    "word": "nocturnal",
+    "meaning": "",
+    "synonym": "Nighttime",
+    "antonym": "Diurnal"
+  },
+  {
+    "word": "Trickle",
+    "meaning": "",
+    "synonym": "Drip, Stream",
+    "antonym": "Flood"
+  },
+  {
+    "word": "kindle",
+    "meaning": "",
+    "synonym": "Ignite, Light, Spark",
+    "antonym": "Extinguish, Quench"
+  },
+  {
+    "word": "lull",
+    "meaning": "",
+    "synonym": "Calm, Soothe",
+    "antonym": "Agitate, Excite"
+  },
+  {
+    "word": "soar",
+    "meaning": "",
+    "synonym": "Rise, Fly",
+    "antonym": "Descend"
+  },
+  {
+    "word": "Dubious",
+    "meaning": "",
+    "synonym": "Doubtful, uncertain, suspicious, skeptical",
+    "antonym": "Certain, sure, confident, trustworthy"
+  },
+  {
+    "word": "warmonger",
+    "meaning": "",
+    "synonym": "agitator, instigator",
+    "antonym": "peacemaker"
+  },
+  {
+    "word": "Desiccant",
+    "meaning": "",
+    "synonym": "Drying agent, dehydrator",
+    "antonym": "Humidifier, moisturizer"
+  },
+  {
+    "word": "snide",
+    "meaning": "",
+    "synonym": "Sneering, Sarcastic",
+    "antonym": "Praising, Eulogizing"
+  },
+  {
+    "word": "Disallow",
+    "meaning": "",
+    "synonym": "Reject, decline, prohibit, forbid",
+    "antonym": "Accept, approve, permit, allow"
+  },
+  {
+    "word": "unilateral",
+    "meaning": "",
+    "synonym": "one-sided",
+    "antonym": "bilateral, mutual"
+  },
+  {
+    "word": "Bland",
+    "meaning": "",
+    "synonym": "Dull, Tasteless",
+    "antonym": "Exciting, Flavorful"
+  },
+  {
+    "word": "Accede",
+    "meaning": "",
+    "synonym": "Assent, Concur",
+    "antonym": "Refuse, Dissent"
+  },
+  {
+    "word": "Acumen",
+    "meaning": "",
+    "synonym": "Insight, Shrewdness",
+    "antonym": "Ignorance, Ineptitude"
+  },
+  {
+    "word": "shun",
+    "meaning": "",
+    "synonym": "Avoid, Evade",
+    "antonym": "Confront"
+  },
+  {
+    "word": "rash",
+    "meaning": "",
+    "synonym": "impulsive, reckless",
+    "antonym": "cautious, careful"
+  },
+  {
+    "word": "Curtail",
+    "meaning": "",
+    "synonym": "Shorten, reduce, cut down, diminish",
+    "antonym": "Extend, lengthen, expand"
+  },
+  {
+    "word": "standing",
+    "meaning": "",
+    "synonym": "Status, Position",
+    "antonym": "-"
+  },
+  {
+    "word": "suffocate",
+    "meaning": "",
+    "synonym": "Choke, Smother",
+    "antonym": "Breathe"
+  },
+  {
+    "word": "Atonement",
+    "meaning": "",
+    "synonym": "Reparation, Redemption",
+    "antonym": "Indebtedness"
+  },
+  {
+    "word": "Caustic",
+    "meaning": "",
+    "synonym": "Acrid, Cutting",
+    "antonym": "Mild, Gentle"
+  },
+  {
+    "word": "knack",
+    "meaning": "",
+    "synonym": "Skill, Talent, Aptitude",
+    "antonym": "Inability, Incompetence"
+  },
+  {
+    "word": "impermeable",
+    "meaning": "",
+    "synonym": "watertight, sealed, impenetrable",
+    "antonym": "porous, pervious"
+  },
+  {
+    "word": "Euphoria",
+    "meaning": "",
+    "synonym": "Joy, bliss, elation, delight",
+    "antonym": "Misery, depression, sadness"
+  },
+  {
+    "word": "unexceptional",
+    "meaning": "",
+    "synonym": "ordinary, average",
+    "antonym": "exceptional, unusual"
+  },
+  {
+    "word": "Cardinal",
+    "meaning": "",
+    "synonym": "Fundamental, Vital",
+    "antonym": "Insignificant, Negligible, Minor"
+  },
+  {
+    "word": "Abide",
+    "meaning": "",
+    "synonym": "Endure, Obey",
+    "antonym": "Disobey"
+  },
+  {
+    "word": "Admonish",
+    "meaning": "",
+    "synonym": "Censure, Rebuke",
+    "antonym": "Applaud, Praise, Compliment"
+  },
+  {
+    "word": "vitiate",
+    "meaning": "",
+    "synonym": "spoil, impair",
+    "antonym": "improve, enhance"
+  },
+  {
+    "word": "ominous",
+    "meaning": "",
+    "synonym": "Menacing, Foreboding",
+    "antonym": "Promising, Favorable"
+  },
+  {
+    "word": "Thrill",
+    "meaning": "",
+    "synonym": "Excitement, Rush",
+    "antonym": "Boredom"
+  },
+  {
+    "word": "sedate",
+    "meaning": "",
+    "synonym": "Calm, Serene",
+    "antonym": "Agitated, Excited"
+  },
+  {
+    "word": "secede/secession",
+    "meaning": "",
+    "synonym": "Withdraw, Separate",
+    "antonym": "Join, Unite"
+  },
+  {
+    "word": "juvenile",
+    "meaning": "",
+    "synonym": "Adolescent, Youthful, Immature",
+    "antonym": "Mature, Adult"
+  },
+  {
+    "word": "Gravel",
+    "meaning": "",
+    "synonym": "Pebbles, shingle, rubble",
+    "antonym": "—"
+  },
+  {
+    "word": "Equilibrium",
+    "meaning": "",
+    "synonym": "Balance, stability, symmetry",
+    "antonym": "Imbalance, instability"
+  },
+  {
+    "word": "petrified",
+    "meaning": "",
+    "synonym": "terrified, frozen",
+    "antonym": "calm, fearless"
+  },
+  {
+    "word": "Aggravate",
+    "meaning": "",
+    "synonym": "Worsen, Provoke",
+    "antonym": "Alleviate, Soothe"
+  },
+  {
+    "word": "scorch",
+    "meaning": "",
+    "synonym": "Burn, Singe",
+    "antonym": "Cool, Freeze"
+  },
+  {
+    "word": "nervy",
+    "meaning": "",
+    "synonym": "Brash, Audacious",
+    "antonym": "Timid, Nervous"
+  },
+  {
+    "word": "nautical",
+    "meaning": "",
+    "synonym": "Marine, Maritime",
+    "antonym": "-"
+  },
+  {
+    "word": "illusion",
+    "meaning": "",
+    "synonym": "mirage, delusion, fantasy",
+    "antonym": "reality, truth"
+  },
+  {
+    "word": "impede",
+    "meaning": "",
+    "synonym": "block, delay, thwart",
+    "antonym": "aid, facilitate"
+  },
+  {
+    "word": "Gawky",
+    "meaning": "",
+    "synonym": "Ungainly, graceless, uncoordinated",
+    "antonym": "Graceful, elegant"
+  },
+  {
+    "word": "Auxiliary",
+    "meaning": "",
+    "synonym": "Assistant, Supporting",
+    "antonym": "Primary"
+  },
+  {
+    "word": "feud",
+    "meaning": "",
+    "synonym": "conflict, enmity, vendetta",
+    "antonym": "agreement, harmony, reconciliation"
+  },
+  {
+    "word": "inane",
+    "meaning": "",
+    "synonym": "absurd, foolish, ridiculous",
+    "antonym": "intelligent, sensible"
+  },
+  {
+    "word": "pervade",
+    "meaning": "",
+    "synonym": "permeate, saturate",
+    "antonym": "withdraw, remove"
+  },
+  {
+    "word": "relinquish",
+    "meaning": "",
+    "synonym": "surrender, abandon",
+    "antonym": "keep, retain"
+  },
+  {
+    "word": "servile",
+    "meaning": "",
+    "synonym": "Submissive, Obedient",
+    "antonym": "Independent, Assertive"
+  },
+  {
+    "word": "pedestrian",
+    "meaning": "",
+    "synonym": "boring, monotonous",
+    "antonym": "exciting, interesting"
+  },
+  {
+    "word": "natal",
+    "meaning": "",
+    "synonym": "-",
+    "antonym": "-"
+  },
+  {
+    "word": "prudence",
+    "meaning": "",
+    "synonym": "caution, wisdom",
+    "antonym": "recklessness, imprudence"
+  },
+  {
+    "word": "Cryptic",
+    "meaning": "",
+    "synonym": "Mysterious, obscure, enigmatic, puzzling",
+    "antonym": "Clear, obvious, straightforward"
+  },
+  {
+    "word": "foment",
+    "meaning": "",
+    "synonym": "instigate, provoke, incite",
+    "antonym": "suppress, discourage, deter"
+  },
+  {
+    "word": "Conviction",
+    "meaning": "",
+    "synonym": "Belief, certainty, confidence, assurance",
+    "antonym": "Doubt, disbelief, uncertainty"
+  },
+  {
+    "word": "kudos",
+    "meaning": "",
+    "synonym": "Praise, Acclaim, Honor",
+    "antonym": "Blame, Discredit"
+  },
+  {
+    "word": "incite",
+    "meaning": "",
+    "synonym": "instigate, agitate, rouse",
+    "antonym": "calm, suppress"
+  },
+  {
+    "word": "unfeigned",
+    "meaning": "",
+    "synonym": "genuine, real",
+    "antonym": "feigned, insincere"
+  },
+  {
+    "word": "Blatant",
+    "meaning": "",
+    "synonym": "Obvious, Brazen",
+    "antonym": "Subtle"
+  },
+  {
+    "word": "Condone",
+    "meaning": "",
+    "synonym": "Excuse, Pardon",
+    "antonym": "Condemn, Punish"
+  },
+  {
+    "word": "Bereft",
+    "meaning": "",
+    "synonym": "Deprived, Stripped",
+    "antonym": "Endowed"
+  },
+  {
+    "word": "refute",
+    "meaning": "",
+    "synonym": "disprove, rebut",
+    "antonym": "prove"
+  },
+  {
+    "word": "highbrow",
+    "meaning": "",
+    "synonym": "cultured, scholarly, intellectual",
+    "antonym": "lowbrow, philistine"
+  },
+  {
+    "word": "Ablution",
+    "meaning": "",
+    "synonym": "Cleansing, Purification",
+    "antonym": "nan"
+  },
+  {
+    "word": "mandatory",
+    "meaning": "",
+    "synonym": "Compulsory, Obligatory",
+    "antonym": "Optional, Voluntary"
+  },
+  {
+    "word": "raze",
+    "meaning": "",
+    "synonym": "demolish, level",
+    "antonym": "build, construct"
+  },
+  {
+    "word": "fidget",
+    "meaning": "",
+    "synonym": "squirm, twitch, jiggle",
+    "antonym": "still, calm, settle"
+  },
+  {
+    "word": "ulterior",
+    "meaning": "",
+    "synonym": "hidden, covert",
+    "antonym": "obvious, open"
+  },
+  {
+    "word": "vex",
+    "meaning": "",
+    "synonym": "irritate, bother",
+    "antonym": "please, delight"
+  },
+  {
+    "word": "ramble",
+    "meaning": "",
+    "synonym": "wander, roam",
+    "antonym": "stay, remain"
+  },
+  {
+    "word": "inflict",
+    "meaning": "",
+    "synonym": "impose, exact, wreak",
+    "antonym": "relieve, spare"
+  },
+  {
+    "word": "uphill",
+    "meaning": "",
+    "synonym": "strenuous, difficult",
+    "antonym": "easy, effortless"
+  },
+  {
+    "word": "improvise",
+    "meaning": "",
+    "synonym": "ad-lib, invent, extemporize",
+    "antonym": "rehearse, plan"
+  },
+  {
+    "word": "Berserk",
+    "meaning": "",
+    "synonym": "Wild, Frenzied",
+    "antonym": "Calm, Tranquil"
+  },
+  {
+    "word": "jittery",
+    "meaning": "",
+    "synonym": "Anxious, Edgy, Restless",
+    "antonym": "Calm, Composed"
+  },
+  {
+    "word": "quench",
+    "meaning": "",
+    "synonym": "satisfy, extinguish",
+    "antonym": "ignite, fuel"
+  },
+  {
+    "word": "impassive",
+    "meaning": "",
+    "synonym": "expressionless, stoic, unfeeling",
+    "antonym": "emotional, passionate"
+  },
+  {
+    "word": "immaculate",
+    "meaning": "",
+    "synonym": "clean, flawless, pristine",
+    "antonym": "dirty, flawed"
+  },
+  {
+    "word": "strut",
+    "meaning": "",
+    "synonym": "Swagger, Parade",
+    "antonym": "-"
+  },
+  {
+    "word": "Denizen",
+    "meaning": "",
+    "synonym": "Citizen, resident, dweller, native",
+    "antonym": "Foreigner, alien, outsider, stranger"
+  },
+  {
+    "word": "pariah",
+    "meaning": "",
+    "synonym": "exile, reject",
+    "antonym": "insider, member"
+  },
+  {
+    "word": "flamboyant",
+    "meaning": "",
+    "synonym": "flashy, ostentatious, extravagant",
+    "antonym": "modest, plain, reserved"
+  },
+  {
+    "word": "ratify",
+    "meaning": "",
+    "synonym": "endorse, confirm",
+    "antonym": "reject, veto"
+  },
+  {
+    "word": "Amble",
+    "meaning": "",
+    "synonym": "Stroll, Saunter",
+    "antonym": "Rush"
+  },
+  {
+    "word": "pertain",
+    "meaning": "",
+    "synonym": "concern, apply",
+    "antonym": "unrelated"
+  },
+  {
+    "word": "mollify",
+    "meaning": "",
+    "synonym": "Pacify, Soften",
+    "antonym": "Agitate, Enrage"
+  },
+  {
+    "word": "Dainty",
+    "meaning": "",
+    "synonym": "Delicate, elegant, refined, fastidious",
+    "antonym": "Coarse, unrefined, robust"
+  },
+  {
+    "word": "hack",
+    "meaning": "",
+    "synonym": "chop, slash, hew",
+    "antonym": "repair, fix"
+  },
+  {
+    "word": "Alloy",
+    "meaning": "",
+    "synonym": "Blend, Composite",
+    "antonym": "Element"
+  },
+  {
+    "word": "progeny",
+    "meaning": "",
+    "synonym": "offspring, descendants",
+    "antonym": "ancestors"
+  },
+  {
+    "word": "Combustion",
+    "meaning": "",
+    "synonym": "Ignition, Burning",
+    "antonym": "Extinction, Quenching"
+  },
+  {
+    "word": "unearth",
+    "meaning": "",
+    "synonym": "uncover, reveal",
+    "antonym": "bury, conceal"
+  },
+  {
+    "word": "sadism",
+    "meaning": "",
+    "synonym": "Cruelty, Brutality",
+    "antonym": "Compassion, Kindness"
+  },
+  {
+    "word": "secular",
+    "meaning": "",
+    "synonym": "Non-religious, Worldly",
+    "antonym": "Religious, Spiritual"
+  },
+  {
+    "word": "Eddy",
+    "meaning": "",
+    "synonym": "Whirlpool, swirl, vortex, turbulence",
+    "antonym": "Calm, stillness"
+  },
+  {
+    "word": "Abbreviate",
+    "meaning": "",
+    "synonym": "Abridge, Condense",
+    "antonym": "Expand, Prolong"
+  },
+  {
+    "word": "Abjure",
+    "meaning": "",
+    "synonym": "Renounce, Recant",
+    "antonym": "Embrace"
+  },
+  {
+    "word": "quell",
+    "meaning": "",
+    "synonym": "suppress, put down",
+    "antonym": "provoke, incite"
+  },
+  {
+    "word": "sash",
+    "meaning": "",
+    "synonym": "Belt, Band",
+    "antonym": "-"
+  },
+  {
+    "word": "penchant",
+    "meaning": "",
+    "synonym": "fondness, preference",
+    "antonym": "dislike, aversion"
+  },
+  {
+    "word": "rebuke",
+    "meaning": "",
+    "synonym": "reprimand, scold",
+    "antonym": "praise, commend"
+  },
+  {
+    "word": "Discreet",
+    "meaning": "",
+    "synonym": "Cautious, prudent, circumspect, diplomatic",
+    "antonym": "Careless, rash, indiscreet, reckless"
+  },
+  {
+    "word": "figurehead",
+    "meaning": "",
+    "synonym": "puppet, titular head, symbol",
+    "antonym": "actual leader, authority"
+  },
+  {
+    "word": "slur",
+    "meaning": "",
+    "synonym": "Mumble, Murmur",
+    "antonym": "Enunciate"
+  },
+  {
+    "word": "Girth",
+    "meaning": "",
+    "synonym": "Circumference, perimeter",
+    "antonym": "—"
+  },
+  {
+    "word": "hobnob",
+    "meaning": "",
+    "synonym": "mingle, fraternize, associate",
+    "antonym": "shun, avoid"
+  },
+  {
+    "word": "vintage",
+    "meaning": "",
+    "synonym": "classic, old-fashioned",
+    "antonym": "modern, new"
+  },
+  {
+    "word": "impending",
+    "meaning": "",
+    "synonym": "imminent, approaching, looming",
+    "antonym": "distant, unlikely"
+  },
+  {
+    "word": "Barrage (1)",
+    "meaning": "",
+    "synonym": "Bombardment, Onslaught",
+    "antonym": "Lull"
+  },
+  {
+    "word": "Clientele",
+    "meaning": "",
+    "synonym": "Patrons, Customers",
+    "antonym": "—"
+  },
+  {
+    "word": "Elegiac",
+    "meaning": "",
+    "synonym": "Lamenting, sorrowful, melancholy",
+    "antonym": "Joyful, happy, cheerful, lively"
+  },
+  {
+    "word": "Dud",
+    "meaning": "",
+    "synonym": "Failure, flop, misfit, worthless",
+    "antonym": "Success, hit, winner"
+  },
+  {
+    "word": "Catholic",
+    "meaning": "",
+    "synonym": "Inclusive, Broad",
+    "antonym": "Narrow, Exclusive"
+  },
+  {
+    "word": "Abdication",
+    "meaning": "",
+    "synonym": "nan",
+    "antonym": "nan"
+  },
+  {
+    "word": "Drone",
+    "meaning": "",
+    "synonym": "Hum, buzz, idler, loafer",
+    "antonym": "Leader, active worker, silence"
+  },
+  {
+    "word": "superb",
+    "meaning": "",
+    "synonym": "Excellent, Splendid",
+    "antonym": "Poor"
+  },
+  {
+    "word": "Amorphous",
+    "meaning": "",
+    "synonym": "Undefinable",
+    "antonym": "Crystalline, Definite"
+  },
+  {
+    "word": "sever",
+    "meaning": "",
+    "synonym": "Cut, Separate",
+    "antonym": "Join"
+  },
+  {
+    "word": "Appraise",
+    "meaning": "",
+    "synonym": "Evaluate, Assess",
+    "antonym": "Ignore"
+  },
+  {
+    "word": "Corroboration",
+    "meaning": "",
+    "synonym": "Confirmation, validation, verification, support",
+    "antonym": "Contradiction, denial, refutation"
+  },
+  {
+    "word": "Egress",
+    "meaning": "",
+    "synonym": "Exit, outlet, departure, escape",
+    "antonym": "Entrance, entry, access"
+  },
+  {
+    "word": "forthright",
+    "meaning": "",
+    "synonym": "candid, blunt, outspoken",
+    "antonym": "evasive, indirect"
+  },
+  {
+    "word": "upsurge",
+    "meaning": "",
+    "synonym": "surge, increase",
+    "antonym": "decline, decrease"
+  },
+  {
+    "word": "Dilapidated",
+    "meaning": "",
+    "synonym": "Ruined, shabby, decayed, broken-down",
+    "antonym": "New, strong, sturdy, pristine"
+  },
+  {
+    "word": "Compel",
+    "meaning": "",
+    "synonym": "Coerce, Oblige",
+    "antonym": "Dissuade, Discourage"
+  },
+  {
+    "word": "regenerate",
+    "meaning": "",
+    "synonym": "renew, revive",
+    "antonym": "deteriorate, decay"
+  },
+  {
+    "word": "sponge",
+    "meaning": "",
+    "synonym": "Freeloader, Parasite",
+    "antonym": "Contribute"
+  },
+  {
+    "word": "vigorous",
+    "meaning": "",
+    "synonym": "robust, lively",
+    "antonym": "weak, lethargic"
+  },
+  {
+    "word": "punitive",
+    "meaning": "",
+    "synonym": "penal, disciplinary",
+    "antonym": "forgiving, lenient"
+  },
+  {
+    "word": "Decree",
+    "meaning": "",
+    "synonym": "Order, command, directive, ruling, edict",
+    "antonym": "Suggestion, request, plea, appeal"
+  },
+  {
+    "word": "finicky",
+    "meaning": "",
+    "synonym": "fussy, fastidious, picky",
+    "antonym": "easygoing, undemanding"
+  },
+  {
+    "word": "litigate",
+    "meaning": "",
+    "synonym": "Contest, Dispute",
+    "antonym": "Agree, Settle"
+  },
+  {
+    "word": "Egoism",
+    "meaning": "",
+    "synonym": "Narcissism, vanity, egotism",
+    "antonym": "Humility, selflessness"
+  },
+  {
+    "word": "wince",
+    "meaning": "",
+    "synonym": "flinch, recoil",
+    "antonym": "—"
+  },
+  {
+    "word": "incessant",
+    "meaning": "",
+    "synonym": "constant, nonstop, ceaseless",
+    "antonym": "intermittent, occasional"
+  },
+  {
+    "word": "pest",
+    "meaning": "",
+    "synonym": "nuisance, bother",
+    "antonym": "blessing, benefit"
+  },
+  {
+    "word": "Collusion",
+    "meaning": "",
+    "synonym": "Conspiracy, Connivance",
+    "antonym": "Transparency, Honesty"
+  },
+  {
+    "word": "feign",
+    "meaning": "",
+    "synonym": "simulate, fake, bluff",
+    "antonym": "reveal, show, express"
+  },
+  {
+    "word": "unrivalled",
+    "meaning": "",
+    "synonym": "unequaled, peerless",
+    "antonym": "matched, equal"
+  },
+  {
+    "word": "perpetual",
+    "meaning": "",
+    "synonym": "eternal, everlasting",
+    "antonym": "temporary, fleeting"
+  },
+  {
+    "word": "vindicate",
+    "meaning": "",
+    "synonym": "clear, absolve",
+    "antonym": "condemn, blame"
+  },
+  {
+    "word": "Arcade",
+    "meaning": "",
+    "synonym": "—",
+    "antonym": "—"
+  },
+  {
+    "word": "Avow",
+    "meaning": "",
+    "synonym": "Affirm, Profess",
+    "antonym": "Deny, Disavow"
+  },
+  {
+    "word": "unison",
+    "meaning": "",
+    "synonym": "harmony, accord",
+    "antonym": "discord, enmity"
+  },
+  {
+    "word": "Glib",
+    "meaning": "",
+    "synonym": "Slick, superficial, insincere",
+    "antonym": "Sincere, honest"
+  },
+  {
+    "word": "Allocate",
+    "meaning": "",
+    "synonym": "Assign, Designate",
+    "antonym": "Withhold"
+  },
+  {
+    "word": "judicious",
+    "meaning": "",
+    "synonym": "Wise, Sensible, Prudent",
+    "antonym": "Foolish, Irrational"
+  },
+  {
+    "word": "Coerce",
+    "meaning": "",
+    "synonym": "Compel, Force, Intimidate",
+    "antonym": "Persuade, Encourage, Dissuade"
+  },
+  {
+    "word": "predominate",
+    "meaning": "",
+    "synonym": "dominate, prevail",
+    "antonym": "yield, surrender"
+  },
+  {
+    "word": "knit",
+    "meaning": "",
+    "synonym": "Weave, Stitch, Join",
+    "antonym": "Unravel, Separate"
+  },
+  {
+    "word": "Euthanasia",
+    "meaning": "",
+    "synonym": "Mercy killing",
+    "antonym": "—"
+  },
+  {
+    "word": "Countenance",
+    "meaning": "",
+    "synonym": "Endorse, support, tolerate, permit",
+    "antonym": "Oppose, disapprove, reject"
+  },
+  {
+    "word": "Allegiance",
+    "meaning": "",
+    "synonym": "Devotion, Fidelity",
+    "antonym": "Disloyalty, Treachery"
+  },
+  {
+    "word": "Congenial",
+    "meaning": "",
+    "synonym": "Friendly, Agreeable",
+    "antonym": "Hostile, Unfriendly"
+  },
+  {
+    "word": "Encumbrance",
+    "meaning": "",
+    "synonym": "Hindrance, load, liability, impediment",
+    "antonym": "Advantage, benefit, assistance"
+  },
+  {
+    "word": "Duplicity",
+    "meaning": "",
+    "synonym": "Deception, dishonesty, fraud, hypocrisy",
+    "antonym": "Honesty, sincerity, truthfulness"
+  },
+  {
+    "word": "Equable",
+    "meaning": "",
+    "synonym": "Calm, composed, serene, stable",
+    "antonym": "Unstable, excitable, volatile"
+  },
+  {
+    "word": "Gawk",
+    "meaning": "",
+    "synonym": "Gape, stare, ogle",
+    "antonym": "Glance, ignore"
+  },
+  {
+    "word": "livid",
+    "meaning": "",
+    "synonym": "Discoloured, Angry",
+    "antonym": "Healthy, Calm"
+  },
+  {
+    "word": "Blatant",
+    "meaning": "",
+    "synonym": "Obvious, Brazen",
+    "antonym": "Subtle"
+  },
+  {
+    "word": "extrovert",
+    "meaning": "",
+    "synonym": "sociable, outgoing, gregarious",
+    "antonym": "introvert, reserved, shy"
+  },
+  {
+    "word": "Connive",
+    "meaning": "",
+    "synonym": "Collude, Conspire",
+    "antonym": "Prevent, Oppose"
+  },
+  {
+    "word": "Erudite",
+    "meaning": "",
+    "synonym": "Learned, knowledgeable, wise, intellectual",
+    "antonym": "Ignorant, uneducated, illiterate"
+  },
+  {
+    "word": "Brass",
+    "meaning": "",
+    "synonym": "Metal, Alloy",
+    "antonym": "—"
+  },
+  {
+    "word": "recluse",
+    "meaning": "",
+    "synonym": "hermit, loner",
+    "antonym": "socialite"
+  },
+  {
+    "word": "impair",
+    "meaning": "",
+    "synonym": "harm, diminish, injure",
+    "antonym": "improve, enhance"
+  },
+  {
+    "word": "missive",
+    "meaning": "",
+    "synonym": "Message, Communication",
+    "antonym": "-"
+  },
+  {
+    "word": "forbear",
+    "meaning": "",
+    "synonym": "abstain, withhold, tolerate",
+    "antonym": "indulge, provoke"
+  },
+  {
+    "word": "Beacon",
+    "meaning": "",
+    "synonym": "Signal, Guide",
+    "antonym": "Obscurity"
+  },
+  {
+    "word": "Discredit",
+    "meaning": "",
+    "synonym": "Disbelieve, disgrace, shame, defame",
+    "antonym": "Believe, trust, credit, endorse"
+  },
+  {
+    "word": "Gnarled",
+    "meaning": "",
+    "synonym": "Knotty, rough, twisted",
+    "antonym": "Smooth, straight"
+  },
+  {
+    "word": "soot",
+    "meaning": "",
+    "synonym": "Ash, Soot",
+    "antonym": "-"
+  },
+  {
+    "word": "Grimace",
+    "meaning": "",
+    "synonym": "Frown, scowl, wince",
+    "antonym": "Smile, grin"
+  },
+  {
+    "word": "Cling",
+    "meaning": "",
+    "synonym": "Adhere, Grip",
+    "antonym": "Detach, Release"
+  },
+  {
+    "word": "Clot",
+    "meaning": "",
+    "synonym": "Lump, Mass",
+    "antonym": "Fluid, Solution"
+  },
+  {
+    "word": "metamorphosis",
+    "meaning": "",
+    "synonym": "Change, Conversion",
+    "antonym": "Stagnation, Inertia"
+  },
+  {
+    "word": "Defile",
+    "meaning": "",
+    "synonym": "Contaminate, taint, foul, degrade, spoil",
+    "antonym": "Purify, cleanse, sanctify, clean"
+  },
+  {
+    "word": "pallid",
+    "meaning": "",
+    "synonym": "colorless, wan",
+    "antonym": "flushed, rosy"
+  },
+  {
+    "word": "Barbaric",
+    "meaning": "",
+    "synonym": "Savage, Inhuman, Tyrannical",
+    "antonym": "Civilized, Cultured"
+  },
+  {
+    "word": "Tangential",
+    "meaning": "",
+    "synonym": "Peripheral, Incidental",
+    "antonym": "Relevant"
+  },
+  {
+    "word": "Arcane",
+    "meaning": "",
+    "synonym": "Esoteric, Obscure",
+    "antonym": "Clear, Known"
+  },
+  {
+    "word": "Exasperate",
+    "meaning": "",
+    "synonym": "Provoke, annoy, irritate, infuriate",
+    "antonym": "Pacify, calm, soothe"
+  },
+  {
+    "word": "Titanic",
+    "meaning": "",
+    "synonym": "Gigantic, Immense",
+    "antonym": "Tiny"
+  },
+  {
+    "word": "Genteel",
+    "meaning": "",
+    "synonym": "Elegant, well-mannered, sophisticated",
+    "antonym": "Vulgar, coarse, rude"
+  },
+  {
+    "word": "rectify",
+    "meaning": "",
+    "synonym": "amend, fix",
+    "antonym": "worsen"
+  },
+  {
+    "word": "Canon",
+    "meaning": "",
+    "synonym": "Principle, Rule, Standard",
+    "antonym": "Exception, Deviation"
+  },
+  {
+    "word": "Cover",
+    "meaning": "",
+    "synonym": "Hide, shield, protect, veil",
+    "antonym": "Reveal, expose, uncover"
+  },
+  {
+    "word": "Tentative",
+    "meaning": "",
+    "synonym": "Hesitant, Uncertain",
+    "antonym": "Definite"
+  },
+  {
+    "word": "Emaciate",
+    "meaning": "",
+    "synonym": "Waste, weaken, starve, thin",
+    "antonym": "Nourish, strengthen, fatten, build up"
+  },
+  {
+    "word": "Ambient",
+    "meaning": "",
+    "synonym": "Encompassing, Surrounding",
+    "antonym": "Central"
+  },
+  {
+    "word": "inundate",
+    "meaning": "",
+    "synonym": "Flood, Overwhelm, Submerge",
+    "antonym": "Drain, Clear"
+  },
+  {
+    "word": "Tadpole",
+    "meaning": "",
+    "synonym": "—",
+    "antonym": "—"
+  },
+  {
+    "word": "Tantrum",
+    "meaning": "",
+    "synonym": "Outburst, Fit",
+    "antonym": "Calmness"
+  },
+  {
+    "word": "inept",
+    "meaning": "",
+    "synonym": "incompetent, clumsy, unfit",
+    "antonym": "skilled, adept"
+  },
+  {
+    "word": "kin",
+    "meaning": "",
+    "synonym": "Kindred, Relations",
+    "antonym": "Stranger, Non-relative"
+  },
+  {
+    "word": "sanity",
+    "meaning": "",
+    "synonym": "Reason, Mental health",
+    "antonym": "Insanity, Madness"
+  },
+  {
+    "word": "Concur",
+    "meaning": "",
+    "synonym": "Agree, Consent",
+    "antonym": "Disagree, Oppose"
+  },
+  {
+    "word": "Crush",
+    "meaning": "",
+    "synonym": "Smash, squash, compress, defeat",
+    "antonym": "Build, create, release"
+  },
+  {
+    "word": "Apprise",
+    "meaning": "",
+    "synonym": "Inform, Notify",
+    "antonym": "Withhold"
+  },
+  {
+    "word": "Atheism",
+    "meaning": "",
+    "synonym": "Nonbelief, Skepticism",
+    "antonym": "Theism, Faith"
+  },
+  {
+    "word": "Decisive",
+    "meaning": "",
+    "synonym": "Conclusive, resolute, determined, unwavering, definite",
+    "antonym": "Indecisive, doubtful, hesitant, uncertain"
+  },
+  {
+    "word": "stride",
+    "meaning": "",
+    "synonym": "March, Strut",
+    "antonym": "-"
+  },
+  {
+    "word": "woo",
+    "meaning": "",
+    "synonym": "court, pursue",
+    "antonym": "repel"
+  },
+  {
+    "word": "postulate",
+    "meaning": "",
+    "synonym": "assume, propose",
+    "antonym": "deny, reject"
+  },
+  {
+    "word": "prone",
+    "meaning": "",
+    "synonym": "liable, susceptible",
+    "antonym": "resistant, immune"
+  },
+  {
+    "word": "wean",
+    "meaning": "",
+    "synonym": "wean off, withdraw",
+    "antonym": "indulge, continue"
+  },
+  {
+    "word": "negligent",
+    "meaning": "",
+    "synonym": "Careless, Neglectful",
+    "antonym": "Careful, Attentive"
+  },
+  {
+    "word": "Concise",
+    "meaning": "",
+    "synonym": "Compact, Short",
+    "antonym": "Diffuse, Repetitive, Wordy"
+  },
+  {
+    "word": "Grovel",
+    "meaning": "",
+    "synonym": "Fawn, beg, abase",
+    "antonym": "Defy, boast"
+  },
+  {
+    "word": "Dynamo",
+    "meaning": "",
+    "synonym": "Power generator, powerhouse, producer",
+    "antonym": "Weakling, powerless, inactive"
+  },
+  {
+    "word": "irate",
+    "meaning": "",
+    "synonym": "Enraged, Furious, Incensed",
+    "antonym": "Calm, Peaceful"
+  },
+  {
+    "word": "Debacle",
+    "meaning": "",
+    "synonym": "Collapse, catastrophe, fiasco, downfall, calamity, failure",
+    "antonym": "Success, triumph, victory, accomplishment"
+  },
+  {
+    "word": "odour",
+    "meaning": "",
+    "synonym": "Scent, Aroma",
+    "antonym": "Odorless"
+  },
+  {
+    "word": "zest",
+    "meaning": "",
+    "synonym": "gusto, enthusiasm",
+    "antonym": "depression, despondency"
+  },
+  {
+    "word": "Alacrity",
+    "meaning": "",
+    "synonym": "Promptness, Willingness",
+    "antonym": "Reluctance"
+  },
+  {
+    "word": "Bigot",
+    "meaning": "",
+    "synonym": "Fanatic, Extremist",
+    "antonym": "Open-minded"
+  },
+  {
+    "word": "Benefactor",
+    "meaning": "",
+    "synonym": "Patron, Supporter",
+    "antonym": "Opponent"
+  },
+  {
+    "word": "refuge",
+    "meaning": "",
+    "synonym": "sanctuary, haven",
+    "antonym": "danger, exposure"
+  },
+  {
+    "word": "queer",
+    "meaning": "",
+    "synonym": "strange, unusual",
+    "antonym": "normal, ordinary"
+  },
+  {
+    "word": "Engulf",
+    "meaning": "",
+    "synonym": "Devour, consume, immerse, inundate",
+    "antonym": "Emerge, surface, release"
+  },
+  {
+    "word": "regress",
+    "meaning": "",
+    "synonym": "revert, decline",
+    "antonym": "progress"
+  },
+  {
+    "word": "nadir",
+    "meaning": "",
+    "synonym": "Bottom, Lowest point",
+    "antonym": "Zenith, Peak"
+  },
+  {
+    "word": "incarcerate",
+    "meaning": "",
+    "synonym": "confine, jail, detain",
+    "antonym": "release, liberate"
+  },
+  {
+    "word": "Dally",
+    "meaning": "",
+    "synonym": "Loiter, dawdle, trifle, linger",
+    "antonym": "Hurry, rush, focus"
+  },
+  {
+    "word": "sardonic",
+    "meaning": "",
+    "synonym": "Sarcastic, Cynical",
+    "antonym": "Sincere, Genuine"
+  },
+  {
+    "word": "Grievous",
+    "meaning": "",
+    "synonym": "Serious, severe, painful",
+    "antonym": "Minor, trivial"
+  },
+  {
+    "word": "foolproof",
+    "meaning": "",
+    "synonym": "infallible, reliable, safe",
+    "antonym": "faulty, flawed"
+  },
+  {
+    "word": "Alienate",
+    "meaning": "",
+    "synonym": "Estrange",
+    "antonym": "Familiarize, Reconcile"
+  },
+  {
+    "word": "luminary",
+    "meaning": "",
+    "synonym": "Celebrity, Leading figure",
+    "antonym": "Unknown, Nobody"
+  },
+  {
+    "word": "Torment",
+    "meaning": "",
+    "synonym": "Agony, Anguish",
+    "antonym": "Comfort"
+  },
+  {
+    "word": "Cursory",
+    "meaning": "",
+    "synonym": "Superficial, brief, hurried, perfunctory",
+    "antonym": "Thorough, detailed, meticulous"
+  },
+  {
+    "word": "surcharge",
+    "meaning": "",
+    "synonym": "Extra charge, Fee",
+    "antonym": "Discount"
+  },
+  {
+    "word": "keynote",
+    "meaning": "",
+    "synonym": "Theme, Essence, Gist",
+    "antonym": "Detail, Minor Point"
+  },
+  {
+    "word": "jubilation",
+    "meaning": "",
+    "synonym": "Joy, Happiness, Triumph",
+    "antonym": "Mourning, Sorrow"
+  },
+  {
+    "word": "Besotted",
+    "meaning": "",
+    "synonym": "Infatuated, Obsessed",
+    "antonym": "Indifferent"
+  },
+  {
+    "word": "Egotism",
+    "meaning": "",
+    "synonym": "Conceit, arrogance, self-absorption",
+    "antonym": "Humility, modesty"
+  },
+  {
+    "word": "Acrimony",
+    "meaning": "",
+    "synonym": "Rancor, Hostility",
+    "antonym": "Harmony, Courtesy"
+  },
+  {
+    "word": "interim",
+    "meaning": "",
+    "synonym": "Temporary, Provisional, Transitional",
+    "antonym": "Permanent, Final"
+  },
+  {
+    "word": "savor",
+    "meaning": "",
+    "synonym": "Enjoy, Relish",
+    "antonym": "Dislike, Disregard"
+  },
+  {
+    "word": "pummel",
+    "meaning": "",
+    "synonym": "batter, strike",
+    "antonym": "caress, soothe"
+  },
+  {
+    "word": "sanction",
+    "meaning": "",
+    "synonym": "Approval, Authorization",
+    "antonym": "Prohibition, Denial"
+  },
+  {
+    "word": "Archaic",
+    "meaning": "",
+    "synonym": "Obsolete, Antiquated",
+    "antonym": "Modern, Current"
+  },
+  {
+    "word": "Archives",
+    "meaning": "",
+    "synonym": "Records, Repository",
+    "antonym": "—"
+  },
+  {
+    "word": "flaunting",
+    "meaning": "",
+    "synonym": "boast, parade, display",
+    "antonym": "conceal, hide, modest"
+  },
+  {
+    "word": "personable",
+    "meaning": "",
+    "synonym": "charming, likable",
+    "antonym": "unpleasant, unattractive"
+  },
+  {
+    "word": "racy",
+    "meaning": "",
+    "synonym": "lively, spicy",
+    "antonym": "dull, bland"
+  },
+  {
+    "word": "Dupe",
+    "meaning": "",
+    "synonym": "Deceive, trick, fool, swindle",
+    "antonym": "Guide, enlighten, assist"
+  },
+  {
+    "word": "provident",
+    "meaning": "",
+    "synonym": "prudent, thrifty",
+    "antonym": "wasteful, imprudent"
+  },
+  {
+    "word": "nonentity",
+    "meaning": "",
+    "synonym": "Nobody, Unimportant",
+    "antonym": "Celebrity, Important"
+  },
+  {
+    "word": "Caricature",
+    "meaning": "",
+    "synonym": "Exaggeration, Parody, Mimicry",
+    "antonym": "Reality, Authenticity"
+  },
+  {
+    "word": "Diffidence",
+    "meaning": "",
+    "synonym": "Timidity, insecurity, meekness, hesitation",
+    "antonym": "Confidence, boldness, assertiveness, courage"
+  },
+  {
+    "word": "Deter",
+    "meaning": "",
+    "synonym": "Prevent, discourage, dissuade, restrain",
+    "antonym": "Encourage, persuade, promote, urge"
+  },
+  {
+    "word": "Torture",
+    "meaning": "",
+    "synonym": "Torment, Agony",
+    "antonym": "Comfort"
+  },
+  {
+    "word": "prim",
+    "meaning": "",
+    "synonym": "proper, precise",
+    "antonym": "casual, sloppy"
+  },
+  {
+    "word": "perpetrate",
+    "meaning": "",
+    "synonym": "execute, carry out",
+    "antonym": "prevent, stop"
+  },
+  {
+    "word": "inculcate",
+    "meaning": "",
+    "synonym": "instill, impress, indoctrinate",
+    "antonym": "neglect, ignore"
+  },
+  {
+    "word": "placate",
+    "meaning": "",
+    "synonym": "appease, mollify",
+    "antonym": "anger, provoke"
+  },
+  {
+    "word": "Dissipate",
+    "meaning": "",
+    "synonym": "Disperse, squander, vanish, dissolve",
+    "antonym": "Gather, accumulate, save, conserve"
+  },
+  {
+    "word": "junta",
+    "meaning": "",
+    "synonym": "Cabal, Faction, Clique",
+    "antonym": "—"
+  },
+  {
+    "word": "partisan",
+    "meaning": "",
+    "synonym": "biased, sectarian",
+    "antonym": "impartial, neutral"
+  },
+  {
+    "word": "Articulate",
+    "meaning": "",
+    "synonym": "Express, Enunciate",
+    "antonym": "Mumble, Inarticulate"
+  },
+  {
+    "word": "Dolt",
+    "meaning": "",
+    "synonym": "Fool, idiot, dunce, simpleton",
+    "antonym": "Genius, intellect, scholar"
+  },
+  {
+    "word": "hirsute",
+    "meaning": "",
+    "synonym": "shaggy, bushy, woolly",
+    "antonym": "bald, hairless"
+  },
+  {
+    "word": "vat",
+    "meaning": "",
+    "synonym": "tub, container",
+    "antonym": "—"
+  },
+  {
+    "word": "shunt",
+    "meaning": "",
+    "synonym": "Divert, Redirect",
+    "antonym": "Keep"
+  },
+  {
+    "word": "Brash",
+    "meaning": "",
+    "synonym": "Saucy, Bold",
+    "antonym": "Cautious, Reserved"
+  },
+  {
+    "word": "mettle",
+    "meaning": "",
+    "synonym": "Spirit, Fortitude",
+    "antonym": "Cowardice, Timidity"
+  },
+  {
+    "word": "intimate",
+    "meaning": "",
+    "synonym": "Imply, Suggest, Indicate",
+    "antonym": "Conceal, Hide"
+  },
+  {
+    "word": "whine",
+    "meaning": "",
+    "synonym": "complain, moan",
+    "antonym": "—"
+  },
+  {
+    "word": "odorous",
+    "meaning": "",
+    "synonym": "Foul-smelling, Malodorous",
+    "antonym": "Fragrant, Pleasant"
+  },
+  {
+    "word": "stray",
+    "meaning": "",
+    "synonym": "Wander, Deviate",
+    "antonym": "Stay"
+  },
+  {
+    "word": "Ashen",
+    "meaning": "",
+    "synonym": "Pallid, Pale",
+    "antonym": "Rosy, Ruddy"
+  },
+  {
+    "word": "Backlog",
+    "meaning": "",
+    "synonym": "Reserve, Stockpile",
+    "antonym": "Depletion"
+  },
+  {
+    "word": "sporadic",
+    "meaning": "",
+    "synonym": "Occasional, Infrequent",
+    "antonym": "Frequent"
+  },
+  {
+    "word": "summon",
+    "meaning": "",
+    "synonym": "Call, Convene",
+    "antonym": "Dismiss"
+  },
+  {
+    "word": "inhibition",
+    "meaning": "",
+    "synonym": "shyness, self-control, constraint",
+    "antonym": "freedom, spontaneity"
+  },
+  {
+    "word": "Deft",
+    "meaning": "",
+    "synonym": "Dexterous, adept, agile, nimble, skillful",
+    "antonym": "Awkward, clumsy, inept, incompetent"
+  },
+  {
+    "word": "Bashful",
+    "meaning": "",
+    "synonym": "Shy, Timid",
+    "antonym": "Bold, Adventurous, Arrogant"
+  },
+  {
+    "word": "fallacious",
+    "meaning": "",
+    "synonym": "false, misleading, incorrect",
+    "antonym": "true, valid, correct"
+  },
+  {
+    "word": "Gild",
+    "meaning": "",
+    "synonym": "Embellish, decorate, ornate",
+    "antonym": "Strip, deface"
+  },
+  {
+    "word": "kit",
+    "meaning": "",
+    "synonym": "Tools, Set, Equipment",
+    "antonym": "—"
+  },
+  {
+    "word": "lumber",
+    "meaning": "",
+    "synonym": "Stumble, Trudge",
+    "antonym": "Glide, Skim"
+  },
+  {
+    "word": "forte",
+    "meaning": "",
+    "synonym": "strength, talent, specialty",
+    "antonym": "weakness, flaw"
+  },
+  {
+    "word": "persecute",
+    "meaning": "",
+    "synonym": "oppress, harass",
+    "antonym": "protect, defend"
+  },
+  {
+    "word": "Ensign",
+    "meaning": "",
+    "synonym": "Banner, flag, standard, symbol",
+    "antonym": "—"
+  },
+  {
+    "word": "procrastination",
+    "meaning": "",
+    "synonym": "delay, defer",
+    "antonym": "hasten, advance"
+  },
+  {
+    "word": "Clinch",
+    "meaning": "",
+    "synonym": "Secure, Confirm",
+    "antonym": "Loosen, Release"
+  },
+  {
+    "word": "paucity",
+    "meaning": "",
+    "synonym": "shortage, dearth",
+    "antonym": "abundance, plenty"
+  },
+  {
+    "word": "Conceited",
+    "meaning": "",
+    "synonym": "Arrogant, Vain",
+    "antonym": "Humble, Modest"
+  },
+  {
+    "word": "Candid",
+    "meaning": "",
+    "synonym": "Honest, Blunt, Direct",
+    "antonym": "Deceitful, Reserved"
+  },
+  {
+    "word": "rant",
+    "meaning": "",
+    "synonym": "tirade, diatribe",
+    "antonym": "praise, compliment"
+  },
+  {
+    "word": "squat",
+    "meaning": "",
+    "synonym": "Crouch, Sit",
+    "antonym": "Stand"
+  },
+  {
+    "word": "Enunciate",
+    "meaning": "",
+    "synonym": "Pronounce, articulate, declare, proclaim",
+    "antonym": "Mumble, mutter, slur"
+  },
+  {
+    "word": "Brittle",
+    "meaning": "",
+    "synonym": "Fragile, Breakable",
+    "antonym": "Durable, Tough"
+  },
+  {
+    "word": "Engrossing",
+    "meaning": "",
+    "synonym": "Fascinating, absorbing, captivating, riveting",
+    "antonym": "Boring, dull, uninteresting"
+  },
+  {
+    "word": "Chaff",
+    "meaning": "",
+    "synonym": "Joke, Banter",
+    "antonym": "Praise, Compliment"
+  },
+  {
+    "word": "untoward",
+    "meaning": "",
+    "synonym": "unlucky, adverse",
+    "antonym": "favorable, fortunate"
+  },
+  {
+    "word": "jaded",
+    "meaning": "",
+    "synonym": "Weary, Tired, Exhausted",
+    "antonym": "Refreshed, Energized"
+  },
+  {
+    "word": "Trifle",
+    "meaning": "",
+    "synonym": "Nonsense, Triviality",
+    "antonym": "Importance"
+  },
+  {
+    "word": "remorse",
+    "meaning": "",
+    "synonym": "guilt, contrition",
+    "antonym": "indifference, shamelessness"
+  },
+  {
+    "word": "Threshold",
+    "meaning": "",
+    "synonym": "Brink, Verge",
+    "antonym": "End"
+  },
+  {
+    "word": "jabber",
+    "meaning": "",
+    "synonym": "Babble, Chatter, Blabber",
+    "antonym": "Mute, Silence"
+  },
+  {
+    "word": "Adversity",
+    "meaning": "",
+    "synonym": "Distress, Hardship",
+    "antonym": "Fortune, Prosperity"
+  },
+  {
+    "word": "Brainchild",
+    "meaning": "",
+    "synonym": "Creation, Invention",
+    "antonym": "Imitation"
+  },
+  {
+    "word": "insignia",
+    "meaning": "",
+    "synonym": "Badge, Symbol, Emblem",
+    "antonym": "—"
+  },
+  {
+    "word": "Addle",
+    "meaning": "",
+    "synonym": "Muddle, Confuse",
+    "antonym": "Clarify"
+  },
+  {
+    "word": "Eulogy",
+    "meaning": "",
+    "synonym": "Praise, tribute, panegyric",
+    "antonym": "Criticism, condemnation"
+  },
+  {
+    "word": "overhaul",
+    "meaning": "",
+    "synonym": "Inspect, Repair",
+    "antonym": "Neglect, Ignore"
+  },
+  {
+    "word": "Ambiguous",
+    "meaning": "",
+    "synonym": "Vague, Unclear",
+    "antonym": "Clear, Definite"
+  },
+  {
+    "word": "Extinct",
+    "meaning": "",
+    "synonym": "Vanished, gone, obliterated",
+    "antonym": "Alive, existing, surviving"
+  },
+  {
+    "word": "opulent",
+    "meaning": "",
+    "synonym": "Luxurious, Lavish",
+    "antonym": "Poor, Stingy"
+  },
+  {
+    "word": "Anguish",
+    "meaning": "",
+    "synonym": "Agony, Torment",
+    "antonym": "Comfort, Relief"
+  },
+  {
+    "word": "Denounce",
+    "meaning": "",
+    "synonym": "Criticize, censure, accuse, blame, vilify",
+    "antonym": "Praise, commend, endorse, support"
+  },
+  {
+    "word": "Dearth",
+    "meaning": "",
+    "synonym": "Scarcity, lack, deficiency, paucity, insufficiency",
+    "antonym": "Abundance, plenty, surplus, excess"
+  },
+  {
+    "word": "penitent",
+    "meaning": "",
+    "synonym": "repentant, contrite",
+    "antonym": "unrepentant, remorseless"
+  },
+  {
+    "word": "forerunner",
+    "meaning": "",
+    "synonym": "precursor, harbinger, omen",
+    "antonym": "follower, result"
+  },
+  {
+    "word": "jocular",
+    "meaning": "",
+    "synonym": "Humorous, Witty, Jestful",
+    "antonym": "Serious, Solemn"
+  },
+  {
+    "word": "scurvy",
+    "meaning": "",
+    "synonym": "Mean, Contemptible",
+    "antonym": "Noble, Honorable"
+  },
+  {
+    "word": "rabble",
+    "meaning": "",
+    "synonym": "mob, crowd",
+    "antonym": "elite, upper class"
+  },
+  {
+    "word": "rejuvenate",
+    "meaning": "",
+    "synonym": "renew, revitalize",
+    "antonym": "age, deteriorate"
+  },
+  {
+    "word": "Aver",
+    "meaning": "",
+    "synonym": "Declare, Claim",
+    "antonym": "Deny"
+  },
+  {
+    "word": "plunge",
+    "meaning": "",
+    "synonym": "dive, fall",
+    "antonym": "rise, ascend"
+  },
+  {
+    "word": "incongruous",
+    "meaning": "",
+    "synonym": "inconsistent, unsuitable, discordant",
+    "antonym": "fitting, appropriate"
+  },
+  {
+    "word": "Disproof",
+    "meaning": "",
+    "synonym": "Refutation, contradiction, rebuttal",
+    "antonym": "Proof, confirmation, validation"
+  },
+  {
+    "word": "sanctuary",
+    "meaning": "",
+    "synonym": "Refuge, Shelter",
+    "antonym": "Danger, Exposure"
+  },
+  {
+    "word": "Dwarf",
+    "meaning": "",
+    "synonym": "Small, miniature, tiny, undersized",
+    "antonym": "Giant, huge, tall, massive"
+  },
+  {
+    "word": "Extinguish",
+    "meaning": "",
+    "synonym": "Douse, snuff, quench, suppress",
+    "antonym": "Ignite, kindle, light"
+  },
+  {
+    "word": "odious",
+    "meaning": "",
+    "synonym": "Repulsive, Abhorrent",
+    "antonym": "Delightful, Pleasant"
+  },
+  {
+    "word": "Abdicate",
+    "meaning": "",
+    "synonym": "Resign, Renounce",
+    "antonym": "Retain, Uphold"
+  },
+  {
+    "word": "shallow",
+    "meaning": "",
+    "synonym": "Superficial, Trivial",
+    "antonym": "Deep, Profound"
+  },
+  {
+    "word": "Thaw",
+    "meaning": "",
+    "synonym": "Melt, Defrost",
+    "antonym": "Freeze"
+  },
+  {
+    "word": "Blemish",
+    "meaning": "",
+    "synonym": "Flaw, Imperfection",
+    "antonym": "Embellishment"
+  },
+  {
+    "word": "molt",
+    "meaning": "",
+    "synonym": "Shed, Cast off",
+    "antonym": "Grow, Develop"
+  },
+  {
+    "word": "Tedious",
+    "meaning": "",
+    "synonym": "Dull, Monotonous",
+    "antonym": "Exciting, Interesting"
+  },
+  {
+    "word": "jab",
+    "meaning": "",
+    "synonym": "Jibe, Dig, Snub",
+    "antonym": "Praise, Compliment"
+  },
+  {
+    "word": "fawn",
+    "meaning": "",
+    "synonym": "flatter, grovel, bootlick",
+    "antonym": "insult, ignore, offend"
+  },
+  {
+    "word": "superfluous",
+    "meaning": "",
+    "synonym": "Unnecessary, Extra",
+    "antonym": "Necessary"
+  },
+  {
+    "word": "prodigal",
+    "meaning": "",
+    "synonym": "extravagant, wasteful",
+    "antonym": "frugal, economical"
+  },
+  {
+    "word": "Benign",
+    "meaning": "",
+    "synonym": "Gentle, Mild",
+    "antonym": "Harsh, Hostile"
+  },
+  {
+    "word": "Anarchy",
+    "meaning": "",
+    "synonym": "Lawlessness, Chaos",
+    "antonym": "Order, Discipline"
+  },
+  {
+    "word": "insane",
+    "meaning": "",
+    "synonym": "Mad, Delirious, Frenzied",
+    "antonym": "Sane, Sound, Normal"
+  },
+  {
+    "word": "Condense",
+    "meaning": "",
+    "synonym": "Compress, Shorten",
+    "antonym": "Expand, Lengthen"
+  },
+  {
+    "word": "shrill",
+    "meaning": "",
+    "synonym": "High-pitched, Piercing",
+    "antonym": "Low, Soft"
+  },
+  {
+    "word": "opaque",
+    "meaning": "",
+    "synonym": "Cloudy, Obscure",
+    "antonym": "Transparent, Clear"
+  },
+  {
+    "word": "malodorous",
+    "meaning": "",
+    "synonym": "Foul, Noxious",
+    "antonym": "Fragrant, Pleasant"
+  },
+  {
+    "word": "impeach",
+    "meaning": "",
+    "synonym": "charge, indict, accuse",
+    "antonym": "acquit, absolve"
+  },
+  {
+    "word": "magnate",
+    "meaning": "",
+    "synonym": "Tycoon, Mogul",
+    "antonym": "Nobody, Commoner"
+  },
+  {
+    "word": "Animosity",
+    "meaning": "",
+    "synonym": "Enmity, Hostility, Rancor, Animus",
+    "antonym": "Amiability, Friendliness"
+  },
+  {
+    "word": "Cataract",
+    "meaning": "",
+    "synonym": "Waterfall, Clouding",
+    "antonym": "Clear vision"
+  },
+  {
+    "word": "Dissent",
+    "meaning": "",
+    "synonym": "Protest, objection, opposition",
+    "antonym": "Agreement, consent, approval, harmony"
+  },
+  {
+    "word": "insensible",
+    "meaning": "",
+    "synonym": "Unfeeling, Numb, Unaware",
+    "antonym": "Aware, Sane, Conscious"
+  },
+  {
+    "word": "veterinary",
+    "meaning": "",
+    "synonym": "animal doctor",
+    "antonym": "—"
+  },
+  {
+    "word": "Charismatic",
+    "meaning": "",
+    "synonym": "Charming, Magnetic",
+    "antonym": "Uninspiring, Dull"
+  },
+  {
+    "word": "Therapeutic",
+    "meaning": "",
+    "synonym": "Healing, Curative",
+    "antonym": "Harmful"
+  },
+  {
+    "word": "realm",
+    "meaning": "",
+    "synonym": "domain, sphere",
+    "antonym": "nan"
+  },
+  {
+    "word": "Abysmal",
+    "meaning": "",
+    "synonym": "Appalling, Terrible",
+    "antonym": "Excellent"
+  },
+  {
+    "word": "ineptitude",
+    "meaning": "",
+    "synonym": "incompetence, incapacity",
+    "antonym": "competence, ability"
+  },
+  {
+    "word": "Traumatic",
+    "meaning": "",
+    "synonym": "Shocking, Harrowing",
+    "antonym": "Pleasant, Comforting"
+  },
+  {
+    "word": "Agile",
+    "meaning": "",
+    "synonym": "Nimble, Spry",
+    "antonym": "Clumsy, Sluggish"
+  },
+  {
+    "word": "liberality",
+    "meaning": "",
+    "synonym": "Generosity, Magnanimity",
+    "antonym": "Stinginess, Meanness"
+  },
+  {
+    "word": "flout",
+    "meaning": "",
+    "synonym": "defy, disregard, scorn",
+    "antonym": "respect, obey, honor"
+  },
+  {
+    "word": "Dilate",
+    "meaning": "",
+    "synonym": "Enlarge, widen, expand, stretch",
+    "antonym": "Contract, narrow, shrink, close"
+  },
+  {
+    "word": "qualm",
+    "meaning": "",
+    "synonym": "doubt, misgiving",
+    "antonym": "confidence, assurance"
+  },
+  {
+    "word": "keep-sake",
+    "meaning": "",
+    "synonym": "Memento, Souvenir, Token",
+    "antonym": "—"
+  },
+  {
+    "word": "irresolute",
+    "meaning": "",
+    "synonym": "Indecisive, Hesitant, Vacillating",
+    "antonym": "Resolute, Determined"
+  },
+  {
+    "word": "Constrained",
+    "meaning": "",
+    "synonym": "Restricted, Forced",
+    "antonym": "Free, Unrestricted"
+  },
+  {
+    "word": "obvious",
+    "meaning": "",
+    "synonym": "Evident, Apparent",
+    "antonym": "Obscure, Unclear"
+  },
+  {
+    "word": "Austere",
+    "meaning": "",
+    "synonym": "Strict, Harsh",
+    "antonym": "Luxurious, Lenient"
+  },
+  {
+    "word": "Benediction",
+    "meaning": "",
+    "synonym": "Blessing, Grace",
+    "antonym": "Curse"
+  },
+  {
+    "word": "unprecedented",
+    "meaning": "",
+    "synonym": "unheard-of, exceptional",
+    "antonym": "usual, known"
+  },
+  {
+    "word": "relic",
+    "meaning": "",
+    "synonym": "artifact, remains",
+    "antonym": "nan"
+  },
+  {
+    "word": "Bait",
+    "meaning": "",
+    "synonym": "Lure, Entice",
+    "antonym": "Repel"
+  },
+  {
+    "word": "odour",
+    "meaning": "",
+    "synonym": "Scent, Aroma",
+    "antonym": "Odorless"
+  },
+  {
+    "word": "urbane",
+    "meaning": "",
+    "synonym": "sophisticated, polished",
+    "antonym": "rude, uncultured"
+  },
+  {
+    "word": "self-contained",
+    "meaning": "",
+    "synonym": "Independent, Self-sufficient",
+    "antonym": "Dependent"
+  },
+  {
+    "word": "undertone",
+    "meaning": "",
+    "synonym": "loosen, relax",
+    "antonym": "tighten"
+  },
+  {
+    "word": "fluster",
+    "meaning": "",
+    "synonym": "unsettle, rattle, bewilder",
+    "antonym": "calm, soothe, reassure"
+  },
+  {
+    "word": "Gloss",
+    "meaning": "",
+    "synonym": "Shine, luster, sheen",
+    "antonym": "Dullness"
+  },
+  {
+    "word": "plaintive",
+    "meaning": "",
+    "synonym": "mournful, sorrowful",
+    "antonym": "cheerful, joyful"
+  },
+  {
+    "word": "massacre",
+    "meaning": "",
+    "synonym": "Slaughter, Mass killing",
+    "antonym": "Rescue, Save"
+  },
+  {
+    "word": "seduce",
+    "meaning": "",
+    "synonym": "Tempt, Entice",
+    "antonym": "Repel, Deter"
+  },
+  {
+    "word": "snub",
+    "meaning": "",
+    "synonym": "Ignore, Reject",
+    "antonym": "Praise"
+  },
+  {
+    "word": "listless",
+    "meaning": "",
+    "synonym": "Apathetic, Indifferent",
+    "antonym": "Energetic, Enthusiastic"
+  },
+  {
+    "word": "plead",
+    "meaning": "",
+    "synonym": "appeal, beg",
+    "antonym": "deny"
+  },
+  {
+    "word": "Ail",
+    "meaning": "",
+    "synonym": "Suffer, Hurt",
+    "antonym": "Heal, Recover"
+  },
+  {
+    "word": "rancid",
+    "meaning": "",
+    "synonym": "stale, rotten",
+    "antonym": "fresh, sweet"
+  },
+  {
+    "word": "Emanate",
+    "meaning": "",
+    "synonym": "Radiate, emerge, originate, arise",
+    "antonym": "Cease, stop, terminate"
+  },
+  {
+    "word": "Banal",
+    "meaning": "",
+    "synonym": "Inane, Vapid",
+    "antonym": "Fresh, Original, New"
+  },
+  {
+    "word": "jib",
+    "meaning": "",
+    "synonym": "Mock, Tease, Ridicule",
+    "antonym": "Applaud, Support"
+  },
+  {
+    "word": "quip",
+    "meaning": "",
+    "synonym": "jest, sally",
+    "antonym": "seriousness"
+  },
+  {
+    "word": "Antidote",
+    "meaning": "",
+    "synonym": "Remedy, Cure",
+    "antonym": "Poison"
+  },
+  {
+    "word": "valiant",
+    "meaning": "",
+    "synonym": "courageous, heroic",
+    "antonym": "cowardly, fearful"
+  },
+  {
+    "word": "Adamant",
+    "meaning": "",
+    "synonym": "Unyielding, Stubborn",
+    "antonym": "Flexible, Yielding"
+  },
+  {
+    "word": "sublime",
+    "meaning": "",
+    "synonym": "Majestic, Grand",
+    "antonym": "Ordinary"
+  },
+  {
+    "word": "fleet",
+    "meaning": "",
+    "synonym": "speedy, nimble, armada",
+    "antonym": "slow, sluggish"
+  },
+  {
+    "word": "Entangle",
+    "meaning": "",
+    "synonym": "Snarl, complicate, entrap",
+    "antonym": "Untangle, disentangle, resolve"
+  },
+  {
+    "word": "Generic",
+    "meaning": "",
+    "synonym": "General, universal, standard",
+    "antonym": "Specific, unique, particular"
+  },
+  {
+    "word": "Garish",
+    "meaning": "",
+    "synonym": "Flashy, ostentatious, loud",
+    "antonym": "Sober, modest"
+  },
+  {
+    "word": "solvent",
+    "meaning": "",
+    "synonym": "Financially sound, Able to pay debts",
+    "antonym": "Insolvent"
+  },
+  {
+    "word": "ogle",
+    "meaning": "",
+    "synonym": "Gawk, Stare",
+    "antonym": "Ignore, Avoid"
+  },
+  {
+    "word": "superannuate",
+    "meaning": "",
+    "synonym": "Retire, Withdraw",
+    "antonym": "Employ"
+  },
+  {
+    "word": "smirk",
+    "meaning": "",
+    "synonym": "Smile, Grin",
+    "antonym": "Frown"
+  },
+  {
+    "word": "vilify",
+    "meaning": "",
+    "synonym": "defame, disparage",
+    "antonym": "praise, honor"
+  },
+  {
+    "word": "veracity",
+    "meaning": "",
+    "synonym": "accuracy, honesty",
+    "antonym": "falsehood, lying"
+  },
+  {
+    "word": "pungency",
+    "meaning": "",
+    "synonym": "acridity, piquancy",
+    "antonym": "blandness, mildness"
+  },
+  {
+    "word": "veer",
+    "meaning": "",
+    "synonym": "swerve, deviate",
+    "antonym": "stay, continue"
+  },
+  {
+    "word": "heed",
+    "meaning": "",
+    "synonym": "notice, observe, regard",
+    "antonym": "ignore, disregard"
+  },
+  {
+    "word": "sedentary",
+    "meaning": "",
+    "synonym": "Inactive, Stationary",
+    "antonym": "Active, Energetic"
+  },
+  {
+    "word": "spleen",
+    "meaning": "",
+    "synonym": "Anger, Resentment",
+    "antonym": "Goodwill"
+  },
+  {
+    "word": "Apprehensive",
+    "meaning": "",
+    "synonym": "Anxious, Uneasy",
+    "antonym": "Confident"
+  },
+  {
+    "word": "Turquoise",
+    "meaning": "",
+    "synonym": "Aqua, Cyan, Teal",
+    "antonym": "nan"
+  },
+  {
+    "word": "Discern",
+    "meaning": "",
+    "synonym": "Detect, distinguish, recognize, identify",
+    "antonym": "Overlook, ignore, miss, confuse"
+  },
+  {
+    "word": "Evoke",
+    "meaning": "",
+    "synonym": "Arouse, summon, elicit, recall",
+    "antonym": "Suppress, stop, ignore"
+  },
+  {
+    "word": "limpid",
+    "meaning": "",
+    "synonym": "Clear, Transparent",
+    "antonym": "Cloudy, Murky"
+  },
+  {
+    "word": "Aloof",
+    "meaning": "",
+    "synonym": "Detached, Distant",
+    "antonym": "Friendly, Sociable"
+  },
+  {
+    "word": "Abase",
+    "meaning": "",
+    "synonym": "Scorn, Belittle, Degrade",
+    "antonym": "Exalt, Cherish"
+  },
+  {
+    "word": "imminent",
+    "meaning": "",
+    "synonym": "impending, forthcoming, near",
+    "antonym": "distant, remote"
+  },
+  {
+    "word": "palate",
+    "meaning": "",
+    "synonym": "-",
+    "antonym": "-"
+  },
+  {
+    "word": "Compatible",
+    "meaning": "",
+    "synonym": "Harmonious, Congenial",
+    "antonym": "Incompatible, Intolerant"
+  },
+  {
+    "word": "Tamper",
+    "meaning": "",
+    "synonym": "Meddle, Alter",
+    "antonym": "Preserve"
+  },
+  {
+    "word": "Gist",
+    "meaning": "",
+    "synonym": "Essence, summary, core",
+    "antonym": "Details, trivia"
+  },
+  {
+    "word": "rap",
+    "meaning": "",
+    "synonym": "hit, strike",
+    "antonym": "caress, soothe"
+  },
+  {
+    "word": "Conduct",
+    "meaning": "",
+    "synonym": "Direct, Guide",
+    "antonym": "Neglect, Mismanage"
+  },
+  {
+    "word": "subdue",
+    "meaning": "",
+    "synonym": "Conquer, Defeat",
+    "antonym": "Release"
+  },
+  {
+    "word": "heterogeneous",
+    "meaning": "",
+    "synonym": "mixed, diverse, assorted",
+    "antonym": "homogeneous, uniform"
+  },
+  {
+    "word": "Alcove",
+    "meaning": "",
+    "synonym": "Niche, Recess",
+    "antonym": "Open space"
+  },
+  {
+    "word": "onus",
+    "meaning": "",
+    "synonym": "Duty, Obligation",
+    "antonym": "Privilege, Exemption"
+  },
+  {
+    "word": "Adorn",
+    "meaning": "",
+    "synonym": "Beautify, Embellish",
+    "antonym": "Deface"
+  },
+  {
+    "word": "imperturbable",
+    "meaning": "",
+    "synonym": "composed, serene, unflappable",
+    "antonym": "nervous, anxious"
+  },
+  {
+    "word": "Annul",
+    "meaning": "",
+    "synonym": "Cancel, Revoke",
+    "antonym": "Enforce"
+  },
+  {
+    "word": "uncanny",
+    "meaning": "",
+    "synonym": "eerie, strange",
+    "antonym": "normal, ordinary"
+  },
+  {
+    "word": "Dissemble",
+    "meaning": "",
+    "synonym": "Pretend, feign, conceal, mask",
+    "antonym": "Reveal, disclose, confess, expose"
+  },
+  {
+    "word": "propagation",
+    "meaning": "",
+    "synonym": "spread, dissemination",
+    "antonym": "reduction, contraction"
+  },
+  {
+    "word": "warrant",
+    "meaning": "",
+    "synonym": "authorization, permit",
+    "antonym": "denial, refusal"
+  },
+  {
+    "word": "verdict",
+    "meaning": "",
+    "synonym": "decision, judgment",
+    "antonym": "—"
+  },
+  {
+    "word": "inebriated",
+    "meaning": "",
+    "synonym": "intoxicated, tipsy, drunk",
+    "antonym": "sober, teetotal"
+  },
+  {
+    "word": "lewd",
+    "meaning": "",
+    "synonym": "Obscene, Lustful, Licentious",
+    "antonym": "Pure, Chaste"
+  },
+  {
+    "word": "opine",
+    "meaning": "",
+    "synonym": "Comment, Suggestion",
+    "antonym": "-"
+  },
+  {
+    "word": "Theatrical",
+    "meaning": "",
+    "synonym": "Dramatic, Overdone",
+    "antonym": "Natural"
+  },
+  {
+    "word": "sediment",
+    "meaning": "",
+    "synonym": "Deposit, Residue",
+    "antonym": "Suspension"
+  },
+  {
+    "word": "preponderance",
+    "meaning": "",
+    "synonym": "majority, dominance",
+    "antonym": "minority"
+  },
+  {
+    "word": "Theseus",
+    "meaning": "",
+    "synonym": "—",
+    "antonym": "—"
+  },
+  {
+    "word": "mordant",
+    "meaning": "",
+    "synonym": "Sarcastic, Sharp",
+    "antonym": "Mild, Gentle"
+  },
+  {
+    "word": "Asterisk",
+    "meaning": "",
+    "synonym": "—",
+    "antonym": "—"
+  },
+  {
+    "word": "provoke",
+    "meaning": "",
+    "synonym": "irritate, incite",
+    "antonym": "calm, soothe"
+  },
+  {
+    "word": "Curriculum",
+    "meaning": "",
+    "synonym": "Syllabus, course, program, outline",
+    "antonym": "nan"
+  },
+  {
+    "word": "Repulsive",
+    "meaning": "",
+    "synonym": "Revolting, Disgusting, Offensive",
+    "antonym": "Attractive, Pleasing"
+  },
+  {
+    "word": "heyday",
+    "meaning": "",
+    "synonym": "peak, prime, zenith",
+    "antonym": "decline, downfall"
+  },
+  {
+    "word": "renowned",
+    "meaning": "",
+    "synonym": "celebrated, eminent",
+    "antonym": "unknown, obscure"
+  },
+  {
+    "word": "Advent",
+    "meaning": "",
+    "synonym": "Onset, Emergence",
+    "antonym": "Departure"
+  },
+  {
+    "word": "Gamut",
+    "meaning": "",
+    "synonym": "Spectrum, scope, extent",
+    "antonym": "Limitation, restriction"
+  },
+  {
+    "word": "indolence",
+    "meaning": "",
+    "synonym": "lethargy, idleness, sloth",
+    "antonym": "diligence, activity"
+  },
+  {
+    "word": "stigmatise",
+    "meaning": "",
+    "synonym": "Brand, Label",
+    "antonym": "Praise"
+  },
+  {
+    "word": "Deprecate",
+    "meaning": "",
+    "synonym": "Criticize, disparage, belittle, decry, denounce",
+    "antonym": "Approve, praise, laud, commend"
+  },
+  {
+    "word": "jovial",
+    "meaning": "",
+    "synonym": "Cheerful, Merry, Jolly",
+    "antonym": "Gloomy, Morose"
+  },
+  {
+    "word": "Embark",
+    "meaning": "",
+    "synonym": "Launch, start, commence, undertake",
+    "antonym": "Quit, stop, discontinue"
+  },
+  {
+    "word": "mediocre",
+    "meaning": "",
+    "synonym": "Average, Moderate",
+    "antonym": "Excellent, Exceptional"
+  },
+  {
+    "word": "Galvanise",
+    "meaning": "",
+    "synonym": "Energize, spur, inspire",
+    "antonym": "Discourage, demotivate"
+  },
+  {
+    "word": "pine",
+    "meaning": "",
+    "synonym": "languish, wither",
+    "antonym": "thrive, flourish"
+  },
+  {
+    "word": "vain",
+    "meaning": "",
+    "synonym": "futile, useless; conceited",
+    "antonym": "useful, successful; humble"
+  },
+  {
+    "word": "lingo",
+    "meaning": "",
+    "synonym": "Dialect, Jargon",
+    "antonym": "Standard language"
+  },
+  {
+    "word": "opportune",
+    "meaning": "",
+    "synonym": "Timely, Convenient",
+    "antonym": "Untimely, Inopportune"
+  },
+  {
+    "word": "reap",
+    "meaning": "",
+    "synonym": "harvest, collect",
+    "antonym": "sow, scatter"
+  },
+  {
+    "word": "smoulder",
+    "meaning": "",
+    "synonym": "Burn, Glow",
+    "antonym": "Extinguish"
+  },
+  {
+    "word": "lithe",
+    "meaning": "",
+    "synonym": "Flexible, Supple",
+    "antonym": "Rigid, Stiff"
+  },
+  {
+    "word": "morose",
+    "meaning": "",
+    "synonym": "Gloomy, Sullen",
+    "antonym": "Cheerful, Friendly"
+  },
+  {
+    "word": "stationary",
+    "meaning": "",
+    "synonym": "Immobile, Still",
+    "antonym": "Moving"
+  },
+  {
+    "word": "indeterminate",
+    "meaning": "",
+    "synonym": "vague, indefinite, uncertain",
+    "antonym": "definite, clear"
+  },
+  {
+    "word": "indomitable",
+    "meaning": "",
+    "synonym": "invincible, resilient, unyielding",
+    "antonym": "weak, submissive"
+  },
+  {
+    "word": "Entreat",
+    "meaning": "",
+    "synonym": "Plead, implore, request, beseech",
+    "antonym": "Refuse, reject, deny"
+  },
+  {
+    "word": "staid",
+    "meaning": "",
+    "synonym": "Serious, Dignified",
+    "antonym": "Excited"
+  },
+  {
+    "word": "Exorbitant",
+    "meaning": "",
+    "synonym": "Excessive, extravagant, unreasonable",
+    "antonym": "Reasonable, moderate, fair"
+  },
+  {
+    "word": "Exhaustive",
+    "meaning": "",
+    "synonym": "Comprehensive, full, detailed",
+    "antonym": "Incomplete, partial, limited"
+  },
+  {
+    "word": "Bolster",
+    "meaning": "",
+    "synonym": "Reinforce, Support",
+    "antonym": "Undermine, Weaken"
+  },
+  {
+    "word": "August",
+    "meaning": "",
+    "synonym": "Grand, Noble",
+    "antonym": "Undignified"
+  },
+  {
+    "word": "rarity",
+    "meaning": "",
+    "synonym": "hostility, thinness",
+    "antonym": "friendship, commonness"
+  },
+  {
+    "word": "extort",
+    "meaning": "",
+    "synonym": "coerce, extract, blackmail",
+    "antonym": "give, offer, donate"
+  },
+  {
+    "word": "Crass",
+    "meaning": "",
+    "synonym": "Insensitive, tactless, stupid, vulgar",
+    "antonym": "Refined, sensitive, intelligent"
+  },
+  {
+    "word": "wrangle",
+    "meaning": "",
+    "synonym": "argue, quarrel",
+    "antonym": "agree"
+  },
+  {
+    "word": "Babbel",
+    "meaning": "",
+    "synonym": "Prattle, Chatter, Babble",
+    "antonym": "Wisdom, Prudence"
+  },
+  {
+    "word": "Accost",
+    "meaning": "",
+    "synonym": "Greet",
+    "antonym": "Shun, Avoid"
+  },
+  {
+    "word": "ferment",
+    "meaning": "",
+    "synonym": "stir, agitate, provoke",
+    "antonym": "calm, pacify, subdue"
+  },
+  {
+    "word": "sidestep",
+    "meaning": "",
+    "synonym": "Avoid, Evade",
+    "antonym": "Confront"
+  },
+  {
+    "word": "Garnish",
+    "meaning": "",
+    "synonym": "Adorn, embellish, decorate",
+    "antonym": "Spoil, disfigure, impair"
+  },
+  {
+    "word": "skeptic",
+    "meaning": "",
+    "synonym": "Doubter, Questioner",
+    "antonym": "Believer"
+  },
+  {
+    "word": "Demean",
+    "meaning": "",
+    "synonym": "Humiliate, disgrace, belittle, insult",
+    "antonym": "Honor, respect, elevate, dignify"
+  },
+  {
+    "word": "solitude",
+    "meaning": "",
+    "synonym": "Isolation, Privacy",
+    "antonym": "Company"
+  },
+  {
+    "word": "Earthy",
+    "meaning": "",
+    "synonym": "Rude, rough, crude, rustic",
+    "antonym": "Refined, cultured, sophisticated"
+  },
+  {
+    "word": "spartan",
+    "meaning": "",
+    "synonym": "Austere, Simple",
+    "antonym": "Luxurious"
+  },
+  {
+    "word": "quaff",
+    "meaning": "",
+    "synonym": "gulp, drink",
+    "antonym": "sip, nibble"
+  },
+  {
+    "word": "maul",
+    "meaning": "",
+    "synonym": "Mangle, Damage",
+    "antonym": "Protect, Care"
+  },
+  {
+    "word": "malady",
+    "meaning": "",
+    "synonym": "Illness, Disorder",
+    "antonym": "Health, Wellness"
+  },
+  {
+    "word": "stingy",
+    "meaning": "",
+    "synonym": "Miserly, Mean",
+    "antonym": "Generous"
+  },
+  {
+    "word": "Gust",
+    "meaning": "",
+    "synonym": "Blast, surge, blow",
+    "antonym": "Calm, breeze"
+  },
+  {
+    "word": "sting",
+    "meaning": "",
+    "synonym": "Prick, Bite",
+    "antonym": "-"
+  },
+  {
+    "word": "Besiege",
+    "meaning": "",
+    "synonym": "Encircle, Attack",
+    "antonym": "Liberate"
+  },
+  {
+    "word": "mercurial",
+    "meaning": "",
+    "synonym": "Fickle, Unstable",
+    "antonym": "Steady, Stable"
+  },
+  {
+    "word": "unruly",
+    "meaning": "",
+    "synonym": "disorderly, disobedient",
+    "antonym": "obedient, manageable"
+  },
+  {
+    "word": "writ",
+    "meaning": "",
+    "synonym": "document, decree",
+    "antonym": "—"
+  },
+  {
+    "word": "Broach",
+    "meaning": "",
+    "synonym": "Introduce, Mention",
+    "antonym": "Avoid, Suppress"
+  },
+  {
+    "word": "falter",
+    "meaning": "",
+    "synonym": "hesitate, stumble, waver",
+    "antonym": "persist, continue, stabilize"
+  },
+  {
+    "word": "wag",
+    "meaning": "",
+    "synonym": "joker, merrymaker",
+    "antonym": "—"
+  },
+  {
+    "word": "Defer",
+    "meaning": "",
+    "synonym": "Delay, adjourn, submit, comply, concede",
+    "antonym": "Expedite, hasten, advance, disregard"
+  },
+  {
+    "word": "Abandon",
+    "meaning": "",
+    "synonym": "Desert, Forsake, Leave",
+    "antonym": "Retain, Unrestrained activity"
+  },
+  {
+    "word": "pristine",
+    "meaning": "",
+    "synonym": "pure, unspoiled",
+    "antonym": "dirty, spoiled"
+  },
+  {
+    "word": "scent",
+    "meaning": "",
+    "synonym": "Aroma, Fragrance",
+    "antonym": "Odor, Stench"
+  },
+  {
+    "word": "rampant",
+    "meaning": "",
+    "synonym": "widespread, unchecked",
+    "antonym": "controlled, limited"
+  },
+  {
+    "word": "vigilance",
+    "meaning": "",
+    "synonym": "alertness, watchfulness",
+    "antonym": "negligence, carelessness"
+  },
+  {
+    "word": "indignant",
+    "meaning": "",
+    "synonym": "resentful, offended, irate",
+    "antonym": "calm, pleased"
+  },
+  {
+    "word": "rake",
+    "meaning": "",
+    "synonym": "libertine, rakehell",
+    "antonym": "virtuous person"
+  },
+  {
+    "word": "incense",
+    "meaning": "",
+    "synonym": "enrage, infuriate, provoke",
+    "antonym": "appease, calm"
+  },
+  {
+    "word": "Guise",
+    "meaning": "",
+    "synonym": "Disguise, facade, mask",
+    "antonym": "Reality, truth"
+  },
+  {
+    "word": "volatile",
+    "meaning": "",
+    "synonym": "unstable, unpredictable",
+    "antonym": "stable, steady"
+  },
+  {
+    "word": "palliate",
+    "meaning": "",
+    "synonym": "alleviate, ease",
+    "antonym": "aggravate, worsen"
+  },
+  {
+    "word": "Cringe",
+    "meaning": "",
+    "synonym": "Cower, grovel, flinch, recoil",
+    "antonym": "Confront, resist, stand tall"
+  },
+  {
+    "word": "Concord",
+    "meaning": "",
+    "synonym": "Accord, Unity",
+    "antonym": "Discord, Conflict"
+  },
+  {
+    "word": "inception",
+    "meaning": "",
+    "synonym": "start, commencement, outset",
+    "antonym": "end, termination"
+  },
+  {
+    "word": "pluck",
+    "meaning": "",
+    "synonym": "pull, pick",
+    "antonym": "release"
+  },
+  {
+    "word": "vivacious",
+    "meaning": "",
+    "synonym": "spirited, energetic",
+    "antonym": "dull, lethargic"
+  },
+  {
+    "word": "incandescent",
+    "meaning": "",
+    "synonym": "luminous, radiant, brilliant",
+    "antonym": "dull, dim"
+  },
+  {
+    "word": "Avid",
+    "meaning": "",
+    "synonym": "Enthusiastic, Greedy",
+    "antonym": "Indifferent"
+  },
+  {
+    "word": "prattle",
+    "meaning": "",
+    "synonym": "babble, chatter",
+    "antonym": "silence, quiet"
+  },
+  {
+    "word": "Engrave",
+    "meaning": "",
+    "synonym": "Carve, inscribe, etch, imprint",
+    "antonym": "Erase, efface, obliterate"
+  },
+  {
+    "word": "Alleviate",
+    "meaning": "",
+    "synonym": "Relieve, Ease",
+    "antonym": "Aggravate, Intensify"
+  },
+  {
+    "word": "saucy",
+    "meaning": "",
+    "synonym": "Bold, Impertinent",
+    "antonym": "Polite, Respectful"
+  },
+  {
+    "word": "Anoint",
+    "meaning": "",
+    "synonym": "Consecrate, Bless",
+    "antonym": "Desecrate"
+  },
+  {
+    "word": "Comely",
+    "meaning": "",
+    "synonym": "Pretty, Pleasing",
+    "antonym": "Unattractive, Ugly"
+  },
+  {
+    "word": "Cajole",
+    "meaning": "",
+    "synonym": "Coax, Wheedle, Sweet-talk",
+    "antonym": "Dissuade, Bully, Force"
+  },
+  {
+    "word": "lucid",
+    "meaning": "",
+    "synonym": "Clear, Intelligible",
+    "antonym": "Incomprehensible, Irrational"
+  },
+  {
+    "word": "ransack",
+    "meaning": "",
+    "synonym": "loot, plunder",
+    "antonym": "guard, protect"
+  },
+  {
+    "word": "Eloquence",
+    "meaning": "",
+    "synonym": "Expressiveness, articulateness, fluency",
+    "antonym": "Inarticulateness, stumbling, dullness"
+  },
+  {
+    "word": "upheaval",
+    "meaning": "",
+    "synonym": "upheave, turmoil",
+    "antonym": "calm, stability"
+  },
+  {
+    "word": "somatic",
+    "meaning": "",
+    "synonym": "Physical",
+    "antonym": "Mental"
+  },
+  {
+    "word": "Abyss",
+    "meaning": "",
+    "synonym": "Chasm",
+    "antonym": "Summit, Elevation"
+  },
+  {
+    "word": "peerless",
+    "meaning": "",
+    "synonym": "unmatched, incomparable",
+    "antonym": "inferior, common"
+  },
+  {
+    "word": "pivotal",
+    "meaning": "",
+    "synonym": "crucial, vital",
+    "antonym": "insignificant"
+  },
+  {
+    "word": "prune",
+    "meaning": "",
+    "synonym": "cut, trim",
+    "antonym": "extend, lengthen"
+  },
+  {
+    "word": "superimpose",
+    "meaning": "",
+    "synonym": "Overlay, Cover",
+    "antonym": "Underlay"
+  },
+  {
+    "word": "paradigm",
+    "meaning": "",
+    "synonym": "pattern, archetype",
+    "antonym": "-"
+  },
+  {
+    "word": "Daft",
+    "meaning": "",
+    "synonym": "Idiotic, foolish, absurd, nonsensical",
+    "antonym": "Profound, wise, intelligent"
+  },
+  {
+    "word": "Emulate",
+    "meaning": "",
+    "synonym": "Imitate, copy, mirror, follow, rival",
+    "antonym": "Differ, oppose, neglect"
+  },
+  {
+    "word": "malign",
+    "meaning": "",
+    "synonym": "Slander, Defame",
+    "antonym": "Praise, Compliment"
+  },
+  {
+    "word": "obnoxious",
+    "meaning": "",
+    "synonym": "Offensive, Hateful",
+    "antonym": "Pleasant, Agreeable"
+  },
+  {
+    "word": "ominous",
+    "meaning": "",
+    "synonym": "Menacing, Sinister",
+    "antonym": "Promising, Auspicious"
+  },
+  {
+    "word": "limp",
+    "meaning": "",
+    "synonym": "Weak, Feeble",
+    "antonym": "Strong, Firm"
+  },
+  {
+    "word": "kennel",
+    "meaning": "",
+    "synonym": "Doghouse",
+    "antonym": "—"
+  },
+  {
+    "word": "Extempore",
+    "meaning": "",
+    "synonym": "Impromptu, spontaneous, unscripted",
+    "antonym": "Planned, rehearsed, deliberate"
+  },
+  {
+    "word": "Cognizant",
+    "meaning": "",
+    "synonym": "Aware, Conscious",
+    "antonym": "Unaware, Oblivious"
+  },
+  {
+    "word": "Endearing",
+    "meaning": "",
+    "synonym": "Charming, lovable, appealing, enchanting",
+    "antonym": "Repulsive, hateful, unpleasant"
+  },
+  {
+    "word": "poncho",
+    "meaning": "",
+    "synonym": "cloak, shawl",
+    "antonym": "nan"
+  },
+  {
+    "word": "salient",
+    "meaning": "",
+    "synonym": "Prominent, Conspicuous, Outstanding",
+    "antonym": "Minor, Insignificant"
+  },
+  {
+    "word": "Bewilder",
+    "meaning": "",
+    "synonym": "Baffle, Perplex",
+    "antonym": "Clarify"
+  },
+  {
+    "word": "Earthenware",
+    "meaning": "",
+    "synonym": "Pottery, ceramics, crockery",
+    "antonym": "Metalware, glassware"
+  },
+  {
+    "word": "pious",
+    "meaning": "",
+    "synonym": "devout, religious",
+    "antonym": "irreligious, unfaithful"
+  },
+  {
+    "word": "surveillance",
+    "meaning": "",
+    "synonym": "Monitoring, Observation",
+    "antonym": "Neglect"
+  },
+  {
+    "word": "Teethe",
+    "meaning": "",
+    "synonym": "—",
+    "antonym": "—"
+  },
+  {
+    "word": "insipid",
+    "meaning": "",
+    "synonym": "Bland, Tasteless, Dull",
+    "antonym": "Flavorful, Tasty, Interesting"
+  },
+  {
+    "word": "inimitable",
+    "meaning": "",
+    "synonym": "unique, incomparable, exceptional",
+    "antonym": "ordinary, typical, common"
+  },
+  {
+    "word": "insolvent",
+    "meaning": "",
+    "synonym": "Bankrupt, Broke, Ruined",
+    "antonym": "Solvent, Wealthy"
+  },
+  {
+    "word": "Gnaw",
+    "meaning": "",
+    "synonym": "Chew, nibble, erode",
+    "antonym": "—"
+  },
+  {
+    "word": "stigma",
+    "meaning": "",
+    "synonym": "Stain, Disgrace",
+    "antonym": "Honor"
+  },
+  {
+    "word": "malice",
+    "meaning": "",
+    "synonym": "Spite, Hatred",
+    "antonym": "Benevolence, Goodwill"
+  },
+  {
+    "word": "Dissolute",
+    "meaning": "",
+    "synonym": "Immoral, corrupt, depraved, debauched",
+    "antonym": "Virtuous, moral, upright, disciplined"
+  },
+  {
+    "word": "Celibacy",
+    "meaning": "",
+    "synonym": "Abstinence, Chastity",
+    "antonym": "Matrimony, Marriage"
+  },
+  {
+    "word": "slither",
+    "meaning": "",
+    "synonym": "Slide, Glide",
+    "antonym": "-"
+  },
+  {
+    "word": "prodigy",
+    "meaning": "",
+    "synonym": "genius, wonder",
+    "antonym": "ordinary, normal"
+  },
+  {
+    "word": "Adjure",
+    "meaning": "",
+    "synonym": "Implore, Beseech",
+    "antonym": "Refuse"
+  },
+  {
+    "word": "volition",
+    "meaning": "",
+    "synonym": "will, choice",
+    "antonym": "compulsion, coercion"
+  },
+  {
+    "word": "Affinity",
+    "meaning": "",
+    "synonym": "Kinship, Rapport",
+    "antonym": "Dislike, Aversion"
+  },
+  {
+    "word": "jurisdiction",
+    "meaning": "",
+    "synonym": "Authority, Control, Power",
+    "antonym": "Powerlessness, Subordination"
+  },
+  {
+    "word": "Agog",
+    "meaning": "",
+    "synonym": "Excited, Enthusiastic",
+    "antonym": "Indifferent"
+  },
+  {
+    "word": "preen",
+    "meaning": "",
+    "synonym": "groom, primp",
+    "antonym": "neglect"
+  },
+  {
+    "word": "onus",
+    "meaning": "",
+    "synonym": "Duty, Obligation",
+    "antonym": "Privilege, Exemption"
+  },
+  {
+    "word": "Allure",
+    "meaning": "",
+    "synonym": "Lure, Weigle",
+    "antonym": "Repel, Deter, Discourage"
+  },
+  {
+    "word": "Graze",
+    "meaning": "",
+    "synonym": "Nibble, skim, scrape",
+    "antonym": "Gorge"
+  },
+  {
+    "word": "Abet",
+    "meaning": "",
+    "synonym": "Conspire, Connive",
+    "antonym": "Dissuade"
+  },
+  {
+    "word": "immune",
+    "meaning": "",
+    "synonym": "resistant, exempt, unaffected",
+    "antonym": "vulnerable, susceptible"
+  },
+  {
+    "word": "slack",
+    "meaning": "",
+    "synonym": "Loose, Negligent",
+    "antonym": "Tight, Active"
+  },
+  {
+    "word": "peekish",
+    "meaning": "",
+    "synonym": "hungry, peckish",
+    "antonym": "full, satisfied"
+  },
+  {
+    "word": "opaqueness",
+    "meaning": "",
+    "synonym": "Obscurity, Cloudiness",
+    "antonym": "Clarity, Transparency"
+  },
+  {
+    "word": "Artifact",
+    "meaning": "",
+    "synonym": "Relic, Object",
+    "antonym": "—"
+  },
+  {
+    "word": "Ruffian",
+    "meaning": "",
+    "synonym": "Thug, Bully, Criminal",
+    "antonym": "Gentleman"
+  },
+  {
+    "word": "impudent",
+    "meaning": "",
+    "synonym": "insolent, brash, rude",
+    "antonym": "polite, respectful"
+  },
+  {
+    "word": "parsimony",
+    "meaning": "",
+    "synonym": "thriftiness, cheapness",
+    "antonym": "generosity, liberality"
+  },
+  {
+    "word": "Acquaint",
+    "meaning": "",
+    "synonym": "Familiarize, Notify",
+    "antonym": "Ignore"
+  },
+  {
+    "word": "submerge",
+    "meaning": "",
+    "synonym": "Sink, Immerse",
+    "antonym": "Emerge"
+  },
+  {
+    "word": "Arid",
+    "meaning": "",
+    "synonym": "Parched, Dry, Bare",
+    "antonym": "Lush, Fertile"
+  },
+  {
+    "word": "petrify",
+    "meaning": "",
+    "synonym": "horrify, terrify",
+    "antonym": "comfort, soothe"
+  },
+  {
+    "word": "heady",
+    "meaning": "",
+    "synonym": "thrilling, potent, giddy",
+    "antonym": "dull, calming"
+  },
+  {
+    "word": "heinous",
+    "meaning": "",
+    "synonym": "atrocious, monstrous, vile",
+    "antonym": "admirable, noble"
+  },
+  {
+    "word": "Breach",
+    "meaning": "",
+    "synonym": "Violation, Rift",
+    "antonym": "Closure, Agreement"
+  },
+  {
+    "word": "Enormity",
+    "meaning": "",
+    "synonym": "Immensity, vastness, hugeness, atrocity",
+    "antonym": "Smallness, insignificance, triviality"
+  },
+  {
+    "word": "unscathed",
+    "meaning": "",
+    "synonym": "uninjured, safe",
+    "antonym": "harmed, injured"
+  },
+  {
+    "word": "Dismal",
+    "meaning": "",
+    "synonym": "Melancholy, bleak, depressing, dreary",
+    "antonym": "Cheerful, pleasant, hopeful, bright"
+  },
+  {
+    "word": "unruffled",
+    "meaning": "",
+    "synonym": "calm, composed",
+    "antonym": "agitated, anxious"
+  },
+  {
+    "word": "Chisel",
+    "meaning": "",
+    "synonym": "Carver, Gouge",
+    "antonym": "—"
+  },
+  {
+    "word": "Benevolence",
+    "meaning": "",
+    "synonym": "Kindness, Generosity",
+    "antonym": "Malevolence"
+  },
+  {
+    "word": "Amalgamate",
+    "meaning": "",
+    "synonym": "Merge, Integrate",
+    "antonym": "Separate, Divide"
+  },
+  {
+    "word": "Gallivant",
+    "meaning": "",
+    "synonym": "Roam, wander, meander",
+    "antonym": "Settle, stay"
+  },
+  {
+    "word": "rake",
+    "meaning": "",
+    "synonym": "libertine, rakehell",
+    "antonym": "virtuous person"
+  },
+  {
+    "word": "plaque",
+    "meaning": "",
+    "synonym": "plate, tablet",
+    "antonym": "nan"
+  },
+  {
+    "word": "jagged",
+    "meaning": "",
+    "synonym": "Ragged, Serrated, Irregular",
+    "antonym": "Smooth, Even"
+  },
+  {
+    "word": "quorum",
+    "meaning": "",
+    "synonym": "majority, minimum",
+    "antonym": "absence, minority"
+  },
+  {
+    "word": "pitfall",
+    "meaning": "",
+    "synonym": "trap, snare",
+    "antonym": "safety"
+  },
+  {
+    "word": "insolent",
+    "meaning": "",
+    "synonym": "Impudent, Impertinent, Offensive",
+    "antonym": "Respectful, Polite, Courteous"
+  },
+  {
+    "word": "Excerpt",
+    "meaning": "",
+    "synonym": "Extract, selection, quotation, passage",
+    "antonym": "Whole, entirety"
+  },
+  {
+    "word": "Conceal",
+    "meaning": "",
+    "synonym": "Hide, Cover",
+    "antonym": "Reveal, Expose"
+  },
+  {
+    "word": "kiln",
+    "meaning": "",
+    "synonym": "Oven, Furnace",
+    "antonym": "—"
+  },
+  {
+    "word": "Coax",
+    "meaning": "",
+    "synonym": "Persuade, Cajole",
+    "antonym": "Force, Bully"
+  },
+  {
+    "word": "Grumpy",
+    "meaning": "",
+    "synonym": "Cranky, surly, peevish",
+    "antonym": "Cheerful, pleasant"
+  },
+  {
+    "word": "obese",
+    "meaning": "",
+    "synonym": "Overweight, Heavy",
+    "antonym": "Thin, Slim"
+  },
+  {
+    "word": "Astringent",
+    "meaning": "",
+    "synonym": "Contracting, Sharp",
+    "antonym": "Mild"
+  },
+  {
+    "word": "Roll",
+    "meaning": "",
+    "synonym": "Turn, Rotate",
+    "antonym": "Stop"
+  },
+  {
+    "word": "Disdain",
+    "meaning": "",
+    "synonym": "Scorn, contempt, deride, disregard",
+    "antonym": "Admire, respect, praise, esteem"
+  },
+  {
+    "word": "pith",
+    "meaning": "",
+    "synonym": "core, essence",
+    "antonym": "surface"
+  },
+  {
+    "word": "Dote",
+    "meaning": "",
+    "synonym": "Pamper, cherish, adore, idolize",
+    "antonym": "Neglect, ignore, disregard, forget"
+  },
+  {
+    "word": "varnish",
+    "meaning": "",
+    "synonym": "lacquer, glaze",
+    "antonym": "—"
+  },
+  {
+    "word": "Gush",
+    "meaning": "",
+    "synonym": "Spurt, stream, effuse",
+    "antonym": "Trickle"
+  },
+  {
+    "word": "Talisman",
+    "meaning": "",
+    "synonym": "Charm, Amulet",
+    "antonym": "—"
+  },
+  {
+    "word": "Baleful",
+    "meaning": "",
+    "synonym": "Sinister, Threatening",
+    "antonym": "Benevolent, Favorable"
+  },
+  {
+    "word": "Truculent",
+    "meaning": "",
+    "synonym": "Defiant, Belligerent",
+    "antonym": "Gentle, Mild"
+  },
+  {
+    "word": "reactionary",
+    "meaning": "",
+    "synonym": "conservative, reactionary",
+    "antonym": "progressive, liberal"
+  },
+  {
+    "word": "Analogy",
+    "meaning": "",
+    "synonym": "Comparison, Parallel",
+    "antonym": "Difference"
+  },
+  {
+    "word": "Disgorge",
+    "meaning": "",
+    "synonym": "Eject, expel, regurgitate, discharge",
+    "antonym": "Retain, keep, hold, swallow"
+  },
+  {
+    "word": "jostle",
+    "meaning": "",
+    "synonym": "Push, Bump, Shove",
+    "antonym": "Avoid, Sidestep"
+  },
+  {
+    "word": "Adduce",
+    "meaning": "",
+    "synonym": "Cite, Present",
+    "antonym": "Withhold"
+  },
+  {
+    "word": "Anomaly",
+    "meaning": "",
+    "synonym": "Abnormality",
+    "antonym": "Normality"
+  },
+  {
+    "word": "Derogatory",
+    "meaning": "",
+    "synonym": "Disparaging, offensive, demeaning, defamatory",
+    "antonym": "Complimentary, praising, flattering"
+  },
+  {
+    "word": "Annihilate",
+    "meaning": "",
+    "synonym": "Obliterate, Exterminate",
+    "antonym": "Create, Preserve"
+  },
+  {
+    "word": "suffrage",
+    "meaning": "",
+    "synonym": "Vote, Franchise",
+    "antonym": "-"
+  },
+  {
+    "word": "haughty",
+    "meaning": "",
+    "synonym": "proud, snobbish, supercilious",
+    "antonym": "humble, modest"
+  },
+  {
+    "word": "scrabble",
+    "meaning": "",
+    "synonym": "Scramble, Claw",
+    "antonym": "-"
+  },
+  {
+    "word": "obtuse",
+    "meaning": "",
+    "synonym": "Dull, Insensitive",
+    "antonym": "Sharp, Keen"
+  },
+  {
+    "word": "Enzyme",
+    "meaning": "",
+    "synonym": "Catalyst, accelerator",
+    "antonym": "Inhibitor"
+  },
+  {
+    "word": "vindictive",
+    "meaning": "",
+    "synonym": "spiteful, revengeful",
+    "antonym": "forgiving, merciful"
+  },
+  {
+    "word": "undo",
+    "meaning": "",
+    "synonym": "reverse, cancel",
+    "antonym": "do, create"
+  },
+  {
+    "word": "obtain",
+    "meaning": "",
+    "synonym": "Acquire, Get",
+    "antonym": "Lose, Forfeit"
+  },
+  {
+    "word": "recalcitrant",
+    "meaning": "",
+    "synonym": "disobedient, defiant",
+    "antonym": "compliant, obedient"
+  },
+  {
+    "word": "Auspicious",
+    "meaning": "",
+    "synonym": "Promising, Fortunate",
+    "antonym": "Unlucky, Inauspicious"
+  },
+  {
+    "word": "Divergence",
+    "meaning": "",
+    "synonym": "Difference, deviation, separation, detour",
+    "antonym": "Agreement, similarity, convergence"
+  },
+  {
+    "word": "machination",
+    "meaning": "",
+    "synonym": "Scheme, Plot",
+    "antonym": "Honesty, Frankness"
+  },
+  {
+    "word": "forensic",
+    "meaning": "",
+    "synonym": "legal, judicial, criminalistic",
+    "antonym": "—"
+  },
+  {
+    "word": "Goad",
+    "meaning": "",
+    "synonym": "Spur, prod, incite",
+    "antonym": "Discourage, deter"
+  },
+  {
+    "word": "sketchy",
+    "meaning": "",
+    "synonym": "Incomplete, Imprecise",
+    "antonym": "Detailed"
+  },
+  {
+    "word": "Appease",
+    "meaning": "",
+    "synonym": "Soothe, Pacify",
+    "antonym": "Agitate, Provoke"
+  },
+  {
+    "word": "provisional",
+    "meaning": "",
+    "synonym": "temporary, interim",
+    "antonym": "permanent, final"
+  },
+  {
+    "word": "relent",
+    "meaning": "",
+    "synonym": "yield, soften",
+    "antonym": "harden, resist"
+  },
+  {
+    "word": "Apiary",
+    "meaning": "",
+    "synonym": "Beehouse",
+    "antonym": "nan"
+  },
+  {
+    "word": "Grave",
+    "meaning": "",
+    "synonym": "Serious, somber, momentous",
+    "antonym": "Trivial, lighthearted"
+  },
+  {
+    "word": "Boisterous",
+    "meaning": "",
+    "synonym": "Raucous, Loud",
+    "antonym": "Quiet, Restrained"
+  },
+  {
+    "word": "Affable",
+    "meaning": "",
+    "synonym": "Amiable, Genial",
+    "antonym": "Unfriendly, Aloof"
+  },
+  {
+    "word": "Commuter",
+    "meaning": "",
+    "synonym": "Traveler, Passenger",
+    "antonym": "Resident"
+  },
+  {
+    "word": "Dormant",
+    "meaning": "",
+    "synonym": "Inactive, latent, sleeping, quiescent",
+    "antonym": "Active, awake, energetic, lively"
+  },
+  {
+    "word": "hardihood",
+    "meaning": "",
+    "synonym": "bravery, audacity, fortitude",
+    "antonym": "timidity, fearfulness"
+  },
+  {
+    "word": "plod",
+    "meaning": "",
+    "synonym": "trudge, slog",
+    "antonym": "rush, hurry"
+  },
+  {
+    "word": "shambles",
+    "meaning": "",
+    "synonym": "Mess, Chaos",
+    "antonym": "Order, Cleanliness"
+  },
+  {
+    "word": "nuptial",
+    "meaning": "",
+    "synonym": "Matrimonial, Bridal",
+    "antonym": "-"
+  },
+  {
+    "word": "Devious",
+    "meaning": "",
+    "synonym": "Cunning, underhand, deceitful, sly, crafty",
+    "antonym": "Honest, frank, straightforward, sincere"
+  },
+  {
+    "word": "Gibe",
+    "meaning": "",
+    "synonym": "Taunt, jeer, mock",
+    "antonym": "Praise, compliment"
+  },
+  {
+    "word": "Exigency",
+    "meaning": "",
+    "synonym": "Demand, requirement, necessity, crisis",
+    "antonym": "Unimportance, triviality"
+  },
+  {
+    "word": "Admirable",
+    "meaning": "",
+    "synonym": "Gentle, Pleasing, Charming",
+    "antonym": "Sullen, Churlish"
+  },
+  {
+    "word": "premature",
+    "meaning": "",
+    "synonym": "early, untimely",
+    "antonym": "timely, late"
+  },
+  {
+    "word": "semblance",
+    "meaning": "",
+    "synonym": "Appearance, Similarity",
+    "antonym": "Difference"
+  },
+  {
+    "word": "sheath",
+    "meaning": "",
+    "synonym": "Cover, Case",
+    "antonym": "-"
+  },
+  {
+    "word": "Turbulence",
+    "meaning": "",
+    "synonym": "Turmoil, Disorder",
+    "antonym": "Calm"
+  },
+  {
+    "word": "Bacchanalia",
+    "meaning": "",
+    "synonym": "Revelry, Carousal",
+    "antonym": "Sobriety, Temperance"
+  },
+  {
+    "word": "Berate",
+    "meaning": "",
+    "synonym": "Rebuke, Reprimand",
+    "antonym": "Praise"
+  },
+  {
+    "word": "profuse",
+    "meaning": "",
+    "synonym": "plentiful, excessive",
+    "antonym": "sparse, scarce"
+  },
+  {
+    "word": "Clamor",
+    "meaning": "",
+    "synonym": "Uproar, Outcry",
+    "antonym": "Silence, Calm"
+  },
+  {
+    "word": "ingest",
+    "meaning": "",
+    "synonym": "consume, devour, absorb",
+    "antonym": "eject, vomit"
+  },
+  {
+    "word": "pungent",
+    "meaning": "",
+    "synonym": "sharp, biting",
+    "antonym": "mild, bland"
+  },
+  {
+    "word": "streak",
+    "meaning": "",
+    "synonym": "Stripe, Line",
+    "antonym": "-"
+  },
+  {
+    "word": "stilted",
+    "meaning": "",
+    "synonym": "Formal, Stiff",
+    "antonym": "Natural"
+  },
+  {
+    "word": "pinch",
+    "meaning": "",
+    "synonym": "squeeze, nip",
+    "antonym": "release"
+  },
+  {
+    "word": "squander",
+    "meaning": "",
+    "synonym": "Waste, Misspend",
+    "antonym": "Save"
+  },
+  {
+    "word": "jeer",
+    "meaning": "",
+    "synonym": "Taunt, Ridicule, Mock",
+    "antonym": "Compliment, Praise"
+  },
+  {
+    "word": "Gale",
+    "meaning": "",
+    "synonym": "Cyclone, hurricane, tempest",
+    "antonym": "Calm, breeze"
+  },
+  {
+    "word": "Comatose",
+    "meaning": "",
+    "synonym": "Unconscious, Inert",
+    "antonym": "Alert, Awake"
+  },
+  {
+    "word": "fervent",
+    "meaning": "",
+    "synonym": "ardent, zealous, enthusiastic",
+    "antonym": "apathetic, indifferent, unemotional"
+  },
+  {
+    "word": "forgery",
+    "meaning": "",
+    "synonym": "counterfeit, imitation, fraud",
+    "antonym": "original, genuine"
+  },
+  {
+    "word": "nomenclature",
+    "meaning": "",
+    "synonym": "Terminology, Classification",
+    "antonym": "-"
+  },
+  {
+    "word": "vestige",
+    "meaning": "",
+    "synonym": "remnant, residue",
+    "antonym": "whole, entirety"
+  },
+  {
+    "word": "idealism",
+    "meaning": "",
+    "synonym": "optimism, utopianism, romanticism",
+    "antonym": "realism, cynicism"
+  },
+  {
+    "word": "Allay",
+    "meaning": "",
+    "synonym": "Soothe, Pacify",
+    "antonym": "Agitate, Kindle"
+  },
+  {
+    "word": "mundane",
+    "meaning": "",
+    "synonym": "Ordinary, Routine",
+    "antonym": "Extraordinary, Unique"
+  },
+  {
+    "word": "hereditary",
+    "meaning": "",
+    "synonym": "inherited, congenital",
+    "antonym": "acquired"
+  },
+  {
+    "word": "Adversary",
+    "meaning": "",
+    "synonym": "Opponent, Rival",
+    "antonym": "Ally, Friend"
+  },
+  {
+    "word": "severance",
+    "meaning": "",
+    "synonym": "Separation",
+    "antonym": "Connection"
+  },
+  {
+    "word": "Truant",
+    "meaning": "",
+    "synonym": "Absentee, Delinquent",
+    "antonym": "Attendant"
+  },
+  {
+    "word": "Drudge",
+    "meaning": "",
+    "synonym": "Laborer, worker, toiler, slave",
+    "antonym": "Master, boss, idler"
+  },
+  {
+    "word": "sundry",
+    "meaning": "",
+    "synonym": "Various, Diverse",
+    "antonym": "Similar"
+  },
+  {
+    "word": "neurotic",
+    "meaning": "",
+    "synonym": "-",
+    "antonym": "-"
+  },
+  {
+    "word": "irksome",
+    "meaning": "",
+    "synonym": "Annoying, Tedious, Boring",
+    "antonym": "Pleasant, Delightful"
+  },
+  {
+    "word": "pernicious",
+    "meaning": "",
+    "synonym": "destructive, damaging",
+    "antonym": "beneficial, harmless"
+  },
+  {
+    "word": "icon",
+    "meaning": "",
+    "synonym": "symbol, idol, emblem",
+    "antonym": "—"
+  },
+  {
+    "word": "snare",
+    "meaning": "",
+    "synonym": "Trap, Entangle",
+    "antonym": "Free"
+  },
+  {
+    "word": "mendacity",
+    "meaning": "",
+    "synonym": "Lying, Untruthfulness",
+    "antonym": "Honesty, Truthfulness"
+  },
+  {
+    "word": "nag",
+    "meaning": "",
+    "synonym": "Complain, Scold",
+    "antonym": "Praise, Compliment"
+  },
+  {
+    "word": "mischievous",
+    "meaning": "",
+    "synonym": "Naughty, Playful",
+    "antonym": "Well-behaved, Innocent"
+  },
+  {
+    "word": "syndrome",
+    "meaning": "",
+    "synonym": "Condition, Disorder",
+    "antonym": "Health"
+  },
+  {
+    "word": "Ascendancy",
+    "meaning": "",
+    "synonym": "Control, Supremacy",
+    "antonym": "Subordination"
+  },
+  {
+    "word": "lurk",
+    "meaning": "",
+    "synonym": "Skulk, Sneak",
+    "antonym": "Confront, Reveal"
+  },
+  {
+    "word": "junk",
+    "meaning": "",
+    "synonym": "Debris, Scrap, Clutter",
+    "antonym": "Treasure, Valuables"
+  },
+  {
+    "word": "Circumscribe",
+    "meaning": "",
+    "synonym": "Restrict, Confine",
+    "antonym": "Expand, Liberate"
+  },
+  {
+    "word": "Espouse",
+    "meaning": "",
+    "synonym": "Support, champion, advocate, back",
+    "antonym": "Oppose, reject, deny"
+  },
+  {
+    "word": "implicit",
+    "meaning": "",
+    "synonym": "implied, unspoken, tacit",
+    "antonym": "explicit, stated"
+  },
+  {
+    "word": "Definitive",
+    "meaning": "",
+    "synonym": "Decisive, ultimate, authoritative, precise",
+    "antonym": "Vague, doubtful, unclear, confusing"
+  },
+  {
+    "word": "muffler",
+    "meaning": "",
+    "synonym": "Scarf, Silencer",
+    "antonym": "-"
+  },
+  {
+    "word": "ignoramus",
+    "meaning": "",
+    "synonym": "dunce, fool, dolt",
+    "antonym": "genius, expert"
+  },
+  {
+    "word": "incise",
+    "meaning": "",
+    "synonym": "carve, engrave, slice",
+    "antonym": "close, seal"
+  },
+  {
+    "word": "Abridgement",
+    "meaning": "",
+    "synonym": "Outline, Abbreviation, Summary, Abstract",
+    "antonym": "Enlargement, Expansion"
+  },
+  {
+    "word": "summary",
+    "meaning": "",
+    "synonym": "Concise, Brief",
+    "antonym": "Detailed"
+  },
+  {
+    "word": "Admonitory",
+    "meaning": "",
+    "synonym": "Warning, Cautionary",
+    "antonym": "Encouraging"
+  },
+  {
+    "word": "Gala",
+    "meaning": "",
+    "synonym": "Festival, party, event",
+    "antonym": "Mourning, grief"
+  },
+  {
+    "word": "rapport",
+    "meaning": "",
+    "synonym": "bond, connection",
+    "antonym": "discord, estrangement"
+  },
+  {
+    "word": "paraphrase",
+    "meaning": "",
+    "synonym": "rephrase, restate",
+    "antonym": "quote, reproduce"
+  },
+  {
+    "word": "Grueling",
+    "meaning": "",
+    "synonym": "Tiring, strenuous, backbreaking",
+    "antonym": "Easy, effortless"
+  },
+  {
+    "word": "soggy",
+    "meaning": "",
+    "synonym": "Wet, Saturated",
+    "antonym": "Dry"
+  },
+  {
+    "word": "Despicable",
+    "meaning": "",
+    "synonym": "Hateful, vile, contemptible, loathsome, abominable",
+    "antonym": "Noble, admirable, praiseworthy, honorable"
+  },
+  {
+    "word": "parable",
+    "meaning": "",
+    "synonym": "allegory, fable",
+    "antonym": "-"
+  },
+  {
+    "word": "Adventitious",
+    "meaning": "",
+    "synonym": "Accidental, Extrinsic",
+    "antonym": "Innate, Inherent"
+  },
+  {
+    "word": "rant",
+    "meaning": "",
+    "synonym": "tirade, diatribe",
+    "antonym": "praise, compliment"
+  },
+  {
+    "word": "yarn",
+    "meaning": "",
+    "synonym": "tale, story",
+    "antonym": "—"
+  },
+  {
+    "word": "Trepidation",
+    "meaning": "",
+    "synonym": "Fear, Anxiety",
+    "antonym": "Confidence"
+  },
+  {
+    "word": "Elan",
+    "meaning": "",
+    "synonym": "Style, flair, vigor, exuberance",
+    "antonym": "Lifelessness, dullness, lethargy"
+  },
+  {
+    "word": "meticulous",
+    "meaning": "",
+    "synonym": "Careful, Thorough",
+    "antonym": "Careless, Negligent"
+  },
+  {
+    "word": "rally",
+    "meaning": "",
+    "synonym": "gather, assemble",
+    "antonym": "disperse, scatter"
+  },
+  {
+    "word": "miser",
+    "meaning": "",
+    "synonym": "Scrooge, Penny-pincher",
+    "antonym": "Spendthrift, Generous"
+  },
+  {
+    "word": "jolt",
+    "meaning": "",
+    "synonym": "Shake, Jar, Shock",
+    "antonym": "Stillness, Calm"
+  },
+  {
+    "word": "mendicant",
+    "meaning": "",
+    "synonym": "Pauper, Panhandler",
+    "antonym": "Wealthy, Rich"
+  },
+  {
+    "word": "Amicable",
+    "meaning": "",
+    "synonym": "Cordial, Harmonious",
+    "antonym": "Warlike, Argumentative"
+  },
+  {
+    "word": "Abstruse",
+    "meaning": "",
+    "synonym": "Obscure, Complex",
+    "antonym": "Clear, Obvious"
+  },
+  {
+    "word": "maestro",
+    "meaning": "",
+    "synonym": "Conductor, Virtuoso",
+    "antonym": "Amateur, Novice"
+  },
+  {
+    "word": "Gasket",
+    "meaning": "",
+    "synonym": "Seal, ring, washer",
+    "antonym": "—"
+  },
+  {
+    "word": "Grit",
+    "meaning": "",
+    "synonym": "Determination, stamina, pluck",
+    "antonym": "Cowardice, weakness"
+  },
+  {
+    "word": "Discretion",
+    "meaning": "",
+    "synonym": "Judgment, prudence, tact, caution",
+    "antonym": "Carelessness, indiscretion, recklessness"
+  },
+  {
+    "word": "Aversion",
+    "meaning": "",
+    "synonym": "Hatred, Disgust",
+    "antonym": "Liking, Fondness"
+  },
+  {
+    "word": "Baron",
+    "meaning": "",
+    "synonym": "Noble, Magnate",
+    "antonym": "Commoner"
+  },
+  {
+    "word": "Abscond",
+    "meaning": "",
+    "synonym": "Flee, Escape",
+    "antonym": "Remain"
+  },
+  {
+    "word": "Ado",
+    "meaning": "",
+    "synonym": "Commotion, Buzzle",
+    "antonym": "Calm, Peace"
+  },
+  {
+    "word": "opinionated",
+    "meaning": "",
+    "synonym": "Dogmatic, Assertive",
+    "antonym": "Open-minded"
+  },
+  {
+    "word": "Disabuse",
+    "meaning": "",
+    "synonym": "Enlighten, correct, inform, rectify",
+    "antonym": "Mislead, deceive, convince, fool"
+  },
+  {
+    "word": "repast",
+    "meaning": "",
+    "synonym": "nan",
+    "antonym": "nan"
+  },
+  {
+    "word": "Gasp",
+    "meaning": "",
+    "synonym": "Pant, puff, choke",
+    "antonym": "Exhale"
+  },
+  {
+    "word": "hematology",
+    "meaning": "",
+    "synonym": "—",
+    "antonym": "—"
+  },
+  {
+    "word": "repel",
+    "meaning": "",
+    "synonym": "repulse, reject",
+    "antonym": "attract"
+  },
+  {
+    "word": "portent",
+    "meaning": "",
+    "synonym": "omen, sign",
+    "antonym": "reassurance"
+  },
+  {
+    "word": "ire",
+    "meaning": "",
+    "synonym": "Rage, Wrath, Fury",
+    "antonym": "Delight, Joy"
+  },
+  {
+    "word": "Deplete",
+    "meaning": "",
+    "synonym": "Exhaust, drain, consume, empty",
+    "antonym": "Replenish, restore, refill, renew"
+  },
+  {
+    "word": "undertone",
+    "meaning": "",
+    "synonym": "hint, suggestion",
+    "antonym": "loudness"
+  },
+  {
+    "word": "magnanimous",
+    "meaning": "",
+    "synonym": "Charitable, Noble",
+    "antonym": "Selfish, Mean"
+  },
+  {
+    "word": "Gambol",
+    "meaning": "",
+    "synonym": "Skip, dance, leap",
+    "antonym": "Trudge, plod"
+  },
+  {
+    "word": "Adroit",
+    "meaning": "",
+    "synonym": "Proficient, Dexterous",
+    "antonym": "Awkward, Dull"
+  },
+  {
+    "word": "Exploit",
+    "meaning": "",
+    "synonym": "Utilize, manipulate, abuse, utilize, achieve",
+    "antonym": "Ignore, waste, misuse (opportunity)"
+  },
+  {
+    "word": "undermine",
+    "meaning": "",
+    "synonym": "weaken, sabotage",
+    "antonym": "strengthen, reinforce"
+  },
+  {
+    "word": "Tremor",
+    "meaning": "",
+    "synonym": "Quiver, Shiver",
+    "antonym": "Stillness"
+  },
+  {
+    "word": "quash",
+    "meaning": "",
+    "synonym": "suppress, extinguish",
+    "antonym": "support, uphold"
+  }
+]
