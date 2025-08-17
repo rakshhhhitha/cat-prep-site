@@ -1,106 +1,57 @@
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #f0f4f8, #e0e7ff);
-  display: flex;
-  justify-content: center;
+  background: linear-gradient(135deg, #f0f4ff, #d9e4ff);
+  min-height: 100vh;
 }
 
 .page {
   text-align: center;
-  max-width: 800px;
-  width: 95%;
-  margin: 30px auto;
+  padding: 30px 15px;
 }
 
 h1, h2 {
   margin-bottom: 20px;
-  color: #333;
+  color: #111;
 }
 
 button {
   padding: 12px 25px;
-  margin: 5px;
+  margin: 6px;
   border-radius: 12px;
   border: none;
   cursor: pointer;
   font-size: 16px;
   transition: all 0.3s ease;
-  min-width: 100px;
-  font-weight: bold;
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
 }
 
 button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0px 6px 8px rgba(0,0,0,0.15);
+  transform: scale(1.05);
 }
 
-.btn-primary { background: #6366f1; color: white; }
-.btn-outline-primary { background: white; border: 2px solid #6366f1; color: #6366f1; }
-.btn-outline-secondary { background: white; border: 2px solid #f97316; color: #f97316; }
+.btn-primary { background: #6366f1; color: #fff; }
+.btn-outline-primary { background: #fff; border: 2px solid #6366f1; color: #6366f1; }
+.btn-outline-secondary { background: #fff; border: 2px solid #4b5563; color: #4b5563; }
 
-.btn-success { background: #16a34a !important; color: white; }
-.btn-danger { background: #dc2626 !important; color: white; }
+.btn-success { background-color: #28a745 !important; color: #fff; }
+.btn-danger { background-color: #dc3545 !important; color: #fff; }
 
-.feedback {
-  margin-top: 15px;
-  font-weight: bold;
-  font-size: 20px;
-  min-height: 30px;
-  transition: all 0.5s ease;
-}
+.d-none { display: none; }
 
-.options {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
-}
+.dashboard { display: flex; flex-direction: column; gap: 12px; align-items: center; margin-bottom: 20px; }
 
-.dashboard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-  gap: 10px;
-}
+.progress-info { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 5px; }
+.progress-bar { width: 100%; max-width: 400px; height: 12px; background: #e2e8f0; border-radius: 6px; overflow: hidden; }
+#progress-fill { width: 0%; height: 100%; background: #6366f1; transition: width 0.5s ease; }
 
-.progress-info {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  font-weight: bold;
-}
+.question { font-size: 1.5em; margin: 20px 0; color: #111; }
 
-.progress-bar {
-  width: 100%;
-  height: 12px;
-  background-color: #d1d5db;
-  border-radius: 6px;
-  overflow: hidden;
-  margin-top: 5px;
-}
+.options { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 15px; }
+.options button { min-width: 120px; font-size: 16px; border-radius: 10px; }
 
-#progress-fill {
-  height: 100%;
-  width: 0%;
-  background: #6366f1;
-  transition: width 0.5s ease;
-}
+.feedback { font-size: 20px; min-height: 28px; margin-top: 10px; font-weight: bold; }
 
-.home-btn {
-  background: #f43f5e;
-  color: white;
-  padding: 10px 20px;
-}
+.home-btn { background: #f59e0b; color: #fff; padding: 10px 20px; border-radius: 10px; }
 
-.mode-buttons, .range-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
-}
+.mode-list, .range-list { margin: 15px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
