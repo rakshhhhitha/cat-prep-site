@@ -68,3 +68,11 @@ button:focus {
   font-weight: bold;
   font-size: 18px;
 }
+#alphabet-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 15px;
+}
+
