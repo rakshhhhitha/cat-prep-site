@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vocabulary Quiz</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vocabulary Quiz</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- START PAGE -->
-  <div id="start-page" class="page">
-    <h1>Vocabulary Quiz</h1>
-    <div id="mode-list"></div>
-    <div id="range-list"></div>
-  </div>
+<!-- START PAGE -->
+<div id="start-page" class="page">
+  <h1>Vocabulary Quiz</h1>
+  <div id="mode-list" class="mode-buttons"></div>
+  <div id="range-list" class="range-buttons"></div>
+</div>
 
-  <!-- QUIZ PAGE -->
-  <div id="quiz-page" class="page d-none">
-    <div class="dashboard">
+<!-- QUIZ PAGE -->
+<div id="quiz-page" class="page d-none">
+  <div class="dashboard">
+    <div class="progress-info">
       <span>Q <span id="current-question">0</span> / <span id="total-questions">0</span></span>
-      <button onclick="goHome()">Home</button>
+      <span id="accuracy">Accuracy: 0%</span>
     </div>
-    <div id="question-text" class="question"></div>
-    <div id="options-container" class="options"></div>
-    <div id="feedback" class="feedback"></div>
+    <div class="progress-bar">
+      <div id="progress-fill"></div>
+    </div>
+    <button class="home-btn" onclick="goHome()">Home</button>
   </div>
+  <div id="question-text" class="question"></div>
+  <div id="options-container" class="options"></div>
+  <div id="feedback" class="feedback"></div>
+</div>
 
-  <!-- RESULT PAGE -->
-  <div id="result-page" class="page d-none">
-    <h2 id="result"></h2>
-    <button onclick="goHome()">Go Home</button>
-  </div>
+<!-- RESULT PAGE -->
+<div id="result-page" class="page d-none">
+  <h2 id="result"></h2>
+  <button onclick="goHome()" class="home-btn">Go Home</button>
+</div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
