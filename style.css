@@ -1,24 +1,56 @@
-body {
-  background-color: #f8f9fa;
-}
-
+/* General Quiz Container */
 .quiz-container {
-  max-width: 600px;
-  margin: auto;
+    background-color: #fff;
+    padding: 25px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: auto;
 }
 
+/* Option Buttons */
 #options-container button {
-  width: 100%;
-  text-align: left;
+    width: 100%;
+    margin: 8px 0;
+    text-align: left;
+    font-size: 1rem;
+    transition: background 0.2s, color 0.2s;
 }
 
-/* Feedback styles */
+/* Prevent mobile blue highlight */
+#options-container button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Feedback Styling */
 #feedback {
-  font-size: 1.2em;
+    font-size: 1.1rem;
+    min-height: 24px;
 }
 
-/* Prevent default mobile blue focus */
-button:focus {
-  outline: none !important;
-  box-shadow: none !important;
+/* Alphabet Buttons */
+#alphabet-list button {
+    min-width: 40px;
+    margin: 3px;
+    font-size: 0.9rem;
+}
+
+/* Mode Buttons */
+#mode-list button {
+    min-width: 80px;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 576px) {
+    .quiz-container {
+        padding: 20px 15px;
+    }
+    #options-container button {
+        font-size: 0.95rem;
+    }
+    #mode-list button, #alphabet-list button {
+        font-size: 0.85rem;
+        padding: 6px 8px;
+    }
 }
