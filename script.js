@@ -1,101 +1,91 @@
 let vocabularyData = [];
 let quizQueue = [];
 let currentQuestion = null;
-let currentMode = null;
-let totalAttempts = 0;
+let currentMode = "";
 let correctAnswers = 0;
+let totalAttempts = 0;
 
-// DOM Elements
+// DOM elements
 const startPage = document.getElementById("start-page");
 const quizPage = document.getElementById("quiz-page");
 const resultPage = document.getElementById("result-page");
+
+const modeList = document.getElementById("mode-list");
+const alphabetList = document.getElementById("alphabet-list");
 const questionText = document.getElementById("question-text");
 const optionsContainer = document.getElementById("options-container");
 const feedback = document.getElementById("feedback");
-const resultDiv = document.getElementById("result");
-const alphabetList = document.getElementById("alphabet-list");
-const modeList = document.getElementById("mode-list");
 const currentQSpan = document.getElementById("current-question");
 const totalQSpan = document.getElementById("total-questions");
 const accuracySpan = document.getElementById("accuracy");
+const resultDiv = document.getElementById("result");
 
-// Shuffle utility
-function shuffle(arr) {
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
-
-// Load Mode Buttons
-function loadModeButtons() {
-  const modes = ["Word", "Synonym", "Antonym"];
-  modeList.innerHTML = "";
-  modes.forEach(mode => {
-    const btn = document.createElement("button");
-    btn.className = "btn btn-outline-primary m-1";
-    btn.textContent = mode;
-    btn.onclick = () => selectMode(mode);
-    modeList.appendChild(btn);
+// Load dataset
+fetch("vocab-data.json")
+  .then(res => res.json())
+  .then(data => {
+    vocabularyData = data;
+    showModes();
   });
+
+// Show modes
+function showModes() {
+  startPage.classList.remove("d-none");
+  quizPage.classList.add("d-none");
+  resultPage.classList.add("d-none");
+
+  modeList.innerHTML = `
+    <button class="btn btn-primary m-1" onclick="chooseMode('Word')">Words Quiz</button>
+    <button class="btn btn-success m-1" onclick="chooseMode('Synonym')">Synonyms Quiz</button>
+    <button class="btn btn-danger m-1" onclick="chooseMode('Antonym')">Antonyms Quiz</button>
+  `;
 }
 
-// Select Mode
-function selectMode(mode) {
+// Choose mode
+function chooseMode(mode) {
   currentMode = mode;
   alphabetList.innerHTML = "";
 
   if (mode === "Word") {
-    for (let i = 65; i <= 90; i++) {
-      const letter = String.fromCharCode(i);
+    // Show alphabets for word quiz
+    const alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+    alphabets.forEach(letter => {
       const btn = document.createElement("button");
       btn.className = "btn btn-outline-secondary m-1";
       btn.textContent = letter;
       btn.onclick = () => startQuiz(letter);
       alphabetList.appendChild(btn);
-    }
-    const randBtn = document.createElement("button");
-    randBtn.className = "btn btn-primary m-1";
-    randBtn.textContent = "Random All";
-    randBtn.onclick = () => startQuiz("RANDOM");
-    alphabetList.appendChild(randBtn);
+    });
   } else {
-    startQuiz("RANDOM");
+    // For Synonym & Antonym → random 50
+    startQuiz();
   }
 }
 
-// Start Quiz
-function startQuiz(choice) {
-  totalAttempts = 0;
+// Start quiz
+function startQuiz(letter = null) {
   correctAnswers = 0;
-  updateDashboard();
+  totalAttempts = 0;
+  currentQSpan.textContent = 0;
 
-  quizQueue = [];
-  let items = [];
-  if (currentMode === "Word") items = vocabularyData.filter(v => v.Meanings);
-  else if (currentMode === "Synonym") items = vocabularyData.filter(v => v.Synonym);
-  else if (currentMode === "Antonym") items = vocabularyData.filter(v => v.Antonym);
-
-  if (currentMode === "Word" && choice !== "RANDOM") {
-    quizQueue = items.filter(item => item.Word[0].toUpperCase() === choice.toUpperCase());
-  } else {
-    quizQueue = [...items];
+  if (currentMode === "Word") {
+    quizQueue = vocabularyData.filter(v => v.Word.startsWith(letter));
+  } else if (currentMode === "Synonym") {
+    quizQueue = vocabularyData.filter(v => v.Synonym && v.Synonym.trim() !== "");
+    shuffle(quizQueue);
+    quizQueue = quizQueue.slice(0, 50);
+  } else if (currentMode === "Antonym") {
+    quizQueue = vocabularyData.filter(v => v.Antonym && v.Antonym.trim() !== "");
+    shuffle(quizQueue);
+    quizQueue = quizQueue.slice(0, 50);
   }
 
-  if (quizQueue.length === 0) {
-    alert("⚠️ No words available for this selection.");
-    return;
-  }
-
-  shuffle(quizQueue);
+  totalQSpan.textContent = quizQueue.length;
+  accuracySpan.textContent = "0%";
 
   startPage.classList.add("d-none");
   quizPage.classList.remove("d-none");
   resultPage.classList.add("d-none");
-
-  totalQSpan.textContent = quizQueue.length;
-  currentQSpan.textContent = 0;
 
   nextQuestion();
 }
@@ -131,9 +121,13 @@ function nextQuestion() {
   // Generate options
   let options = [correctAnswer];
   let allOptions = [];
-  if (currentMode === "Word") allOptions = vocabularyData.flatMap(v => v.Meanings.split(",").map(m => m.trim()));
-  else if (currentMode === "Synonym") allOptions = vocabularyData.flatMap(v => v.Synonym ? v.Synonym.split(",").map(s => s.trim()) : []);
-  else if (currentMode === "Antonym") allOptions = vocabularyData.flatMap(v => v.Antonym ? v.Antonym.split(",").map(a => a.trim()) : []);
+  if (currentMode === "Word") {
+    allOptions = vocabularyData.flatMap(v => v.Meanings.split(",").map(m => m.trim()));
+  } else if (currentMode === "Synonym") {
+    allOptions = vocabularyData.flatMap(v => v.Synonym ? v.Synonym.split(",").map(s => s.trim()) : []);
+  } else if (currentMode === "Antonym") {
+    allOptions = vocabularyData.flatMap(v => v.Antonym ? v.Antonym.split(",").map(a => a.trim()) : []);
+  }
 
   while (options.length < 4 && allOptions.length > options.length) {
     const rand = allOptions[Math.floor(Math.random() * allOptions.length)];
@@ -150,11 +144,15 @@ function nextQuestion() {
     btn.onclick = () => handleAnswer(btn, opt, correctAnswer);
     optionsContainer.appendChild(btn);
   });
+
+  // 🚀 Prevent stuck blue highlight on mobile
+  document.activeElement.blur();
 }
 
 // Handle Answer
 function handleAnswer(button, selected, correctAnswer) {
   totalAttempts++;
+  button.blur(); // 🚀 Prevent focus highlight issue on mobile
 
   if (selected === correctAnswer) {
     correctAnswers++;
@@ -165,41 +163,43 @@ function handleAnswer(button, selected, correctAnswer) {
     button.classList.remove("btn-outline-primary");
     button.classList.add("btn-danger");
     feedback.textContent = `❌ Incorrect! Correct: ${correctAnswer}`;
-    // Highlight correct
+
+    // Highlight correct answer
     Array.from(optionsContainer.children).forEach(b => {
       if (b.textContent === correctAnswer) {
         b.classList.remove("btn-outline-primary");
         b.classList.add("btn-success");
       }
     });
-    quizQueue.push(currentQuestion); // loop wrong question to the end
+
+    // 🚀 Add wrong question back for revision
+    quizQueue.push(currentQuestion);
   }
 
+  // Disable all options after answering
   Array.from(optionsContainer.children).forEach(b => b.disabled = true);
+
   updateDashboard();
+
+  // Move to next question after short delay
   setTimeout(nextQuestion, 1200);
 }
 
-// Update Dashboard
+// Update Scoreboard
 function updateDashboard() {
-  accuracySpan.textContent = totalAttempts ? ((correctAnswers/totalAttempts)*100).toFixed(2) + "%" : "0%";
+  const acc = totalAttempts === 0 ? 0 : (correctAnswers / totalAttempts) * 100;
+  accuracySpan.textContent = `${acc.toFixed(2)}%`;
+}
+
+// Shuffle utility
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
 }
 
 // Go Home
 function goHome() {
-  startPage.classList.remove("d-none");
-  quizPage.classList.add("d-none");
-  resultPage.classList.add("d-none");
-  alphabetList.innerHTML = "";
+  showModes();
 }
-
-// Load Dataset
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("vocab-data.json")
-    .then(res => res.json())
-    .then(data => {
-      vocabularyData = data;
-      loadModeButtons();
-    })
-    .catch(err => console.error("❌ Failed to load vocab-data.json", err));
-});
