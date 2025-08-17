@@ -1,14 +1,41 @@
-.quiz-container {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    max-width: 700px;
-    margin: auto;
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
 }
 
-#options-container button {
-    width: 100%;
-    margin: 5px 0;
-    text-align: left;
+.quiz-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+#options-container .btn {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  font-size: 1rem;
+  text-align: left;
+  border-radius: 8px;
+}
+
+/* ✅ Fix sticky blue highlight on mobile */
+button:focus,
+button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Feedback text */
+#feedback {
+  font-size: 1.1rem;
+}
+
+/* Dashboard */
+#quiz-page .d-flex {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
