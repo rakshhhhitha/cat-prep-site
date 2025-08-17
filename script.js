@@ -1,10 +1,8 @@
 let vocabularyData = [];
 let quizQueue = [];
-let quizQueueStart = []; // fixed reference for dashboard
+let quizQueueStart = [];
 let currentQuestion = null;
 let currentMode = null;
-let totalAttempts = 0;
-let accuracy = 100;
 const maxAttemptsPerWord = 2;
 
 // DOM Elements
@@ -17,13 +15,10 @@ const feedback = document.getElementById("feedback");
 const resultDiv = document.getElementById("result");
 const alphabetList = document.getElementById("alphabet-list");
 const modeList = document.getElementById("mode-list");
-const currentQSpan = document.getElementById("current-question");
-const totalQSpan = document.getElementById("total-questions");
-const accuracySpan = document.getElementById("accuracy");
 const wordsCorrectSpan = document.getElementById("words-correct");
 const totalQuestionsWordsSpan = document.getElementById("total-questions-words");
 
-// Utility: Shuffle array
+// Shuffle utility
 function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -71,8 +66,6 @@ function selectMode(mode) {
 
 // Start Quiz
 function startQuiz(choice) {
-    totalAttempts = 0;
-    accuracy = 100;
     quizQueue = [];
     let items = [];
 
@@ -91,8 +84,7 @@ function startQuiz(choice) {
         return;
     }
 
-    // Initialize attempts, correct flag, and wrong count
-    quizQueueStart = quizQueue.map(q => ({ ...q, attempts: 0, correct: false, wrongCount: 0 }));
+    quizQueueStart = quizQueue.map(q => ({ ...q, attempts: 0, correct: false }));
     quizQueue = [...quizQueueStart];
 
     shuffle(quizQueue);
@@ -100,10 +92,7 @@ function startQuiz(choice) {
     quizPage.classList.remove("d-none");
     resultPage.classList.add("d-none");
 
-    totalQSpan.textContent = quizQueueStart.length;
     totalQuestionsWordsSpan.textContent = quizQueueStart.length;
-    currentQSpan.textContent = 0;
-
     updateDashboard();
     nextQuestion();
 }
@@ -116,14 +105,13 @@ function nextQuestion() {
     if (quizQueue.length === 0) {
         quizPage.classList.add("d-none");
         resultPage.classList.remove("d-none");
-        resultDiv.textContent = `✅ Quiz Complete! Accuracy: ${accuracy.toFixed(2)}%`;
+        resultDiv.textContent = `✅ Quiz Complete! Words Correct: ${wordsCorrectSpan.textContent} / ${quizQueueStart.length}`;
         return;
     }
 
     currentQuestion = quizQueue.shift();
-    currentQSpan.textContent = parseInt(currentQSpan.textContent) + 1;
-
     let correctAnswer = "";
+
     if (currentMode === "Word") {
         questionText.textContent = `What is the meaning of "${currentQuestion.Word}"?`;
         correctAnswer = currentQuestion.Meanings.split(",")[0].trim();
@@ -177,29 +165,20 @@ function handleAnswer(button, selected, correctAnswer) {
         button.classList.add("btn-danger");
         feedback.textContent = `❌ Incorrect! Correct: ${correctAnswer}`;
 
-        // Highlight correct answer
+        currentQuestion.attempts++;
+        if (currentQuestion.attempts < maxAttemptsPerWord) {
+            quizQueue.push(currentQuestion);
+        }
+
         Array.from(optionsContainer.children).forEach(b => {
             if (b.textContent === correctAnswer) {
                 b.classList.remove("btn-outline-primary");
                 b.classList.add("btn-success");
             }
         });
-
-        currentQuestion.attempts++;
-        if (currentQuestion.attempts < maxAttemptsPerWord) {
-            quizQueue.push(currentQuestion);
-        }
-
-        // Decrease accuracy only for first wrong attempt
-        if (currentQuestion.wrongCount === 0) {
-            accuracy -= (100 / quizQueueStart.length);
-            if (accuracy < 0) accuracy = 0;
-            currentQuestion.wrongCount++;
-        }
     }
 
     Array.from(optionsContainer.children).forEach(b => b.disabled = true);
-    totalAttempts++;
     updateDashboard();
     setTimeout(nextQuestion, 1200);
 }
@@ -207,8 +186,6 @@ function handleAnswer(button, selected, correctAnswer) {
 // Update Dashboard
 function updateDashboard() {
     wordsCorrectSpan.textContent = quizQueueStart.filter(q => q.correct).length;
-    totalQuestionsWordsSpan.textContent = quizQueueStart.length;
-    accuracySpan.textContent = accuracy.toFixed(2) + "%";
 }
 
 // Go Home
