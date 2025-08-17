@@ -53,7 +53,7 @@ function selectMode(mode) {
             alphabetList.appendChild(btn);
         }
     } else {
-        // Range buttons for Synonym / Antonym mode
+        // Numeric ranges for Synonym / Antonym mode
         const rangeSize = 100;
         const totalItems = vocabularyData.length;
         for (let start = 0; start < totalItems; start += rangeSize) {
@@ -201,8 +201,8 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("vocab-data.json")
         .then(res => res.json())
         .then(data => {
-            vocabularyData = data;
-            loadModeButtons();
+            vocabularyData = data.sort((a, b) => a.Word.localeCompare(b.Word)); // alphabetical
+            loadModeButtons();  // load buttons only after data is ready
             console.log("Vocabulary loaded:", vocabularyData.length);
         })
         .catch(err => console.error("❌ Failed to load vocab-data.json", err));
