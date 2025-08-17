@@ -43,3 +43,12 @@ button.incorrect {
 .d-none {
     display: none !important;
 }
+
+#options-container button {
+    text-align: left;
+    transition: 0.3s;
+}
+#options-container button:hover {
+    transform: scale(1.02);
+}
+
