@@ -1,8 +1,10 @@
 let vocabularyData = [];
 let quizQueue = [];
-let quizQueueStart = [];
 let currentQuestion = null;
 let currentMode = null;
+let totalAttempts = 0;
+let correctAnswers = 0;
+let wordsCorrect = 0; // tracks number of words answered correctly at least once
 const maxAttemptsPerWord = 2;
 
 // DOM Elements
@@ -15,10 +17,13 @@ const feedback = document.getElementById("feedback");
 const resultDiv = document.getElementById("result");
 const alphabetList = document.getElementById("alphabet-list");
 const modeList = document.getElementById("mode-list");
+const currentQSpan = document.getElementById("current-question");
+const totalQSpan = document.getElementById("total-questions");
+const accuracySpan = document.getElementById("accuracy");
 const wordsCorrectSpan = document.getElementById("words-correct");
 const totalQuestionsWordsSpan = document.getElementById("total-questions-words");
 
-// Shuffle utility
+// Utility: Shuffle array
 function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -66,6 +71,10 @@ function selectMode(mode) {
 
 // Start Quiz
 function startQuiz(choice) {
+    totalAttempts = 0;
+    correctAnswers = 0;
+    wordsCorrect = 0;
+    updateDashboard();
     quizQueue = [];
     let items = [];
 
@@ -84,17 +93,16 @@ function startQuiz(choice) {
         return;
     }
 
-    // Reset all questions
-    quizQueueStart = quizQueue.map(q => ({ ...q, attempts: 0, correct: false }));
-    quizQueue = [...quizQueueStart];
+    // Reset attempts & correctOnce for all questions
+    quizQueue.forEach(q => { q.attempts = 0; q.correctOnce = false; });
 
     shuffle(quizQueue);
     startPage.classList.add("d-none");
     quizPage.classList.remove("d-none");
     resultPage.classList.add("d-none");
-
-    totalQuestionsWordsSpan.textContent = quizQueueStart.length;
-    updateDashboard();
+    totalQSpan.textContent = quizQueue.length;
+    totalQuestionsWordsSpan.textContent = quizQueue.length;
+    currentQSpan.textContent = 0;
     nextQuestion();
 }
 
@@ -106,11 +114,12 @@ function nextQuestion() {
     if (quizQueue.length === 0) {
         quizPage.classList.add("d-none");
         resultPage.classList.remove("d-none");
-        resultDiv.textContent = `✅ Quiz Complete! Words Correct: ${wordsCorrectSpan.textContent} / ${quizQueueStart.length}`;
+        resultDiv.textContent = `✅ Quiz Complete! Accuracy: ${((wordsCorrect/totalQuestionsWordsSpan.textContent)*100).toFixed(2)}%`;
         return;
     }
 
     currentQuestion = quizQueue.shift();
+    currentQSpan.textContent = parseInt(currentQSpan.textContent) + 1;
     let correctAnswer = "";
 
     if (currentMode === "Word") {
@@ -152,12 +161,14 @@ function nextQuestion() {
 
 // Handle Answer
 function handleAnswer(button, selected, correctAnswer) {
-    if (selected === correctAnswer && !currentQuestion.correct) {
-        currentQuestion.correct = true;
-        button.classList.remove("btn-outline-primary");
-        button.classList.add("btn-success");
-        feedback.textContent = "✅ Correct!";
-    } else if (selected === correctAnswer) {
+    totalAttempts++;
+
+    if (selected === correctAnswer) {
+        correctAnswers++;
+        if (!currentQuestion.correctOnce) {
+            currentQuestion.correctOnce = true;
+            wordsCorrect++;
+        }
         button.classList.remove("btn-outline-primary");
         button.classList.add("btn-success");
         feedback.textContent = "✅ Correct!";
@@ -166,17 +177,20 @@ function handleAnswer(button, selected, correctAnswer) {
         button.classList.add("btn-danger");
         feedback.textContent = `❌ Incorrect! Correct: ${correctAnswer}`;
 
-        currentQuestion.attempts++;
-        if (currentQuestion.attempts < maxAttemptsPerWord) {
-            quizQueue.push(currentQuestion);
-        }
-
+        // Highlight correct answer
         Array.from(optionsContainer.children).forEach(b => {
             if (b.textContent === correctAnswer) {
                 b.classList.remove("btn-outline-primary");
                 b.classList.add("btn-success");
             }
         });
+
+        // Repeat wrong question if under attempt limit
+        currentQuestion.attempts = currentQuestion.attempts || 0;
+        currentQuestion.attempts++;
+        if (currentQuestion.attempts < maxAttemptsPerWord) {
+            quizQueue.push(currentQuestion);
+        }
     }
 
     Array.from(optionsContainer.children).forEach(b => b.disabled = true);
@@ -186,7 +200,10 @@ function handleAnswer(button, selected, correctAnswer) {
 
 // Update Dashboard
 function updateDashboard() {
-    wordsCorrectSpan.textContent = quizQueueStart.filter(q => q.correct).length;
+    accuracySpan.textContent = totalQuestionsWordsSpan.textContent
+        ? ((wordsCorrect / totalQuestionsWordsSpan.textContent) * 100).toFixed(2) + "%"
+        : "0%";
+    wordsCorrectSpan.textContent = wordsCorrect;
 }
 
 // Go Home
