@@ -1,11 +1,10 @@
-let vocabularyData = [];
+let vocabData = [];
+let quizMode = "";
 let quizQueue = [];
 let currentQuestion = null;
-let currentMode = "";
 let correctAnswers = 0;
 let totalAttempts = 0;
 
-// DOM elements
 const startPage = document.getElementById("start-page");
 const quizPage = document.getElementById("quiz-page");
 const resultPage = document.getElementById("result-page");
@@ -15,50 +14,54 @@ const alphabetList = document.getElementById("alphabet-list");
 const questionText = document.getElementById("question-text");
 const optionsContainer = document.getElementById("options-container");
 const feedback = document.getElementById("feedback");
-const currentQSpan = document.getElementById("current-question");
-const totalQSpan = document.getElementById("total-questions");
-const accuracySpan = document.getElementById("accuracy");
-const resultDiv = document.getElementById("result");
+const currentQuestionNum = document.getElementById("current-question");
+const totalQuestionsNum = document.getElementById("total-questions");
+const accuracyText = document.getElementById("accuracy");
+const resultText = document.getElementById("result");
 
-// Load dataset
+// Load vocab data
 fetch("vocab-data.json")
   .then(res => res.json())
   .then(data => {
-    vocabularyData = data;
-    showModes();
+    vocabData = data;
+    renderModes();
   });
 
-// Show modes
-function showModes() {
-  startPage.classList.remove("d-none");
-  quizPage.classList.add("d-none");
-  resultPage.classList.add("d-none");
-
-  modeList.innerHTML = `
-    <button class="btn btn-primary m-1" onclick="chooseMode('Word')">Words Quiz</button>
-    <button class="btn btn-success m-1" onclick="chooseMode('Synonym')">Synonyms Quiz</button>
-    <button class="btn btn-danger m-1" onclick="chooseMode('Antonym')">Antonyms Quiz</button>
-  `;
+// Render quiz mode options
+function renderModes() {
+  modeList.innerHTML = "";
+  const modes = ["Words", "Synonyms", "Antonyms"];
+  modes.forEach(mode => {
+    const btn = document.createElement("button");
+    btn.className = "btn btn-primary m-2";
+    btn.textContent = mode;
+    btn.onclick = () => selectMode(mode);
+    modeList.appendChild(btn);
+  });
 }
 
-// Choose mode
-function chooseMode(mode) {
-  currentMode = mode;
+// Select mode
+function selectMode(mode) {
+  quizMode = mode;
   alphabetList.innerHTML = "";
 
-  if (mode === "Word") {
-    // Show alphabets for word quiz
-    const alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-    alphabets.forEach(letter => {
+  if (mode === "Words") {
+    // Show alphabet buttons
+    for (let i = 65; i <= 90; i++) {
+      const letter = String.fromCharCode(i);
       const btn = document.createElement("button");
       btn.className = "btn btn-outline-secondary m-1";
       btn.textContent = letter;
       btn.onclick = () => startQuiz(letter);
       alphabetList.appendChild(btn);
-    });
+    }
   } else {
-    // For Synonym & Antonym → random 50
-    startQuiz();
+    // Random 50 for Synonyms/Antonyms
+    const btn = document.createElement("button");
+    btn.className = "btn btn-success";
+    btn.textContent = `Start ${mode} Quiz (50 Qs)`;
+    btn.onclick = () => startQuiz();
+    alphabetList.appendChild(btn);
   }
 }
 
@@ -66,93 +69,93 @@ function chooseMode(mode) {
 function startQuiz(letter = null) {
   correctAnswers = 0;
   totalAttempts = 0;
-  currentQSpan.textContent = 0;
+  feedback.textContent = "";
 
-  if (currentMode === "Word") {
-    quizQueue = vocabularyData.filter(v => v.Word.startsWith(letter));
-  } else if (currentMode === "Synonym") {
-    quizQueue = vocabularyData.filter(v => v.Synonym && v.Synonym.trim() !== "");
-    shuffle(quizQueue);
-    quizQueue = quizQueue.slice(0, 50);
-  } else if (currentMode === "Antonym") {
-    quizQueue = vocabularyData.filter(v => v.Antonym && v.Antonym.trim() !== "");
-    shuffle(quizQueue);
-    quizQueue = quizQueue.slice(0, 50);
+  if (quizMode === "Words") {
+    quizQueue = vocabData.filter(item =>
+      item.Word[0].toUpperCase() === letter
+    );
+  } else if (quizMode === "Synonyms") {
+    quizQueue = shuffleArray(vocabData).slice(0, 50);
+  } else if (quizMode === "Antonyms") {
+    quizQueue = shuffleArray(vocabData).slice(0, 50);
   }
 
-  totalQSpan.textContent = quizQueue.length;
-  accuracySpan.textContent = "0%";
+  if (quizQueue.length === 0) {
+    alert("No questions available!");
+    return;
+  }
 
   startPage.classList.add("d-none");
   quizPage.classList.remove("d-none");
   resultPage.classList.add("d-none");
 
+  totalQuestionsNum.textContent = quizQueue.length;
   nextQuestion();
 }
 
-// Next Question
+// Show next question
 function nextQuestion() {
-  feedback.textContent = "";
-
   if (quizQueue.length === 0) {
-    quizPage.classList.add("d-none");
-    resultPage.classList.remove("d-none");
-    resultDiv.textContent = `✅ Quiz Complete! Accuracy: ${((correctAnswers/totalAttempts)*100).toFixed(2)}%`;
+    showResult();
     return;
   }
 
   currentQuestion = quizQueue.shift();
-  currentQSpan.textContent = parseInt(currentQSpan.textContent) + 1;
+  currentQuestionNum.textContent = totalAttempts + 1;
+  feedback.textContent = "";
 
+  let question = "";
   let correctAnswer = "";
-  if (currentMode === "Word") {
-    questionText.textContent = `What is the meaning of "${currentQuestion.Word}"?`;
+  let options = [];
+
+  if (quizMode === "Words") {
+    question = `What is the meaning of "${currentQuestion.Word}"?`;
     correctAnswer = currentQuestion.Meanings.split(",")[0].trim();
-  } else if (currentMode === "Synonym") {
-    questionText.textContent = `Which word is a synonym of "${currentQuestion.Word}"?`;
-    const syns = currentQuestion.Synonym.split(",").map(s => s.trim()).filter(Boolean);
-    correctAnswer = syns[Math.floor(Math.random() * syns.length)];
-  } else if (currentMode === "Antonym") {
-    questionText.textContent = `Which word is an antonym of "${currentQuestion.Word}"?`;
-    const ants = currentQuestion.Antonym.split(",").map(a => a.trim()).filter(Boolean);
-    correctAnswer = ants[Math.floor(Math.random() * ants.length)];
+    options = generateOptions(
+      correctAnswer,
+      vocabData.map(item => item.Meanings.split(",")[0].trim())
+    );
+  } else if (quizMode === "Synonyms") {
+    question = `Pick the synonym of "${currentQuestion.Word}"`;
+    correctAnswer = currentQuestion.Synonym.split(",")[0].trim();
+    options = generateOptions(
+      correctAnswer,
+      vocabData.flatMap(item => item.Synonym.split(",").map(s => s.trim()))
+    );
+  } else {
+    question = `Pick the antonym of "${currentQuestion.Word}"`;
+    correctAnswer = currentQuestion.Antonym.split(",")[0].trim();
+    options = generateOptions(
+      correctAnswer,
+      vocabData.flatMap(item => item.Antonym.split(",").map(a => a.trim()))
+    );
   }
 
-  // Generate options
-  let options = [correctAnswer];
-  let allOptions = [];
-  if (currentMode === "Word") {
-    allOptions = vocabularyData.flatMap(v => v.Meanings.split(",").map(m => m.trim()));
-  } else if (currentMode === "Synonym") {
-    allOptions = vocabularyData.flatMap(v => v.Synonym ? v.Synonym.split(",").map(s => s.trim()) : []);
-  } else if (currentMode === "Antonym") {
-    allOptions = vocabularyData.flatMap(v => v.Antonym ? v.Antonym.split(",").map(a => a.trim()) : []);
-  }
+  questionText.textContent = question;
+  renderOptions(options, correctAnswer);
+}
 
-  while (options.length < 4 && allOptions.length > options.length) {
-    const rand = allOptions[Math.floor(Math.random() * allOptions.length)];
-    if (!options.includes(rand)) options.push(rand);
-  }
-
-  shuffle(options);
-
+// Render options
+function renderOptions(options, correctAnswer) {
   optionsContainer.innerHTML = "";
+
   options.forEach(opt => {
     const btn = document.createElement("button");
-    btn.className = "btn btn-outline-primary m-1";
+    btn.className = "btn btn-outline-primary";
     btn.textContent = opt;
     btn.onclick = () => handleAnswer(btn, opt, correctAnswer);
     optionsContainer.appendChild(btn);
   });
-
-  // 🚀 Prevent stuck blue highlight on mobile
-  document.activeElement.blur();
 }
 
-// Handle Answer
+// Handle answer
 function handleAnswer(button, selected, correctAnswer) {
   totalAttempts++;
-  button.blur(); // 🚀 Prevent focus highlight issue on mobile
+
+  // 🚀 Remove sticky highlight immediately (mobile fix)
+  button.blur();
+  document.activeElement.blur();
 
   if (selected === correctAnswer) {
     correctAnswers++;
@@ -164,7 +167,6 @@ function handleAnswer(button, selected, correctAnswer) {
     button.classList.add("btn-danger");
     feedback.textContent = `❌ Incorrect! Correct: ${correctAnswer}`;
 
-    // Highlight correct answer
     Array.from(optionsContainer.children).forEach(b => {
       if (b.textContent === correctAnswer) {
         b.classList.remove("btn-outline-primary");
@@ -172,34 +174,41 @@ function handleAnswer(button, selected, correctAnswer) {
       }
     });
 
-    // 🚀 Add wrong question back for revision
+    // Repeat wrong question later
     quizQueue.push(currentQuestion);
   }
 
-  // Disable all options after answering
-  Array.from(optionsContainer.children).forEach(b => b.disabled = true);
-
+  Array.from(optionsContainer.children).forEach(b => (b.disabled = true));
   updateDashboard();
 
-  // Move to next question after short delay
   setTimeout(nextQuestion, 1200);
 }
 
-// Update Scoreboard
+// Update dashboard
 function updateDashboard() {
-  const acc = totalAttempts === 0 ? 0 : (correctAnswers / totalAttempts) * 100;
-  accuracySpan.textContent = `${acc.toFixed(2)}%`;
+  accuracyText.textContent =
+    totalAttempts > 0
+      ? ((correctAnswers / totalAttempts) * 100).toFixed(1) + "%"
+      : "0%";
+  currentQuestionNum.textContent = totalAttempts;
+  totalQuestionsNum.textContent = quizQueue.length + totalAttempts;
 }
 
-// Shuffle utility
-function shuffle(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
+// Show results
+function showResult() {
+  quizPage.classList.add("d-none");
+  resultPage.classList.remove("d-none");
+  resultText.textContent = `Your Accuracy: ${accuracyText.textContent}`;
 }
 
-// Go Home
+// Shuffle helper
+function shuffleArray(arr) {
+  return arr.sort(() => Math.random() - 0.5);
+}
+
+// Go back home
 function goHome() {
-  showModes();
+  startPage.classList.remove("d-none");
+  quizPage.classList.add("d-none");
+  resultPage.classList.add("d-none");
 }
