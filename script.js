@@ -18,6 +18,7 @@ const progressFill = document.getElementById("progress-fill");
 
 const maxAttemptsPerWord = Infinity;
 
+// Shuffle array helper
 function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -26,18 +27,24 @@ function shuffle(arr) {
     return arr;
 }
 
-// Load Mode Buttons
+// Gradient Mode Buttons
 function loadModeButtons() {
-    ["Word", "Synonym", "Antonym"].forEach(mode => {
+    const modes = [
+        { name: "Word", class: "btn-word" },
+        { name: "Synonym", class: "btn-synonym" },
+        { name: "Antonym", class: "btn-antonym" }
+    ];
+
+    modes.forEach(mode => {
         const btn = document.createElement("button");
-        btn.className = "btn-outline-primary";
-        btn.textContent = mode;
-        btn.onclick = () => selectMode(mode);
+        btn.className = mode.class;
+        btn.textContent = mode.name;
+        btn.onclick = () => selectMode(mode.name);
         modeList.appendChild(btn);
     });
 }
 
-// Select Mode
+// Select Mode & Show Ranges
 function selectMode(mode) {
     currentMode = mode;
     rangeList.innerHTML = "";
@@ -114,7 +121,8 @@ function nextQuestion() {
     if (!quizQueue.length) {
         quizPage.classList.add("d-none");
         resultPage.classList.remove("d-none");
-        resultDiv.textContent = "✅ Quiz Complete!";
+        resultDiv.textContent = "🎉 Quiz Complete!";
+        createConfetti(); // trigger confetti
         return;
     }
 
@@ -184,10 +192,34 @@ function goHome() {
     rangeList.innerHTML = "";
 }
 
+// Confetti
+function createConfetti() {
+    const container = document.getElementById("confetti-container");
+    for (let i = 0; i < 100; i++) {
+        const confetti = document.createElement("div");
+        confetti.style.position = "absolute";
+        confetti.style.width = "8px";
+        confetti.style.height = "8px";
+        confetti.style.backgroundColor = `hsl(${Math.random()*360}, 100%, 50%)`;
+        confetti.style.top = "-10px";
+        confetti.style.left = `${Math.random() * 100}%`;
+        confetti.style.opacity = Math.random();
+        confetti.style.transform = `rotate(${Math.random()*360}deg)`;
+        confetti.style.borderRadius = "50%";
+        container.appendChild(confetti);
+
+        const duration = 2000 + Math.random() * 2000;
+        confetti.animate([
+            { transform: confetti.style.transform, top: "-10px" },
+            { transform: `rotate(${Math.random()*360}deg)`, top: "110vh" }
+        ], { duration: duration, easing: 'linear' });
+
+        setTimeout(() => container.removeChild(confetti), duration);
+    }
+}
+
 // Load Dataset
 document.addEventListener("DOMContentLoaded", () => {
     fetch("vocab-data.json")
         .then(res => res.json())
-        .then(data => { vocabularyData = data; loadModeButtons(); })
-        .catch(err => console.error("❌ Failed to load vocab-data.json", err));
-});
+        .then(data => { vocabularyData = data; loadModeButto
