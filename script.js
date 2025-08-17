@@ -18,7 +18,7 @@ const progressFill = document.getElementById("progress-fill");
 
 const maxAttemptsPerWord = Infinity;
 
-// Shuffle array helper
+// Shuffle helper
 function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -27,7 +27,7 @@ function shuffle(arr) {
     return arr;
 }
 
-// Gradient Mode Buttons
+// Load Gradient Mode Buttons
 function loadModeButtons() {
     const modes = [
         { name: "Word", class: "btn-word" },
@@ -177,7 +177,7 @@ function handleAnswer(button, selected, correctAnswer) {
         Array.from(optionsContainer.children).forEach(b => {
             if (b.textContent === correctAnswer) { b.classList.remove("btn-outline-primary"); b.classList.add("btn-success"); }
         });
-        quizQueue.push(currentQuestion);
+        quizQueue.push(currentQuestion); // loop until correct
     }
 
     Array.from(optionsContainer.children).forEach(b => b.disabled = true);
@@ -192,35 +192,35 @@ function goHome() {
     rangeList.innerHTML = "";
 }
 
-// Confetti
+// 🎊 Confetti
 function createConfetti() {
     const container = document.getElementById("confetti-container");
     const colors = ["#f97316", "#facc15", "#10b981", "#06b6d4", "#ef4444", "#ec4899", "#6366f1"];
     const confettiCount = 150;
-    const duration = 4000; // confetti duration
+    const duration = 4000;
 
     for (let i = 0; i < confettiCount; i++) {
         const confetti = document.createElement("div");
-        confetti.style.position = "fixed";
-        confetti.style.width = "8px";
-        confetti.style.height = "8px";
+        confetti.className = "confetti";
         confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
         confetti.style.left = Math.random() * window.innerWidth + "px";
         confetti.style.top = "-10px";
         confetti.style.opacity = Math.random() + 0.5;
-        confetti.style.borderRadius = "50%";
         container.appendChild(confetti);
 
-        // Animate falling
-        const fallDuration = duration + Math.random() * 2000;
-        const horizontalMove = (Math.random() - 0.5) * 100; // sideways motion
+        const endX = confetti.offsetLeft + (Math.random() - 0.5) * 200;
+        const endY = window.innerHeight + 20;
+        const rotation = Math.random() * 720;
 
-        confetti.animate([
-            { transform: `translate(0px, 0px) rotate(${Math.random()*360}deg)`, top: "-10px" },
-            { transform: `translate(${horizontalMove}px, ${window.innerHeight + 20}px) rotate(${Math.random()*720}deg)`, top: `${window.innerHeight + 20}px` }
-        ], { duration: fallDuration, easing: 'ease-out' });
+        const animation = confetti.animate([
+            { transform: `translate(0,0) rotate(0deg)` },
+            { transform: `translate(${endX - confetti.offsetLeft}px, ${endY}px) rotate(${rotation}deg)` }
+        ], {
+            duration: duration + Math.random() * 2000,
+            easing: 'ease-out'
+        });
 
-        setTimeout(() => container.removeChild(confetti), fallDuration);
+        animation.onfinish = () => container.removeChild(confetti);
     }
 }
 
