@@ -1,7 +1,7 @@
 let vocabularyData = [];
 let quizQueue = [];
 let currentQuestion = null;
-let currentMode = null; // "Word" | "Synonym" | "Antonym"
+let currentMode = null;
 let totalAttempts = 0;
 let correctAnswers = 0;
 
@@ -11,20 +11,12 @@ const quizPage = document.getElementById("quiz-page");
 const resultPage = document.getElementById("result-page");
 const questionText = document.getElementById("question-text");
 const optionsContainer = document.getElementById("options-container");
+const feedback = document.getElementById("feedback");
 const resultDiv = document.getElementById("result");
 const alphabetList = document.getElementById("alphabet-list");
 const modeList = document.getElementById("mode-list");
-
-// Dashboard container (add this to index.html inside quiz-page)
-const dashboardHTML = `
-<div class="mt-3">
-  <p>Total Attempts: <span id="total-attempts">0</span></p>
-  <p>Correct Answers: <span id="correct-answers">0</span></p>
-  <p>Accuracy: <span id="accuracy">0%</span></p>
-</div>`;
-quizPage.insertAdjacentHTML("beforeend", dashboardHTML);
-const totalAttemptsSpan = document.getElementById("total-attempts");
-const correctAnswersSpan = document.getElementById("correct-answers");
+const currentQSpan = document.getElementById("current-question");
+const totalQSpan = document.getElementById("total-questions");
 const accuracySpan = document.getElementById("accuracy");
 
 // =================
@@ -111,6 +103,9 @@ function startQuiz(choice) {
   quizPage.classList.remove("d-none");
   resultPage.classList.add("d-none");
 
+  totalQSpan.textContent = quizQueue.length;
+  currentQSpan.textContent = 0;
+
   nextQuestion();
 }
 
@@ -118,6 +113,8 @@ function startQuiz(choice) {
 // Next Question
 // =================
 function nextQuestion() {
+  feedback.textContent = "";
+
   if (quizQueue.length === 0) {
     quizPage.classList.add("d-none");
     resultPage.classList.remove("d-none");
@@ -126,6 +123,7 @@ function nextQuestion() {
   }
 
   currentQuestion = quizQueue.shift();
+  currentQSpan.textContent = parseInt(currentQSpan.textContent) + 1;
 
   let correctAnswer = "";
   if (currentMode === "Word") {
@@ -170,31 +168,31 @@ function nextQuestion() {
 // =================
 function handleAnswer(button, selected, correctAnswer) {
   totalAttempts++;
+
   if (selected === correctAnswer) {
     correctAnswers++;
     button.classList.add("correct");
+    feedback.textContent = "✅ Correct!";
   } else {
     button.classList.add("incorrect");
-    quizQueue.push(currentQuestion); // retry later
-    // highlight correct answer
+    feedback.textContent = `❌ Incorrect! Correct: ${correctAnswer}`;
+    quizQueue.push(currentQuestion);
     Array.from(optionsContainer.children).forEach(b => {
       if (b.textContent === correctAnswer) b.classList.add("correct");
     });
   }
-  updateDashboard();
-  // disable all buttons
+
+  // Disable buttons
   Array.from(optionsContainer.children).forEach(b => b.disabled = true);
 
-  // next question after 1s
-  setTimeout(nextQuestion, 1000);
+  updateDashboard();
+  setTimeout(nextQuestion, 1200);
 }
 
 // =================
 // Update Dashboard
 // =================
 function updateDashboard() {
-  totalAttemptsSpan.textContent = totalAttempts;
-  correctAnswersSpan.textContent = correctAnswers;
   accuracySpan.textContent = totalAttempts ? ((correctAnswers/totalAttempts)*100).toFixed(2) + "%" : "0%";
 }
 
