@@ -117,6 +117,7 @@ function nextQuestion() {
   let correctAnswer = "";
   if (currentMode === "Word") {
     questionText.textContent = `What is the meaning of "${currentQuestion.Word}"?`;
+    // Take first meaning (for simplicity)
     correctAnswer = currentQuestion.Meanings.split(",")[0].trim();
   } else if (currentMode === "Synonym") {
     questionText.textContent = `Which word is a synonym of "${currentQuestion.Word}"?`;
@@ -165,15 +166,17 @@ function handleAnswer(button, selected, correctAnswer) {
     button.classList.remove("btn-outline-primary");
     button.classList.add("btn-danger");
     feedback.textContent = `❌ Incorrect! Correct: ${correctAnswer}`;
+    // Highlight correct
     Array.from(optionsContainer.children).forEach(b => {
       if (b.textContent === correctAnswer) {
         b.classList.remove("btn-outline-primary");
         b.classList.add("btn-success");
       }
     });
-    quizQueue.push(currentQuestion);
+    quizQueue.push(currentQuestion); // loop wrong question to the end
   }
 
+  // Disable all buttons
   Array.from(optionsContainer.children).forEach(b => b.disabled = true);
 
   updateDashboard();
@@ -190,11 +193,6 @@ function goHome() {
   startPage.classList.remove("d-none");
   quizPage.classList.add("d-none");
   resultPage.classList.add("d-none");
-  currentQSpan.textContent = 0;
-  totalQSpan.textContent = 0;
-  accuracySpan.textContent = "0%";
-  feedback.textContent = "";
-  optionsContainer.innerHTML = "";
 }
 
 // Load Dataset
@@ -205,4 +203,3 @@ fetch("vocab-data.json")
     loadModeButtons();
   })
   .catch(err => console.error("❌ Failed to load vocab-data.json", err));
-
