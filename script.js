@@ -4,7 +4,7 @@ let currentQuestion = null;
 let currentMode = null;
 let totalAttempts = 0;
 let correctAnswers = 0;
-let wordsCorrect = 0; // tracks number of words answered correctly at least once
+let wordsCorrect = 0; // internal tracking, still works
 const maxAttemptsPerWord = 2;
 
 // DOM Elements
@@ -19,7 +19,6 @@ const alphabetList = document.getElementById("alphabet-list");
 const modeList = document.getElementById("mode-list");
 const currentQSpan = document.getElementById("current-question");
 const totalQSpan = document.getElementById("total-questions");
-const accuracySpan = document.getElementById("accuracy");
 
 // Utility: Shuffle array
 function shuffle(arr) {
@@ -72,7 +71,6 @@ function startQuiz(choice) {
     totalAttempts = 0;
     correctAnswers = 0;
     wordsCorrect = 0;
-    updateDashboard();
     quizQueue = [];
     let items = [];
 
@@ -91,7 +89,6 @@ function startQuiz(choice) {
         return;
     }
 
-    // Reset attempts & correctOnce for all questions
     quizQueue.forEach(q => { q.attempts = 0; q.correctOnce = false; });
 
     shuffle(quizQueue);
@@ -111,7 +108,7 @@ function nextQuestion() {
     if (quizQueue.length === 0) {
         quizPage.classList.add("d-none");
         resultPage.classList.remove("d-none");
-        resultDiv.textContent = `✅ Quiz Complete! Accuracy: ${((wordsCorrect/totalQSpan.textContent)*100).toFixed(2)}%`;
+        resultDiv.textContent = `✅ Quiz Complete!`;
         return;
     }
 
@@ -174,7 +171,6 @@ function handleAnswer(button, selected, correctAnswer) {
         button.classList.add("btn-danger");
         feedback.textContent = `❌ Incorrect! Correct: ${correctAnswer}`;
 
-        // Highlight correct answer
         Array.from(optionsContainer.children).forEach(b => {
             if (b.textContent === correctAnswer) {
                 b.classList.remove("btn-outline-primary");
@@ -182,7 +178,6 @@ function handleAnswer(button, selected, correctAnswer) {
             }
         });
 
-        // Repeat wrong question if under attempt limit
         currentQuestion.attempts = currentQuestion.attempts || 0;
         currentQuestion.attempts++;
         if (currentQuestion.attempts < maxAttemptsPerWord) {
@@ -191,15 +186,7 @@ function handleAnswer(button, selected, correctAnswer) {
     }
 
     Array.from(optionsContainer.children).forEach(b => b.disabled = true);
-    updateDashboard();
     setTimeout(nextQuestion, 1200);
-}
-
-// Update Dashboard
-function updateDashboard() {
-    accuracySpan.textContent = totalQSpan.textContent
-        ? ((wordsCorrect / totalQSpan.textContent) * 100).toFixed(2) + "%"
-        : "0%";
 }
 
 // Go Home
