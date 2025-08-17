@@ -60,7 +60,6 @@ button:focus {
   justify-content: space-between;
   margin-bottom: 20px;
   flex-wrap: wrap;
-  gap: 10px;
 }
 
 .feedback {
