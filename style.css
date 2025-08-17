@@ -1,21 +1,41 @@
+/* --- Background setup --- */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #f0f4ff, #d9e4ff);
   min-height: 100vh;
+
+  /* Background image from GitHub */
+  background: url('https://raw.githubusercontent.com/USERNAME/REPO/main/background.jpg') no-repeat center center fixed;
+  background-size: cover; /* cover the screen */
+  color: #fff;
 }
 
+/* Overlay to make text/buttons readable */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.3); /* adjust opacity as needed */
+  z-index: -1;
+}
+
+/* --- Pages --- */
 .page {
   text-align: center;
   padding: 30px 15px;
+  position: relative;
+  z-index: 1;
 }
 
+/* --- Headings --- */
 h1, h2 {
   margin-bottom: 20px;
-  color: #111;
+  color: #fff;
 }
 
+/* --- Buttons --- */
 button {
   padding: 12px 25px;
   margin: 6px;
@@ -30,52 +50,39 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Gradient Buttons for Modes */
-.btn-word { background: linear-gradient(45deg, #f97316, #facc15); color: #fff; border: none; }
-.btn-synonym { background: linear-gradient(45deg, #10b981, #06b6d4); color: #fff; border: none; }
-.btn-antonym { background: linear-gradient(45deg, #ef4444, #ec4899); color: #fff; border: none; }
+/* Gradient buttons for modes */
+.btn-word { background: linear-gradient(45deg, #6a11cb, #2575fc); color: #fff; }
+.btn-synonym { background: linear-gradient(45deg, #10b981, #06b6d4); color: #fff; }
+.btn-antonym { background: linear-gradient(45deg, #f97316, #facc15); color: #fff; }
 
-.btn-primary { background: #6366f1; color: #fff; }
-.btn-outline-primary { background: #fff; border: 2px solid #6366f1; color: #6366f1; }
-.btn-outline-secondary { background: #fff; border: 2px solid #4b5563; color: #4b5563; }
+.btn-outline-primary { background: rgba(255,255,255,0.2); border: 2px solid #fff; color: #fff; }
+.btn-outline-secondary { background: rgba(255,255,255,0.1); border: 2px solid #fff; color: #fff; }
 
 .btn-success { background-color: #28a745 !important; color: #fff; }
 .btn-danger { background-color: #dc3545 !important; color: #fff; }
 
+.btn-primary { background-color: #6366f1; color: #fff; }
+
 .d-none { display: none; }
 
+/* --- Dashboard --- */
 .dashboard { display: flex; flex-direction: column; gap: 12px; align-items: center; margin-bottom: 20px; }
 
 .progress-info { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 5px; }
-.progress-bar { width: 100%; max-width: 400px; height: 12px; background: #e2e8f0; border-radius: 6px; overflow: hidden; }
+.progress-bar { width: 100%; max-width: 400px; height: 12px; background: rgba(255,255,255,0.3); border-radius: 6px; overflow: hidden; }
 #progress-fill { width: 0%; height: 100%; background: #6366f1; transition: width 0.5s ease; }
 
-.question { font-size: 1.5em; margin: 20px 0; color: #111; }
+/* --- Questions & Options --- */
+.question { font-size: 1.5em; margin: 20px 0; color: #fff; }
 
 .options { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 15px; }
 .options button { min-width: 120px; font-size: 16px; border-radius: 10px; }
 
+/* --- Feedback --- */
 .feedback { font-size: 20px; min-height: 28px; margin-top: 10px; font-weight: bold; }
 
+/* --- Home button --- */
 .home-btn { background: #f59e0b; color: #fff; padding: 10px 20px; border-radius: 10px; }
 
+/* --- Mode & Range lists --- */
 .mode-list, .range-list { margin: 15px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
-
-/* Make container full viewport so confetti is visible */
-#confetti-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; /* full height */
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 9999;
-}
-.confetti {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-}
-
