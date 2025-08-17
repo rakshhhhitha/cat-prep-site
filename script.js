@@ -84,6 +84,7 @@ function startQuiz(choice) {
         return;
     }
 
+    // Reset all questions
     quizQueueStart = quizQueue.map(q => ({ ...q, attempts: 0, correct: false }));
     quizQueue = [...quizQueueStart];
 
