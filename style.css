@@ -5,7 +5,7 @@ body {
   padding: 0;
   min-height: 100vh;
 
-  background-color: #fff; /* plain white background */
+  background-color: #f4f0fa; /* very light pastel purple */
   color: #111; /* dark text for readability */
 }
 
@@ -20,12 +20,18 @@ body::before {
   padding: 30px 15px;
   position: relative;
   z-index: 1;
+
+  background: #fff; /* white card background */
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 40px auto;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
 /* --- Headings --- */
 h1, h2 {
   margin-bottom: 20px;
-  color: #111;
+  color: #111; /* dark headings */
 }
 
 /* --- Buttons --- */
@@ -66,16 +72,60 @@ button:hover {
 #progress-fill { width: 0%; height: 100%; background: #6366f1; transition: width 0.5s ease; }
 
 /* --- Questions & Options --- */
-.question { font-size: 1.5em; margin: 20px 0; color: #111; }
+.question {
+  font-size: 1.5em;
+  margin: 20px 0;
+  color: #111; /* dark question text */
+}
 
-.options { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 15px; }
-.options button { min-width: 120px; font-size: 16px; border-radius: 10px; }
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.options button {
+  min-width: 120px;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #111; /* dark text on buttons */
+  background-color: #e2e0f7; /* light pastel button background */
+  border: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  transition: all 0.3s ease;
+}
+
+.options button:hover {
+  background-color: #d0c8f0; /* slightly darker on hover */
+  transform: scale(1.05);
+}
 
 /* --- Feedback --- */
-.feedback { font-size: 20px; min-height: 28px; margin-top: 10px; font-weight: bold; color: #111; }
+.feedback {
+  font-size: 20px;
+  min-height: 28px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #111;
+}
 
 /* --- Home button --- */
-.home-btn { background: #f59e0b; color: #fff; padding: 10px 20px; border-radius: 10px; }
+.home-btn {
+  background: #6366f1; /* accent color */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
 
 /* --- Mode & Range lists --- */
-.mode-list, .range-list { margin: 15px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.mode-list, .range-list {
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
