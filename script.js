@@ -3,7 +3,7 @@ let quizQueue = [];
 let currentQuestion = null;
 let currentMode = null;
 let totalAttempts = 0;
-let wordsCorrect = 0; // counts words answered correctly at least once
+let wordsCorrect = 0;
 
 // DOM Elements
 const startPage = document.getElementById("start-page");
@@ -41,24 +41,13 @@ function loadModeButtons() {
     });
 }
 
-// Generate numeric ranges for Synonym/Antonym
-function generateNumericRanges(arrayLength, step = 100) {
-    const ranges = [];
-    for (let i = 0; i < arrayLength; i += step) {
-        const start = i + 1;
-        const end = Math.min(i + step, arrayLength);
-        ranges.push({ start, end });
-    }
-    return ranges;
-}
-
 // Select Mode
 function selectMode(mode) {
     currentMode = mode;
     alphabetList.innerHTML = "";
 
     if (mode === "Word") {
-        // Alphabet buttons
+        // Alphabetical buttons A-Z
         for (let i = 65; i <= 90; i++) {
             const letter = String.fromCharCode(i);
             const btn = document.createElement("button");
@@ -67,21 +56,27 @@ function selectMode(mode) {
             btn.onclick = () => startQuiz(letter);
             alphabetList.appendChild(btn);
         }
+        // Random All button
         const randBtn = document.createElement("button");
         randBtn.className = "btn btn-primary m-1";
         randBtn.textContent = "Random All";
         randBtn.onclick = () => startQuiz("RANDOM");
         alphabetList.appendChild(randBtn);
     } else {
-        // Numeric ranges for Synonym/Antonym
-        const ranges = generateNumericRanges(vocabularyData.length);
-        ranges.forEach(r => {
+        // Synonym & Antonym: numeric ranges
+        const total = vocabularyData.length;
+        let start = 1;
+        let end = 100;
+        while (start <= total) {
             const btn = document.createElement("button");
             btn.className = "btn btn-outline-secondary m-1";
-            btn.textContent = `${r.start}-${r.end}`;
-            btn.onclick = () => startQuiz(r);
+            btn.textContent = `${start}-${Math.min(end, total)}`;
+            btn.onclick = () => startQuiz(`${start}-${Math.min(end, total)}`);
             alphabetList.appendChild(btn);
-        });
+            start += 100;
+            end += 100;
+        }
+        // Random All button
         const randBtn = document.createElement("button");
         randBtn.className = "btn btn-primary m-1";
         randBtn.textContent = "Random All";
@@ -105,7 +100,8 @@ function startQuiz(choice) {
     if (currentMode === "Word" && choice !== "RANDOM") {
         quizQueue = items.filter(item => item.Word[0].toUpperCase() === choice.toUpperCase());
     } else if (currentMode !== "Word" && choice !== "RANDOM") {
-        quizQueue = items.slice(choice.start - 1, choice.end);
+        const [start, end] = choice.split("-").map(Number);
+        quizQueue = items.slice(start - 1, end);
     } else {
         quizQueue = [...items];
     }
@@ -132,14 +128,23 @@ function nextQuestion() {
     feedback.textContent = "";
     optionsContainer.innerHTML = "";
 
+    // Finish quiz only if all words are answered correctly
     if (quizQueue.length === 0) {
         quizPage.classList.add("d-none");
         resultPage.classList.remove("d-none");
-        resultDiv.textContent = `✅ Quiz Complete! Accuracy: ${((wordsCorrect/totalQSpan.textContent)*100).toFixed(2)}%`;
+        resultDiv.textContent = `✅ Quiz Complete! Accuracy: ${((wordsCorrect / totalQSpan.textContent)*100).toFixed(2)}%`;
         return;
     }
 
+    // Pick next question
     currentQuestion = quizQueue.shift();
+
+    // Skip if already correct (safety)
+    if (currentQuestion.correctOnce) {
+        nextQuestion();
+        return;
+    }
+
     currentQSpan.textContent = parseInt(currentQSpan.textContent) + 1;
     let correctAnswer = "";
 
@@ -182,7 +187,6 @@ function nextQuestion() {
 
 // Handle Answer
 function handleAnswer(button, selected, correctAnswer) {
-    totalAttempts++;
 
     if (selected === correctAnswer) {
         if (!currentQuestion.correctOnce) {
@@ -205,12 +209,17 @@ function handleAnswer(button, selected, correctAnswer) {
             }
         });
 
-        // Push wrong question back to end
+        // Push wrong question back to the **end of queue**
         quizQueue.push(currentQuestion);
     }
 
+    // Disable all buttons
     Array.from(optionsContainer.children).forEach(b => b.disabled = true);
+
+    // Update accuracy
     updateDashboard();
+
+    // Next question after delay
     setTimeout(nextQuestion, 1200);
 }
 
