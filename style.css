@@ -30,6 +30,11 @@ button:hover {
   transform: scale(1.05);
 }
 
+/* Gradient Buttons for Modes */
+.btn-word { background: linear-gradient(45deg, #f97316, #facc15); color: #fff; border: none; }
+.btn-synonym { background: linear-gradient(45deg, #10b981, #06b6d4); color: #fff; border: none; }
+.btn-antonym { background: linear-gradient(45deg, #ef4444, #ec4899); color: #fff; border: none; }
+
 .btn-primary { background: #6366f1; color: #fff; }
 .btn-outline-primary { background: #fff; border: 2px solid #6366f1; color: #6366f1; }
 .btn-outline-secondary { background: #fff; border: 2px solid #4b5563; color: #4b5563; }
@@ -55,3 +60,15 @@ button:hover {
 .home-btn { background: #f59e0b; color: #fff; padding: 10px 20px; border-radius: 10px; }
 
 .mode-list, .range-list { margin: 15px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+
+/* Confetti container */
+#confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 9999;
+}
