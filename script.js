@@ -2,6 +2,8 @@ let vocabularyData = [];
 let quizQueue = [];
 let currentQuestion = null;
 let currentMode = null; // "Word" | "Synonym" | "Antonym"
+let totalAttempts = 0;
+let correctAnswers = 0;
 
 // DOM Elements
 const startPage = document.getElementById("start-page");
@@ -12,6 +14,18 @@ const optionsContainer = document.getElementById("options-container");
 const resultDiv = document.getElementById("result");
 const alphabetList = document.getElementById("alphabet-list");
 const modeList = document.getElementById("mode-list");
+
+// Dashboard container (add this to index.html inside quiz-page)
+const dashboardHTML = `
+<div class="mt-3">
+  <p>Total Attempts: <span id="total-attempts">0</span></p>
+  <p>Correct Answers: <span id="correct-answers">0</span></p>
+  <p>Accuracy: <span id="accuracy">0%</span></p>
+</div>`;
+quizPage.insertAdjacentHTML("beforeend", dashboardHTML);
+const totalAttemptsSpan = document.getElementById("total-attempts");
+const correctAnswersSpan = document.getElementById("correct-answers");
+const accuracySpan = document.getElementById("accuracy");
 
 // =================
 // Shuffle Utility
@@ -47,7 +61,6 @@ function selectMode(mode) {
   alphabetList.innerHTML = "";
 
   if (mode === "Word") {
-    // Alphabet selection for Word quiz
     for (let i = 65; i <= 90; i++) {
       const letter = String.fromCharCode(i);
       const btn = document.createElement("button");
@@ -56,15 +69,12 @@ function selectMode(mode) {
       btn.onclick = () => startQuiz(letter);
       alphabetList.appendChild(btn);
     }
-
-    // Random All button
     const randBtn = document.createElement("button");
     randBtn.className = "btn btn-primary m-1";
     randBtn.textContent = "Random All";
     randBtn.onclick = () => startQuiz("RANDOM");
     alphabetList.appendChild(randBtn);
   } else {
-    // For Synonym and Antonym, just start 50 random questions
     startQuiz("RANDOM");
   }
 }
@@ -73,8 +83,11 @@ function selectMode(mode) {
 // Start Quiz
 // =================
 function startQuiz(choice) {
-  quizQueue = [];
+  totalAttempts = 0;
+  correctAnswers = 0;
+  updateDashboard();
 
+  quizQueue = [];
   let items = [];
   if (currentMode === "Word") items = vocabularyData.filter(v => v.Meanings);
   else if (currentMode === "Synonym") items = vocabularyData.filter(v => v.Synonym);
@@ -92,8 +105,6 @@ function startQuiz(choice) {
   }
 
   shuffle(quizQueue);
-
-  // For Synonym/Antonym, take only 50 questions at a time
   if (currentMode !== "Word" && quizQueue.length > 50) quizQueue = quizQueue.slice(0, 50);
 
   startPage.classList.add("d-none");
@@ -110,7 +121,7 @@ function nextQuestion() {
   if (quizQueue.length === 0) {
     quizPage.classList.add("d-none");
     resultPage.classList.remove("d-none");
-    resultDiv.textContent = "✅ You mastered all words in this batch!";
+    resultDiv.textContent = `✅ Quiz Complete! Accuracy: ${((correctAnswers/totalAttempts)*100).toFixed(2)}%`;
     return;
   }
 
@@ -149,21 +160,42 @@ function nextQuestion() {
     const btn = document.createElement("button");
     btn.className = "btn btn-outline-primary m-1";
     btn.textContent = opt;
-    btn.onclick = () => checkAnswer(opt, correctAnswer);
+    btn.onclick = () => handleAnswer(btn, opt, correctAnswer);
     optionsContainer.appendChild(btn);
   });
 }
 
 // =================
-// Check Answer
+// Handle Answer
 // =================
-function checkAnswer(selected, correctAnswer) {
+function handleAnswer(button, selected, correctAnswer) {
+  totalAttempts++;
   if (selected === correctAnswer) {
-    nextQuestion();
+    correctAnswers++;
+    button.classList.add("correct");
   } else {
-    quizQueue.push(currentQuestion); // retry wrong question later
-    nextQuestion();
+    button.classList.add("incorrect");
+    quizQueue.push(currentQuestion); // retry later
+    // highlight correct answer
+    Array.from(optionsContainer.children).forEach(b => {
+      if (b.textContent === correctAnswer) b.classList.add("correct");
+    });
   }
+  updateDashboard();
+  // disable all buttons
+  Array.from(optionsContainer.children).forEach(b => b.disabled = true);
+
+  // next question after 1s
+  setTimeout(nextQuestion, 1000);
+}
+
+// =================
+// Update Dashboard
+// =================
+function updateDashboard() {
+  totalAttemptsSpan.textContent = totalAttempts;
+  correctAnswersSpan.textContent = correctAnswers;
+  accuracySpan.textContent = totalAttempts ? ((correctAnswers/totalAttempts)*100).toFixed(2) + "%" : "0%";
 }
 
 // =================
