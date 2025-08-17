@@ -117,7 +117,6 @@ function nextQuestion() {
   let correctAnswer = "";
   if (currentMode === "Word") {
     questionText.textContent = `What is the meaning of "${currentQuestion.Word}"?`;
-    // Take first meaning (for simplicity)
     correctAnswer = currentQuestion.Meanings.split(",")[0].trim();
   } else if (currentMode === "Synonym") {
     questionText.textContent = `Which word is a synonym of "${currentQuestion.Word}"?`;
@@ -176,7 +175,6 @@ function handleAnswer(button, selected, correctAnswer) {
     quizQueue.push(currentQuestion); // loop wrong question to the end
   }
 
-  // Disable all buttons
   Array.from(optionsContainer.children).forEach(b => b.disabled = true);
 
   updateDashboard();
@@ -193,7 +191,15 @@ function goHome() {
   startPage.classList.remove("d-none");
   quizPage.classList.add("d-none");
   resultPage.classList.add("d-none");
+  currentQSpan.textContent = 0;
+  totalQSpan.textContent = 0;
+  accuracySpan.textContent = "0%";
+  feedback.textContent = "";
+  optionsContainer.innerHTML = "";
 }
+
+// Back Home button
+document.getElementById("backHomeBtn").onclick = goHome;
 
 // Load Dataset
 fetch("vocab-data.json")
