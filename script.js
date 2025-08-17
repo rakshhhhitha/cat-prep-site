@@ -1,58 +1,230 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Vocabulary Quiz</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container d-flex justify-content-center align-items-center min-vh-100">
-    <!-- Start Page -->
-    <div id="startPage" class="quiz-container text-center">
-      <h1 class="mb-3">Vocabulary Quiz</h1>
-      <p>Total Words Available: <span id="totalQuestions">0</span></p>
-      <button class="btn btn-primary mt-3" id="startQuizBtn">Start Quiz</button>
-    </div>
+let vocabulary = [];
+let quizQuestions = [];
+let currentIndex = 0;
+let totalAttempts = 0;
+let correctAnswers = 0;
+let timer;
+let timeLeft = 30;
 
-    <!-- Quiz Page -->
-    <div id="quizPage" class="quiz-container hidden">
-      <div class="quiz-header">
-        <h2>Interactive Quiz</h2>
-        <div class="progress">
-          <div id="progressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuemin="0"
-            aria-valuemax="100"></div>
-        </div>
-      </div>
+// DOM Elements
+const startPage = document.getElementById("startPage");
+const quizPage = document.getElementById("quizPage");
+const resultPage = document.getElementById("resultPage");
+const questionText = document.getElementById("questionText");
+const optionsContainer = document.getElementById("optionsContainer");
+const feedback = document.getElementById("feedback");
+const totalQuestionsSpan = document.getElementById("totalQuestions");
+const currentQ = document.getElementById("currentQ");
+const totalAttemptsSpan = document.getElementById("totalAttempts");
+const correctAnswersSpan = document.getElementById("correctAnswers");
+const accuracySpan = document.getElementById("accuracy");
+const progressBar = document.getElementById("progressBar");
+const finalScore = document.getElementById("finalScore");
+const finalAccuracy = document.getElementById("finalAccuracy");
+const totalQuestionsResult = document.getElementById("totalQuestionsResult");
+const resultIcon = document.getElementById("resultIcon");
 
-      <h4 class="mb-3">Question <span id="currentQ">1</span> / 20</h4>
-      <p class="question" id="questionText"></p>
-      <div class="options" id="optionsContainer"></div>
+// Utility
+function shuffle(array) {
+  return array.sort(() => 0.5 - Math.random());
+}
 
-      <div class="feedback mt-3 fw-bold" id="feedback"></div>
+// Dashboard Update
+function updateDashboard() {
+  totalAttemptsSpan.textContent = totalAttempts;
+  correctAnswersSpan.textContent = correctAnswers;
+  accuracySpan.textContent = totalAttempts
+    ? ((correctAnswers / totalAttempts) * 100).toFixed(2) + "%"
+    : "0%";
+}
 
-      <div class="quiz-footer mt-4">
-        <div>
-          <p>Total Attempts: <span id="totalAttempts">0</span></p>
-          <p>Correct Answers: <span id="correctAnswers">0</span></p>
-          <p>Accuracy: <span id="accuracy">0%</span></p>
-        </div>
-      </div>
-    </div>
+// Pick question from pools
+function pickQuestion(pools) {
+  const availableTypes = [];
+  if (pools.meaningsPool.length) availableTypes.push("Meanings");
+  if (pools.synonymsPool.length) availableTypes.push("Synonym");
+  if (pools.antonymsPool.length) availableTypes.push("Antonym");
+  if (availableTypes.length === 0) return null;
 
-    <!-- Results Page -->
-    <div id="resultPage" class="quiz-container hidden text-center">
-      <div class="result-icon">
-        <i id="resultIcon" class="fas fa-trophy text-success"></i>
-      </div>
-      <h2>Quiz Completed!</h2>
-      <p>Your Score: <span id="finalScore"></span> / <span id="totalQuestionsResult"></span></p>
-      <p>Accuracy: <span id="finalAccuracy"></span>%</p>
-      <button class="btn btn-primary mt-3" id="restartQuizBtn">Restart Quiz</button>
-    </div>
-  </div>
+  const type = availableTypes[Math.floor(Math.random() * availableTypes.length)];
+  let item, correct, question, options;
 
-  <script src="script.js"></script>
-</body>
-</html>
+  if (type === "Meanings") {
+    item = pools.meaningsPool.pop();
+    correct = item.Meanings.trim();
+    question = `What is the meaning of "${item.Word}"?`;
+    options = pools.meaningsPool.map((v) => v.Meanings.trim()).filter(Boolean);
+  } else if (type === "Synonym") {
+    item = pools.synonymsPool.pop();
+    const syns = item.Synonym.split(",").map((s) => s.trim()).filter(Boolean);
+    correct = syns[Math.floor(Math.random() * syns.length)];
+    question = `Which word is a synonym of "${item.Word}"?`;
+    options = pools.synonymsPool
+      .flatMap((v) => v.Synonym.split(",").map((s) => s.trim()))
+      .filter(Boolean);
+  } else if (type === "Antonym") {
+    item = pools.antonymsPool.pop();
+    const ants = item.Antonym.split(",").map((a) => a.trim()).filter(Boolean);
+    correct = ants[Math.floor(Math.random() * ants.length)];
+    question = `Which word is an antonym of "${item.Word}"?`;
+    options = pools.antonymsPool
+      .flatMap((v) => v.Antonym.split(",").map((a) => a.trim()))
+      .filter(Boolean);
+  }
+
+  options = [...new Set(options)];
+  if (!options.includes(correct)) options.push(correct);
+  options = shuffle(options).slice(0, 4);
+  if (!options.includes(correct))
+    options[Math.floor(Math.random() * 4)] = correct;
+
+  return { question, options, correct };
+}
+
+// Start Quiz
+function startQuiz() {
+  startPage.classList.add("hidden");
+  quizPage.classList.remove("hidden");
+  resultPage.classList.add("hidden");
+
+  currentIndex = 0;
+  totalAttempts = 0;
+  correctAnswers = 0;
+  updateDashboard();
+
+  // Build pools
+  const meaningsPool = vocabulary.filter(
+    (v) => v.Meanings && v.Meanings.trim() !== ""
+  );
+  const synonymsPool = vocabulary.filter(
+    (v) => v.Synonym && v.Synonym.trim() !== ""
+  );
+  const antonymsPool = vocabulary.filter(
+    (v) => v.Antonym && v.Antonym.trim() !== ""
+  );
+
+  const pools = {
+    meaningsPool: shuffle(meaningsPool),
+    synonymsPool: shuffle(synonymsPool),
+    antonymsPool: shuffle(antonymsPool),
+  };
+
+  quizQuestions = [];
+  while (quizQuestions.length < 20) {
+    const q = pickQuestion(pools);
+    if (!q) break;
+    quizQuestions.push(q);
+  }
+
+  currentQ.textContent = 1;
+  generateQuestion();
+}
+
+// Generate Question
+function generateQuestion() {
+  feedback.textContent = "";
+  progressBar.style.width = (currentIndex / quizQuestions.length) * 100 + "%";
+
+  const q = quizQuestions[currentIndex];
+  if (!q) return;
+
+  questionText.textContent = q.question;
+  optionsContainer.innerHTML = "";
+
+  q.options.forEach((opt) => {
+    const btn = document.createElement("button");
+    btn.textContent = opt;
+    btn.classList.add("btn", "btn-light");
+    btn.onclick = () => handleAnswer(btn, opt, q.correct);
+    optionsContainer.appendChild(btn);
+  });
+
+  // Reset and start timer
+  resetTimer();
+  startTimer(q.correct);
+}
+
+// Handle answer selection
+function handleAnswer(btn, chosen, correct) {
+  totalAttempts++;
+  if (chosen === correct) {
+    correctAnswers++;
+    feedback.textContent = "✅ Correct!";
+    btn.classList.add("correct");
+  } else {
+    feedback.textContent = `❌ Incorrect! Correct: ${correct}`;
+    btn.classList.add("incorrect");
+    Array.from(optionsContainer.children).forEach((b) => {
+      if (b.textContent === correct) b.classList.add("correct");
+    });
+  }
+  updateDashboard();
+  Array.from(optionsContainer.children).forEach((b) => (b.disabled = true));
+  clearInterval(timer);
+  setTimeout(nextQuestion, 1200);
+}
+
+// Timer
+function startTimer(correctAnswer) {
+  timeLeft = 30;
+  timer = setInterval(() => {
+    timeLeft--;
+    if (timeLeft <= 0) {
+      clearInterval(timer);
+      feedback.textContent = `⏰ Time’s up! Correct: ${correctAnswer}`;
+      Array.from(optionsContainer.children).forEach((b) => {
+        if (b.textContent === correctAnswer) b.classList.add("correct");
+        b.disabled = true;
+      });
+      setTimeout(nextQuestion, 1200);
+    }
+  }, 1000);
+}
+
+function resetTimer() {
+  if (timer) clearInterval(timer);
+}
+
+// Next Question
+function nextQuestion() {
+  currentIndex++;
+  if (currentIndex < quizQuestions.length) {
+    currentQ.textContent = currentIndex + 1;
+    generateQuestion();
+  } else showResults();
+}
+
+// Results Page
+function showResults() {
+  quizPage.classList.add("hidden");
+  resultPage.classList.remove("hidden");
+  finalScore.textContent = correctAnswers;
+  totalQuestionsResult.textContent = quizQuestions.length;
+  finalAccuracy.textContent = (
+    (correctAnswers / quizQuestions.length) *
+    100
+  ).toFixed(2);
+  progressBar.style.width = "100%";
+
+  if (correctAnswers > quizQuestions.length / 2) {
+    resultIcon.className = "fas fa-trophy text-success";
+  } else {
+    resultIcon.className = "fas fa-times-circle text-danger";
+  }
+}
+
+// Event Listeners
+document.getElementById("startQuizBtn").onclick = startQuiz;
+document.getElementById("restartQuizBtn").onclick = startQuiz;
+
+// Load Vocabulary Data
+fetch("https://raw.githubusercontent.com/rakshhhhitha/cat-prep-site/main/vocab-data.json")
+  .then((res) => res.json())
+  .then((data) => {
+    vocabulary = data;
+    totalQuestionsSpan.textContent = vocabulary.length;
+  })
+  .catch((err) => {
+    console.error("Failed to load vocab:", err);
+    questionText.textContent = "Failed to load vocabulary.";
+  });
