@@ -1,9 +1,11 @@
 let vocabularyData = [];
 let quizQueue = [];
+let mastered = new Map(); // Track mastery: word -> correct streak
 let currentQuestion = null;
 let currentMode = null;
 let totalAttempts = 0;
 let correctAnswers = 0;
+const masteryThreshold = 2; // Need 2 correct in a row to master
 
 // DOM Elements
 const startPage = document.getElementById("start-page");
@@ -69,9 +71,9 @@ function selectMode(mode) {
 function startQuiz(choice) {
   totalAttempts = 0;
   correctAnswers = 0;
-  updateDashboard();
-
   quizQueue = [];
+  mastered.clear();
+
   let items = [];
   if (currentMode === "Word") items = vocabularyData.filter(v => v.Meanings);
   else if (currentMode === "Synonym") items = vocabularyData.filter(v => v.Synonym);
@@ -104,6 +106,12 @@ function startQuiz(choice) {
 function nextQuestion() {
   feedback.textContent = "";
 
+  // Remove mastered questions from queue
+  quizQueue = quizQueue.filter(q => {
+    const key = getKey(q);
+    return !mastered.has(key) || mastered.get(key) < masteryThreshold;
+  });
+
   if (quizQueue.length === 0) {
     quizPage.classList.add("d-none");
     resultPage.classList.remove("d-none");
@@ -117,7 +125,6 @@ function nextQuestion() {
   let correctAnswer = "";
   if (currentMode === "Word") {
     questionText.textContent = `What is the meaning of "${currentQuestion.Word}"?`;
-    // Take first meaning (for simplicity)
     correctAnswer = currentQuestion.Meanings.split(",")[0].trim();
   } else if (currentMode === "Synonym") {
     questionText.textContent = `Which word is a synonym of "${currentQuestion.Word}"?`;
@@ -156,16 +163,22 @@ function nextQuestion() {
 // Handle Answer
 function handleAnswer(button, selected, correctAnswer) {
   totalAttempts++;
+  const key = getKey(currentQuestion);
 
   if (selected === correctAnswer) {
     correctAnswers++;
     button.classList.remove("btn-outline-primary");
     button.classList.add("btn-success");
     feedback.textContent = "✅ Correct!";
+
+    if (!mastered.has(key)) mastered.set(key, 1);
+    else mastered.set(key, mastered.get(key) + 1);
+
   } else {
     button.classList.remove("btn-outline-primary");
     button.classList.add("btn-danger");
     feedback.textContent = `❌ Incorrect! Correct: ${correctAnswer}`;
+
     // Highlight correct
     Array.from(optionsContainer.children).forEach(b => {
       if (b.textContent === correctAnswer) {
@@ -173,26 +186,25 @@ function handleAnswer(button, selected, correctAnswer) {
         b.classList.add("btn-success");
       }
     });
-    quizQueue.push(currentQuestion); // loop wrong question to the end
+
+    // Reset mastery
+    mastered.set(key, 0);
+    quizQueue.push(currentQuestion); // Loop wrong question
   }
 
-  // Disable all buttons
   Array.from(optionsContainer.children).forEach(b => b.disabled = true);
-
   updateDashboard();
   setTimeout(nextQuestion, 1200);
+}
+
+// Unique key for mastery
+function getKey(question) {
+  return question.Word + "-" + currentMode;
 }
 
 // Update Dashboard
 function updateDashboard() {
   accuracySpan.textContent = totalAttempts ? ((correctAnswers/totalAttempts)*100).toFixed(2) + "%" : "0%";
-}
-
-// Go Home
-function goHome() {
-  startPage.classList.remove("d-none");
-  quizPage.classList.add("d-none");
-  resultPage.classList.add("d-none");
 }
 
 // Load Dataset
