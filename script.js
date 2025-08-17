@@ -2,6 +2,7 @@ let vocabularyData = [];
 let quizQueue = [];
 let currentQuestion = null;
 let currentMode = null;
+const maxAttemptsPerWord = 2;
 
 // DOM Elements
 const startPage = document.getElementById("start-page");
@@ -15,8 +16,6 @@ const alphabetList = document.getElementById("alphabet-list");
 const modeList = document.getElementById("mode-list");
 const currentQSpan = document.getElementById("current-question");
 const totalQSpan = document.getElementById("total-questions");
-
-const maxAttemptsPerWord = 2;
 
 // Utility: shuffle array
 function shuffle(arr) {
@@ -58,11 +57,10 @@ function selectMode(mode) {
         randBtn.onclick = () => startQuiz("RANDOM");
         alphabetList.appendChild(randBtn);
     } else {
-        // Synonym & Antonym numeric ranges
+        // Synonym/Antonym numeric ranges
         const total = vocabularyData.length;
-        for (let i = 0; i < total; i += 100) {
-            const start = i + 1;
-            const end = Math.min(i + 100, total);
+        for (let start = 1; start <= total; start += 100) {
+            const end = Math.min(start + 99, total);
             const btn = document.createElement("button");
             btn.className = "btn btn-outline-secondary m-1";
             btn.textContent = `${start}-${end}`;
@@ -86,31 +84,30 @@ function startQuiz(choice) {
     else if (currentMode === "Synonym") items = vocabularyData.filter(v => v.Synonym);
     else if (currentMode === "Antonym") items = vocabularyData.filter(v => v.Antonym);
 
-    if (!items.length) { alert("⚠️ No words available."); return; }
-
+    // Filter by choice
     if (currentMode === "Word" && choice !== "RANDOM") {
         quizQueue = items.filter(item => item.Word[0].toUpperCase() === choice.toUpperCase());
-    } else if (choice === "RANDOM") {
-        quizQueue = [...items];
-    } else {
-        // Numeric range
+    } else if ((currentMode === "Synonym" || currentMode === "Antonym") && choice !== "RANDOM") {
         const [start, end] = choice.split("-").map(Number);
         quizQueue = items.slice(start - 1, end);
+    } else {
+        quizQueue = [...items];
     }
 
-    if (!quizQueue.length) { alert("⚠️ No words available for this selection."); return; }
+    if (!quizQueue.length) {
+        alert("⚠️ No words available for this selection.");
+        return;
+    }
 
-    // Reset attempts
+    // Reset attempts for all questions
     quizQueue.forEach(q => q.attempts = 0);
 
     shuffle(quizQueue);
     startPage.classList.add("d-none");
     quizPage.classList.remove("d-none");
     resultPage.classList.add("d-none");
-
     totalQSpan.textContent = quizQueue.length;
     currentQSpan.textContent = 0;
-
     nextQuestion();
 }
 
@@ -185,10 +182,10 @@ function handleAnswer(button, selected, correctAnswer) {
             }
         });
 
-        // Push back to end
+        // Repeat wrong question until correct
         currentQuestion.attempts = currentQuestion.attempts || 0;
         currentQuestion.attempts++;
-        quizQueue.push(currentQuestion);
+        quizQueue.push(currentQuestion); // always push to end until correct
     }
 
     Array.from(optionsContainer.children).forEach(b => b.disabled = true);
@@ -203,14 +200,14 @@ function goHome() {
     alphabetList.innerHTML = "";
 }
 
-// Load data
+// Load Dataset
 document.addEventListener("DOMContentLoaded", () => {
     fetch("vocab-data.json")
         .then(res => res.json())
         .then(data => {
             vocabularyData = data;
             loadModeButtons();
-            console.log("Loaded", vocabularyData.length, "words.");
+            console.log("Vocabulary loaded:", vocabularyData.length);
         })
-        .catch(err => console.error(err));
+        .catch(err => console.error("❌ Failed to load vocab-data.json", err));
 });
