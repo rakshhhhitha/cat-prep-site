@@ -1,41 +1,50 @@
 body {
-  background-color: #f8f9fa;
   font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 0;
 }
 
-.quiz-container {
-  background: #fff;
-  border-radius: 12px;
-  padding: 25px;
-  margin-top: 50px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
 }
 
-/* Buttons */
-#options-container .btn {
-  display: block;
-  width: 100%;
-  margin: 8px 0;
-  padding: 12px;
-  font-size: 1rem;
-  text-align: left;
-  border-radius: 8px;
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-/* ✅ Fix sticky blue highlight on mobile */
-button:focus,
-button:active {
-  outline: none !important;
-  box-shadow: none !important;
+#quiz-page, #result-page {
+  display: none;
 }
 
-/* Feedback text */
+.btn {
+  min-width: 120px;
+}
+
+#options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#options-container button {
+  width: 80%;
+  margin: 5px 0;
+}
+
 #feedback {
-  font-size: 1.1rem;
+  font-size: 18px;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
 }
 
-/* Dashboard */
-#quiz-page .d-flex {
-  font-weight: bold;
-  margin-bottom: 10px;
+.dashboard {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 16px;
 }
