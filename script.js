@@ -165,14 +165,13 @@ function handleAnswer(button, selected, correctAnswer) {
     button.classList.remove("btn-outline-primary");
     button.classList.add("btn-danger");
     feedback.textContent = `❌ Incorrect! Correct: ${correctAnswer}`;
-    // Highlight correct
     Array.from(optionsContainer.children).forEach(b => {
       if (b.textContent === correctAnswer) {
         b.classList.remove("btn-outline-primary");
         b.classList.add("btn-success");
       }
     });
-    quizQueue.push(currentQuestion); // loop wrong question to the end
+    quizQueue.push(currentQuestion);
   }
 
   Array.from(optionsContainer.children).forEach(b => b.disabled = true);
@@ -198,9 +197,6 @@ function goHome() {
   optionsContainer.innerHTML = "";
 }
 
-// Back Home button
-document.getElementById("backHomeBtn").onclick = goHome;
-
 // Load Dataset
 fetch("vocab-data.json")
   .then(res => res.json())
@@ -209,3 +205,4 @@ fetch("vocab-data.json")
     loadModeButtons();
   })
   .catch(err => console.error("❌ Failed to load vocab-data.json", err));
+
