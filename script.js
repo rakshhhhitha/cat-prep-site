@@ -16,7 +16,7 @@ const currentQSpan = document.getElementById("current-question");
 const totalQSpan = document.getElementById("total-questions");
 const progressFill = document.getElementById("progress-fill");
 
-const maxAttemptsPerWord = Infinity; // loop until correct
+const maxAttemptsPerWord = Infinity;
 
 function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
@@ -169,7 +169,7 @@ function handleAnswer(button, selected, correctAnswer) {
         Array.from(optionsContainer.children).forEach(b => {
             if (b.textContent === correctAnswer) { b.classList.remove("btn-outline-primary"); b.classList.add("btn-success"); }
         });
-        quizQueue.push(currentQuestion); // loop until correct
+        quizQueue.push(currentQuestion);
     }
 
     Array.from(optionsContainer.children).forEach(b => b.disabled = true);
