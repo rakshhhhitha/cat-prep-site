@@ -222,4 +222,6 @@ function createConfetti() {
 document.addEventListener("DOMContentLoaded", () => {
     fetch("vocab-data.json")
         .then(res => res.json())
-        .then(data => { vocabularyData = data; loadModeButto
+        .then(data => { vocabularyData = data; loadModeButtons(); })
+        .catch(err => console.error("❌ Failed to load vocab-data.json", err));
+});
