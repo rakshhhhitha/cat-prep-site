@@ -25,7 +25,8 @@ fetch("vocab-data.json")
   .then(data => {
     vocabData = data;
     renderModes();
-  });
+  })
+  .catch(err => console.error("Error loading vocab-data.json:", err));
 
 // Render quiz mode options
 function renderModes() {
@@ -46,7 +47,7 @@ function selectMode(mode) {
   alphabetList.innerHTML = "";
 
   if (mode === "Words") {
-    // Show alphabet buttons
+    // Alphabet buttons
     for (let i = 65; i <= 90; i++) {
       const letter = String.fromCharCode(i);
       const btn = document.createElement("button");
@@ -56,7 +57,7 @@ function selectMode(mode) {
       alphabetList.appendChild(btn);
     }
   } else {
-    // Random 50 for Synonyms/Antonyms
+    // Start button
     const btn = document.createElement("button");
     btn.className = "btn btn-success";
     btn.textContent = `Start ${mode} Quiz (50 Qs)`;
@@ -72,8 +73,8 @@ function startQuiz(letter = null) {
   feedback.textContent = "";
 
   if (quizMode === "Words") {
-    quizQueue = vocabData.filter(item =>
-      item.Word[0].toUpperCase() === letter
+    quizQueue = vocabData.filter(
+      item => item.Word && item.Word[0].toUpperCase() === letter
     );
   } else if (quizMode === "Synonyms") {
     quizQueue = shuffleArray(vocabData).slice(0, 50);
@@ -111,29 +112,41 @@ function nextQuestion() {
 
   if (quizMode === "Words") {
     question = `What is the meaning of "${currentQuestion.Word}"?`;
-    correctAnswer = currentQuestion.Meanings.split(",")[0].trim();
+    correctAnswer = safePick(currentQuestion.Meanings);
     options = generateOptions(
       correctAnswer,
-      vocabData.map(item => item.Meanings.split(",")[0].trim())
+      vocabData.map(item => safePick(item.Meanings))
     );
   } else if (quizMode === "Synonyms") {
     question = `Pick the synonym of "${currentQuestion.Word}"`;
-    correctAnswer = currentQuestion.Synonym.split(",")[0].trim();
+    correctAnswer = safePick(currentQuestion.Synonym);
     options = generateOptions(
       correctAnswer,
-      vocabData.flatMap(item => item.Synonym.split(",").map(s => s.trim()))
+      vocabData.flatMap(item => splitValues(item.Synonym))
     );
   } else {
     question = `Pick the antonym of "${currentQuestion.Word}"`;
-    correctAnswer = currentQuestion.Antonym.split(",")[0].trim();
+    correctAnswer = safePick(currentQuestion.Antonym);
     options = generateOptions(
       correctAnswer,
-      vocabData.flatMap(item => item.Antonym.split(",").map(a => a.trim()))
+      vocabData.flatMap(item => splitValues(item.Antonym))
     );
   }
 
   questionText.textContent = question;
   renderOptions(options, correctAnswer);
+}
+
+// Helper: safe pick first value
+function safePick(field) {
+  if (!field) return "N/A";
+  return field.split(",")[0].trim();
+}
+
+// Helper: split multiple values into array
+function splitValues(field) {
+  if (!field) return [];
+  return field.split(",").map(v => v.trim()).filter(v => v);
 }
 
 // Render options
@@ -142,7 +155,7 @@ function renderOptions(options, correctAnswer) {
 
   options.forEach(opt => {
     const btn = document.createElement("button");
-    btn.className = "btn btn-outline-primary";
+    btn.className = "btn btn-outline-primary w-100 my-1";
     btn.textContent = opt;
     btn.onclick = () => handleAnswer(btn, opt, correctAnswer);
     optionsContainer.appendChild(btn);
@@ -153,24 +166,20 @@ function renderOptions(options, correctAnswer) {
 function handleAnswer(button, selected, correctAnswer) {
   totalAttempts++;
 
-  // 🚀 Remove sticky highlight immediately (mobile fix)
   button.blur();
   document.activeElement.blur();
 
   if (selected === correctAnswer) {
     correctAnswers++;
-    button.classList.remove("btn-outline-primary");
-    button.classList.add("btn-success");
+    button.classList.replace("btn-outline-primary", "btn-success");
     feedback.textContent = "✅ Correct!";
   } else {
-    button.classList.remove("btn-outline-primary");
-    button.classList.add("btn-danger");
+    button.classList.replace("btn-outline-primary", "btn-danger");
     feedback.textContent = `❌ Incorrect! Correct: ${correctAnswer}`;
 
     Array.from(optionsContainer.children).forEach(b => {
       if (b.textContent === correctAnswer) {
-        b.classList.remove("btn-outline-primary");
-        b.classList.add("btn-success");
+        b.classList.replace("btn-outline-primary", "btn-success");
       }
     });
 
@@ -203,7 +212,7 @@ function showResult() {
 
 // Shuffle helper
 function shuffleArray(arr) {
-  return arr.sort(() => Math.random() - 0.5);
+  return [...arr].sort(() => Math.random() - 0.5);
 }
 
 // Go back home
