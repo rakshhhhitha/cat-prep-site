@@ -5,9 +5,8 @@ body {
   padding: 0;
   min-height: 100vh;
 
-  /* No background image or color */
-  background: none;
-  color: #111;  /* default text color */
+  background-color: #fff; /* plain white background */
+  color: #111; /* dark text for readability */
 }
 
 /* Remove overlay */
