@@ -28,6 +28,7 @@ function shuffle(arr) {
 
 // Load Mode Buttons
 function loadModeButtons() {
+    modeList.innerHTML = "";
     ["Word", "Synonym", "Antonym"].forEach(mode => {
         const btn = document.createElement("button");
         btn.className = "btn btn-outline-primary m-1";
@@ -77,12 +78,22 @@ function selectMode(mode) {
 
 // Start Quiz
 function startQuiz(choice) {
+    if (!vocabularyData.length) {
+        alert("⚠️ Vocabulary data not loaded yet.");
+        return;
+    }
+
     quizQueue = [];
     let items = [];
 
     if (currentMode === "Word") items = vocabularyData.filter(v => v.Meanings);
     else if (currentMode === "Synonym") items = vocabularyData.filter(v => v.Synonym);
     else if (currentMode === "Antonym") items = vocabularyData.filter(v => v.Antonym);
+
+    if (!items.length) {
+        alert("⚠️ No data available for this mode.");
+        return;
+    }
 
     // Filter by choice
     if (currentMode === "Word" && choice !== "RANDOM") {
@@ -99,7 +110,7 @@ function startQuiz(choice) {
         return;
     }
 
-    // Reset attempts for all questions
+    // Reset attempts
     quizQueue.forEach(q => q.attempts = 0);
 
     shuffle(quizQueue);
@@ -173,7 +184,6 @@ function handleAnswer(button, selected, correctAnswer) {
         button.classList.remove("btn-outline-primary");
         button.classList.add("btn-danger");
         feedback.textContent = `❌ Incorrect! Correct: ${correctAnswer}`;
-
         // Highlight correct answer
         Array.from(optionsContainer.children).forEach(b => {
             if (b.textContent === correctAnswer) {
@@ -181,11 +191,9 @@ function handleAnswer(button, selected, correctAnswer) {
                 b.classList.add("btn-success");
             }
         });
-
-        // Repeat wrong question until correct
-        currentQuestion.attempts = currentQuestion.attempts || 0;
-        currentQuestion.attempts++;
-        quizQueue.push(currentQuestion); // always push to end until correct
+        // Always push back to end
+        currentQuestion.attempts = (currentQuestion.attempts || 0) + 1;
+        quizQueue.push(currentQuestion);
     }
 
     Array.from(optionsContainer.children).forEach(b => b.disabled = true);
