@@ -195,26 +195,32 @@ function goHome() {
 // Confetti
 function createConfetti() {
     const container = document.getElementById("confetti-container");
-    for (let i = 0; i < 100; i++) {
+    const colors = ["#f97316", "#facc15", "#10b981", "#06b6d4", "#ef4444", "#ec4899", "#6366f1"];
+    const confettiCount = 150;
+    const duration = 4000; // confetti duration
+
+    for (let i = 0; i < confettiCount; i++) {
         const confetti = document.createElement("div");
-        confetti.style.position = "absolute";
+        confetti.style.position = "fixed";
         confetti.style.width = "8px";
         confetti.style.height = "8px";
-        confetti.style.backgroundColor = `hsl(${Math.random()*360}, 100%, 50%)`;
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.left = Math.random() * window.innerWidth + "px";
         confetti.style.top = "-10px";
-        confetti.style.left = `${Math.random() * 100}%`;
-        confetti.style.opacity = Math.random();
-        confetti.style.transform = `rotate(${Math.random()*360}deg)`;
+        confetti.style.opacity = Math.random() + 0.5;
         confetti.style.borderRadius = "50%";
         container.appendChild(confetti);
 
-        const duration = 2000 + Math.random() * 2000;
-        confetti.animate([
-            { transform: confetti.style.transform, top: "-10px" },
-            { transform: `rotate(${Math.random()*360}deg)`, top: "110vh" }
-        ], { duration: duration, easing: 'linear' });
+        // Animate falling
+        const fallDuration = duration + Math.random() * 2000;
+        const horizontalMove = (Math.random() - 0.5) * 100; // sideways motion
 
-        setTimeout(() => container.removeChild(confetti), duration);
+        confetti.animate([
+            { transform: `translate(0px, 0px) rotate(${Math.random()*360}deg)`, top: "-10px" },
+            { transform: `translate(${horizontalMove}px, ${window.innerHeight + 20}px) rotate(${Math.random()*720}deg)`, top: `${window.innerHeight + 20}px` }
+        ], { duration: fallDuration, easing: 'ease-out' });
+
+        setTimeout(() => container.removeChild(confetti), fallDuration);
     }
 }
 
