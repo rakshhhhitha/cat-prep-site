@@ -4,7 +4,7 @@ let currentQuestion = null;
 let currentMode = null;
 let totalAttempts = 0;
 let correctAnswers = 0;
-let wordsCorrect = 0; // internal tracking, still works
+let wordsCorrect = 0; // internal tracking
 const maxAttemptsPerWord = 2;
 
 // DOM Elements
@@ -20,7 +20,7 @@ const modeList = document.getElementById("mode-list");
 const currentQSpan = document.getElementById("current-question");
 const totalQSpan = document.getElementById("total-questions");
 
-// Utility: Shuffle array
+// Shuffle utility
 function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -129,7 +129,6 @@ function nextQuestion() {
         correctAnswer = ants[Math.floor(Math.random() * ants.length)];
     }
 
-    // Generate options
     let options = [correctAnswer];
     let allOptions = [];
     if (currentMode === "Word") allOptions = vocabularyData.flatMap(v => v.Meanings.split(",").map(m => m.trim()));
