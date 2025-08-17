@@ -46,7 +46,6 @@ function selectMode(mode) {
     alphabetList.innerHTML = "";
 
     if (mode === "Word") {
-        // Alphabetical A-Z
         for (let i = 65; i <= 90; i++) {
             const letter = String.fromCharCode(i);
             const btn = document.createElement("button");
@@ -55,26 +54,22 @@ function selectMode(mode) {
             btn.onclick = () => startQuiz(letter);
             alphabetList.appendChild(btn);
         }
-        // Random All
         const randBtn = document.createElement("button");
         randBtn.className = "btn btn-primary m-1";
         randBtn.textContent = "Random All";
         randBtn.onclick = () => startQuiz("RANDOM");
         alphabetList.appendChild(randBtn);
     } else {
-        // Synonym/Antonym numeric ranges
         const total = vocabularyData.length;
-        let start = 1;
-        while (start <= total) {
-            const end = Math.min(start + 99, total);
+        for (let i = 0; i < total; i += 100) {
+            const start = i + 1;
+            const end = Math.min(i + 100, total);
             const btn = document.createElement("button");
             btn.className = "btn btn-outline-secondary m-1";
             btn.textContent = `${start}-${end}`;
             btn.onclick = () => startQuiz(`${start}-${end}`);
             alphabetList.appendChild(btn);
-            start += 100;
         }
-        // Random All
         const randBtn = document.createElement("button");
         randBtn.className = "btn btn-primary m-1";
         randBtn.textContent = "Random All";
@@ -88,19 +83,24 @@ function startQuiz(choice) {
     wordsCorrect = 0;
     updateDashboard();
     quizQueue = [];
-    let items = [];
 
+    if (!vocabularyData || vocabularyData.length === 0) {
+        alert("❌ Vocabulary data not loaded!");
+        return;
+    }
+
+    let items = [];
     if (currentMode === "Word") items = vocabularyData.filter(v => v.Meanings);
     else if (currentMode === "Synonym") items = vocabularyData.filter(v => v.Synonym);
     else if (currentMode === "Antonym") items = vocabularyData.filter(v => v.Antonym);
 
-    if (currentMode === "Word" && choice !== "RANDOM") {
+    if (choice === "RANDOM") {
+        quizQueue = [...items];
+    } else if (currentMode === "Word") {
         quizQueue = items.filter(item => item.Word[0].toUpperCase() === choice.toUpperCase());
-    } else if (currentMode !== "Word" && choice !== "RANDOM") {
+    } else {
         const [start, end] = choice.split("-").map(Number);
         quizQueue = items.slice(start - 1, end);
-    } else {
-        quizQueue = [...items];
     }
 
     if (quizQueue.length === 0) {
@@ -126,11 +126,10 @@ function nextQuestion() {
     feedback.textContent = "";
     optionsContainer.innerHTML = "";
 
-    // Finish quiz only if all questions answered correctly
     if (quizQueue.length === 0) {
         quizPage.classList.add("d-none");
         resultPage.classList.remove("d-none");
-        resultDiv.textContent = `✅ Quiz Complete! Accuracy: ${((wordsCorrect / totalQSpan.textContent)*100).toFixed(2)}%`;
+        resultDiv.textContent = `✅ Quiz Complete! Accuracy: ${((wordsCorrect / totalQSpan.textContent) * 100).toFixed(2)}%`;
         return;
     }
 
@@ -152,7 +151,6 @@ function nextQuestion() {
         correctAnswer = ants[Math.floor(Math.random() * ants.length)];
     }
 
-    // Options
     let options = [correctAnswer];
     let allOptions = [];
     if (currentMode === "Word") allOptions = vocabularyData.flatMap(v => v.Meanings.split(",").map(m => m.trim()));
@@ -190,17 +188,13 @@ function handleAnswer(button, selected, correctAnswer) {
         button.classList.remove("btn-outline-primary");
         button.classList.add("btn-danger");
         feedback.textContent = `❌ Incorrect! Correct: ${correctAnswer}`;
-
-        // Highlight correct answer
         Array.from(optionsContainer.children).forEach(b => {
             if (b.textContent === correctAnswer) {
                 b.classList.remove("btn-outline-primary");
                 b.classList.add("btn-success");
             }
         });
-
-        // Push back to end for looping
-        quizQueue.push(currentQuestion);
+        quizQueue.push(currentQuestion); // loop wrong answer
     }
 
     Array.from(optionsContainer.children).forEach(b => b.disabled = true);
