@@ -5,12 +5,12 @@ body {
   padding: 0;
   min-height: 100vh;
 
-  /* Solid background color */
-  background-color: #d8c4e3;  /* soft pastel purple */
-  color: #111;  /* darker text for contrast */
+  /* No background image or color */
+  background: none;
+  color: #111;  /* default text color */
 }
 
-/* Remove overlay since we are using a solid color */
+/* Remove overlay */
 body::before {
   display: none;
 }
@@ -21,13 +21,6 @@ body::before {
   padding: 30px 15px;
   position: relative;
   z-index: 1;
-
-  /* Slightly translucent card effect */
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 12px;
-  max-width: 700px;
-  margin: 40px auto;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 /* --- Headings --- */
