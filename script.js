@@ -4,6 +4,7 @@ let currentQuestion = null;
 let currentMode = null;
 let totalAttempts = 0;
 let correctAnswers = 0;
+let wordsCorrect = 0; // tracks number of words answered correctly at least once
 const maxAttemptsPerWord = 2;
 
 // DOM Elements
@@ -70,6 +71,7 @@ function selectMode(mode) {
 function startQuiz(choice) {
     totalAttempts = 0;
     correctAnswers = 0;
+    wordsCorrect = 0;
     updateDashboard();
     quizQueue = [];
     let items = [];
@@ -89,6 +91,9 @@ function startQuiz(choice) {
         return;
     }
 
+    // Reset attempts & correctOnce for all questions
+    quizQueue.forEach(q => { q.attempts = 0; q.correctOnce = false; });
+
     shuffle(quizQueue);
     startPage.classList.add("d-none");
     quizPage.classList.remove("d-none");
@@ -106,7 +111,7 @@ function nextQuestion() {
     if (quizQueue.length === 0) {
         quizPage.classList.add("d-none");
         resultPage.classList.remove("d-none");
-        resultDiv.textContent = `✅ Quiz Complete! Accuracy: ${((correctAnswers/totalAttempts)*100).toFixed(2)}%`;
+        resultDiv.textContent = `✅ Quiz Complete! Accuracy: ${((wordsCorrect/totalQSpan.textContent)*100).toFixed(2)}%`;
         return;
     }
 
@@ -157,6 +162,10 @@ function handleAnswer(button, selected, correctAnswer) {
 
     if (selected === correctAnswer) {
         correctAnswers++;
+        if (!currentQuestion.correctOnce) {
+            currentQuestion.correctOnce = true;
+            wordsCorrect++;
+        }
         button.classList.remove("btn-outline-primary");
         button.classList.add("btn-success");
         feedback.textContent = "✅ Correct!";
@@ -188,7 +197,9 @@ function handleAnswer(button, selected, correctAnswer) {
 
 // Update Dashboard
 function updateDashboard() {
-    accuracySpan.textContent = totalAttempts ? ((correctAnswers/totalAttempts)*100).toFixed(2) + "%" : "0%";
+    accuracySpan.textContent = totalQSpan.textContent
+        ? ((wordsCorrect / totalQSpan.textContent) * 100).toFixed(2) + "%"
+        : "0%";
 }
 
 // Go Home
