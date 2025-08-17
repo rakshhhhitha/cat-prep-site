@@ -3,8 +3,6 @@ let quizQueue = [];
 let currentQuestion = null;
 let currentMode = null;
 let totalAttempts = 0;
-let correctAnswers = 0;
-let wordsCorrect = 0; // internal tracking
 const maxAttemptsPerWord = 2;
 
 // DOM Elements
@@ -69,8 +67,6 @@ function selectMode(mode) {
 // Start Quiz
 function startQuiz(choice) {
     totalAttempts = 0;
-    correctAnswers = 0;
-    wordsCorrect = 0;
     quizQueue = [];
     let items = [];
 
@@ -89,7 +85,7 @@ function startQuiz(choice) {
         return;
     }
 
-    quizQueue.forEach(q => { q.attempts = 0; q.correctOnce = false; });
+    quizQueue.forEach(q => { q.attempts = 0; });
 
     shuffle(quizQueue);
     startPage.classList.add("d-none");
@@ -157,11 +153,6 @@ function handleAnswer(button, selected, correctAnswer) {
     totalAttempts++;
 
     if (selected === correctAnswer) {
-        correctAnswers++;
-        if (!currentQuestion.correctOnce) {
-            currentQuestion.correctOnce = true;
-            wordsCorrect++;
-        }
         button.classList.remove("btn-outline-primary");
         button.classList.add("btn-success");
         feedback.textContent = "✅ Correct!";
