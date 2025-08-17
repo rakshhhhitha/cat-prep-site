@@ -117,7 +117,6 @@ function nextQuestion() {
   let correctAnswer = "";
   if (currentMode === "Word") {
     questionText.textContent = `What is the meaning of "${currentQuestion.Word}"?`;
-    // Take first meaning (for simplicity)
     correctAnswer = currentQuestion.Meanings.split(",")[0].trim();
   } else if (currentMode === "Synonym") {
     questionText.textContent = `Which word is a synonym of "${currentQuestion.Word}"?`;
@@ -176,9 +175,7 @@ function handleAnswer(button, selected, correctAnswer) {
     quizQueue.push(currentQuestion); // loop wrong question to the end
   }
 
-  // Disable all buttons
   Array.from(optionsContainer.children).forEach(b => b.disabled = true);
-
   updateDashboard();
   setTimeout(nextQuestion, 1200);
 }
@@ -193,13 +190,16 @@ function goHome() {
   startPage.classList.remove("d-none");
   quizPage.classList.add("d-none");
   resultPage.classList.add("d-none");
+  alphabetList.innerHTML = "";
 }
 
 // Load Dataset
-fetch("vocab-data.json")
-  .then(res => res.json())
-  .then(data => {
-    vocabularyData = data;
-    loadModeButtons();
-  })
-  .catch(err => console.error("❌ Failed to load vocab-data.json", err));
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("vocab-data.json")
+    .then(res => res.json())
+    .then(data => {
+      vocabularyData = data;
+      loadModeButtons();
+    })
+    .catch(err => console.error("❌ Failed to load vocab-data.json", err));
+});
