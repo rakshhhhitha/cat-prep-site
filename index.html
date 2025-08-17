@@ -3,56 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <title>Vocabulary Quiz</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+<body class="bg-light">
+
+  <div class="container py-5">
+    <h1 class="text-center mb-4">Vocabulary Quiz</h1>
+
     <!-- Start Page -->
-    <div id="startPage" class="quiz-container text-center">
-      <h1 class="mb-3">Vocabulary Quiz</h1>
-      <p>Total Words Available: <span id="totalQuestions">0</span></p>
-      <button class="btn btn-primary mt-3" id="startQuizBtn">Start Quiz</button>
+    <div id="start-page" class="text-center">
+      <p class="lead">Select an option:</p>
+      <button class="btn btn-primary m-2" onclick="startQuiz('RANDOM')">🎲 Random (All Words)</button>
+      <div class="mt-4">
+        <p class="fw-semibold">Or pick an alphabet:</p>
+        <div id="alphabet-list" class="d-flex flex-wrap justify-content-center"></div>
+      </div>
     </div>
 
     <!-- Quiz Page -->
-    <div id="quizPage" class="quiz-container hidden">
-      <div class="quiz-header">
-        <h2>Interactive Quiz</h2>
-        <div class="progress">
-          <div id="progressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuemin="0"
-            aria-valuemax="100"></div>
-        </div>
-      </div>
-
-      <h4 class="mb-3">Question <span id="currentQ">1</span> / 20</h4>
-      <p class="question" id="questionText"></p>
-      <div class="options" id="optionsContainer"></div>
-
-      <div class="feedback mt-3 fw-bold" id="feedback"></div>
-
-      <div class="quiz-footer mt-4">
-        <div>
-          <p>Number of Questions: <span id="totalAttempts">0</span></p>
-          <p>Correct Answers: <span id="correctAnswers">0</span></p>
-          <p>Accuracy: <span id="accuracy">0%</span></p>
+    <div id="quiz-page" class="d-none">
+      <div class="card shadow p-4">
+        <div class="card-body text-center">
+          <h5 class="card-title" id="question-text"></h5>
+          <div id="options-container" class="d-grid gap-2 col-6 mx-auto mt-4"></div>
         </div>
       </div>
     </div>
 
-    <!-- Results Page -->
-    <div id="resultPage" class="quiz-container hidden text-center">
-      <div class="result-icon">
-        <i id="resultIcon" class="fas fa-trophy text-success"></i>
-      </div>
-      <h2>Quiz Completed!</h2>
-      <p>Your Score: <span id="finalScore"></span> / <span id="totalQuestionsResult"></span></p>
-      <p>Accuracy: <span id="finalAccuracy"></span>%</p>
-      <button class="btn btn-primary mt-3" id="restartQuizBtn">Restart Quiz</button>
+    <!-- Result Page -->
+    <div id="result-page" class="d-none text-center mt-5">
+      <div class="alert alert-success fw-bold" id="result"></div>
+      <button class="btn btn-secondary mt-3" onclick="goHome()">🏠 Back to Home</button>
     </div>
   </div>
 
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
