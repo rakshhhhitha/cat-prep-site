@@ -19,9 +19,7 @@ const currentQSpan = document.getElementById("current-question");
 const totalQSpan = document.getElementById("total-questions");
 const accuracySpan = document.getElementById("accuracy");
 
-// =================
-// Shuffle Utility
-// =================
+// Shuffle utility
 function shuffle(arr) {
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -30,9 +28,7 @@ function shuffle(arr) {
   return arr;
 }
 
-// =================
 // Load Mode Buttons
-// =================
 function loadModeButtons() {
   const modes = ["Word", "Synonym", "Antonym"];
   modeList.innerHTML = "";
@@ -45,9 +41,7 @@ function loadModeButtons() {
   });
 }
 
-// =================
 // Select Mode
-// =================
 function selectMode(mode) {
   currentMode = mode;
   alphabetList.innerHTML = "";
@@ -71,9 +65,7 @@ function selectMode(mode) {
   }
 }
 
-// =================
 // Start Quiz
-// =================
 function startQuiz(choice) {
   totalAttempts = 0;
   correctAnswers = 0;
@@ -86,7 +78,7 @@ function startQuiz(choice) {
   else if (currentMode === "Antonym") items = vocabularyData.filter(v => v.Antonym);
 
   if (currentMode === "Word" && choice !== "RANDOM") {
-    quizQueue = items.filter(item => item.Word[0].toUpperCase() === choice);
+    quizQueue = items.filter(item => item.Word[0].toUpperCase() === choice.toUpperCase());
   } else {
     quizQueue = [...items];
   }
@@ -97,7 +89,6 @@ function startQuiz(choice) {
   }
 
   shuffle(quizQueue);
-  if (currentMode !== "Word" && quizQueue.length > 50) quizQueue = quizQueue.slice(0, 50);
 
   startPage.classList.add("d-none");
   quizPage.classList.remove("d-none");
@@ -109,9 +100,7 @@ function startQuiz(choice) {
   nextQuestion();
 }
 
-// =================
 // Next Question
-// =================
 function nextQuestion() {
   feedback.textContent = "";
 
@@ -128,21 +117,22 @@ function nextQuestion() {
   let correctAnswer = "";
   if (currentMode === "Word") {
     questionText.textContent = `What is the meaning of "${currentQuestion.Word}"?`;
-    correctAnswer = currentQuestion.Meanings;
+    // Take first meaning (for simplicity)
+    correctAnswer = currentQuestion.Meanings.split(",")[0].trim();
   } else if (currentMode === "Synonym") {
     questionText.textContent = `Which word is a synonym of "${currentQuestion.Word}"?`;
-    const syns = currentQuestion.Synonym.split(",").map(s => s.trim());
+    const syns = currentQuestion.Synonym.split(",").map(s => s.trim()).filter(Boolean);
     correctAnswer = syns[Math.floor(Math.random() * syns.length)];
   } else if (currentMode === "Antonym") {
     questionText.textContent = `Which word is an antonym of "${currentQuestion.Word}"?`;
-    const ants = currentQuestion.Antonym.split(",").map(a => a.trim());
+    const ants = currentQuestion.Antonym.split(",").map(a => a.trim()).filter(Boolean);
     correctAnswer = ants[Math.floor(Math.random() * ants.length)];
   }
 
-  // Options
+  // Generate options
   let options = [correctAnswer];
   let allOptions = [];
-  if (currentMode === "Word") allOptions = vocabularyData.map(v => v.Meanings);
+  if (currentMode === "Word") allOptions = vocabularyData.flatMap(v => v.Meanings.split(",").map(m => m.trim()));
   else if (currentMode === "Synonym") allOptions = vocabularyData.flatMap(v => v.Synonym ? v.Synonym.split(",").map(s => s.trim()) : []);
   else if (currentMode === "Antonym") allOptions = vocabularyData.flatMap(v => v.Antonym ? v.Antonym.split(",").map(a => a.trim()) : []);
 
@@ -163,51 +153,49 @@ function nextQuestion() {
   });
 }
 
-// =================
 // Handle Answer
-// =================
 function handleAnswer(button, selected, correctAnswer) {
   totalAttempts++;
 
   if (selected === correctAnswer) {
     correctAnswers++;
-    button.classList.add("correct");
+    button.classList.remove("btn-outline-primary");
+    button.classList.add("btn-success");
     feedback.textContent = "✅ Correct!";
   } else {
-    button.classList.add("incorrect");
+    button.classList.remove("btn-outline-primary");
+    button.classList.add("btn-danger");
     feedback.textContent = `❌ Incorrect! Correct: ${correctAnswer}`;
-    quizQueue.push(currentQuestion);
+    // Highlight correct
     Array.from(optionsContainer.children).forEach(b => {
-      if (b.textContent === correctAnswer) b.classList.add("correct");
+      if (b.textContent === correctAnswer) {
+        b.classList.remove("btn-outline-primary");
+        b.classList.add("btn-success");
+      }
     });
+    quizQueue.push(currentQuestion); // loop wrong question to the end
   }
 
-  // Disable buttons
+  // Disable all buttons
   Array.from(optionsContainer.children).forEach(b => b.disabled = true);
 
   updateDashboard();
   setTimeout(nextQuestion, 1200);
 }
 
-// =================
 // Update Dashboard
-// =================
 function updateDashboard() {
   accuracySpan.textContent = totalAttempts ? ((correctAnswers/totalAttempts)*100).toFixed(2) + "%" : "0%";
 }
 
-// =================
 // Go Home
-// =================
 function goHome() {
   startPage.classList.remove("d-none");
   quizPage.classList.add("d-none");
   resultPage.classList.add("d-none");
 }
 
-// =================
 // Load Dataset
-// =================
 fetch("vocab-data.json")
   .then(res => res.json())
   .then(data => {
