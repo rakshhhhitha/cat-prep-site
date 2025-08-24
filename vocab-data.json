@@ -11767,7 +11767,7 @@
     "Meanings": "a gentle breeze",
     "Synonym": "Breeze, Wind",
     "Antonym": "Gale"
-  }
+  },
     {
         "Word": "accolade",
         "Meanings": "honor, award",
@@ -14551,7 +14551,8 @@
     "Meanings": "slaying of a tyrant",
     "Synonym": "regicide, assassination, execution",
     "Antonym": "None"
-  },{
+  },
+ {
     "Word": "ukase",
     "Meanings": "an official decree; arbitrary order",
     "Synonym": "edict, command, mandate",
