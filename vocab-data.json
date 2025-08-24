@@ -11767,8 +11767,739 @@
     "Meanings": "a gentle breeze",
     "Synonym": "Breeze, Wind",
     "Antonym": "Gale"
+  },
+      {
+        "Word": "accolade",
+        "Meanings": "honor, award",
+        "Synonym": "award, honor, recognition, tribute, praise, distinction, laurel, commendation",
+        "Antonym": "criticism, censure, reproach, rebuke, dishonor, condemnation"
+    },
+    {
+        "Word": "accoutrement",
+        "Meanings": "equipment",
+        "Synonym": "equipment, gear, apparatus, paraphernalia, outfit, furnishings",
+        "Antonym": "None"
+    },
+    {
+        "Word": "acephalous",
+        "Meanings": "headless, having no leader",
+        "Synonym": "headless, leaderless, anarchic, ungoverned",
+        "Antonym": "led, organized, governed, directed"
+    },
+    {
+        "Word": "acolyte",
+        "Meanings": "assistant, beginner",
+        "Synonym": "assistant, follower, attendant, novice, helper, disciple",
+        "Antonym": "leader, superior, guide, chief"
+    },
+    {
+        "Word": "adscititious",
+        "Meanings": "supplemental, adopted form",
+        "Synonym": "supplementary, additional, extraneous, external",
+        "Antonym": "essential, inherent, intrinsic, fundamental"
+    },
+    {
+        "Word": "afflatus",
+        "Meanings": "inspiration, divine revelation",
+        "Synonym": "inspiration, revelation, vision, enlightenment, muse",
+        "Antonym": "None"
+    },
+    {
+        "Word": "affusion",
+        "Meanings": "pouring on (particularly of water)",
+        "Synonym": "pouring, sprinkling, ablution, anointment",
+        "Antonym": "None"
+    },
+    {
+        "Word": "aficionado",
+        "Meanings": "devotee or fan of any sport/pastime",
+        "Synonym": "enthusiast, devotee, admirer, fan, connoisseur, follower",
+        "Antonym": "critic, detractor, opponent"
+    },
+    {
+        "Word": "agnate",
+        "Meanings": "descended by male links from same male ancestor",
+        "Synonym": "kinsman, relative, blood relation, family member",
+        "Antonym": "None"
+    },
+    {
+        "Word": "ala-mode",
+        "Meanings": "fashionable (of clothes and ideas)",
+        "Synonym": "stylish, fashionable, trendy, chic, in vogue, modish",
+        "Antonym": "outdated, unfashionable, old-fashioned"
+    },
+    {
+        "Word": "allegro",
+        "Meanings": "rapid, quick",
+        "Synonym": "fast, brisk, lively, rapid, swift, energetic",
+        "Antonym": "slow, sluggish, lethargic"
+    },
+    {
+        "Word": "altruism",
+        "Meanings": "unselfish concern for the welfare of others",
+        "Synonym": "selflessness, generosity, benevolence, philanthropy, kindness, humanity",
+        "Antonym": "egoism, selfishness, egocentricity, self-interest"
+    },
+    {
+        "Word": "amanuensis",
+        "Meanings": "a secretary, literary assistant",
+        "Synonym": "scribe, secretary, copyist, clerk, stenographer",
+        "Antonym": "None"
+    },
+    {
+        "Word": "amazon",
+        "Meanings": "a female warrior; tall, strong, or athletic woman",
+        "Synonym": "female warrior, virago, strong woman",
+        "Antonym": "None"
+    },
+    {
+        "Word": "anagnorisis",
+        "Meanings": "recognition (especially in drama: discovery or realization)",
+        "Synonym": "recognition, discovery, revelation, realization, awareness",
+        "Antonym": "ignorance, unawareness, oblivion"
+    },
+    {
+        "Word": "animadvert",
+        "Meanings": "to comment adversely",
+        "Synonym": "criticize, censure, condemn, denounce, reproach, rebuke, reprimand",
+        "Antonym": "praise, applaud, eulogize, approve, commend"
+    },
+    {
+        "Word": "antebellum",
+        "Meanings": "existing before a war",
+        "Synonym": "prewar, prior to war",
+        "Antonym": "postwar"
+    },
+    {
+        "Word": "antediluvian",
+        "Meanings": "made a long time ago",
+        "Synonym": "ancient, archaic, prehistoric, old-fashioned, outdated",
+        "Antonym": "modern, new, contemporary, up-to-date"
+    },
+    {
+        "Word": "anthropomorphic",
+        "Meanings": "having human characteristics",
+        "Synonym": "humanlike, personified",
+        "Antonym": "None"
+    },
+    {
+        "Word": "antiquary",
+        "Meanings": "student or collector of antiques",
+        "Synonym": "antiquarian, collector, historian, archivist",
+        "Antonym": "None"
+    },
+    {
+        "Word": "aperitif",
+        "Meanings": "an alcoholic drink taken before a meal",
+        "Synonym": "appetizer drink, pre-dinner drink",
+        "Antonym": "digestif (drink taken after a meal)"
+    },
+    {
+        "Word": "aphorism",
+        "Meanings": "concise statement of a principle",
+        "Synonym": "proverb, maxim, adage, saying, dictum",
+        "Antonym": "None"
+    },
+    {
+        "Word": "apocalypse",
+        "Meanings": "revelation of the future; great catastrophe",
+        "Synonym": "revelation, catastrophe, calamity, disaster, end of the world",
+        "Antonym": "None"
+    },
+    {
+        "Word": "apocryphal",
+        "Meanings": "of doubtful authenticity",
+        "Synonym": "spurious, counterfeit, false, unverified, dubious",
+        "Antonym": "authentic, genuine, real, original"
+    },
+    {
+        "Word": "apologist",
+        "Meanings": "one who defends or attempts to justify a doctrine, faith, or action",
+        "Synonym": "defender, advocate, supporter, proponent, champion",
+        "Antonym": "critic, opponent, adversary, detractor"
+    },
+    {
+        "Word": "apostasy",
+        "Meanings": "abandoning of what one believed in; renunciation of religion",
+        "Synonym": "renunciation, abandonment, defection, desertion, rejection, heresy",
+        "Antonym": "loyalty, faithfulness, devotion, adherence"
+    },
+    {
+        "Word": "apothecary",
+        "Meanings": "a person who prepares and sells medicines",
+        "Synonym": "pharmacist, druggist, chemist",
+        "Antonym": "None"
+    },
+    {
+        "Word": "apotheosis",
+        "Meanings": "most perfect development of something; deification",
+        "Synonym": "deification, glorification, exaltation, consecration",
+        "Antonym": "desecration, degradation, defamation"
+    },
+    {
+        "Word": "appellation",
+        "Meanings": "identifying name or title",
+        "Synonym": "designation, title, label, epithet, moniker",
+        "Antonym": "None"
+    },
+    {
+        "Word": "apposite",
+        "Meanings": "appropriate, fitting",
+        "Synonym": "apt, suitable, relevant, applicable, pertinent",
+        "Antonym": "irrelevant, inappropriate, unsuitable"
+    },
+    {
+        "Word": "arabesque",
+        "Meanings": "a complex ornate design",
+        "Synonym": "ornamentation, decoration, embellishment, pattern",
+        "Antonym": "plainness, simplicity, minimalism"
+    },
+    {
+        "Word": "arboreal",
+        "Meanings": "of or connected with trees",
+        "Synonym": "woody, treelike, forested, sylvan",
+        "Antonym": "None"
+    },
+    {
+        "Word": "arraign",
+        "Meanings": "to bring before a law court to answer charges; call to account",
+        "Synonym": "accuse, charge, indict, prosecute, summon",
+        "Antonym": "excuse, condone, acquit, absolve, exonerate"
+    },
+    {
+        "Word": "arrogate",
+        "Meanings": "to clinch or seize without right",
+        "Synonym": "assume, seize, appropriate, usurp, commandeer",
+        "Antonym": "abdicate, surrender, relinquish, renounce"
+    },
+    {
+        "Word": "arroyo",
+        "Meanings": "a gully",
+        "Synonym": "ravine, channel, gully, watercourse",
+        "Antonym": "hill, elevation"
+    },
+    {
+        "Word": "aspersion",
+        "Meanings": "slander",
+        "Synonym": "slander, defamation, smear, calumny, vilification",
+        "Antonym": "praise, approval, compliment"
+    },
+    {
+        "Word": "assiduous",
+        "Meanings": "diligent, hard-working, sedulous",
+        "Synonym": "diligent, industrious, meticulous, tireless, persistent",
+        "Antonym": "lazy, negligent, careless"
+    },
+    {
+        "Word": "atavism",
+        "Meanings": "resemblance to remote ancestors",
+        "Synonym": "reappearance, throwback, reversion",
+        "Antonym": "progress, advancement, novelty"
+    },
+    {
+        "Word": "atelier",
+        "Meanings": "artist’s workroom",
+        "Synonym": "studio, workshop",
+        "Antonym": "None"
+    },
+    {
+        "Word": "atrabilious",
+        "Meanings": "ill-tempered",
+        "Synonym": "irritable, gloomy, morose, surly",
+        "Antonym": "happy, cheerful, good-tempered"
+    },
+    {
+        "Word": "atticism",
+        "Meanings": "extreme elegance of speech",
+        "Synonym": "eloquence, refinement, clarity",
+        "Antonym": "crudity, inelegance"
+    },
+    {
+        "Word": "bacchanalian",
+        "Meanings": "drunken revelry",
+        "Synonym": "riotous, carousing, orgiastic, drunken",
+        "Antonym": "sober, restrained, austere"
+    },
+    {
+        "Word": "bailiff",
+        "Meanings": "a law officer who collects property of debtors or keeps order in court",
+        "Synonym": "court officer, steward, marshal",
+        "Antonym": "None"
+    },
+    {
+        "Word": "bairn",
+        "Meanings": "a child",
+        "Synonym": "child, youngster, kid, infant",
+        "Antonym": "adult, grown-up"
+    },
+    {
+        "Word": "banns",
+        "Meanings": "proclamation made in church of an intended marriage",
+        "Synonym": "announcement, proclamation, declaration",
+        "Antonym": "secret, concealment"
+    },
+    {
+        "Word": "barme cide",
+        "Meanings": "gifts or benefits that are imaginary, illusory",
+        "Synonym": "illusory, deceptive, pretended, fake",
+        "Antonym": "real, genuine, authentic"
+    },
+    {
+        "Word": "baroque",
+        "Meanings": "elaborate style, fashionable in architecture",
+        "Synonym": "ornate, elaborate, extravagant, decorative",
+        "Antonym": "plain, simple, austere"
+    },
+    {
+        "Word": "behemoth",
+        "Meanings": "huge or powerful animal/thing",
+        "Synonym": "giant, monster, leviathan, colossus",
+        "Antonym": "dwarf, weakling, pygmy"
+    },
+    {
+        "Word": "betrothed",
+        "Meanings": "engaged, pledged to marry",
+        "Synonym": "engaged, affianced, promised",
+        "Antonym": "single, unattached"
+    },
+    {
+        "Word": "bibulous",
+        "Meanings": "addicted to or fond of alcoholic drinks",
+        "Synonym": "drunken, intemperate, alcoholic",
+        "Antonym": "sober, abstinent, temperate"
+    },
+    {
+        "Word": "billingsgate",
+        "Meanings": "foul, vulgar, abusive talk",
+        "Synonym": "abuse, vituperation, invective, profanity",
+        "Antonym": "praise, compliment, flattery"
+    },
+    {
+        "Word": "bionic",
+        "Meanings": "very strong, skillful",
+        "Synonym": "superhuman, enhanced, mechanical",
+        "Antonym": "weak, feeble, fragile"
+    },
+    {
+        "Word": "bivouac",
+        "Meanings": "temporary encampment in open",
+        "Synonym": "camp, encampment, shelter",
+        "Antonym": "permanent settlement, home"
+    },
+    {
+        "Word": "blandishment",
+        "Meanings": "flattery, coaxing",
+        "Synonym": "flattery, cajolery, persuasion, coaxing",
+        "Antonym": "criticism, insult, reproach"
+    },
+    {
+        "Word": "bludgeon",
+        "Meanings": "short heavy club; to bully or coerce",
+        "Synonym": "club, cudgel, beat, pummel, coerce, intimidate",
+        "Antonym": "persuade, comfort, encourage"
+    },
+    {
+        "Word": "bluestocking",
+        "Meanings": "woman pretending to literary taste",
+        "Synonym": "intellectual woman, scholar",
+        "Antonym": "None"
+    },
+    {
+        "Word": "bodkin",
+        "Meanings": "a thick, blunt needle",
+        "Synonym": "needle, pin, stiletto",
+        "Antonym": "None"
+    },
+    {
+        "Word": "bonmot",
+        "Meanings": "clever or witty remark",
+        "Synonym": "quip, joke, witticism, repartee",
+        "Antonym": "None"
+    },
+    {
+        "Word": "buccaneer",
+        "Meanings": "pirate",
+        "Synonym": "pirate, marauder, freebooter, corsair",
+        "Antonym": "sailor, naval officer, protector"
+    },
+    {
+        "Word": "bugbear",
+        "Meanings": "source of annoyance or fear",
+        "Synonym": "fear, dread, phobia, irritation",
+        "Antonym": "comfort, delight, reassurance"
+    },
+    {
+        "Word": "bumptious",
+        "Meanings": "disagreeably conceited",
+        "Synonym": "arrogant, conceited, pompous, boastful",
+        "Antonym": "humble, polite, modest, meek"
+    },
+    {
+        "Word": "burgeon",
+        "Meanings": "to grow forth; send out buds",
+        "Synonym": "flourish, expand, thrive, increase, blossom",
+        "Antonym": "wither, decline, shrink, diminish"
+    },
+    {
+        "Word": "burgess",
+        "Meanings": "citizen",
+        "Synonym": "citizen, freeman, resident",
+        "Antonym": "alien, outsider, foreigner"
+    },
+    {
+        "Word": "burlesque",
+        "Meanings": "broadly comic, satirical imitation",
+        "Synonym": "parody, caricature, satire, lampoon",
+        "Antonym": "seriousness, sincerity"
+    },
+    {
+        "Word": "caboodle",
+        "Meanings": "whole group",
+        "Synonym": "lot, bunch, collection, entirety, aggregate",
+        "Antonym": "part, portion, fragment"
+    },
+    {
+        "Word": "cachet",
+        "Meanings": "respect or prestige, approval, complete acceptance",
+        "Synonym": "prestige, status, distinction, esteem, admiration",
+        "Antonym": "disgrace, shame, dishonor"
+    },
+    {
+        "Word": "cadge",
+        "Meanings": "to beg, to get by begging",
+        "Synonym": "beg, scrounge, mooch, sponge",
+        "Antonym": "earn, provide, give"
+    },
+    {
+        "Word": "callisthenics",
+        "Meanings": "athletic exercises",
+        "Synonym": "gymnastics, workout, exercise, training",
+        "Antonym": "inaction, idleness"
+    },
+    {
+        "Word": "canaille",
+        "Meanings": "mob, multitude",
+        "Synonym": "rabble, crowd, populace, masses",
+        "Antonym": "elite, aristocracy, gentry"
+    },
+    {
+        "Word": "cantankerous",
+        "Meanings": "bad-tempered, quarrelsome",
+        "Synonym": "irritable, quarrelsome, irascible, cranky",
+        "Antonym": "amiable, good-natured, cheerful"
+    },
+    {
+        "Word": "carapace",
+        "Meanings": "protective covering",
+        "Synonym": "shell, armor, shield, coating",
+        "Antonym": "exposure, vulnerability"
+    },
+    {
+        "Word": "carousal",
+        "Meanings": "noisy drinking party",
+        "Synonym": "revelry, spree, debauchery, drinking bout",
+        "Antonym": "sobriety, abstinence, austerity"
+    },
+    {
+        "Word": "carouse",
+        "Meanings": "to drink alcohol freely",
+        "Synonym": "revel, booze, drink, frolic",
+        "Antonym": "abstain, refrain, fast"
+    },
+    {
+        "Word": "carte blanche",
+        "Meanings": "full discretionary power",
+        "Synonym": "unlimited power, license, full authority, freedom",
+        "Antonym": "restriction, limitation, constraint"
+    },
+    {
+        "Word": "castigation",
+        "Meanings": "severe punishment",
+        "Synonym": "punishment, chastisement, discipline, rebuke",
+        "Antonym": "praise, forgiveness, commendation"
+    },
+    {
+        "Word": "casuistry",
+        "Meanings": "subtle but false reasoning about moral issues",
+        "Synonym": "sophistry, deception, fallacy, evasion",
+        "Antonym": "truth, honesty, frankness"
+    },
+    {
+        "Word": "cataclysm",
+        "Meanings": "sudden violent change",
+        "Synonym": "disaster, upheaval, catastrophe, calamity",
+        "Antonym": "blessing, boon, miracle"
+    },
+    {
+        "Word": "caveat",
+        "Meanings": "warning, proviso",
+        "Synonym": "warning, caution, admonition, stipulation",
+        "Antonym": "None"
+    },
+    {
+        "Word": "certitude",
+        "Meanings": "sureness",
+        "Synonym": "certainty, inevitability, assurance, conviction",
+        "Antonym": "uncertainty, doubt, hesitation"
+    },
+    {
+        "Word": "chagrin",
+        "Meanings": "embarrassment due to disappointment",
+        "Synonym": "annoyance, humiliation, shame, dismay",
+        "Antonym": "delight, glorification, satisfaction"
+    },
+    {
+        "Word": "chicanery",
+        "Meanings": "legal trickery, false argument",
+        "Synonym": "deception, fraud, trickery, duplicity",
+        "Antonym": "honesty, candor, truthfulness"
+    },
+    {
+        "Word": "chimera",
+        "Meanings": "illusion or fabrication of the mind",
+        "Synonym": "fantasy, illusion, dream, mirage",
+        "Antonym": "reality, actuality, fact"
+    },
+    {
+        "Word": "chutzpah",
+        "Meanings": "audacity, boldness",
+        "Synonym": "audacity, nerve, boldness, gall, temerity",
+        "Antonym": "timidity, meekness, shyness"
+    },
+    {
+        "Word": "coda",
+        "Meanings": "passage completing a piece of music",
+        "Synonym": "conclusion, finale, ending, epilogue",
+        "Antonym": "introduction, prelude, beginning"
+    },
+    {
+        "Word": "cogitate",
+        "Meanings": "think deeply, meditate",
+        "Synonym": "ponder, reflect, contemplate, ruminate",
+        "Antonym": "ignore, disregard, neglect"
+    },
+    {
+        "Word": "commestibles",
+        "Meanings": "edible food",
+        "Synonym": "food, edibles, provisions, victuals",
+        "Antonym": "poison, inedible"
+    },
+    {
+        "Word": "commiserate",
+        "Meanings": "to feel pity for",
+        "Synonym": "sympathize, console, pity, empathize",
+        "Antonym": "ignore, disregard, mock"
+    },
+    {
+        "Word": "compunction",
+        "Meanings": "feeling of regret for one’s actions",
+        "Synonym": "remorse, guilt, penitence, repentance",
+        "Antonym": "shamelessness, indifference"
+    },
+    {
+        "Word": "concatenate",
+        "Meanings": "to link together",
+        "Synonym": "connect, join, link, chain",
+        "Antonym": "separate, disconnect, detach"
+    },
+    {
+        "Word": "concussion",
+        "Meanings": "impaired brain functioning due to blow",
+        "Synonym": "brain injury, shock, trauma",
+        "Antonym": "None"
+    },
+    {
+        "Word": "conjoin",
+        "Meanings": "to join together",
+        "Synonym": "unite, combine, merge, integrate",
+        "Antonym": "separate, split, divide"
+    },
+    {
+        "Word": "conscription",
+        "Meanings": "compulsory service in armed forces",
+        "Synonym": "draft, enlistment, recruitment",
+        "Antonym": "volunteerism, exemption"
+    },
+    {
+        "Word": "consecrate",
+        "Meanings": "to make sacred; dedicate to religion",
+        "Synonym": "sanctify, bless, hallow, dedicate",
+        "Antonym": "desecrate, defile, profane"
+    },
+    {
+        "Word": "contretemps",
+        "Meanings": "embarrassing occurrence",
+        "Synonym": "mishap, misadventure, blunder, accident",
+        "Antonym": "fortune, luck, success"
+    },
+    {
+        "Word": "contrite",
+        "Meanings": "deep sorrow for wrongdoing",
+        "Synonym": "remorseful, repentant, apologetic, penitent",
+        "Antonym": "unrepentant, remorseless, shameless"
+    },
+    {
+        "Word": "contumacious",
+        "Meanings": "insubordinate, rebellious",
+        "Synonym": "disobedient, defiant, unruly, mutinous",
+        "Antonym": "obedient, compliant, submissive"
+    },
+    {
+        "Word": "conundrum",
+        "Meanings": "a riddle, dilemma, enigma",
+        "Synonym": "puzzle, mystery, problem, riddle",
+        "Antonym": "solution, answer, explanation"
+    },
+    {
+        "Word": "convalesce",
+        "Meanings": "recover health gradually after sickness",
+        "Synonym": "heal, recuperate, recover, mend",
+        "Antonym": "deteriorate, relapse, worsen"
+    },
+    {
+        "Word": "convoke",
+        "Meanings": "call together, summon",
+        "Synonym": "assemble, convene, summon, gather",
+        "Antonym": "disperse, dismiss, disband"
+    },
+    {
+        "Word": "cornucopia",
+        "Meanings": "abundant supply",
+        "Synonym": "abundance, profusion, plenty, overflow",
+        "Antonym": "scarcity, lack, deficiency"
+    },
+    {
+        "Word": "curmudgeon",
+        "Meanings": "bad-tempered person",
+        "Synonym": "crank, grouch, complainer, grump",
+        "Antonym": "optimist, cheerful person, pleasant fellow"
+    },
+  {
+    "Word": "dastardly",
+    "Meanings": "mean, cowardly",
+    "Synonym": "cowardly, mean, vile, base, craven, sneaky",
+    "Antonym": "brave, heroic, noble, gallant, courageous"
+  },
+  {
+    "Word": "decapitate",
+    "Meanings": "to behead",
+    "Synonym": "behead, execute, guillotine, cut off",
+    "Antonym": "None"
+  },
+  {
+    "Word": "declivity",
+    "Meanings": "downward inclination",
+    "Synonym": "slope, decline, descent, downgrade",
+    "Antonym": "ascent, rise, acclivity, upgrade"
+  },
+  {
+    "Word": "decrepit",
+    "Meanings": "broken down or worn out by old age or long use",
+    "Synonym": "weak, feeble, fragile, aged, frail, dilapidated",
+    "Antonym": "robust, strong, sturdy, agile, vigorous"
+  },
+  {
+    "Word": "delectation",
+    "Meanings": "delight, enjoyment",
+    "Synonym": "enjoyment, pleasure, delight, gratification",
+    "Antonym": "displeasure, dissatisfaction, boredom, annoyance"
+  },
+  {
+    "Word": "deleterious",
+    "Meanings": "harmful",
+    "Synonym": "harmful, damaging, injurious, detrimental, noxious, pernicious",
+    "Antonym": "harmless, beneficial, safe, advantageous, wholesome"
+  },
+  {
+    "Word": "delinquent",
+    "Meanings": "said of young people showing a tendency to commit crimes",
+    "Synonym": "offender, wrongdoer, lawbreaker, criminal, negligent",
+    "Antonym": "obedient, responsible, dutiful, law-abiding"
+  },
+  {
+    "Word": "delirium",
+    "Meanings": "a temporary mental disturbance during a fever, marked by confused speech and hallucination",
+    "Synonym": "mania, frenzy, insanity, hysteria, hallucination",
+    "Antonym": "sanity, calmness, lucidity, normality"
+  },
+  {
+    "Word": "demagogue",
+    "Meanings": "person appealing not to reasons but to emotions",
+    "Synonym": "agitator, rabble-rouser, instigator, provocateur, opportunist",
+    "Antonym": "peacemaker, conciliator, diplomat, mediator"
+  },
+  {
+    "Word": "denouement",
+    "Meanings": "an outcome or solution; the unraveling of a plot",
+    "Synonym": "outcome, resolution, conclusion, finale, climax",
+    "Antonym": "beginning, start, prologue, introduction"
+  },
+  {
+    "Word": "dereliction",
+    "Meanings": "deserting and leaving; to fall into ruins",
+    "Synonym": "neglect, abandonment, desertion, disrepair, dilapidation",
+    "Antonym": "restoration, upkeep, preservation, repair"
+  },
+  {
+    "Word": "descant",
+    "Meanings": "a tune usually sung or played at the same time as the main tune",
+    "Synonym": "melody, counterpoint, descanting, harmony, air",
+    "Antonym": "None"
+  },
+  {
+    "Word": "desideratum",
+    "Meanings": "something needed and wanted",
+    "Synonym": "requirement, necessity, essential, prerequisite",
+    "Antonym": "luxury, nonessential, triviality"
+  },
+  {
+    "Word": "desuetude",
+    "Meanings": "cessation of use; disuse",
+    "Synonym": "disuse, inactivity, obsolescence, neglect",
+    "Antonym": "use, practice, activity, adoption"
+  },
+  {
+    "Word": "detente",
+    "Meanings": "lessening of tension, especially between nations",
+    "Synonym": "truce, armistice, peace, reconciliation",
+    "Antonym": "conflict, hostility, tension, enmity"
+  },
+  {
+    "Word": "detumescence",
+    "Meanings": "diminishing or lessening of swelling",
+    "Synonym": "subsiding, reduction, shrinking, decrease",
+    "Antonym": "swelling, enlargement, growth"
+  },
+  {
+    "Word": "didactic",
+    "Meanings": "intended to teach; preachy",
+    "Synonym": "educational, instructive, informative, moralizing",
+    "Antonym": "uninformative, misleading, unteaching"
+  },
+  {
+    "Word": "dilettante",
+    "Meanings": "one who dabbles in an art but is not an expert",
+    "Synonym": "amateur, novice, nonprofessional, layman",
+    "Antonym": "expert, professional, specialist"
+  },
+  {
+    "Word": "discontent",
+    "Meanings": "refuse to approve of",
+    "Synonym": "disapproval, dissatisfaction, displeasure, objection",
+    "Antonym": "approval, satisfaction, contentment"
+  },
+  {
+    "Word": "dissimulate",
+    "Meanings": "to hide one’s feelings",
+    "Synonym": "pretend, conceal, disguise, feign",
+    "Antonym": "reveal, express, disclose, expose"
+  },
+  {
+    "Word": "dissonance",
+    "Meanings": "discord",
+    "Synonym": "discord, disagreement, disharmony, conflict",
+    "Antonym": "harmony, accord, agreement, concord"
   }
-
 ]
 
 
